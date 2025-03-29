@@ -1,5 +1,6 @@
 'use client';
 
+import BookingSection from "./home/booking/page";
 import HeroSection from "./home/hero/page";
 import IntroductionSection from "./home/instroduction/page";
 
@@ -14,6 +15,8 @@ export default function Home() {
      <HeroSection/>
      {/* Here is introduction section of home page */}
      <IntroductionSection/>
+     {/* Here is booking section of home page */}
+     <BookingSection/>
    </>
   );
 }
