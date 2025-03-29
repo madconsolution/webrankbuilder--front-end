@@ -4,7 +4,7 @@
 
 export default function BookingSection() {
   return (
-    <div className="relative flex items-center justify-center min-h-screen bg-gradient-to-r from-black via-blue-900 to-black">
+    <div className="relative flex items-center justify-center h-[550px] bg-gradient-to-r from-black via-blue-900 to-black">
       {/* Left Side Content */}
       <div className="text-white text-left w-1/2 p-8">
         <h2 className="text-3xl font-bold">
