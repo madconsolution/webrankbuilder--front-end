@@ -1,5 +1,6 @@
 'use client';
 
+import CommunitySection from "./home/booking/community/page";
 import BookingSection from "./home/booking/page";
 import HeroSection from "./home/hero/page";
 import IntroductionSection from "./home/instroduction/page";
@@ -16,6 +17,8 @@ export default function Home() {
      <HeroSection/>
      {/* Here is introduction section of home page */}
      <IntroductionSection/>
+    {/* Her is comunity section of home page */}
+    <CommunitySection/>
      {/* Here is service section of home page */}
      <ServiceSection/>
      {/* Here is booking section of home page */}
