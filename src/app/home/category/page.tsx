@@ -29,17 +29,18 @@ export default function CategoryTabs() {
 
   return (
     <div className="w-full md:w-[1140px] mx-auto p-4">
-      <div className="flex space-x-4 mb-6 ">
-        {categories.map(category => ( 
-          <button
-            key={category}
-            onClick={() => setSelectedTab(category)}
-            className={`px-4 py-2 text-black hover:bg-red-500 ${selectedTab === category ? ' bg-red-500 text-white' : ''}`}
-          >
-            {category}
-          </button>
-        ))}
-      </div>
+    <div className="flex flex-wrap md:flex space-x-2 md:space-x-4 mb-6 p-2 text-sm">
+  {categories.map(category => (
+    <button
+      key={category}
+      onClick={() => setSelectedTab(category)}
+      className={`px-3 py-1 text-sm sm:text-base text-black hover:bg-red-500 ${selectedTab === category ? 'bg-red-500 text-white' : ''}`}
+    >
+      {category}
+    </button>
+  ))}
+</div>
+
       <div className="grid grid-cols-2 md:grid-cols-3 gap-6 ">
         {filteredProducts.map(product => (
           <div key={product.id} className=" shadow-md rounded-lg overflow-hidden ">
