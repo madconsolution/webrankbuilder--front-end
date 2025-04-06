@@ -17,7 +17,7 @@ export default function Navbar() {
   const navigation = [
     { name: "Home", href: "/" },
     { name: "Products", href: "/products", hasArrow: true },
-    { name: "About Tortox", href: "#" },
+    { name: "About Tortox", href: "/about" },
     { name: "Sales Network", href: "#" },
     { name: "Contact us", href: "#" },
   ];
