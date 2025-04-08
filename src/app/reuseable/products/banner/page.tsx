@@ -12,9 +12,9 @@ interface BannerProps {
 
 const ProductBanner: React.FC<BannerProps> = ({ bgImage, logo1, logo2, description }) => {
   return (
-    <div className="relative w-full h-80">
+    <div className="relative w-full h-[787px] overflow-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0 w-full h-[787px]  mx-auto bg-center" style={{ backgroundImage: `url(${bgImage})` }}></div>
+      <div className="absolute inset-0 w-full h-[787px]  mx-auto bg-center bg-no-repeat" style={{ backgroundImage: `url(${bgImage})` }}></div>
       
       {/* Content Section */}
       <div className="absolute inset-0  flex items-center mt-8 flex-col text-white">
