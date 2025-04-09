@@ -5,6 +5,7 @@ import FeatureHighlightSection from "@/app/reuseable/products/feature/page";
 import FeatureSlider from "@/app/reuseable/products/freature-slider/page";
 import FeatureCard from "@/app/reuseable/products/freature-slider/page";
 import ProductOverview from "@/app/reuseable/products/overview/page";
+import ProductSlider from "@/app/reuseable/products/product-slider/page";
 
 const products = [
   {
@@ -44,6 +45,13 @@ const slides = [
       image: '/products/IRIS/Feature-slider/Background.png',
   },
 ];
+// 
+const sampleProducts = [
+  { image: '/products/IRIS/Feature-slider/image-1.png' },
+  { image: '/products/IRIS/Feature-slider/image-2.png' },
+  { image: '/products/IRIS/Feature-slider/Background.png' },
+
+];
 
 const IrisPage = () => {
   return (
@@ -70,6 +78,8 @@ const IrisPage = () => {
     />
      {/* Here is feature slider */}
      <FeatureSlider slides={slides} />
+     {/* Other product slider */}
+     <ProductSlider title="Other Products" products={sampleProducts} />
     </>
   );
 };
