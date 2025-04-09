@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import Title from "../title/page";
 
 interface Product {
   title: string;
@@ -19,13 +20,13 @@ interface ProductOverviewProps {
 const ProductOverview: React.FC<ProductOverviewProps> = ({ products }) => {
   return (
     <div className="bg-black  text-white py-10  px-4 md:px-16">
-      {/* Heading */}
-      <h2 className="text-3xl font-bold text-center">
-        TORTOX <span className="text-red-500">IRIS</span>
-      </h2>
-      <p className="text-center text-gray-400 max-w-3xl mx-auto mt-2">
-      Tortox Iris re-engineered designs and features to offer the best balance of performance and with honeycomb design front panel inspired open fascia that is specifically created take as much air in to your system as possible. The core of the TORTOX IRIS is its clean design, well balanced between a perfectly organised interior structure and the sleek exterior design.
-      </p>
+    <div>
+      <Title 
+        mainTitle="TORTOX" 
+        subTitle="IRIS" 
+        content="Tortox Iris re-engineered designs and features to offer the best balance of performance with a honeycomb design front panel inspired open fascia that is specifically created to take as much air into your system as possible. The core of the TORTOX IRIS is its clean design, well balanced between a perfectly organised interior structure and the sleek exterior design." 
+      />
+    </div>
 
       {/* Slider Section */}
       <Swiper
