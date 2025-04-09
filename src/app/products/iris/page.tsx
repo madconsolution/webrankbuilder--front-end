@@ -30,9 +30,6 @@ const IrisPage = () => {
         />
       </>
 
-      {/* Vertical spacing between Banner and Overview */}
-
-
       {/* Overview Section */}
       <>
         <ProductOverview products={products} />
@@ -45,7 +42,7 @@ const IrisPage = () => {
       image="/products/feature-prof.png" 
       title="FUTURE-PROOF FRONT PANEL"
       highlightText="Featuring a super-speed USB 3.1 port, RGB Lighting Control switch and additional connections for all modern peripherals."
-      position="right" // or "left"
+      position="right" 
     />
       </>
     </>
