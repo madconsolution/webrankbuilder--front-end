@@ -1,8 +1,11 @@
 'use client';
 
 import ProductBanner from "@/app/reuseable/products/banner/page";
+import FeatureBlock from "@/app/reuseable/products/Feature-Block/page";
 import FeatureHighlightSection from "@/app/reuseable/products/feature/page";
+import HighlightsSllder from "@/app/reuseable/products/freature-slider/page";
 import FeatureSlider from "@/app/reuseable/products/freature-slider/page";
+import HighlightsSlider from "@/app/reuseable/products/Highlights-silder/page";
 import CallToActionBanner from "@/app/reuseable/products/join-group/page";
 
 import ProductOverview from "@/app/reuseable/products/overview/page";
@@ -165,7 +168,7 @@ const IrisPage = () => {
 />
 
        {/* Feature showcase */}
-       <ProductFeatureShowcase
+       {/* <ProductFeatureShowcase
   imageSrc="/products/IRIS/showcase/image.png"
  imageAlt="Remote and Fan Controller"
  title="High Performance"
@@ -173,6 +176,42 @@ const IrisPage = () => {
  description={`Tortox IRIS comes preinstalled with 4x Tortox Dual loop fans for a more efficient cooling performance. The Included RGB fansare RGB center illuminated and can support multiple control standards like ASUS AURA SYNC, MSI MISTIC LIGHT SYNC, GIGABYTE RGB Fusion 2.0 and ASRock POLYCHROME RGB. This allows you to control the fan lighting simply through software and synchronize the fans, and other devices such as mice and keyboard for more attractive lighting.`}
   noteLine1="8 Fan 2 LED strip Aura connection with Remote"
   noteLine2="4x DUAL LOOP 120MM RGB RAINBOW FANS*"
+ /> */}
+
+ {/* Feature Block */}
+  <FeatureBlock
+  imageSrc="/products/IRIS/showcase/image-1.png"
+  imageAlt="Open Neon Case"   title="Thermal"
+   highlight="Expandability"
+   description={`To cool down the components, Grid Design on the front panel
+   has offered smooth intake. NEON supports up to two 140mm fans or a 280mm radiator in the front while a 120mm rear-fan
+   or radiator at the rear will push the hot air out. It also supports up
+   to 163mm high CPU air cooler.`}
+  note="Three Single Colour(Red) 33 LED Case Fans Pre-installed"
+   imageLeft={true} />
+
+ <FeatureBlock
+    imageSrc="/products/IRIS/showcase/image-2.png"
+   imageAlt="Two NEON Cases"
+  title="Tool-free"
+ highlight="modular storage design"
+ description={`Both the included hard drive cages are modular and tool-free
+  giving the user the ability to configure the system to their needs. Apart from these hard drive cages which accommodate up to 2
+   HDDs, the NEON comes with three modular SSD brackets. Available in with or without RGB windowed side panel case, you can
+  choose the NEON that blends perfectly with your surroundings.`}
+  imageLeft={false}
+/>
+
+       {/* Highlight slider  */}
+        <HighlightsSlider
+   title="Magnetic And Removable"
+   highlight="Built-In Dust Filters"
+  description="Your system should look good inside and out. Featuring a large removable and magnetic dust filter on the Top of case, along with dust filters for the power supply at the bottom. Shadow keeps dust where it belongs - outside your PC."
+  images={[
+     { src: '/products/IRIS/highlight/image-1.png', alt: 'Front Case' },
+    { src: '/products/IRIS/highlight/image-2.png', alt: 'Mesh Filter' },
+    { src: '/products/IRIS/highlight/image-3.png', alt: 'RGB Case' },
+   ]}
  />
           {/* Specifications */}
       <SpecificationSection specs={specs} imageSrc="/products/IRIS/specification/image.png" />
