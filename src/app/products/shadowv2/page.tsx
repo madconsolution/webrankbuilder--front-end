@@ -1,6 +1,7 @@
 'use client';
 
 import ProductBanner from "@/app/reuseable/products/banner/page";
+import Expensive from "@/app/reuseable/products/expensive/page";
 import FeatureBlock from "@/app/reuseable/products/Feature-Block/page";
 import FeatureHighlightSection from "@/app/reuseable/products/feature/page";
 import HighlightsSllder from "@/app/reuseable/products/freature-slider/page";
@@ -131,13 +132,13 @@ const specs: SpecItem[] = [
   },
 ];
 
-const IrisPage = () => {
+const Shadow2Page = () => {
   return (
     <>
       <ProductBanner
         bgImage="/products/iris-banner.png"
         logo1="/logo.png"
-        logo2="/products/IRIS.png"
+        logo2="/products/Shadow/Shadow-right-logo-banner.png"
         description="ATX MID TOWER COMPUTER  CASE THAT HAVE GREAT DESIGN"
       />
    
@@ -145,9 +146,10 @@ const IrisPage = () => {
    <ProductOverview
   products={products}
   mainTitle="TORTOX"
-  subTitle="IRIS"
-  content="Tortox Iris re-engineered designs and features to offer the best balance of performance and with honeycomb design front panel inspired open fascia that is specifically created take as much air in to your system as possible. The core of the TORTOX IRIS is its clean design, well balanced between a perfectly organised interior structure and the sleek exterior design."
+  subTitle="SHADOW"
+  content="The most premium production gaming enclosure. Built from premium materials that are engineered with utmost care and attention to detail. A design based on continuous product improvement and innovation throughout . Discover the ultimate building experience. Shadow keeps an incredibly clean look that can be easily switched to different RGB patterns from the side control panel."
 />
+
 
       <FeatureHighlightSection
         image="/products/feature-prof.png"
@@ -174,18 +176,18 @@ const IrisPage = () => {
 />
 
        {/* Feature showcase */}
-       {/* <ProductFeatureShowcase
-  imageSrc="/products/IRIS/showcase/image.png"
+       <ProductFeatureShowcase
+  imageSrc="/products/IRIS/showcase/image-1.png"
  imageAlt="Remote and Fan Controller"
  title="High Performance"
  highlight="Spectre Fans Included"
  description={`Tortox IRIS comes preinstalled with 4x Tortox Dual loop fans for a more efficient cooling performance. The Included RGB fansare RGB center illuminated and can support multiple control standards like ASUS AURA SYNC, MSI MISTIC LIGHT SYNC, GIGABYTE RGB Fusion 2.0 and ASRock POLYCHROME RGB. This allows you to control the fan lighting simply through software and synchronize the fans, and other devices such as mice and keyboard for more attractive lighting.`}
   noteLine1="8 Fan 2 LED strip Aura connection with Remote"
   noteLine2="4x DUAL LOOP 120MM RGB RAINBOW FANS*"
- /> */}
+ />
 
  {/* Feature Block */}
-  <FeatureBlock
+  {/* <FeatureBlock
   imageSrc="/products/IRIS/showcase/image-1.png"
   imageAlt="Open Neon Case"   title="Thermal"
    highlight="Expandability"
@@ -206,7 +208,16 @@ const IrisPage = () => {
    HDDs, the NEON comes with three modular SSD brackets. Available in with or without RGB windowed side panel case, you can
   choose the NEON that blends perfectly with your surroundings.`}
   imageLeft={false}
+/> */}
+
+{/* Expensive */}
+
+<Expensive
+  bgImage="/products/Shadow/expensive/image.png"
+  title="Expansive Storage Space"
+  description="With the explosion of high-definition content, users are going to need a lot more storage to keep it all. Shadow offers no less than seven PCI Slot & two 3.5” HDD bays for massive storage capability. You can even install a 2.5” SSD on the case for lightning-fast boot times."
 />
+
 
        {/* Highlight slider  */}
         <HighlightsSlider
@@ -227,4 +238,4 @@ const IrisPage = () => {
   );
 };
 
-export default IrisPage;
+export default Shadow2Page;
