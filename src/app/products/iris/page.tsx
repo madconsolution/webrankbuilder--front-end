@@ -3,6 +3,7 @@
 import ProductBanner from "@/app/reuseable/products/banner/page";
 import FeatureHighlightSection from "@/app/reuseable/products/feature/page";
 import FeatureSlider from "@/app/reuseable/products/freature-slider/page";
+import CallToActionBanner from "@/app/reuseable/products/join-group/page";
 
 import ProductOverview from "@/app/reuseable/products/overview/page";
 import ProductSlider from "@/app/reuseable/products/product-slider/page";
@@ -155,9 +156,17 @@ const IrisPage = () => {
         />
       </div>
 
-      <ProductSlider title="Other Products" products={sampleProducts} />
-
+      {/* Join Group  */}
+      <CallToActionBanner
+  text="Over 1000's of gamers already using our products."
+  buttonLabel="Join Our Group"
+  buttonHref="/community"
+/>
+      
+          {/* Specifications */}
       <SpecificationSection specs={specs} imageSrc="/products/IRIS/specification/image.png" />
+          {/* Products slider */}
+      <ProductSlider title="Other Products" products={sampleProducts} />
     </>
   );
 };
