@@ -1,5 +1,6 @@
 "use client";
-import { useEffect, useState } from "react";
+
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -7,76 +8,167 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import { BiArrowBack } from "react-icons/bi";
 import { IoMdClose } from "react-icons/io";
 
+// Types
+interface ProductItem {
+  name: string;
+  slug: string;
+}
+
+interface ProductCategory {
+  title: string;
+  items: ProductItem[];
+}
+
+interface NavItem {
+  name: string;
+  href: string;
+  hasArrow?: boolean;
+}
+
+const productCategories: ProductCategory[] = [
+  { title: "Computer Case", items: [ { name: "SHADOW", slug: "shadow" }, { name: "IRIS", slug: "iris" }, { name: "NOVA", slug: "nova" } ] },
+  { title: "Cables", items: [ { name: "4K HDMI 2.0", slug: "4hdmi_cables" }, { name: "CAT 6E ETHERNET", slug: "cat6e_ethernet" } ] },
+  { title: "Adapter", items: [ { name: "USB TYPE C TO HDMI", slug: "usb_c_hdmi" } ] },
+  { title: "Connector", items: [ { name: "RJ45 CAT7 UTP NETWORK", slug: "rj45_cat7" } ] },
+  { title: "Case Fans", items: [ { name: "LUNA", slug: "luna" }, { name: "NINJA X", slug: "ninja_x" } ] },
+  { title: "Power Supply", items: [ { name: "BX 600", slug: "bx600" }, { name: "BX 700", slug: "bx700" } ] },
+  { title: "Liquid Cooler", items: [ { name: "LIQWI L120", slug: "liqwi_l120" }, { name: "LIQWI L240", slug: "liqwi_l240" } ] },
+  { title: "Air Coolers", items: [ { name: "AIR FREEZE 120", slug: "air_freeze_120" } ] },
+  { title: "Light Panels", items: [ { name: "SMART LIGHT PANEL", slug: "smart_light_panel" } ] },
+  { title: "Gaming Chair", items: [ { name: "GC400-R", slug: "gc400r" }, { name: "GS300-G", slug: "gs300g" } ] },
+  { title: "Gaming Desk", items: [ { name: "GD400-R", slug: "gd400r" } ] },
+];
+
 export default function Navbar() {
   const pathname = usePathname();
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [hoveredItem, setHoveredItem] = useState<string | null>(null);
+  const [megaMenuVisible, setMegaMenuVisible] = useState<boolean>(false);
+  const megaRef = useRef<HTMLDivElement | null>(null);
+  const hoverTimeout = useRef<NodeJS.Timeout | null>(null);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+  const toggleMenu = () => setIsOpen((prev) => !prev);
   const closeMenu = () => setIsOpen(false);
 
-  const navigation = [
+  const navigation: NavItem[] = [
     { name: "Home", href: "/" },
-    { name: "Products", href: "/products", hasArrow: true },
+    { name: "Products", href: "#", hasArrow: true },
     { name: "About Tortox", href: "/about" },
     { name: "Sales Network", href: "#" },
     { name: "Contact us", href: "#" },
   ];
 
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (megaRef.current && !megaRef.current.contains(e.target as Node)) {
+        setMegaMenuVisible(false);
+        setHoveredItem(null);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  useEffect(() => {
+    setMegaMenuVisible(false);
+    setHoveredItem(null);
+  }, [pathname]);
+
   return (
-    <nav className="sticky top-0 z-50 bg-black transition-all backdrop-blur">
-      <div className="text-white p-4 max-w-custom mx-auto px-4">
+    <nav className="sticky top-0 z-50 bg-black text-white transition-all backdrop-blur">
+      <div className="max-w-7xl mx-auto p-4">
         <div className="flex justify-between items-center">
-          {/* Logo */}
-          <div className="text-xl font-bold hidden md:block">
+          <div className="hidden md:block">
             <Link href="/">
               <Image src="/logo/logo.png" alt="Logo" width={250} height={50} />
             </Link>
           </div>
 
-          {/* Desktop Menu */}
-          <ul className="hidden md:flex space-x-6">
-            {navigation?.map(({ name, href }) => {
+          <ul className="hidden md:flex space-x-6 relative">
+            {navigation.map(({ name, href, hasArrow }) => {
               const isActive = pathname.startsWith(href);
+              const showMega = megaMenuVisible && hoveredItem === name;
+
+              const handleMouseEnter = () => {
+                if (hasArrow) {
+                  if (hoverTimeout.current) clearTimeout(hoverTimeout.current);
+                  setHoveredItem(name);
+                  setMegaMenuVisible(true);
+                }
+              };
+
+              const handleMouseLeave = () => {
+                if (hasArrow) {
+                  hoverTimeout.current = setTimeout(() => {
+                    setMegaMenuVisible(false);
+                    setHoveredItem(null);
+                  }, 300);
+                }
+              };
+
               return (
-                <li key={name}>
+                <li
+                  key={name}
+                  className="relative"
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                >
                   <Link
                     href={href}
                     className={`block px-4 py-2 rounded transition ${
-                      isActive
-                        ? "bg-gray-200 dark:bg-gray-700 text-black dark:text-white"
-                        : "hover:bg-gray-100 dark:hover:bg-gray-700"
+                      isActive ? "bg-gray-200 text-black" : "hover:bg-gray-100 hover:text-black"
                     }`}
                   >
                     {name}
                   </Link>
+
+                  {hasArrow && showMega && (
+                    <div
+                      ref={megaRef}
+                      className="absolute left-0 top-full w-screen max-w-6xl mt-2 bg-white text-black py-6 px-6 shadow-lg grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 z-50 animate-fade-in"
+                      onMouseEnter={() => {
+                        if (hoverTimeout.current) clearTimeout(hoverTimeout.current);
+                        setHoveredItem(name);
+                        setMegaMenuVisible(true);
+                      }}
+                      onMouseLeave={handleMouseLeave}
+                    >
+                      {productCategories.map((category, i) => (
+                        <div key={i}>
+                          <h4 className="font-bold text-sm mb-3 text-gray-900">{category.title}</h4>
+                          <ul className="space-y-1 text-sm text-gray-700">
+                            {category.items.map((item, idx) => (
+                              <li key={idx}>
+                                <Link href={`/products/${item.slug}`} className="hover:text-red-500">
+                                  {item.name}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </li>
               );
             })}
           </ul>
         </div>
 
-        {/* Mobile View */}
-        <div className="md:hidden">
-          {/* Logo Centered */}
-          <div className="border-b border-[#fff] w-full flex justify-center border-t">
+        {/* Mobile */}
+        <div className="md:hidden mt-4">
+          <div className="border-b border-white w-full flex justify-center">
             <div className="py-3">
               <Link href="/">
-                <Image
-                  src="/logo/logo.png"
-                  alt="Logo"
-                  width={200}
-                  height={50}
-                />
+                <Image src="/logo/logo.png" alt="Logo" width={200} height={50} />
               </Link>
             </div>
           </div>
 
-          {/* Mobile Menu Button Below Logo */}
           <button
             onClick={toggleMenu}
-            className="text-white focus:outline-none text-2xl pb-2 mt-4"
+            className="text-white text-2xl mt-4"
             aria-label="Toggle navigation menu"
-            aria-expanded={isOpen}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -84,18 +176,12 @@ export default function Navbar() {
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
-              strokeWidth="2"
+              strokeWidth={2}
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
 
-          {/* Mobile Menu */}
-          {/** Backdrop Overlay */}
           <div
             className={`fixed inset-0 bg-black/50 z-40 transition-opacity duration-300 ${
               isOpen ? "opacity-100 visible" : "opacity-0 invisible"
@@ -103,14 +189,11 @@ export default function Navbar() {
             onClick={closeMenu}
           />
 
-          {/** Mobile Menu */}
           <div
-            className={`fixed top-0 right-0 h-[100vh] w-[100%] bg-white text-[#8C8C8C] border-l shadow-lg flex flex-col space-y-4 p-6
-              transition-transform duration-600 ease-in-out transform z-50 ${
-                isOpen ? "translate-x-0" : "-translate-x-full"
-              }`}
+            className={`fixed top-0 right-0 h-screen w-full bg-white text-[#8C8C8C] shadow-lg p-6 z-50 transition-transform duration-500 ${
+              isOpen ? "translate-x-0" : "translate-x-full"
+            }`}
           >
-            {/** Close Button */}
             <div className="flex items-center justify-between border-b border-t border-[#8C8C8C] p-4">
               <button onClick={closeMenu} className="text-2xl">
                 <BiArrowBack />
@@ -121,17 +204,16 @@ export default function Navbar() {
               </button>
             </div>
 
-            {/* Navigation Links */}
-            <ul className="flex flex-col w-full mt-2">
+            <ul className="flex flex-col w-full mt-4">
               {navigation.map(({ name, href, hasArrow }) => (
                 <li key={name} className="border-b border-[#8C8C8C]">
                   <a
                     href={href}
                     onClick={closeMenu}
-                    className="flex justify-between items-center px-6 py-4 w-full text-left text-lg font-medium"
+                    className="flex justify-between items-center px-6 py-4 text-lg font-medium"
                   >
                     {name}
-                    <span>{hasArrow && <MdKeyboardArrowRight className="text-2xl" />}</span>
+                    {hasArrow && <MdKeyboardArrowRight className="text-2xl" />}
                   </a>
                 </li>
               ))}
