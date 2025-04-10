@@ -69,7 +69,7 @@ const HighlightsSlider: FC<HighlightsSliderProps> = ({
             <button
               onClick={nextSlide}
               disabled={current === images.length - 1}
-              className="bg-white text-black p-2 rounded-full hover:bg-red-500 hover:text-white disabled:opacity-50"
+              className="bg-[#424245B8] text-black p-2 rounded-full hover:bg-red-500 hover:text-white disabled:opacity-50"
             >
               <FaChevronRight />
             </button>
