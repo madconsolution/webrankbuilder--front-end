@@ -19,12 +19,12 @@ const ProductBanner: React.FC<BannerProps> = ({ bgImage, logo1, logo2, descripti
       {/* Content Section */}
       <div className="absolute inset-0  flex items-center mt-8 flex-col text-white ">
         {/* Logo Section */}
-        <div className="flex  gap-2 -ml-40 mb-2">
+        <div className="flex  gap-2  mb-2 items-center">
           <>
             <Image src={logo1} alt="Logo 1" width={250} height={50}  className=' object-contain' />
           </>
           <>
-            <Image src={logo2} alt="Logo 2" width={85} height={23} className="object-contain "  />
+            <Image src={logo2} alt="Logo 2" width={235} height={70} className=" "  />
           </>
         </div>
 

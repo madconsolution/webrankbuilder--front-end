@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -15,18 +15,26 @@ interface Product {
 
 interface ProductOverviewProps {
   products: Product[];
+  mainTitle: string;
+  subTitle: string;
+  content: string;
 }
 
-const ProductOverview: React.FC<ProductOverviewProps> = ({ products }) => {
+const ProductOverview: React.FC<ProductOverviewProps> = ({
+  products,
+  mainTitle,
+  subTitle,
+  content,
+}) => {
   return (
-    <div className="bg-black  text-white py-10  px-4 md:px-16">
-    <div>
-      <Title 
-        mainTitle="TORTOX" 
-        subTitle="IRIS" 
-        content="Tortox Iris re-engineered designs and features to offer the best balance of performance with a honeycomb design front panel inspired open fascia that is specifically created to take as much air into your system as possible. The core of the TORTOX IRIS is its clean design, well balanced between a perfectly organised interior structure and the sleek exterior design." 
-      />
-    </div>
+    <div className="bg-black text-white py-10 px-4 md:px-16">
+      <div>
+        <Title 
+          mainTitle={mainTitle} 
+          subTitle={subTitle} 
+          content={content} 
+        />
+      </div>
 
       {/* Slider Section */}
       <Swiper
@@ -42,9 +50,9 @@ const ProductOverview: React.FC<ProductOverviewProps> = ({ products }) => {
       >
         {products.map((product, index) => (
           <SwiperSlide key={index}>
-            <div className=" rounded-lg p-4  ">
-            <p className="text-lg  mt-4 w-80">{product.title}</p>
-   
+            <div className="rounded-lg p-4">
+              <p className="text-lg mt-4 w-80">{product.title}</p>
+
               <Image
                 src={product.image}
                 alt={product.title}
@@ -52,7 +60,6 @@ const ProductOverview: React.FC<ProductOverviewProps> = ({ products }) => {
                 height={300}
                 className="mx-auto"
               />
-         
             </div>
           </SwiperSlide>
         ))}
@@ -61,4 +68,4 @@ const ProductOverview: React.FC<ProductOverviewProps> = ({ products }) => {
   );
 };
 
-export default ProductOverview; 
+export default ProductOverview;
