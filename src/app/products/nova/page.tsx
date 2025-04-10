@@ -138,7 +138,7 @@ const NovaPage = () => {
       <ProductBanner
         bgImage="/products/iris-banner.png"
         logo1="/logo.png"
-        logo2="/products/Shadow/Shadow-right-logo-banner.png"
+        logo2="/products/Nova/image.png"
         description="ATX MID TOWER COMPUTER  CASE THAT HAVE GREAT DESIGN"
       />
    
@@ -146,13 +146,13 @@ const NovaPage = () => {
    <ProductOverview
   products={products}
   mainTitle="TORTOX"
-  subTitle="SHADOW"
+  subTitle="NOVA"
   content="The most premium production gaming enclosure. Built from premium materials that are engineered with utmost care and attention to detail. A design based on continuous product improvement and innovation throughout . Discover the ultimate building experience. Shadow keeps an incredibly clean look that can be easily switched to different RGB patterns from the side control panel."
 />
 
 
       <FeatureHighlightSection
-        image="/products/feature-prof.png"
+        image="/products/Nova/image.png"
         title="FUTURE-PROOF FRONT PANEL"
         highlightText="Featuring a super-speed USB 3.1 port, RGB Lighting Control switch and additional connections for all modern peripherals."
         position="right"

@@ -138,7 +138,7 @@ const Shadow2Page = () => {
       <ProductBanner
         bgImage="/products/iris-banner.png"
         logo1="/logo.png"
-        logo2="/products/Shadow/Shadow-right-logo-banner.png"
+        logo2="/products/Shadow/Shadowv2-right-logo-banner.png"
         description="ATX MID TOWER COMPUTER  CASE THAT HAVE GREAT DESIGN"
       />
    

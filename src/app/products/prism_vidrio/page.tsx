@@ -136,7 +136,7 @@ const VidrioPage = () => {
   return (
     <>
       <ProductBanner
-        bgImage="/products/iris-banner.png"
+        bgImage="/products/Vidrio/VIDRIO.png"
         logo1="/logo.png"
         logo2="/products/Shadow/Shadow-right-logo-banner.png"
         description="ATX MID TOWER COMPUTER  CASE THAT HAVE GREAT DESIGN"
@@ -146,7 +146,7 @@ const VidrioPage = () => {
    <ProductOverview
   products={products}
   mainTitle="TORTOX"
-  subTitle="SHADOW"
+  subTitle="VIDRIO"
   content="The most premium production gaming enclosure. Built from premium materials that are engineered with utmost care and attention to detail. A design based on continuous product improvement and innovation throughout . Discover the ultimate building experience. Shadow keeps an incredibly clean look that can be easily switched to different RGB patterns from the side control panel."
 />
 

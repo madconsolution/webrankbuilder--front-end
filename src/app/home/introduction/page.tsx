@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 
 export default function IntroductionSection() {
   return (
-    <div className="text-center p-6 bg-[#F5F5F5] min-h-[200px] flex flex-col items-center justify-center">
+    <div className="text-center p-6 bg-[#000000] min-h-[200px] flex flex-col items-center justify-center">
       <h3 className="font-bold text-lg md:text-xl">
         WELCOME TO <span className="text-[#CC0000]">TORTOX</span>
       </h3>

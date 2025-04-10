@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #171717;;
+  --background: #fcfcfc;;
   --foreground: #171717;
 }
 
@@ -55,4 +55,22 @@ products_banner_logo_box {
   height: 33;
   top: 186px;
   left: 474px;
+}
+
+
+/* Swipper  */
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: #ccc;
+  opacity: 0.5;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  width: 24px;
+  opacity: 1;
+  background: white;
 }

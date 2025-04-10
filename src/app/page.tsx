@@ -9,7 +9,7 @@ import ServiceSection from "./home/service/page";
 
 export default function Home() {
   return (
-    <>
+    <div className="bg-white">
       {/* Here is hero section of home page */}
       <HeroSection />
       {/* Here is introduction section of home page */}
@@ -23,6 +23,6 @@ export default function Home() {
       <ServiceSection />
       {/* Here is booking section of home page */}
       <BookingSection />
-    </>
+    </ div>
   );
 }
