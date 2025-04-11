@@ -2,73 +2,92 @@
 
 export default function BookingSection() {
   return (
-    <div className="relative flex items-center justify-center h-[550px] bg-gradient-to-r from-black via-blue-900 to-black">
+    <div className="relative flex flex-col md:flex-row justify-between  min-h-[550px] px-6 md:px-24 py-10 bg-gradient-to-r from-[#00002b] via-[#000064] to-[#00002b] text-white font-serif">
       {/* Left Side Content */}
-      <div className="text-white text-left w-1/2 p-8">
-        <h2 className="text-3xl font-bold">
-          WELCOME TO <span className="text-red-600">TORTOX</span>
-        </h2>
-        <p className="mt-4 text-lg leading-relaxed">
-          Tortox is one of the worlds leading providers of{' '}
-          <strong>high-performance PC peripherals</strong> and components.
-        </p>
-      </div>
+      <div className="w-full md:w-1/2 mb-10 md:mb-0 text-left">
+  <h2 className="text-3xl font-extrabold">TORTOX</h2>
+  <p className="text-xl md:text-3xl leading-relaxed font-medium">
+    Tortox is one of the world’s leading providers of{' '}
+    <strong className="font-bold">high-performance PC peripherals</strong> and components.
+  </p>
+</div>
 
-      {/* Booking Form */}
-      <div className="w-1/3 bg-[#4E4D97] bg-opacity-20 p-6 rounded-lg shadow-lg backdrop-blur-md">
-        <h3 className="text-xl font-bold text-gray-200 mb-4 text-center">Book Products Now</h3>
 
-        <form className="space-y-4">
-  <div className="flex gap-x-5">
-    <label className="text-gray-200 mb-1">Name</label>
-    <input
-      type="text"
-      placeholder="Enter your name"
-      className="w-full p-2 bg-white bg-opacity-20 border border-gray-300 rounded text-white placeholder-gray-300"
-    />
-  </div>
+      {/* Right Side Form */}
+      <div className="relative w-full md:w-[500px]">
+        <div className="w-full h-auto bg-gradient-to-b from-[#9ba1ff] to-[#5e63b6] p-6 pt-5 rounded-lg shadow-lg text-[#FFFFE4] relative z-10">
+          <h3 className="text-2xl text-center text-white font-semibold my-5">
+            Book <strong>Products</strong> Now
+          </h3>
 
-  <div className="flex space-x-10">
-    <label className="text-gray-200 mb-1">Email</label>
-    <input
-      type="email"
-      placeholder="Enter your email"
-      className="w-full p-2 bg-white bg-opacity-20 border border-gray-300 rounded text-white placeholder-gray-300"
-    />
-  </div>
+          <form className="space-y-4">
+            {/* Name */}
+            <div className="flex flex-col sm:flex-row items-center justify-between w-full space-y-2 sm:space-y-0 sm:space-x-2">
+              <label className="text-sm text-white w-full sm:w-[30%]">Name</label>
+              <input
+                type="text"
+                placeholder="Name"
+                className="flex-1 px-2 py-2 rounded text-gray-900 bg-white w-full"
+              />
+            </div>
 
-  <div className="flex space-x-10">
-    <label className="text-gray-200 mb-1 ">Phone </label>
-    <input
-      type="text"
-      placeholder="Enter your phone number"
-      className="w-full p-2 bg-white bg-opacity-20 border border-gray-300 rounded text-white placeholder-gray-300"
-    />
-  </div>
+            {/* Email */}
+            <div className="flex flex-col sm:flex-row items-center justify-between w-full space-y-2 sm:space-y-0 sm:space-x-2">
+              <label className="text-sm text-white w-full sm:w-[30%]">Email</label>
+              <input
+                type="email"
+                placeholder="Your Email"
+                className="flex-1 px-2 py-2 rounded text-gray-900 bg-white w-full"
+              />
+            </div>
 
-  <div className="flex flex-col">
-    <label className="text-gray-200 mb-1">Select Product</label>
-    <select className="w-full p-2 bg-white bg-opacity-20 border border-gray-300 rounded text-gray-600">
-      <option>Select Product</option>
-      <option>Gaming Mouse</option>
-      <option>Mechanical Keyboard</option>
-      <option>Wireless Headset</option>
-      <option>Gaming PC</option>
-    </select>
-  </div>
+            {/* Phone */}
+            <div className="flex flex-col sm:flex-row items-center justify-between w-full space-y-2 sm:space-y-0 sm:space-x-2">
+              <label className="text-sm text-white w-full sm:w-[30%]">Phone No:</label>
+              <input
+                type="text"
+                placeholder="Your Phone No:"
+                className="flex-1 px-2 py-2 rounded text-gray-900 bg-white w-full"
+              />
+            </div>
 
-  {/* reCAPTCHA Placeholder */}
-  <div className="flex items-center space-x-2 bg-white p-3 rounded text-gray-800">
-    <input type="checkbox" />
-    <span>I am not a robot</span>
-  </div>
+            {/* Product Dropdown */}
+            <div className="flex flex-col sm:flex-row items-center justify-between w-full space-y-2 sm:space-y-0 sm:space-x-2">
+              <label className="text-sm text-white w-full sm:w-[30%]">Product</label>
+              <select className="flex-1 px-2 py-2 rounded text-gray-900 bg-white w-full">
+                <option>Select Product</option>
+                <option>Gaming Mouse</option>
+                <option>Mechanical Keyboard</option>
+                <option>Wireless Headset</option>
+                <option>Gaming PC</option>
+              </select>
+            </div>
 
-  {/* Submit Button */}
-  <button className="w-full bg-red-600 text-white p-2 rounded hover:bg-red-700 transition">
-    SUBMIT
-  </button>
-</form>
+            {/* CAPTCHA Mock */}
+            <div className="flex items-center gap-3 bg-white p-3 rounded flex-wrap">
+              <input type="checkbox" />
+              <span className="text-sm text-black">I'm not a robot</span>
+              <img
+                src="https://www.gstatic.com/recaptcha/api2/logo_48.png"
+                alt="captcha"
+                className="h-10 ml-auto"
+              />
+            </div>
 
+            {/* Submit Button */}
+            <div className="mx-auto w-24">
+              <button
+                type="submit"
+                className="w-24 bg-red-600 text-white font-semibold py-2 rounded hover:bg-red-700 transition"
+              >
+                SUBMIT
+              </button>
+            </div>
+          </form>
+        </div>
+
+        {/* Bubble pointer */}
+        <div className="hidden md:block absolute bottom-[-7px] left-10 w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-t-[20px] border-t-[#5e63b6] z-0" />
       </div>
     </div>
   );
