@@ -1,10 +1,22 @@
 'use client';
 
+import { div } from 'framer-motion/client';
 import { FaMapMarkerAlt, FaPhoneAlt, FaMobileAlt, FaEnvelope, FaGlobe } from 'react-icons/fa';
+import BannerSection from '../reuseable/contact/banner/page';
 
 export default function ContactSection() {
   return (
-    <section className="w-full bg-[#f5f5f5] py-12 px-4 md:px-16">
+   <div>
+    {/*  contact banner  */}
+    <BannerSection
+        backgroundImage="/contact/banner-contact.jpg" 
+        title="Distributors"
+        buttonText="Read More"
+        buttonLink="/distributors"
+      />
+
+    {/* Formt is here  */}
+     <section className="w-full bg-[#f5f5f5] py-12 px-4 md:px-16">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
         
         {/* Contact Form */}
@@ -84,5 +96,6 @@ export default function ContactSection() {
         </div>
       </div>
     </section>
+   </div>
   );
 }
