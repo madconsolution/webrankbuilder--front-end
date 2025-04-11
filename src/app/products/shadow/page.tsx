@@ -195,29 +195,7 @@ const ShadowPage = () => {
   noteLine2="*Shadow Case can support up to 7 RGB Fans."
  />
 
- {/* Feature Block */}
-  {/* <FeatureBlock
-  imageSrc="/products/IRIS/showcase/image-1.png"
-  imageAlt="Open Neon Case"   title="Thermal"
-   highlight="Expandability"
-   description={`To cool down the components, Grid Design on the front panel
-   has offered smooth intake. NEON supports up to two 140mm fans or a 280mm radiator in the front while a 120mm rear-fan
-   or radiator at the rear will push the hot air out. It also supports up
-   to 163mm high CPU air cooler.`}
-  note="Three Single Colour(Red) 33 LED Case Fans Pre-installed"
-   imageLeft={true} />
 
- <FeatureBlock
-    imageSrc="/products/IRIS/showcase/image-2.png"
-   imageAlt="Two NEON Cases"
-  title="Tool-free"
- highlight="modular storage design"
- description={`Both the included hard drive cages are modular and tool-free
-  giving the user the ability to configure the system to their needs. Apart from these hard drive cages which accommodate up to 2
-   HDDs, the NEON comes with three modular SSD brackets. Available in with or without RGB windowed side panel case, you can
-  choose the NEON that blends perfectly with your surroundings.`}
-  imageLeft={false}
-/> */}
 
 {/* Expensive */}
 
@@ -234,9 +212,9 @@ const ShadowPage = () => {
    highlight="Built-In Dust Filters"
   description="Your system should look good inside and out. Featuring a large removable and magnetic dust filter on the Top of case, along with dust filters for the power supply at the bottom. Shadow keeps dust where it belongs - outside your PC."
   images={[
-     { src: '/products/IRIS/highlight/image-1.png', alt: 'Front Case' },
-    { src: '/products/IRIS/highlight/image-2.png', alt: 'Mesh Filter' },
-    { src: '/products/IRIS/highlight/image-3.png', alt: 'RGB Case' },
+     { src: '/products/Shadow/Highlight-slider/image-1.png', alt: 'Front Case' },
+    { src: '/products/Shadow/Highlight-slider/image-2.png', alt: 'Mesh Filter' },
+    { src: '/products/Shadow/Highlight-slider/image-3.png', alt: 'RGB Case' },
    ]}
  />
           {/* Specifications */}

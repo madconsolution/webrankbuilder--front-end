@@ -31,10 +31,10 @@ const HighlightsSlider: FC<HighlightsSliderProps> = ({
     <section className="bg-black text-white py-16">
       <div className="w-full">
         <div className="">
-          <h2 className="mt-4 text-sm md:text-base text-gray-300 max-w-[1044px] font-bold">
+          <h2 className="mt-4 pr-0 md:pr-[8%] text-sm md:text-base text-gray-300 max-w-[1044px] font-bold">
             {title} <span className="text-red-500">{highlight}</span>
           </h2>
-          <p className="mt-4 pl-4 md:pl-[14%] text-sm md:text-base text-gray-300 max-w-[1044px]">
+          <p className="mt-4 pl-4 md:pl-[10%] text-sm md:text-base text-gray-300 max-w-[1044px]">
             {description}
           </p>
         </div>
@@ -54,7 +54,7 @@ const HighlightsSlider: FC<HighlightsSliderProps> = ({
                   alt={img.alt}
                   width={454}
                   height={435}
-                  className="w-full h-full object-cover"
+                  className="w-full h-[435px] object-cover"
                 />
               </div>
             ))}

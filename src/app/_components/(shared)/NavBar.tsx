@@ -7,63 +7,105 @@ import { usePathname } from "next/navigation";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { BiArrowBack } from "react-icons/bi";
 import { IoMdClose } from "react-icons/io";
+import MegaMenu from "./MegaMenusss";
 
-// Types
-interface ProductItem {
-  name: string;
-  slug: string;
-}
-
-interface ProductCategory {
-  title: string;
-  items: ProductItem[];
-}
-
-interface NavItem {
-  name: string;
-  href: string;
-  hasArrow?: boolean;
-}
-
-const productCategories: ProductCategory[] = [
-  { title: "Computer Case", items: [ { name: "SHADOW", slug: "shadow" }, { name: "IRIS", slug: "iris" }, { name: "NOVA", slug: "nova" } ] },
-  { title: "Cables", items: [ { name: "4K HDMI 2.0", slug: "4hdmi_cables" }, { name: "CAT 6E ETHERNET", slug: "cat6e_ethernet" } ] },
-  { title: "Adapter", items: [ { name: "USB TYPE C TO HDMI", slug: "usb_c_hdmi" } ] },
-  { title: "Connector", items: [ { name: "RJ45 CAT7 UTP NETWORK", slug: "rj45_cat7" } ] },
-  { title: "Case Fans", items: [ { name: "LUNA", slug: "luna" }, { name: "NINJA X", slug: "ninja_x" } ] },
-  { title: "Power Supply", items: [ { name: "BX 600", slug: "bx600" }, { name: "BX 700", slug: "bx700" } ] },
-  { title: "Liquid Cooler", items: [ { name: "LIQWI L120", slug: "liqwi_l120" }, { name: "LIQWI L240", slug: "liqwi_l240" } ] },
-  { title: "Air Coolers", items: [ { name: "AIR FREEZE 120", slug: "air_freeze_120" } ] },
-  { title: "Light Panels", items: [ { name: "SMART LIGHT PANEL", slug: "smart_light_panel" } ] },
-  { title: "Gaming Chair", items: [ { name: "GC400-R", slug: "gc400r" }, { name: "GS300-G", slug: "gs300g" } ] },
-  { title: "Gaming Desk", items: [ { name: "GD400-R", slug: "gd400r" } ] },
+const productCategories = [
+  {
+    title: "Computer Case",
+    items: [
+      { name: "SHADOW", slug: "shadow" },
+      { name: "SHADOW V2", slug: "shadowv2" },
+      { name: "IRIS", slug: "iris" },
+      { name: "NOVA", slug: "nova" },
+      { name: "MAGNUS", slug: "magnus" },
+      { name: "NEON", slug: "neon" },
+      { name: "ALPHA", slug: "aplha" },
+      { name: "SPECTRA", slug: "spectra" },
+      { name: "ZION", slug: "zion" },
+      { name: "PRISM", slug: "prism" },
+      { name: "VIDRIO", slug: "vidrio" },
+      { name: "CURVO", slug: "curvo" },
+    ],
+  },
+  {
+    title: "Cables",
+    items: [
+      { name: "4K HDMI 2.0", slug: "4hdmi_cables" },
+      { name: "CAT 6E ETHERNET", slug: "cat6e_ethernet" },
+    ],
+  },
+  {
+    title: "Adapter",
+    items: [{ name: "USB TYPE C TO HDMI", slug: "usb_c_hdmi" }],
+  },
+  {
+    title: "Connector",
+    items: [{ name: "RJ45 CAT7 UTP NETWORK", slug: "rj45_cat7" }],
+  },
+  {
+    title: "Case Fans",
+    items: [
+      { name: "LUNA", slug: "luna" },
+      { name: "NINJA X", slug: "ninja_x" },
+    ],
+  },
+  {
+    title: "Power Supply",
+    items: [
+      { name: "BX 600", slug: "bx600" },
+      { name: "BX 700", slug: "bx700" },
+    ],
+  },
+  {
+    title: "Liquid Cooler",
+    items: [
+      { name: "LIQWI L120", slug: "liqwi_l120" },
+      { name: "LIQWI L240", slug: "liqwi_l240" },
+    ],
+  },
+  {
+    title: "Air Coolers",
+    items: [{ name: "AIR FREEZE 120", slug: "air_freeze_120" }],
+  },
+  {
+    title: "Light Panels",
+    items: [{ name: "SMART LIGHT PANEL", slug: "smart_light_panel" }],
+  },
+  {
+    title: "Gaming Chair",
+    items: [
+      { name: "GC400-R", slug: "gc400r" },
+      { name: "GS300-G", slug: "gs300g" },
+    ],
+  },
+  {
+    title: "Gaming Desk",
+    items: [{ name: "GD400-R", slug: "gd400r" }],
+  },
 ];
 
 export default function Navbar() {
   const pathname = usePathname();
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isOpen, setIsOpen] = useState(false);
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
-  const [megaMenuVisible, setMegaMenuVisible] = useState<boolean>(false);
-  const megaRef = useRef<HTMLDivElement | null>(null);
+  const [megaMenuVisible, setMegaMenuVisible] = useState(false);
   const hoverTimeout = useRef<NodeJS.Timeout | null>(null);
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
   const closeMenu = () => setIsOpen(false);
 
-  const navigation: NavItem[] = [
+  const navigation = [
     { name: "Home", href: "/" },
-    { name: "Products", href: "#", hasArrow: true },
+    { name: "Products", href: "/products", hasArrow: true },
     { name: "About Tortox", href: "/about" },
     { name: "Sales Network", href: "#" },
     { name: "Contact us", href: "#" },
   ];
 
   useEffect(() => {
-    const handleClickOutside = (e: MouseEvent) => {
-      if (megaRef.current && !megaRef.current.contains(e.target as Node)) {
-        setMegaMenuVisible(false);
-        setHoveredItem(null);
-      }
+    const handleClickOutside = () => {
+      setMegaMenuVisible(false);
+      setHoveredItem(null);
     };
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
@@ -86,8 +128,10 @@ export default function Navbar() {
 
           <ul className="hidden md:flex space-x-6 relative">
             {navigation.map(({ name, href, hasArrow }) => {
-              const isActive = pathname.startsWith(href);
-              const showMega = megaMenuVisible && hoveredItem === name;
+              const isActive =
+                href === "/"
+                  ? pathname === "/"
+                  : pathname.startsWith(href);
 
               const handleMouseEnter = () => {
                 if (hasArrow) {
@@ -116,38 +160,23 @@ export default function Navbar() {
                   <Link
                     href={href}
                     className={`block px-4 py-2 rounded transition ${
-                      isActive ? "bg-gray-200 text-black" : "hover:bg-gray-100 hover:text-black"
+                      isActive
+                        ? "bg-gray-200 text-black"
+                        : "hover:bg-gray-100 hover:text-black"
                     }`}
                   >
                     {name}
                   </Link>
 
-                  {hasArrow && showMega && (
-                    <div
-                      ref={megaRef}
-                      className="absolute left-0 top-full w-screen max-w-6xl mt-2 bg-white text-black py-6 px-6 shadow-lg grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 z-50 animate-fade-in"
-                      onMouseEnter={() => {
-                        if (hoverTimeout.current) clearTimeout(hoverTimeout.current);
-                        setHoveredItem(name);
-                        setMegaMenuVisible(true);
-                      }}
+                  {hasArrow && (
+                    <MegaMenu
+                      categories={productCategories}
+                      hoveredItem={hoveredItem}
+                      megaMenuVisible={megaMenuVisible}
+                      currentItem={name}
+                      onMouseEnter={handleMouseEnter}
                       onMouseLeave={handleMouseLeave}
-                    >
-                      {productCategories.map((category, i) => (
-                        <div key={i}>
-                          <h4 className="font-bold text-sm mb-3 text-gray-900">{category.title}</h4>
-                          <ul className="space-y-1 text-sm text-gray-700">
-                            {category.items.map((item, idx) => (
-                              <li key={idx}>
-                                <Link href={`/products/${item.slug}`} className="hover:text-red-500">
-                                  {item.name}
-                                </Link>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      ))}
-                    </div>
+                    />
                   )}
                 </li>
               );
@@ -178,7 +207,11 @@ export default function Navbar() {
               viewBox="0 0 24 24"
               strokeWidth={2}
             >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             </svg>
           </button>
 
@@ -205,18 +238,30 @@ export default function Navbar() {
             </div>
 
             <ul className="flex flex-col w-full mt-4">
-              {navigation.map(({ name, href, hasArrow }) => (
-                <li key={name} className="border-b border-[#8C8C8C]">
-                  <a
-                    href={href}
-                    onClick={closeMenu}
-                    className="flex justify-between items-center px-6 py-4 text-lg font-medium"
+              {navigation.map(({ name, href, hasArrow }) => {
+                const isActive =
+                  href === "/"
+                    ? pathname === "/"
+                    : pathname.startsWith(href);
+
+                return (
+                  <li
+                    key={name}
+                    className={`border-b border-[#8C8C8C] ${
+                      isActive ? "bg-gray-200 text-black" : ""
+                    }`}
                   >
-                    {name}
-                    {hasArrow && <MdKeyboardArrowRight className="text-2xl" />}
-                  </a>
-                </li>
-              ))}
+                    <Link
+                      href={href}
+                      onClick={closeMenu}
+                      className="flex justify-between items-center px-6 py-4 text-lg font-medium"
+                    >
+                      {name}
+                      {hasArrow && <MdKeyboardArrowRight className="text-2xl" />}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>
