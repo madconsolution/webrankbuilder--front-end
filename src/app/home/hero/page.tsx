@@ -5,47 +5,63 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation, Autoplay } from 'swiper/modules';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { useRef, useEffect } from 'react';
 
 export default function HeroSection() {
   const videos = ['/logo_video.mp4'];
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
 
   return (
-    <div className="flex flex-col items-center justify-center w-full min-h-screen bg-[#0B1320] text-white">
-   
-      
-      {/* Video Carousel */}
-      <div className="relative w-full">
-        <Swiper
-          modules={[Navigation, Autoplay]}
-          spaceBetween={20}
-          slidesPerView={1}
+    <div className="relative w-full min-h-screen bg-[#0B1320] text-white overflow-hidden">
+      {/* Video Swiper Carousel */}
+      <Swiper
+        modules={[Navigation, Autoplay]}
+        slidesPerView={1}
+        loop
+        autoplay={{ delay: 5000, disableOnInteraction: false }}
+        navigation={{
+          prevEl: prevRef.current,
+          nextEl: nextRef.current,
+        }}
+        onInit={(swiper) => {
+          // Fix for custom navigation buttons
+          // @ts-ignore
+          swiper.params.navigation.prevEl = prevRef.current;
+          // @ts-ignore
+          swiper.params.navigation.nextEl = nextRef.current;
+          swiper.navigation.init();
+          swiper.navigation.update();
+        }}
+        className="h-screen"
+      >
+        {videos.map((video, index) => (
+          <SwiperSlide key={index}>
+            <video
+              className="w-full h-screen object-cover"
+              src={video}
+              autoPlay
+              muted
+              loop
+              playsInline
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
 
-          // navigation={{
-          //   nextEl: '.swiper-button-next',
-          //   prevEl: '.swiper-button-prev',
-          // }}
-          autoplay={{ delay: 5000 }}
-          loop
-          className="rounded-lg overflow-hidden"
-        >
-          {videos.map((video, index) => (
-            <SwiperSlide key={index}>
-              <video className="w-full h-[100vh] object-cover" autoPlay muted loop>
-                <source src={video} type="video/mp4" />
-          browser does not support the video tag.
-              </video>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-
-        {/* Custom Navigation Arrows */}
-        <button className="swiper-button-prev absolute left-4 top-1/2 transform -translate-y-1/2  rounded-full p-3 transition">
-          <FaChevronLeft size={24} />
-        </button>
-        <button className="swiper-button-next absolute right-4 top-1/2 transform -translate-y-1/2  rounded-full p-3 transition">
-          <FaChevronRight size={24} />
-        </button>
-      </div>
+      {/* Custom Navigation Buttons */}
+      <button
+        ref={prevRef}
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white bg-black/30 hover:bg-black/50 p-3 rounded-full z-10"
+      >
+        <FaChevronLeft size={20} />
+      </button>
+      <button
+        ref={nextRef}
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white bg-black/30 hover:bg-black/50 p-3 rounded-full z-10"
+      >
+        <FaChevronRight size={20} />
+      </button>
     </div>
   );
 }

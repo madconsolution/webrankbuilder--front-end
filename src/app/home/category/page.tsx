@@ -34,7 +34,7 @@ export default function CategoryTabs() {
     <button
       key={category}
       onClick={() => setSelectedTab(category)}
-      className={`px-3 py-1 text-sm sm:text-base text-black hover:bg-red-500 ${selectedTab === category ? 'bg-red-500 text-white' : ''}`}
+      className={`px-3 py-4 text-sm sm:text-base text-black hover:bg-red-500 ${selectedTab === category ? 'bg-red-500 text-white' : ''}`}
     >
       {category}
     </button>
