@@ -210,9 +210,9 @@ const IrisPage = () => {
 
        {/* Highlight slider  */}
         <HighlightsSlider
-   title="Magnetic And Removable"
-   highlight="Built-In Dust Filters"
-  description="Your system should look good inside and out. Featuring a large removable and magnetic dust filter on the Top of case, along with dust filters for the power supply at the bottom. Shadow keeps dust where it belongs - outside your PC."
+   title="Easy Clean with "
+   highlight="Removable Dust Filters"
+  description="TORTOX IRIS is designed to offer reliable performance for years to come. By filtering out dust particle which reduces system lifespan, systems built with TORTOX IRIS can boast of dust free operation. The improved air intake mesh on the front comes with an embedded nylon filter that prevents dust from entering the system while the filter at the bottom keeps PSU free from dust. All these filters can be easily removed for a faster cleaning job."
   images={[
      { src: '/products/IRIS/highlight/image-1.png', alt: 'Front Case' },
     { src: '/products/IRIS/highlight/image-2.png', alt: 'Mesh Filter' },

@@ -20,7 +20,7 @@ const FeatureSlider: React.FC<FeatureSliderProps> = ({ slides }) => {
 
   const handleScroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
-      const scrollAmount = 550 + 24; // Slide width + gap
+      const scrollAmount = 550 + 24;
       scrollRef.current.scrollBy({
         left: direction === 'left' ? -scrollAmount : scrollAmount,
         behavior: 'smooth',
@@ -29,8 +29,7 @@ const FeatureSlider: React.FC<FeatureSliderProps> = ({ slides }) => {
   };
 
   return (
-    <div className="relative w-full bg-black px-4 md:px-16 py-10 text-white">
-      {/* Slider container without visible scrollbar */}
+    <div className="relative w-full bg-black px-4 md:px-16 py-10 text-white font-sans">
       <div
         ref={scrollRef}
         className="flex gap-6 overflow-x-scroll scroll-smooth pb-4"
@@ -39,35 +38,23 @@ const FeatureSlider: React.FC<FeatureSliderProps> = ({ slides }) => {
         {slides.map((slide, index) => (
           <div
             key={index}
-            className="w-[550px] flex-shrink-0  rounded-lg p-6 mb-5 flex flex-col justify-between shadow-md"
+            className="w-[550px] flex-shrink-0 rounded-lg p-2 mb-5 flex flex-col justify-start"
           >
-            {/* Text box styled to match the image */}
-            <div
-              style={{
-                width: '411.89px',
-              
-                fontFamily: 'Open Sans, sans-serif',
-                fontWeight: 400,
-                fontSize: '18px',
-                lineHeight: '24px',
-                letterSpacing: '0%',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-            
-              }}
-              className="mb-4"
-            >
-              <h3 className="text-lg font-bold leading-tight mb-1">
+            {/* Text Section */}
+            <div className="px-4 mb-4 w-[95%]">
+              <h3 className="text-[16px] font-bold text-white mb-2 leading-snug">
                 {slide.title}{' '}
                 {slide.highlight && (
                   <span className="text-red-500">{slide.highlight}</span>
                 )}
               </h3>
-              <p className="text-sm text-gray-300">{slide.description}</p>
+              <p className="text-[14px] text-gray-300 leading-[22px]">
+                {slide.description}
+              </p>
             </div>
 
-            <div className="w-[550px] h-[550px] relative rounded-md overflow-hidden">
+            {/* Image Section */}
+            <div className="w-[100%] h-[400px] relative rounded-lg overflow-hidden">
               <Image
                 src={slide.image}
                 alt="feature"
@@ -95,7 +82,7 @@ const FeatureSlider: React.FC<FeatureSliderProps> = ({ slides }) => {
         </button>
       </div>
 
-      {/* Hide scrollbar (Tailwind utility override for Chrome/Edge/Safari) */}
+      {/* Hide scrollbar for Webkit */}
       <style jsx>{`
         div::-webkit-scrollbar {
           display: none;
