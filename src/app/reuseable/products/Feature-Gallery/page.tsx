@@ -44,7 +44,7 @@ const TortoxShowcase: React.FC<TortoxShowcaseProps> = ({
                   src={src}
                   alt={`tortox-image-${index}`}
                   fill
-                  className="object-cover rounded-md shadow-lg"
+                  className="object-cover "
                 />
               </div>
             ))}

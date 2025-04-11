@@ -1,3 +1,5 @@
+
+"use client"
 import Image from 'next/image';
 import { FC, useState } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';

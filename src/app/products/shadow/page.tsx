@@ -2,10 +2,10 @@
 
 import ProductBanner from "@/app/reuseable/products/banner/page";
 import Expensive from "@/app/reuseable/products/expensive/page";
-import FeatureBlock from "@/app/reuseable/products/Feature-Block/page";
+
 import FeatureGallery from "@/app/reuseable/products/Feature-Gallery/page";
 import FeatureHighlightSection from "@/app/reuseable/products/feature/page";
-import HighlightsSllder from "@/app/reuseable/products/freature-slider/page";
+
 import FeatureSlider from "@/app/reuseable/products/freature-slider/page";
 import HighlightsSlider from "@/app/reuseable/products/Highlights-silder/page";
 import CallToActionBanner from "@/app/reuseable/products/join-group/page";
@@ -14,9 +14,9 @@ import ProductOverview from "@/app/reuseable/products/overview/page";
 import ProductSlider from "@/app/reuseable/products/product-slider/page";
 import ProductFeatureShowcase from "@/app/reuseable/products/Showcase/page";
 import SpecificationSection from "@/app/reuseable/products/specifications/page";
-import Title from "@/app/reuseable/products/title/page";
 
-// ✅ Add the SpecItem type here
+
+// Add the SpecItem type here
 type SpecItem = {
   title: string;
   items: string[];
@@ -186,13 +186,13 @@ const ShadowPage = () => {
 
        {/* Feature showcase */}
        <ProductFeatureShowcase
-  imageSrc="/products/IRIS/showcase/image-1.png"
- imageAlt="Remote and Fan Controller"
- title="High Performance"
- highlight="Spectre Fans Included"
- description={`Tortox IRIS comes preinstalled with 4x Tortox Dual loop fans for a more efficient cooling performance. The Included RGB fansare RGB center illuminated and can support multiple control standards like ASUS AURA SYNC, MSI MISTIC LIGHT SYNC, GIGABYTE RGB Fusion 2.0 and ASRock POLYCHROME RGB. This allows you to control the fan lighting simply through software and synchronize the fans, and other devices such as mice and keyboard for more attractive lighting.`}
-  noteLine1="8 Fan 2 LED strip Aura connection with Remote"
-  noteLine2="4x DUAL LOOP 120MM RGB RAINBOW FANS*"
+  imageSrc="/products/Shadow/showcase/image.png"
+ imageAlt=""
+ title=""
+ highlight="RGB LED Controller"
+ description={`The RGB LED Controller allows you to take full control of your rig’s lighting and take it to the next level. Take advantage of countless combinations of colors and lighting effects and have the PC lighting you want without an RGB capable motherboard. It has a special designed to give your build awesome LED visual effect just by a 3-button controller, which allow you adjust effect speed (high, medium, slow), color (White, red, Orange, yellow, Green, Blue, Violet, demo) and mode (static, breathing, pulse, breathing + pulse), the only limitation is your imagination. The LED ring and fan blade are transparent and sharp made also add points on the install effect.`}
+  noteLine1="THREE PRE-INSTALLED 120MM RGB RAINBOW FANS*"
+  noteLine2="*Shadow Case can support up to 7 RGB Fans."
  />
 
  {/* Feature Block */}

@@ -10,7 +10,7 @@ interface BannerProps {
   description: string;
 }
 
-const ProductBanner: React.FC<BannerProps> = ({ bgImage, logo1, logo2, description }) => {
+const ProductBanner: React.FC<BannerProps> = ({ bgImage, logo1, logo2}) => {
   return (
     <div className="relative w-full h-[787px] overflow-hidden">
       {/* Background Image */}

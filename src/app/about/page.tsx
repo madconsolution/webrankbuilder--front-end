@@ -1,16 +1,13 @@
-
-// components/AboutTortox.jsx
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function AboutTortox() {
   return (
     <section className="bg-white py-12 px-4 md:px-16">
       <motion.div
         className="max-w-custom mx-auto flex flex-col md:flex-row items-center justify-between gap-8"
-        
-
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -46,11 +43,15 @@ export default function AboutTortox() {
           transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <img src="/logo/logo.png" alt="Tortox Logo" className="max-w-xs w-full" />
+          <Image
+            src="/logo/logo.png"
+            alt="Tortox Logo"
+            width={250} // adjust as needed
+            height={250}
+            className="w-full h-auto"
+          />
         </motion.div>
       </motion.div>
     </section>
   );
 }
-
-  

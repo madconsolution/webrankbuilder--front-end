@@ -2,9 +2,9 @@
 
 import ProductBanner from "@/app/reuseable/products/banner/page";
 import Expensive from "@/app/reuseable/products/expensive/page";
-import FeatureBlock from "@/app/reuseable/products/Feature-Block/page";
+
 import FeatureHighlightSection from "@/app/reuseable/products/feature/page";
-import HighlightsSllder from "@/app/reuseable/products/freature-slider/page";
+
 import FeatureSlider from "@/app/reuseable/products/freature-slider/page";
 import HighlightsSlider from "@/app/reuseable/products/Highlights-silder/page";
 import CallToActionBanner from "@/app/reuseable/products/join-group/page";

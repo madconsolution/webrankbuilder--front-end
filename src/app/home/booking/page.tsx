@@ -1,7 +1,5 @@
 'use client';
 
-
-
 export default function BookingSection() {
   return (
     <div className="relative flex items-center justify-center h-[550px] bg-gradient-to-r from-black via-blue-900 to-black">
@@ -11,7 +9,7 @@ export default function BookingSection() {
           WELCOME TO <span className="text-red-600">TORTOX</span>
         </h2>
         <p className="mt-4 text-lg leading-relaxed">
-          Tortox is one of the world’s leading providers of{' '}
+          Tortox is one of the worlds leading providers of{' '}
           <strong>high-performance PC peripherals</strong> and components.
         </p>
       </div>
@@ -62,7 +60,7 @@ export default function BookingSection() {
   {/* reCAPTCHA Placeholder */}
   <div className="flex items-center space-x-2 bg-white p-3 rounded text-gray-800">
     <input type="checkbox" />
-    <span>I'm not a robot</span>
+    <span>I am not a robot</span>
   </div>
 
   {/* Submit Button */}

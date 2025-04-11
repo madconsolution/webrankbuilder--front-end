@@ -9,7 +9,17 @@ const productCategories = [
   },
   {
     title: "Cables",
-    items: ["4K HDMI 2.0", "4K HDMI 2.1", "4K 8K DP TO DP", "4K MINI DP TO DP", "MINI DP TO HDMI", "CAT 6E ETHERNET", "PSU 6+2 PIN *2", "PSU 6+2 PIN *3", "PSU 1×24"],
+    items: [
+      "4K HDMI 2.0",
+      "4K HDMI 2.1",
+      "4K 8K DP TO DP",
+      "4K MINI DP TO DP",
+      "MINI DP TO HDMI",
+      "CAT 6E ETHERNET",
+      "PSU 6+2 PIN ×2",
+      "PSU 6+2 PIN ×3",
+      "PSU 1×24",
+    ],
   },
   {
     title: "Adapter",
@@ -51,11 +61,11 @@ const productCategories = [
 
 const NavbarWithMegaMenu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const menuRef = useRef(null);
+  const menuRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const handler = (e: MouseEvent) => {
-      if (menuRef.current && !(menuRef.current as any).contains(e.target)) {
+      if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
         setMenuOpen(false);
       }
     };
@@ -103,7 +113,10 @@ const NavbarWithMegaMenu = () => {
 
       {/* Mega Menu */}
       {menuOpen && (
-        <div ref={menuRef} className="absolute left-1/2 -translate-x-1/2 w-full max-w-6xl mx-auto mt-2 bg-gray-100 text-black py-6 px-6 shadow-lg grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 z-40">
+        <div
+          ref={menuRef}
+          className="absolute left-1/2 -translate-x-1/2 w-full max-w-6xl mx-auto mt-2 bg-gray-100 text-black py-6 px-6 shadow-lg grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 z-40"
+        >
           {productCategories.map((category, i) => (
             <div key={i}>
               <h4 className="font-bold text-sm mb-3 text-gray-900">{category.title}</h4>
