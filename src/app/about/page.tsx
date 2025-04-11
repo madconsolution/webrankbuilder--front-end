@@ -1,11 +1,22 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { div } from 'framer-motion/client';
 import Image from 'next/image';
+import BannerSection from '../reuseable/contact/banner/page';
 
 export default function AboutTortox() {
   return (
-    <section className="bg-white py-12 px-4 md:px-16">
+ <div>
+  {/* About benner */}
+  <BannerSection
+        backgroundImage="/contact/banner-contact.jpg" 
+        title="Distributors"
+        buttonText="Read More"
+        buttonLink="/distributors"
+      />
+  {/*  */}
+     <section className="bg-white py-12 px-4 md:px-16">
       <motion.div
         className="max-w-custom mx-auto flex flex-col md:flex-row items-center justify-between gap-8"
         initial={{ opacity: 0, y: 50 }}
@@ -53,5 +64,6 @@ export default function AboutTortox() {
         </motion.div>
       </motion.div>
     </section>
+ </div>
   );
 }
