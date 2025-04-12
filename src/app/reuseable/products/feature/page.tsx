@@ -30,8 +30,8 @@ const FeatureHighlightSection: React.FC<FeatureHighlightSectionProps> = ({
           <Image
             src={image}
             alt="Feature Image"
-            width={700}
-            height={500}
+            width={550}
+            height={550}
             className="object-contain w-full h-auto"
           />
         </div>

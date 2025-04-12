@@ -29,19 +29,19 @@ const FeatureSlider: React.FC<FeatureSliderProps> = ({ slides }) => {
   };
 
   return (
-    <div className="relative w-full bg-black px-4 md:px-16 py-10 text-white font-sans">
+    <div className="relative w-full md:w-[1440px] mx-auto my-auto bg-red-500 items-center px-4 md:px-16 py-10 text-white font-sans">
       <div
         ref={scrollRef}
-        className="flex gap-6 overflow-x-scroll scroll-smooth pb-4"
+        className="flex gap-6 overflow-x-scroll scroll-smooth pb-4 items-center"
         style={{ scrollbarWidth: 'none' }}
       >
         {slides.map((slide, index) => (
           <div
             key={index}
-            className="w-[550px] flex-shrink-0 rounded-lg p-2 mb-5 flex flex-col justify-start"
+            className="w-[550px] flex-shrink-0 rounded-lg p-2 mb-5 flex flex-col "
           >
             {/* Text Section */}
-            <div className="px-4 mb-4 w-[95%]">
+            <div className="px-4 mb-4 w-[70%]">
               <h3 className="text-[16px] font-bold text-white mb-2 leading-snug">
                 {slide.title}{' '}
                 {slide.highlight && (
@@ -54,7 +54,7 @@ const FeatureSlider: React.FC<FeatureSliderProps> = ({ slides }) => {
             </div>
 
             {/* Image Section */}
-            <div className="w-[100%] h-[400px] relative rounded-lg overflow-hidden">
+            <div className="w-[100%] h-[400px] relative rounded-lg overflow-hidden items-center">
               <Image
                 src={slide.image}
                 alt="feature"
