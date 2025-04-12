@@ -18,7 +18,7 @@ const ProductBanner: React.FC<BannerProps> = ({ bgImage, logo1, logo2, descripti
   ];
 
   return (
-    <div className="relative w-full h-[787px] overflow-hidden">
+    <div className="relative w-full md:w-[1440px] mx-auto h-[787px] overflow-hidden">
       {/* Background Image */}
       <div
         className="absolute inset-0 w-full h-full bg-center bg-no-repeat bg-cover"

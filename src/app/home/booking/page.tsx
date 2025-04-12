@@ -13,7 +13,7 @@ export default function BookingSection() {
     <div className="relative flex flex-col md:flex-row justify-between min-h-[550px] px-6 md:px-24 py-10 bg-gradient-to-r from-[#00002b] via-[#000064] to-[#00002b] text-white font-serif">
       {/* Left Side Content */}
       <div className="w-full md:w-1/2 mb-10 md:mb-0 text-left">
-        <h2 className="text-3xl font-extrabold">TORTOX</h2>
+        <h3 className="text-3xl font-extrabold">TORTOX</h3>
         <p className="text-xl md:text-3xl leading-relaxed font-medium">
           Tortox is one of the world’s leading providers of{' '}
           <strong className="font-bold">high-performance PC peripherals</strong> and components.

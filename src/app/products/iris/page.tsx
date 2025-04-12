@@ -31,6 +31,16 @@ const products = [
     description: "Optimized for cooling with customizable lighting effects.",
     image: "/category-1.png",
   },
+  {
+    title: "3D Reflection front panel with Elegant honeycomb design",
+    description: "A sleek and stylish design for maximum airflow and performance.",
+    image: "/category-1.png",
+  },
+  {
+    title: "Four 120mm Tortox Dual loop Case fans, Aura Controller & Remote",
+    description: "Optimized for cooling with customizable lighting effects.",
+    image: "/category-1.png",
+  },
 ];
 
 const slides = [
@@ -140,7 +150,14 @@ const IrisPage = () => {
         logo2="/products/IRIS.png"
         description={["ATX MID TOWER COMPUTER  CASE THAT HAVE GREAT DESIGN"]}
       />
-  
+       {/* Here is first heading title */}
+       <div className="text-xl text-[#FFFFFF]">
+        <Title
+          mainTitle="TORTOX"
+          subTitle="IRIS"
+          content="Tortox Iris re-engineered designs and features to offer the best balance of performance and with honeycomb design front panel inspired open fascia that is specifically created take as much air in to your system as possible. The core of the TORTOX IRIS is its clean design, well balanced between a perfectly organised interior structure and the sleek exterior design."
+        />
+      </div>
 
    <ProductOverview
   products={products}

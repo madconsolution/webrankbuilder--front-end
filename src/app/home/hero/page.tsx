@@ -38,7 +38,7 @@ export default function HeroSection() {
   {videos.map((video, index) => (
     <SwiperSlide key={index}>
       <video
-        className="w-full h-screen object-cover"
+        className="w-full h-[813px] object-cover"
         src={video}
         autoPlay
         muted
