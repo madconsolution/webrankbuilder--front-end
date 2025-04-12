@@ -38,10 +38,10 @@ const FeatureBlock: FC<FeatureBlockProps> = ({
           />
         </div>
         <div className="w-full max-w-xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold">
+          <h3 className="text-2xl md:text-3xl font-bold">
             {title}{' '}
             <span className="text-red-500">{highlight}</span>
-          </h2>
+          </h3>
           <p
             className="mt-4 text-sm md:text-base leading-relaxed text-gray-300"
             dangerouslySetInnerHTML={{ __html: description }}

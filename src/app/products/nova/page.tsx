@@ -2,6 +2,7 @@
 
 import ProductBanner from "@/app/reuseable/products/banner/page";
 import Expensive from "@/app/reuseable/products/expensive/page";
+import FeatureBlock from "@/app/reuseable/products/Feature-Block/page";
 
 import FeatureHighlightSection from "@/app/reuseable/products/feature/page";
 
@@ -139,7 +140,7 @@ const NovaPage = () => {
         bgImage="/products/iris-banner.png"
         logo1="/logo.png"
         logo2="/products/Nova/image.png"
-        description="ATX MID TOWER COMPUTER  CASE THAT HAVE GREAT DESIGN"
+        description={["ATX MID TOWER COMPUTER  CASE THAT HAVE GREAT DESIGN"]}
       />
    
 
@@ -152,7 +153,7 @@ const NovaPage = () => {
 
 
       <FeatureHighlightSection
-        image="/products/Nova/image.png"
+        image="/products/feature-prof.png"
         title="FUTURE-PROOF FRONT PANEL"
         highlightText="Featuring a super-speed USB 3.1 port, RGB Lighting Control switch and additional connections for all modern peripherals."
         position="right"
@@ -186,35 +187,12 @@ const NovaPage = () => {
   noteLine2="4x DUAL LOOP 120MM RGB RAINBOW FANS*"
  />
 
- {/* Feature Block */}
-  {/* <FeatureBlock
-  imageSrc="/products/IRIS/showcase/image-1.png"
-  imageAlt="Open Neon Case"   title="Thermal"
-   highlight="Expandability"
-   description={`To cool down the components, Grid Design on the front panel
-   has offered smooth intake. NEON supports up to two 140mm fans or a 280mm radiator in the front while a 120mm rear-fan
-   or radiator at the rear will push the hot air out. It also supports up
-   to 163mm high CPU air cooler.`}
-  note="Three Single Colour(Red) 33 LED Case Fans Pre-installed"
-   imageLeft={true} />
-
- <FeatureBlock
-    imageSrc="/products/IRIS/showcase/image-2.png"
-   imageAlt="Two NEON Cases"
-  title="Tool-free"
- highlight="modular storage design"
- description={`Both the included hard drive cages are modular and tool-free
-  giving the user the ability to configure the system to their needs. Apart from these hard drive cages which accommodate up to 2
-   HDDs, the NEON comes with three modular SSD brackets. Available in with or without RGB windowed side panel case, you can
-  choose the NEON that blends perfectly with your surroundings.`}
-  imageLeft={false}
-/> */}
 
 {/* Expensive */}
 
 <Expensive
   bgImage="/products/Shadow/expensive/image.png"
-  title="Expansive Storage Space"
+  title="Remaking the Idea of Gaming Case"
   description="With the explosion of high-definition content, users are going to need a lot more storage to keep it all. Shadow offers no less than seven PCI Slot & two 3.5” HDD bays for massive storage capability. You can even install a 2.5” SSD on the case for lightning-fast boot times."
 />
 
@@ -230,6 +208,32 @@ const NovaPage = () => {
     { src: '/products/IRIS/highlight/image-3.png', alt: 'RGB Case' },
    ]}
  />
+
+
+ 
+ {/* Feature Block */}
+  <FeatureBlock
+  imageSrc="/products/Nova/dual-feature/image-2.png"
+  imageAlt="Open Neon Case"   title=""
+   highlight="Flexible Cooling Option"
+   description={`To cool down the components, Grid Design on the front panel
+   has offered smooth intake. NEON supports up to two 140mm fans or a 280mm radiator in the front while a 120mm rear-fan
+   or radiator at the rear will push the hot air out. It also supports up
+   to 163mm high CPU air cooler.`}
+  note="Three Single Colour(Red) 33 LED Case Fans Pre-installed"
+   imageLeft={true} />
+
+ <FeatureBlock
+    imageSrc="/products/Nova/dual-feature/image-1.png"
+   imageAlt="Two NEON Cases"
+  title="Tool-free"
+ highlight="modular storage design"
+ description={`Both the included hard drive cages are modular and tool-free
+  giving the user the ability to configure the system to their needs. Apart from these hard drive cages which accommodate up to 2
+   HDDs, the NEON comes with three modular SSD brackets. Available in with or without RGB windowed side panel case, you can
+  choose the NEON that blends perfectly with your surroundings.`}
+  imageLeft={false}
+/>
           {/* Specifications */}
       <SpecificationSection specs={specs} imageSrc="/products/IRIS/specification/image.png" />
           {/* Products slider */}

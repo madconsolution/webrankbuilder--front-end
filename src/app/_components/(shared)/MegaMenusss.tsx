@@ -26,7 +26,7 @@ export default function MegaMenu({
 
   return (
     <div
-      className="absolute top-full left-0 w-[1400px] left-2/3 transform -translate-x-2/4
+      className="absolute top-full  w-[1400px] left-2/3 transform -translate-x-2/4
   bg-[#f9f9f9] text-[#333] py-10  z-50 shadow-lg border-t border-gray-200"
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}

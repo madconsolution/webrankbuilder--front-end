@@ -3,41 +3,43 @@
 import Image from 'next/image';
 import React from 'react';
 
-interface BannerProps {
-  bgImage: string;
-  logo1: string;
-  logo2: string;
-  description: string;
+export interface BannerProps {
+  bgImage: string;  // e.g., '/images/bg.jpg'
+  logo1: string;    // e.g., '/images/logo1.png'
+  logo2: string;    // e.g., '/images/logo2.png'
+  description?: string[];
 }
 
-const ProductBanner: React.FC<BannerProps> = ({ bgImage, logo1, logo2}) => {
+const ProductBanner: React.FC<BannerProps> = ({ bgImage, logo1, logo2, description }) => {
+  const lines = description ?? [
+    'ATX MID TOWER COMPUTER',
+    'CASE',
+    'THAT HAVE GREAT DESIGN',
+  ];
+
   return (
     <div className="relative w-full h-[787px] overflow-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0 w-full h-[787px]  mx-auto bg-center bg-no-repeat" style={{ backgroundImage: `url(${bgImage})` }}></div>
-      
-      {/* Content Section */}
-      <div className="absolute inset-0  flex items-center mt-8 flex-col text-white ">
-        {/* Logo Section */}
-        <div className="flex  gap-2  mb-2 items-center">
-          <>
-            <Image src={logo1} alt="Logo 1" width={250} height={50}  className=' object-contain' />
-          </>
-          <>
-            <Image src={logo2} alt="Logo 2" width={235} height={70} className=" "  />
-          </>
+      <div
+        className="absolute inset-0 w-full h-full bg-center bg-no-repeat bg-cover"
+        style={{ backgroundImage: `url('${bgImage}')` }}
+      />
+
+      {/* Content Overlay */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-white mt-8 px-4 text-center">
+        {/* Logos */}
+        <div className="flex gap-2 mb-4 items-center">
+          <Image src={logo1} alt="Product Logo 1" width={250} height={50} />
+          <Image src={logo2} alt="Product Logo 2" width={100} height={70} />
         </div>
 
-       
-        {/* Description Section */}
-        <div className="leading-snug text-xl sm:text-2xl md:text-3xl font-medium tracking-widest space-y-2 text-center">
-          <p>ATX MID TOWER COMPUTER</p>
-          <p>CASE</p>
-          <p>THAT HAVE GREAT DESIGN</p>
+        {/* Description */}
+        <div className="text-xl sm:text-2xl md:text-3xl font-medium tracking-widest leading-snug space-y-2">
+          {lines.map((line, idx) => (
+            <p key={idx}>{line}</p>
+          ))}
         </div>
       </div>
-
-  
     </div>
   );
 };

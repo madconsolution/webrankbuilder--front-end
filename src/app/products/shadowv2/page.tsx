@@ -3,6 +3,7 @@
 import ProductBanner from "@/app/reuseable/products/banner/page";
 import Expensive from "@/app/reuseable/products/expensive/page";
 
+import FeatureGallery from "@/app/reuseable/products/Feature-Gallery/page";
 import FeatureHighlightSection from "@/app/reuseable/products/feature/page";
 
 import FeatureSlider from "@/app/reuseable/products/freature-slider/page";
@@ -13,9 +14,9 @@ import ProductOverview from "@/app/reuseable/products/overview/page";
 import ProductSlider from "@/app/reuseable/products/product-slider/page";
 import ProductFeatureShowcase from "@/app/reuseable/products/Showcase/page";
 import SpecificationSection from "@/app/reuseable/products/specifications/page";
-import Title from "@/app/reuseable/products/title/page";
 
-// ✅ Add the SpecItem type here
+
+// Add the SpecItem type here
 type SpecItem = {
   title: string;
   items: string[];
@@ -36,24 +37,24 @@ const products = [
 
 const slides = [
   {
-    title: 'Up to',
-    highlight: 'EATX support',
+    title: '',
+    highlight: 'Sharp, Black and Beautiful',
     description:
-      'Tortox IRIS supports up to EATX motherboards while having plenty of room for high end water-cooling builds. At the back of the motherboard tray, leaves plenty of room for cables management to support high end components and PSUs.',
+      'Premium-quality tempered glass guarantees the durability of the panels and adds overall strength to the chassis. A light grey tinted tempered glass side panel is ideal for showcasing your build with (RGB) lighting.',
     image: '/products/IRIS/Feature-slider/image-1.png',
   },
   {
-    title: 'Tempered Glass',
-    highlight: 'Side Panels',
+    title: '',
+    highlight: 'Covers for Clean Building',
     description:
-      'Tortox IRIS features high-quality tempered glass side panel to showcase the beautiful components. IRIS comes with high quality temper glass side panels is crystal clear to showcase the hardware while the other is 100% dark tinted to hide the cables behind motherboard tray.',
+      'A PSU shroud and additional cable covers take cable management to the next level. Assemble clean builds like a pro!  An incredibly clean look that can be easily switched to different RGB patterns from the side control panel.',
     image: '/products/IRIS/Feature-slider/image-2.png',
   },
   {
-    title: 'Dual Chamber',
-    highlight: 'Air Flow',
+    title: '',
+    highlight: '',
     description:
-      'Designed for optimal cooling, the dual-chamber setup allows enhanced airflow and separation of heat zones.',
+      '',
     image: '/products/IRIS/Feature-slider/Background.png',
   },
 ];
@@ -132,14 +133,14 @@ const specs: SpecItem[] = [
   },
 ];
 
-const Shadow2Page = () => {
+const Shadowv2Page = () => {
   return (
     <>
       <ProductBanner
         bgImage="/products/iris-banner.png"
         logo1="/logo.png"
-        logo2="/products/Shadow/Shadowv2-right-logo-banner.png"
-        description="ATX MID TOWER COMPUTER  CASE THAT HAVE GREAT DESIGN"
+        logo2="/products/Shadow/Shadow-right-logo-banner.png"
+        description={["ATX MID TOWER COMPUTER  CASE THAT HAVE GREAT DESIGN"]}
       />
    
 
@@ -160,13 +161,21 @@ const Shadow2Page = () => {
 
       <FeatureSlider slides={slides} />
 
-      <div className="text-xl text-[#FFFFFF]">
-        <Title
-          mainTitle="TORTOX"
-          subTitle="IRIS"
-          content="Featuring EATX / ATX / Micro ATX / Mini-ITX Supported Case with 2 SSD Drive Bays and additional connections for all modern peripherals."
-        />
-      </div>
+        {/* Feature Gallery section is here */}
+        <FeatureGallery
+  title="TORTOX"
+  highlight="SHADOW"
+  description={`Featuring ATX/Micro ATX/Mini-ITX supported case\nwith two SSD Drive Bays and additional connections\nfor all modern peripherals.`}
+  images={[
+    '/products/Shadow/gallery/image-1.png',
+    '/products/Shadow/gallery/image-2.png',
+    '/products/Shadow/gallery/image-3.png',
+    '/products/Shadow/gallery/image-4.png',
+    '/products/Shadow/gallery/image-5.png',
+   
+  ]}
+/>
+
 
       {/* Join Group  */}
       <CallToActionBanner
@@ -177,38 +186,16 @@ const Shadow2Page = () => {
 
        {/* Feature showcase */}
        <ProductFeatureShowcase
-  imageSrc="/products/IRIS/showcase/image-1.png"
- imageAlt="Remote and Fan Controller"
- title="High Performance"
- highlight="Spectre Fans Included"
- description={`Tortox IRIS comes preinstalled with 4x Tortox Dual loop fans for a more efficient cooling performance. The Included RGB fansare RGB center illuminated and can support multiple control standards like ASUS AURA SYNC, MSI MISTIC LIGHT SYNC, GIGABYTE RGB Fusion 2.0 and ASRock POLYCHROME RGB. This allows you to control the fan lighting simply through software and synchronize the fans, and other devices such as mice and keyboard for more attractive lighting.`}
-  noteLine1="8 Fan 2 LED strip Aura connection with Remote"
-  noteLine2="4x DUAL LOOP 120MM RGB RAINBOW FANS*"
+  imageSrc="/products/Shadow/showcase/image.png"
+ imageAlt=""
+ title=""
+ highlight="RGB LED Controller"
+ description={`The RGB LED Controller allows you to take full control of your rig’s lighting and take it to the next level. Take advantage of countless combinations of colors and lighting effects and have the PC lighting you want without an RGB capable motherboard. It has a special designed to give your build awesome LED visual effect just by a 3-button controller, which allow you adjust effect speed (high, medium, slow), color (White, red, Orange, yellow, Green, Blue, Violet, demo) and mode (static, breathing, pulse, breathing + pulse), the only limitation is your imagination. The LED ring and fan blade are transparent and sharp made also add points on the install effect.`}
+  noteLine1="THREE PRE-INSTALLED 120MM RGB RAINBOW FANS*"
+  noteLine2="*Shadow Case can support up to 7 RGB Fans."
  />
 
- {/* Feature Block */}
-  {/* <FeatureBlock
-  imageSrc="/products/IRIS/showcase/image-1.png"
-  imageAlt="Open Neon Case"   title="Thermal"
-   highlight="Expandability"
-   description={`To cool down the components, Grid Design on the front panel
-   has offered smooth intake. NEON supports up to two 140mm fans or a 280mm radiator in the front while a 120mm rear-fan
-   or radiator at the rear will push the hot air out. It also supports up
-   to 163mm high CPU air cooler.`}
-  note="Three Single Colour(Red) 33 LED Case Fans Pre-installed"
-   imageLeft={true} />
 
- <FeatureBlock
-    imageSrc="/products/IRIS/showcase/image-2.png"
-   imageAlt="Two NEON Cases"
-  title="Tool-free"
- highlight="modular storage design"
- description={`Both the included hard drive cages are modular and tool-free
-  giving the user the ability to configure the system to their needs. Apart from these hard drive cages which accommodate up to 2
-   HDDs, the NEON comes with three modular SSD brackets. Available in with or without RGB windowed side panel case, you can
-  choose the NEON that blends perfectly with your surroundings.`}
-  imageLeft={false}
-/> */}
 
 {/* Expensive */}
 
@@ -225,9 +212,9 @@ const Shadow2Page = () => {
    highlight="Built-In Dust Filters"
   description="Your system should look good inside and out. Featuring a large removable and magnetic dust filter on the Top of case, along with dust filters for the power supply at the bottom. Shadow keeps dust where it belongs - outside your PC."
   images={[
-     { src: '/products/IRIS/highlight/image-1.png', alt: 'Front Case' },
-    { src: '/products/IRIS/highlight/image-2.png', alt: 'Mesh Filter' },
-    { src: '/products/IRIS/highlight/image-3.png', alt: 'RGB Case' },
+     { src: '/products/Shadow/Highlight-slider/image-1.png', alt: 'Front Case' },
+    { src: '/products/Shadow/Highlight-slider/image-2.png', alt: 'Mesh Filter' },
+    { src: '/products/Shadow/Highlight-slider/image-3.png', alt: 'RGB Case' },
    ]}
  />
           {/* Specifications */}
@@ -238,4 +225,4 @@ const Shadow2Page = () => {
   );
 };
 
-export default Shadow2Page;
+export default Shadowv2Page;

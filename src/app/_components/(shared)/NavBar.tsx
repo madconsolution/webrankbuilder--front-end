@@ -31,22 +31,46 @@ const productCategories = [
     title: "Cables",
     items: [
       { name: "4K HDMI 2.0", slug: "4hdmi_cables" },
-      { name: "CAT 6E ETHERNET", slug: "cat6e_ethernet" },
+      { name: "8K HDMI 2.1", slug: "4hdmi_cables" },
+      { name: "4K 8K DP TO DP", slug: "4hdmi_cables" },
+      { name: "4K Mini DP TO DP", slug: "4hdmi_cables" },
+      { name: "Mini DP TO HDMI", slug: "4hdmi_cables" },
+      { name: "PSU 6+2 Pin *2", slug: "4hdmi_cables" },
+      { name: "PSU 6+2 Pin *3", slug: "4hdmi_cables" },
+      { name: "CAT 6E Ethernet", slug: "4hdmi_cables" },
+      { name: "PSU 12+4", slug: "4hdmi_cables" },
+      { name: "PSU 24", slug: "4hdmi_cables" },
+    
     ],
   },
   {
     title: "Adapter",
-    items: [{ name: "USB TYPE C TO HDMI", slug: "usb_c_hdmi" }],
+    items: [
+      { name: "USB TYPE C TO HDMI", slug: "usb_c_hdmi" },
+      { name: "DP To HDMI", slug: "usb_c_hdmi" },
+      { name: "Mini DP To HDMI 4K", slug: "usb_c_hdmi" },
+      { name: "Mini DP To DP", slug: "usb_c_hdmi" }
+
+
+    ],
   },
   {
     title: "Connector",
-    items: [{ name: "RJ45 CAT7 UTP NETWORK", slug: "rj45_cat7" }],
+    items: [
+      { name: "RJ45 CAT7 UTP NETWORK", slug: "rj45_cat7" },
+
+    ],
   },
   {
     title: "Case Fans",
     items: [
       { name: "LUNA", slug: "luna" },
       { name: "NINJA X", slug: "ninja_x" },
+      { name: "NINJA X3", slug: "ninja_x" },
+      { name: "SPARK", slug: "ninja_x" },
+      { name: "SPARK X3", slug: "ninja_x" },
+      { name: "ARCUS", slug: "ninja_x" }
+
     ],
   },
   {
@@ -54,6 +78,7 @@ const productCategories = [
     items: [
       { name: "BX 600", slug: "bx600" },
       { name: "BX 700", slug: "bx700" },
+      { name: "LX 700", slug: "bx700" },
     ],
   },
   {
@@ -100,7 +125,7 @@ export default function Navbar() {
     { name: "Products", href: "/products", hasArrow: true },
     { name: "About Tortox", href: "/about" },
     { name: "Sales Network", href: "#" },
-    { name: "Contact us", href: "#" },
+    { name: "Contact us", href: "/contact" },
   ];
 
   useEffect(() => {

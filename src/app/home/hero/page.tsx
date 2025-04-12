@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation, Autoplay } from 'swiper/modules';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import { useRef, useEffect } from 'react';
+import { useRef} from 'react';
 
 export default function HeroSection() {
   const videos = ['/logo_video.mp4'];
@@ -16,38 +16,39 @@ export default function HeroSection() {
     <div className="relative w-full min-h-screen bg-[#0B1320] text-white overflow-hidden">
       {/* Video Swiper Carousel */}
       <Swiper
-        modules={[Navigation, Autoplay]}
-        slidesPerView={1}
+  modules={[Navigation, Autoplay]}
+  slidesPerView={1}
+  loop
+  autoplay={{ delay: 5000, disableOnInteraction: false }}
+  navigation={{
+    prevEl: prevRef.current,
+    nextEl: nextRef.current,
+  }}
+  onInit={(swiper) => {
+    // Fix for custom navigation buttons
+    // @ts-expect-error: Custom Swiper navigation ref not typed
+    swiper.params.navigation.prevEl = prevRef.current;
+   // @ts-expect-error: Custom Swiper navigation ref not typed
+    swiper.params.navigation.nextEl = nextRef.current;
+    swiper.navigation.init();
+    swiper.navigation.update();
+  }}
+  className="h-screen"
+>
+  {videos.map((video, index) => (
+    <SwiperSlide key={index}>
+      <video
+        className="w-full h-screen object-cover"
+        src={video}
+        autoPlay
+        muted
         loop
-        autoplay={{ delay: 5000, disableOnInteraction: false }}
-        navigation={{
-          prevEl: prevRef.current,
-          nextEl: nextRef.current,
-        }}
-        onInit={(swiper) => {
-          // Fix for custom navigation buttons
-          // @ts-ignore
-          swiper.params.navigation.prevEl = prevRef.current;
-          // @ts-ignore
-          swiper.params.navigation.nextEl = nextRef.current;
-          swiper.navigation.init();
-          swiper.navigation.update();
-        }}
-        className="h-screen"
-      >
-        {videos.map((video, index) => (
-          <SwiperSlide key={index}>
-            <video
-              className="w-full h-screen object-cover"
-              src={video}
-              autoPlay
-              muted
-              loop
-              playsInline
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+        playsInline
+      />
+    </SwiperSlide>
+  ))}
+</Swiper>
+
 
       {/* Custom Navigation Buttons */}
       <button
