@@ -26,7 +26,7 @@ const ProductBanner: React.FC<BannerProps> = ({ bgImage, logo1, logo2, descripti
       />
 
       {/* Content Overlay */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-white mt-8 px-4 text-center">
+      <div className="absolute max-w-xl mx-auto inset-0 flex flex-col items-center  text-white mt-8 px-4 text-center">
         {/* Logos */}
         <div className="flex gap-2 mb-4 items-center">
           <Image src={logo1} alt="Product Logo 1" width={250} height={50} />

@@ -2,6 +2,7 @@
 
 import ProductBanner from "@/app/reuseable/products/banner/page";
 import Expensive from "@/app/reuseable/products/expensive/page";
+import FeatureGrid from "@/app/reuseable/products/Feature-Grid/page";
 
 import FeatureHighlightSection from "@/app/reuseable/products/feature/page";
 
@@ -63,6 +64,40 @@ const sampleProducts = [
   { image: '/products/IRIS/Feature-slider/image-2.png' },
   { image: '/products/IRIS/Feature-slider/Background.png' },
 ];
+
+
+
+// Feature Grid 6 image start
+
+
+const features = [
+  {
+    image: '/products/Prism/feature/f1.png',
+  
+  },
+  {
+    image: '/products/Prism/feature/f2.png',
+ 
+  },
+  {
+    image: '/products/Prism/feature/f3.png',
+  
+  },
+  {
+    image: '/products/Prism/feature/f4.png',
+   
+  },
+  {
+    image: '/products/Prism/feature/f5.png',
+  
+  },
+  {
+    image: '/products/Prism/feature/f6.png',
+   
+  },
+];
+
+// Feature Grid 6 image end
 
 const specs: SpecItem[] = [
   {
@@ -136,9 +171,9 @@ const PrismPage = () => {
   return (
     <>
       <ProductBanner
-        bgImage="/products/Prism/PRISM.png"
+        bgImage="/products/iris-banner.png"
         logo1="/logo.png"
-        logo2="/products/Shadow/Shadow-right-logo-banner.png"
+        logo2="/products/Prism/PRISM.png"
         description={["ATX MID TOWER COMPUTER  CASE THAT HAVE GREAT DESIGN"]}
       />
    
@@ -167,6 +202,8 @@ const PrismPage = () => {
           content="Featuring EATX / ATX / Micro ATX / Mini-ITX Supported Case with 2 SSD Drive Bays and additional connections for all modern peripherals."
         />
       </div>
+           {/* Feature-Grid 6-image */}
+           <FeatureGrid features={features} />
 
       {/* Join Group  */}
       <CallToActionBanner
