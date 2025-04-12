@@ -134,7 +134,7 @@ const specs: SpecItem[] = [
 
 const AlphaPage = () => {
   return (
-    <>
+    <div className="w-full md:w-[1440px] mx-auto">
       <ProductBanner
         bgImage="/products/iris-banner.png"
         logo1="/logo.png"
@@ -186,29 +186,7 @@ const AlphaPage = () => {
   noteLine2="4x DUAL LOOP 120MM RGB RAINBOW FANS*"
  />
 
- {/* Feature Block */}
-  {/* <FeatureBlock
-  imageSrc="/products/IRIS/showcase/image-1.png"
-  imageAlt="Open Neon Case"   title="Thermal"
-   highlight="Expandability"
-   description={`To cool down the components, Grid Design on the front panel
-   has offered smooth intake. NEON supports up to two 140mm fans or a 280mm radiator in the front while a 120mm rear-fan
-   or radiator at the rear will push the hot air out. It also supports up
-   to 163mm high CPU air cooler.`}
-  note="Three Single Colour(Red) 33 LED Case Fans Pre-installed"
-   imageLeft={true} />
 
- <FeatureBlock
-    imageSrc="/products/IRIS/showcase/image-2.png"
-   imageAlt="Two NEON Cases"
-  title="Tool-free"
- highlight="modular storage design"
- description={`Both the included hard drive cages are modular and tool-free
-  giving the user the ability to configure the system to their needs. Apart from these hard drive cages which accommodate up to 2
-   HDDs, the NEON comes with three modular SSD brackets. Available in with or without RGB windowed side panel case, you can
-  choose the NEON that blends perfectly with your surroundings.`}
-  imageLeft={false}
-/> */}
 
 {/* Expensive */}
 
@@ -234,7 +212,7 @@ const AlphaPage = () => {
       <SpecificationSection specs={specs} imageSrc="/products/IRIS/specification/image.png" />
           {/* Products slider */}
       <ProductSlider title="Other Products" products={sampleProducts} />
-    </>
+    </ div>
   );
 };
 

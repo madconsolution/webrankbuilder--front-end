@@ -22,39 +22,26 @@ type SpecItem = {
   items: string[];
 };
 
-const products = [
-  {
-    title: "3D Reflection front panel with Elegant honeycomb design",
-    description: "A sleek and stylish design for maximum airflow and performance.",
-    image: "/category-1.png",
-  },
-  {
-    title: "Four 120mm Tortox Dual loop Case fans, Aura Controller & Remote",
-    description: "Optimized for cooling with customizable lighting effects.",
-    image: "/category-1.png",
-  },
-];
-
 const slides = [
   {
     title: 'Up to',
     highlight: 'EATX support',
     description:
       'Tortox IRIS supports up to EATX motherboards while having plenty of room for high end water-cooling builds. At the back of the motherboard tray, leaves plenty of room for cables management to support high end components and PSUs.',
-    image: '/products/IRIS/Feature-slider/image-1.png',
+    image: '/products/Prism/slider/image-2.png',
   },
   {
     title: 'Tempered Glass',
     highlight: 'Side Panels',
     description:
       'Tortox IRIS features high-quality tempered glass side panel to showcase the beautiful components. IRIS comes with high quality temper glass side panels is crystal clear to showcase the hardware while the other is 100% dark tinted to hide the cables behind motherboard tray.',
-    image: '/products/IRIS/Feature-slider/image-2.png',
+    image: '/products/Prism/slider/image-1.png',
   },
   {
-    title: 'Dual Chamber',
-    highlight: 'Air Flow',
+    title: '',
+    highlight: '',
     description:
-      'Designed for optimal cooling, the dual-chamber setup allows enhanced airflow and separation of heat zones.',
+      '',
     image: '/products/IRIS/Feature-slider/Background.png',
   },
 ];
@@ -169,7 +156,7 @@ const specs: SpecItem[] = [
 
 const CurvoPage = () => {
   return (
-    <>
+    <div className="w-full md:w-[1440px] mx-auto">
       <ProductBanner
         bgImage="/products/iris-banner.png"
         logo1="/logo.png"
@@ -210,7 +197,7 @@ const CurvoPage = () => {
       <SpecificationSection specs={specs} imageSrc="/products/IRIS/specification/image.png" />
           {/* Products slider */}
       <ProductSlider title="Other Products" products={sampleProducts} />
-    </>
+    </ div>
   );
 };
 

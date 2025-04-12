@@ -135,7 +135,7 @@ const specs: SpecItem[] = [
 
 const NovaPage = () => {
   return (
-    <>
+    <div className="w-full md:w-[1440px] mx-auto">
       <ProductBanner
         bgImage="/products/iris-banner.png"
         logo1="/logo.png"
@@ -238,7 +238,7 @@ const NovaPage = () => {
       <SpecificationSection specs={specs} imageSrc="/products/IRIS/specification/image.png" />
           {/* Products slider */}
       <ProductSlider title="Other Products" products={sampleProducts} />
-    </>
+    </ div>
   );
 };
 

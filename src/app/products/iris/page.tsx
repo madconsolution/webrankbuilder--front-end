@@ -59,10 +59,10 @@ const slides = [
     image: '/products/IRIS/Feature-slider/image-2.png',
   },
   {
-    title: 'Dual Chamber',
-    highlight: 'Air Flow',
+    title: '',
+    highlight: '',
     description:
-      'Designed for optimal cooling, the dual-chamber setup allows enhanced airflow and separation of heat zones.',
+      '',
     image: '/products/IRIS/Feature-slider/Background.png',
   },
 ];
@@ -143,7 +143,7 @@ const specs: SpecItem[] = [
 
 const IrisPage = () => {
   return (
-    <>
+    <div className="w-full md:w-[1440px] mx-auto">
       <ProductBanner
         bgImage="/products/iris-banner.png"
         logo1="/logo.png"
@@ -240,7 +240,7 @@ const IrisPage = () => {
       <SpecificationSection specs={specs} imageSrc="/products/IRIS/specification/image.png" />
           {/* Products slider */}
       <ProductSlider title="Other Products" products={sampleProducts} />
-    </>
+    </ div>
   );
 };
 
