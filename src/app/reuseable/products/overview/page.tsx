@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import Title from "../title/page";
+
 
 interface Product {
   title: string;
@@ -22,19 +22,11 @@ interface ProductOverviewProps {
 
 const ProductOverview: React.FC<ProductOverviewProps> = ({
   products,
-  mainTitle,
-  subTitle,
-  content,
+
 }) => {
   return (
     <div className="bg-black text-white py-10 px-4 md:px-16">
-      <div>
-        <Title 
-          mainTitle={mainTitle} 
-          subTitle={subTitle} 
-          content={content} 
-        />
-      </div>
+    
 
       {/* Slider Section */}
       <Swiper
