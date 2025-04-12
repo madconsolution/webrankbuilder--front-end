@@ -2,6 +2,7 @@
 
 import ProductBanner from "@/app/reuseable/products/banner/page";
 import Expensive from "@/app/reuseable/products/expensive/page";
+import FeatureGrid from "@/app/reuseable/products/Feature-Grid/page";
 
 import FeatureHighlightSection from "@/app/reuseable/products/feature/page";
 
@@ -63,6 +64,40 @@ const sampleProducts = [
   { image: '/products/IRIS/Feature-slider/image-2.png' },
   { image: '/products/IRIS/Feature-slider/Background.png' },
 ];
+
+
+
+// Feature Grid 6 image start
+
+
+const features = [
+  {
+    image: '/products/Prism/feature/f1.png',
+  
+  },
+  {
+    image: '/products/Prism/feature/f2.png',
+ 
+  },
+  {
+    image: '/products/Prism/feature/f3.png',
+  
+  },
+  {
+    image: '/products/Prism/feature/f4.png',
+   
+  },
+  {
+    image: '/products/Prism/feature/f5.png',
+  
+  },
+  {
+    image: '/products/Prism/feature/f6.png',
+   
+  },
+];
+
+// Feature Grid 6 image end
 
 const specs: SpecItem[] = [
   {
@@ -132,41 +167,32 @@ const specs: SpecItem[] = [
   },
 ];
 
-const CuvoPage = () => {
+const CurvoPage = () => {
   return (
     <>
       <ProductBanner
-        bgImage="/products/Curvo/CURVO.png"
+        bgImage="/products/iris-banner.png"
         logo1="/logo.png"
-        logo2="/products/Shadow/Shadow-right-logo-banner.png"
+        logo2="/products/Curvo/CURVO.png"
         description={["ATX MID TOWER COMPUTER  CASE THAT HAVE GREAT DESIGN"]}
       />
    
+        {/* Section title is here */}
+     
+            <div className="text-xl text-[#FFFFFF]">
+               <Title
+                 mainTitle="TORTOX"
+                 subTitle="CURVO"
+                 content="The Tortox Prism versatile gaming pc case supports both ATX and Micro-ATX (M-ATX) motherboards, ensuring compatibility with a wide range of build requirements. Its sleek design features three tempered glass panels secured with an O-Screw snap joint design, allowing for easy installation and removal while showcasing your internal components. The case supports up to ten 120mm or nine 140mm fans, providing extensive cooling options to maintain low temperatures even during heavy use. It also boasts a convertible PCI slot design, enabling horizontal or vertical GPU mounting to enhance both aesthetics and airflow. A USB Type-C port is included for faster data transmission, adding modern connectivity options. To prevent GPU sagging, the case comes with a dedicated GPU stand. Superior heat dissipation is achieved through its excellent airflow design, ensuring optimal performance. Additionally, the case offers ample room for expansion, allowing for multiple storage drives, additional GPUs, and other components, making it ideal for both gaming and professional workstations."
+               />
+             </div>
 
-   <ProductOverview
-  products={products}
-  mainTitle="TORTOX"
-  subTitle="Curvo"
-  content="The most premium production gaming enclosure. Built from premium materials that are engineered with utmost care and attention to detail. A design based on continuous product improvement and innovation throughout . Discover the ultimate building experience. Shadow keeps an incredibly clean look that can be easily switched to different RGB patterns from the side control panel."
-/>
 
-
-      <FeatureHighlightSection
-        image="/products/feature-prof.png"
-        title="FUTURE-PROOF FRONT PANEL"
-        highlightText="Featuring a super-speed USB 3.1 port, RGB Lighting Control switch and additional connections for all modern peripherals."
-        position="right"
-      />
 
       <FeatureSlider slides={slides} />
 
-      <div className="text-xl text-[#FFFFFF]">
-        <Title
-          mainTitle="TORTOX"
-          subTitle="IRIS"
-          content="Featuring EATX / ATX / Micro ATX / Mini-ITX Supported Case with 2 SSD Drive Bays and additional connections for all modern peripherals."
-        />
-      </div>
+           {/* Feature-Grid 6-image */}
+           <FeatureGrid features={features} />
 
       {/* Join Group  */}
       <CallToActionBanner
@@ -175,61 +201,11 @@ const CuvoPage = () => {
   buttonHref="/community"
 />
 
-       {/* Feature showcase */}
-       <ProductFeatureShowcase
-  imageSrc="/products/IRIS/showcase/image-1.png"
- imageAlt="Remote and Fan Controller"
- title="High Performance"
- highlight="Spectre Fans Included"
- description={`Tortox IRIS comes preinstalled with 4x Tortox Dual loop fans for a more efficient cooling performance. The Included RGB fansare RGB center illuminated and can support multiple control standards like ASUS AURA SYNC, MSI MISTIC LIGHT SYNC, GIGABYTE RGB Fusion 2.0 and ASRock POLYCHROME RGB. This allows you to control the fan lighting simply through software and synchronize the fans, and other devices such as mice and keyboard for more attractive lighting.`}
-  noteLine1="8 Fan 2 LED strip Aura connection with Remote"
-  noteLine2="4x DUAL LOOP 120MM RGB RAINBOW FANS*"
- />
-
- {/* Feature Block */}
-  {/* <FeatureBlock
-  imageSrc="/products/IRIS/showcase/image-1.png"
-  imageAlt="Open Neon Case"   title="Thermal"
-   highlight="Expandability"
-   description={`To cool down the components, Grid Design on the front panel
-   has offered smooth intake. NEON supports up to two 140mm fans or a 280mm radiator in the front while a 120mm rear-fan
-   or radiator at the rear will push the hot air out. It also supports up
-   to 163mm high CPU air cooler.`}
-  note="Three Single Colour(Red) 33 LED Case Fans Pre-installed"
-   imageLeft={true} />
-
- <FeatureBlock
-    imageSrc="/products/IRIS/showcase/image-2.png"
-   imageAlt="Two NEON Cases"
-  title="Tool-free"
- highlight="modular storage design"
- description={`Both the included hard drive cages are modular and tool-free
-  giving the user the ability to configure the system to their needs. Apart from these hard drive cages which accommodate up to 2
-   HDDs, the NEON comes with three modular SSD brackets. Available in with or without RGB windowed side panel case, you can
-  choose the NEON that blends perfectly with your surroundings.`}
-  imageLeft={false}
-/> */}
-
-{/* Expensive */}
-
-<Expensive
-  bgImage="/products/Shadow/expensive/image.png"
-  title="Expansive Storage Space"
-  description="With the explosion of high-definition content, users are going to need a lot more storage to keep it all. Shadow offers no less than seven PCI Slot & two 3.5” HDD bays for massive storage capability. You can even install a 2.5” SSD on the case for lightning-fast boot times."
-/>
+ 
 
 
-       {/* Highlight slider  */}
-        <HighlightsSlider
-   title="Magnetic And Removable"
-   highlight="Built-In Dust Filters"
-  description="Your system should look good inside and out. Featuring a large removable and magnetic dust filter on the Top of case, along with dust filters for the power supply at the bottom. Shadow keeps dust where it belongs - outside your PC."
-  images={[
-     { src: '/products/IRIS/highlight/image-1.png', alt: 'Front Case' },
-    { src: '/products/IRIS/highlight/image-2.png', alt: 'Mesh Filter' },
-    { src: '/products/IRIS/highlight/image-3.png', alt: 'RGB Case' },
-   ]}
- />
+
+
           {/* Specifications */}
       <SpecificationSection specs={specs} imageSrc="/products/IRIS/specification/image.png" />
           {/* Products slider */}
@@ -238,4 +214,4 @@ const CuvoPage = () => {
   );
 };
 
-export default CuvoPage;
+export default CurvoPage;

@@ -10,7 +10,7 @@ type FeatureCardProps = {
 
 const FeatureCard = ({ image }: FeatureCardProps) => {
   return (
-    <div className=" rounded-2xl  grid grid-cols-1 md:grid-cols-3 items-center text-center w-[1440px] mx-auto h-auto shadow-md">
+    <div className=" rounded-2xl gap-4 grid grid-cols-1 md:grid-cols-3 items-center text-center w-[1440px] mx-auto h-auto shadow-md">
       <div className="relative w-[433px] h-[590px] mb-4 rounded-lg overflow-hidden">
         <Image src={image} alt={"not found"} fill className="" />
       </div>
