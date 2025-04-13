@@ -17,7 +17,7 @@ const TortoxShowcase: React.FC<TortoxShowcaseProps> = ({
   images,
 }) => {
   return (
-    <section className="w-full md:w-[1670px] bg-black text-white py-20  font-sans relative">
+    <section className="w-full md:w-[1440px] bg-black text-white py-20  font-sans relative">
       <div className="flex flex-col gap-16">
         {/* Top Left Text */}
         <div className="max-w-xl z-10">
@@ -38,7 +38,7 @@ const TortoxShowcase: React.FC<TortoxShowcaseProps> = ({
             {images.map((src, index) => (
               <div
                 key={index}
-                className="relative w-[140px] md:w-[280px] aspect-[3/4] hover:scale-105 transition-transform duration-300"
+                className="relative  md:w-[240px] aspect-[3/4] hover:scale-105 transition-transform duration-300"
               >
                 <Image
                   src={src}

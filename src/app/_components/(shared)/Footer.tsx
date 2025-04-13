@@ -6,7 +6,7 @@ import { FaFacebookF, FaInstagram } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="bg-black text-white py-8">
-      <div className="max-w-custom mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="max-w-custom w-full md:w-[1440px] mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Footer Menu */}
         <div>
           <h3 className=" mb-2">FOOTER MENU</h3>
@@ -59,7 +59,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-gray-700 mt-8 pt-4 flex flex-col md:flex-row justify-between items-center px-6 text-sm">
+      <div className="w-full md:w-[1440px] mx-auto border-t border-gray-700 mt-8 pt-4 flex flex-col md:flex-row justify-between items-center px-6 text-sm">
  <div className="flex gap-4">
  <Link href="/">
           <Image src="/logo/logo.png" alt="Logo" width={200} height={50} />

@@ -5,14 +5,17 @@ import "./globals.css";
 import NavBar from "./_components/(shared)/NavBar";
 import Footer from "./_components/(shared)/Footer";
 
+// Load fonts with CSS variable names
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -22,21 +25,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <div className="w-full ">
-          <NavBar />
-          <div className="">
-          {children}
-          </div>
-          <Footer />
-        </div>
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className="antialiased">
+        <NavBar />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

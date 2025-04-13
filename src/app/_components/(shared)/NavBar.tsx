@@ -19,7 +19,7 @@ const productCategories = [
       { name: "NOVA", slug: "nova" },
       { name: "MAGNUS", slug: "magnus" },
       { name: "NEON", slug: "neon" },
-      { name: "ALPHA", slug: "aplha" },
+      { name: "ALPHA", slug: "alpha" },
       { name: "SPECTRA", slug: "spectra" },
       { name: "ZION", slug: "zion" },
       { name: "PRISM", slug: "prism" },
@@ -30,47 +30,40 @@ const productCategories = [
   {
     title: "Cables",
     items: [
-      { name: "4K HDMI 2.0", slug: "4hdmi_cables" },
-      { name: "8K HDMI 2.1", slug: "4hdmi_cables" },
-      { name: "4K 8K DP TO DP", slug: "4hdmi_cables" },
-      { name: "4K Mini DP TO DP", slug: "4hdmi_cables" },
-      { name: "Mini DP TO HDMI", slug: "4hdmi_cables" },
-      { name: "PSU 6+2 Pin *2", slug: "4hdmi_cables" },
-      { name: "PSU 6+2 Pin *3", slug: "4hdmi_cables" },
-      { name: "CAT 6E Ethernet", slug: "4hdmi_cables" },
-      { name: "PSU 12+4", slug: "4hdmi_cables" },
-      { name: "PSU 24", slug: "4hdmi_cables" },
-    
+      { name: "4K HDMI 2.0", slug: "4k-hdmi-2" },
+      { name: "8K HDMI 2.1", slug: "8k-hdmi-2-1" },
+      { name: "4K 8K DP TO DP", slug: "dp-to-dp" },
+      { name: "4K Mini DP TO DP", slug: "mini-dp-to-dp" },
+      { name: "Mini DP TO HDMI", slug: "mini-dp-hdmi" },
+      { name: "PSU 6+2 Pin *2", slug: "psu-6-2-2" },
+      { name: "PSU 6+2 Pin *3", slug: "psu-6-2-3" },
+      { name: "CAT 6E Ethernet", slug: "cat6e-ethernet" },
+      { name: "PSU 12+4", slug: "psu-12-4" },
+      { name: "PSU 24", slug: "psu-24" },
     ],
   },
   {
     title: "Adapter",
     items: [
-      { name: "USB TYPE C TO HDMI", slug: "usb_c_hdmi" },
-      { name: "DP To HDMI", slug: "usb_c_hdmi" },
-      { name: "Mini DP To HDMI 4K", slug: "usb_c_hdmi" },
-      { name: "Mini DP To DP", slug: "usb_c_hdmi" }
-
-
+      { name: "USB TYPE C TO HDMI", slug: "usb-c-hdmi" },
+      { name: "DP To HDMI", slug: "dp-hdmi" },
+      { name: "Mini DP To HDMI 4K", slug: "mini-dp-hdmi-4k" },
+      { name: "Mini DP To DP", slug: "mini-dp-dp" },
     ],
   },
   {
     title: "Connector",
-    items: [
-      { name: "RJ45 CAT7 UTP NETWORK", slug: "rj45_cat7" },
-
-    ],
+    items: [{ name: "RJ45 CAT7 UTP NETWORK", slug: "rj45-cat7" }],
   },
   {
     title: "Case Fans",
     items: [
       { name: "LUNA", slug: "luna" },
-      { name: "NINJA X", slug: "ninja_x" },
-      { name: "NINJA X3", slug: "ninja_x" },
-      { name: "SPARK", slug: "ninja_x" },
-      { name: "SPARK X3", slug: "ninja_x" },
-      { name: "ARCUS", slug: "ninja_x" }
-
+      { name: "NINJA X", slug: "ninja-x" },
+      { name: "NINJA X3", slug: "ninja-x3" },
+      { name: "SPARK", slug: "spark" },
+      { name: "SPARK X3", slug: "spark-x3" },
+      { name: "ARCUS", slug: "arcus" },
     ],
   },
   {
@@ -78,23 +71,23 @@ const productCategories = [
     items: [
       { name: "BX 600", slug: "bx600" },
       { name: "BX 700", slug: "bx700" },
-      { name: "LX 700", slug: "bx700" },
+      { name: "LX 700", slug: "lx700" },
     ],
   },
   {
     title: "Liquid Cooler",
     items: [
-      { name: "LIQWI L120", slug: "liqwi_l120" },
-      { name: "LIQWI L240", slug: "liqwi_l240" },
+      { name: "LIQWI L120", slug: "liqwi-l120" },
+      { name: "LIQWI L240", slug: "liqwi-l240" },
     ],
   },
   {
     title: "Air Coolers",
-    items: [{ name: "AIR FREEZE 120", slug: "air_freeze_120" }],
+    items: [{ name: "AIR FREEZE 120", slug: "air-freeze-120" }],
   },
   {
     title: "Light Panels",
-    items: [{ name: "SMART LIGHT PANEL", slug: "smart_light_panel" }],
+    items: [{ name: "SMART LIGHT PANEL", slug: "smart-light-panel" }],
   },
   {
     title: "Gaming Chair",
@@ -122,25 +115,20 @@ export default function Navbar() {
 
   const navigation = [
     { name: "Home", href: "/" },
-    { name: "Products", href: "/products", hasArrow: true },
+    { name: "Products", href: "/products/iris", hasArrow: true },
     { name: "About Tortox", href: "/about" },
     { name: "Sales Network", href: "#" },
     { name: "Contact us", href: "/contact" },
   ];
 
   useEffect(() => {
-    const handleClickOutside = () => {
-      setMegaMenuVisible(false);
-      setHoveredItem(null);
+    const handleRouteChange = () => {
+      setMobileMegaOpen(false);
     };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
-
-  useEffect(() => {
     setMegaMenuVisible(false);
     setHoveredItem(null);
-    setMobileMegaOpen(false);
+    window.addEventListener("popstate", handleRouteChange);
+    return () => window.removeEventListener("popstate", handleRouteChange);
   }, [pathname]);
 
   return (
@@ -154,7 +142,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Nav */}
-          <ul className="hidden md:flex space-x-6 relative">
+          <ul className="hidden md:flex space-x-6">
             {navigation.map(({ name, href, hasArrow }) => {
               const isActive = pathname === href || pathname.startsWith(href);
 
@@ -168,6 +156,7 @@ export default function Navbar() {
 
               const handleMouseLeave = () => {
                 if (hasArrow) {
+                  if (hoverTimeout.current) clearTimeout(hoverTimeout.current);
                   hoverTimeout.current = setTimeout(() => {
                     setMegaMenuVisible(false);
                     setHoveredItem(null);
@@ -178,7 +167,7 @@ export default function Navbar() {
               return (
                 <li
                   key={name}
-                  className="relative"
+                  className=""
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                 >
@@ -207,24 +196,8 @@ export default function Navbar() {
           </ul>
         </div>
 
-        {/* Mobile */}
-        <div className="md:hidden mt-4">
-          <div className="border-b border-white w-full flex justify-center">
-            <div className="py-3">
-              <Link href="/">
-                <Image src="/logo/logo.png" alt="Logo" width={200} height={50} />
-              </Link>
-            </div>
-          </div>
-
-          <button onClick={toggleMenu} className="text-white text-2xl mt-4" aria-label="Toggle menu">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-
-          {/* Mobile overlay and menu */}
-          <div
+        {/* Mobile Nav */}
+        <div
             className={`fixed inset-0 bg-black/50 z-40 transition-opacity duration-300 ${
               isOpen ? "opacity-100 visible" : "opacity-0 invisible"
             }`}
@@ -298,7 +271,6 @@ export default function Navbar() {
               })}
             </ul>
           </div>
-        </div>
       </div>
     </nav>
   );

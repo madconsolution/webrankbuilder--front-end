@@ -1,18 +1,18 @@
 'use client';
 
 import ProductBanner from "@/app/reuseable/products/banner/page";
-import Expensive from "@/app/reuseable/products/expensive/page";
+
 import FeatureGrid from "@/app/reuseable/products/Feature-Grid/page";
 
-import FeatureHighlightSection from "@/app/reuseable/products/feature/page";
+
 
 import FeatureSlider from "@/app/reuseable/products/freature-slider/page";
-import HighlightsSlider from "@/app/reuseable/products/Highlights-silder/page";
+
 import CallToActionBanner from "@/app/reuseable/products/join-group/page";
 
-import ProductOverview from "@/app/reuseable/products/overview/page";
+
 import ProductSlider from "@/app/reuseable/products/product-slider/page";
-import ProductFeatureShowcase from "@/app/reuseable/products/Showcase/page";
+
 import SpecificationSection from "@/app/reuseable/products/specifications/page";
 import Title from "@/app/reuseable/products/title/page";
 

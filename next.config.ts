@@ -6,9 +6,10 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'www.gstatic.com',
-        pathname: '/recaptcha/api2/**',
+        protocol: "https",
+        hostname: "www.gstatic.com",
+        port: "", 
+        pathname: "/recaptcha/api2/**",
       },
     ],
   },

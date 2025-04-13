@@ -144,12 +144,16 @@ const specs: SpecItem[] = [
 const IrisPage = () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
-      <ProductBanner
-        bgImage="/products/iris-banner.png"
-        logo1="/logo.png"
-        logo2="/products/IRIS.png"
-        description={["ATX MID TOWER COMPUTER  CASE THAT HAVE GREAT DESIGN"]}
-      />
+   <ProductBanner
+      bgImage="/products/iris-banner.png"
+      logo1="/logo.png"
+      logo2="/products/IRIS.png"
+      description={[
+        'ATX MID TOWER COMPUTER',
+        'CASE',
+        'THAT HAVE GREAT DESIGN',
+      ]}
+    />
        {/* Here is first heading title */}
        <div className="text-xl text-[#FFFFFF]">
         <Title
