@@ -104,11 +104,13 @@ const productCategories = [
 
 export default function Navbar() {
   const pathname = usePathname();
-  const [isOpen, setIsOpen] = useState(false);
+
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
   const [megaMenuVisible, setMegaMenuVisible] = useState(false);
-  const [mobileMegaOpen, setMobileMegaOpen] = useState(false);
+
   const hoverTimeout = useRef<NodeJS.Timeout | null>(null);
+  const [isOpen, setIsOpen] = useState(false);
+  const [mobileMegaOpen, setMobileMegaOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
   const closeMenu = () => setIsOpen(false);
@@ -124,6 +126,7 @@ export default function Navbar() {
   useEffect(() => {
     const handleRouteChange = () => {
       setMobileMegaOpen(false);
+      
     };
     setMegaMenuVisible(false);
     setHoveredItem(null);
@@ -197,13 +200,31 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Nav */}
-        <div
+           {/* Mobile Nav */}
+        <div className="md:hidden mt-4">
+          <div className="border-b border-white w-full flex justify-center">
+            <div className="py-3">
+              <Link href="/">
+                <Image src="/logo/logo.png" alt="Logo" width={200} height={50} />
+              </Link>
+            </div>
+          </div>
+
+          <button onClick={toggleMenu} className="text-white text-2xl mt-4" aria-label="Toggle menu">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+
+          {/* Overlay */}
+          <div
             className={`fixed inset-0 bg-black/50 z-40 transition-opacity duration-300 ${
               isOpen ? "opacity-100 visible" : "opacity-0 invisible"
             }`}
             onClick={closeMenu}
           />
 
+          {/* Sidebar */}
           <div
             className={`fixed top-0 right-0 h-screen w-full bg-white text-[#333] shadow-lg p-6 z-50 transition-transform duration-500 ${
               isOpen ? "translate-x-0" : "translate-x-full"
@@ -238,24 +259,28 @@ export default function Navbar() {
                       </Link>
 
                       {hasArrow && (
-                        <button onClick={() => setMobileMegaOpen(!mobileMegaOpen)}>
+                        <button
+                          onClick={() => setMobileMegaOpen(!mobileMegaOpen)}
+                          className="text-xl"
+                          aria-label="Toggle sub menu"
+                        >
                           {mobileMegaOpen ? <MdKeyboardArrowDown /> : <MdKeyboardArrowRight />}
                         </button>
                       )}
                     </div>
 
                     {hasArrow && mobileMegaOpen && (
-                      <div className="bg-[#f9f9f9] px-6 pb-4">
-                        {productCategories.map((cat) => (
-                          <div key={cat.title} className="mb-4">
-                            <h4 className="font-semibold text-sm uppercase mb-2">{cat.title}</h4>
-                            <ul className="space-y-1 pl-2">
-                              {cat.items.map((item) => (
+                      <div className="bg-gray-100 px-6 py-2">
+                        {productCategories.map((category) => (
+                          <div key={category.title} className="mb-4">
+                            <h4 className="text-sm font-bold mb-1">{category.title}</h4>
+                            <ul className="text-sm space-y-1">
+                              {category.items.map((item) => (
                                 <li key={item.slug}>
                                   <Link
                                     href={`/products/${item.slug}`}
                                     onClick={closeMenu}
-                                    className="text-sm text-blue-700 hover:underline"
+                                    className="block hover:text-blue-600"
                                   >
                                     {item.name}
                                   </Link>
@@ -271,6 +296,9 @@ export default function Navbar() {
               })}
             </ul>
           </div>
+        </div>
+       
+    
       </div>
     </nav>
   );
