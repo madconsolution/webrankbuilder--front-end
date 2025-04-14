@@ -1,9 +1,19 @@
 'use client';
 
 import CablesBanner from "@/app/reuseable/cables/banner/page";
+import SpecificationSection from "@/app/reuseable/cables/Specification/page";
+import CallToActionBanner from "@/app/reuseable/products/join-group/page";
 import Title from "@/app/reuseable/products/title/page";
 
-
+// Here is specification date
+const specs = [
+    { label: 'Model', value: 'USB C To HDMI' },
+    { label: 'Built In Conversion Chip', value: 'Yes' },
+    { label: 'PVC Jackets', value: 'Yes' },
+    { label: 'Shell Type', value: 'Aluminium' },
+    { label: 'Max Resolution', value: '4k@60Hz' },
+    { label: 'Compatibility', value: 'Smartphone, TV, Projector' },
+  ];
 
 const IrisPage = () => {
   return (
@@ -28,7 +38,16 @@ const IrisPage = () => {
              />
               </ div>
       
+        {/* Specification section */}
 
+        <SpecificationSection specifications={specs} />
+           
+          {/* Join Group  */}
+      <CallToActionBanner
+  text="Over 1000's of gamers already using our products."
+  buttonLabel="Join Our Group"
+  buttonHref="/community"
+/>
 
     </ div>
   );

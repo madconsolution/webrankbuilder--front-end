@@ -185,16 +185,6 @@ const IrisPage = () => {
   buttonHref="/community"
 />
 
-       {/* Feature showcase */}
-       {/* <ProductFeatureShowcase
-  imageSrc="/products/IRIS/showcase/image.png"
- imageAlt="Remote and Fan Controller"
- title="High Performance"
- highlight="Spectre Fans Included"
- description={`Tortox IRIS comes preinstalled with 4x Tortox Dual loop fans for a more efficient cooling performance. The Included RGB fansare RGB center illuminated and can support multiple control standards like ASUS AURA SYNC, MSI MISTIC LIGHT SYNC, GIGABYTE RGB Fusion 2.0 and ASRock POLYCHROME RGB. This allows you to control the fan lighting simply through software and synchronize the fans, and other devices such as mice and keyboard for more attractive lighting.`}
-  noteLine1="8 Fan 2 LED strip Aura connection with Remote"
-  noteLine2="4x DUAL LOOP 120MM RGB RAINBOW FANS*"
- /> */}
 
  {/* Feature Block */}
   <FeatureBlock
