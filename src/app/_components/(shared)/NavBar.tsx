@@ -30,7 +30,7 @@ const productCategories = [
   {
     title: "Cables",
     items: [
-      { name: "4K HDMI 2.0", slug: "4k-hdmi-2" },
+      { name: "4K HDMI 2.0", slug: "4hdmi_cables" },
       { name: "8K HDMI 2.1", slug: "8k-hdmi-2-1" },
       { name: "4K 8K DP TO DP", slug: "dp-to-dp" },
       { name: "4K Mini DP TO DP", slug: "mini-dp-to-dp" },
