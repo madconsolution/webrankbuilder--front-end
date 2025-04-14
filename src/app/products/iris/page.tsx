@@ -7,8 +7,8 @@ import FeatureHighlightSection from "@/app/reuseable/products/feature/page";
 import FeatureSlider from "@/app/reuseable/products/freature-slider/page";
 import HighlightsSlider from "@/app/reuseable/products/Highlights-silder/page";
 import CallToActionBanner from "@/app/reuseable/products/join-group/page";
+import AutoSlider from "@/app/reuseable/products/overview/page";
 
-import ProductOverview from "@/app/reuseable/products/overview/page";
 import ProductSlider from "@/app/reuseable/products/product-slider/page";
 
 import SpecificationSection from "@/app/reuseable/products/specifications/page";
@@ -24,23 +24,14 @@ const products = [
   {
     title: "3D Reflection front panel with Elegant honeycomb design",
     description: "A sleek and stylish design for maximum airflow and performance.",
-    image: "/category-1.png",
+    image: "/products/IRIS/Auto-Slider/image-1.png",
   },
   {
     title: "Four 120mm Tortox Dual loop Case fans, Aura Controller & Remote",
     description: "Optimized for cooling with customizable lighting effects.",
-    image: "/category-1.png",
+    image: "/products/IRIS/Auto-Slider/image-2.png",
   },
-  {
-    title: "3D Reflection front panel with Elegant honeycomb design",
-    description: "A sleek and stylish design for maximum airflow and performance.",
-    image: "/category-1.png",
-  },
-  {
-    title: "Four 120mm Tortox Dual loop Case fans, Aura Controller & Remote",
-    description: "Optimized for cooling with customizable lighting effects.",
-    image: "/category-1.png",
-  },
+
 ];
 
 const slides = [
@@ -163,7 +154,7 @@ const IrisPage = () => {
         />
       </div>
 
-   <ProductOverview
+   <AutoSlider
   products={products}
   mainTitle="TORTOX"
   subTitle="IRIS"

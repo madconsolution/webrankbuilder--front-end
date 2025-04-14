@@ -21,19 +21,19 @@ type SpecItem = {
   items: string[];
 };
 
+// Here is auto-slider data
 const products = [
   {
-    title: "3D Reflection front panel with Elegant honeycomb design",
-    description: "A sleek and stylish design for maximum airflow and performance.",
-    image: "/category-1.png",
+    title: "Accommodate up to 2 HDDs and three modular SSD.",
+    description: "",
+    image: "/products/Magnus/Auto-Slider/image-1.png",
   },
   {
-    title: "Four 120mm Tortox Dual loop Case fans, Aura Controller & Remote",
-    description: "Optimized for cooling with customizable lighting effects.",
-    image: "/category-1.png",
+    title: "Optional window side panel.",
+    description: "",
+    image: "/products/Magnus/Auto-Slider/image-2.png",
   },
 ];
-
 const slides = [
   {
     title: 'Up to',

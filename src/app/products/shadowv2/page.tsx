@@ -9,8 +9,7 @@ import FeatureHighlightSection from "@/app/reuseable/products/feature/page";
 import FeatureSlider from "@/app/reuseable/products/freature-slider/page";
 import HighlightsSlider from "@/app/reuseable/products/Highlights-silder/page";
 import CallToActionBanner from "@/app/reuseable/products/join-group/page";
-
-import ProductOverview from "@/app/reuseable/products/overview/page";
+import AutoSlider from "@/app/reuseable/products/overview/page";
 import ProductSlider from "@/app/reuseable/products/product-slider/page";
 import ProductFeatureShowcase from "@/app/reuseable/products/Showcase/page";
 import SpecificationSection from "@/app/reuseable/products/specifications/page";
@@ -22,16 +21,17 @@ type SpecItem = {
   items: string[];
 };
 
+// Here is auto-slider data
 const products = [
   {
-    title: "3D Reflection front panel with Elegant honeycomb design",
-    description: "A sleek and stylish design for maximum airflow and performance.",
-    image: "/category-1.png",
+    title: "Front and Left side Transparent Tempered Glass Built",
+    description: "",
+    image: "/products/Shadow/Auto-Slider/image-1.png",
   },
   {
-    title: "Four 120mm Tortox Dual loop Case fans, Aura Controller & Remote",
-    description: "Optimized for cooling with customizable lighting effects.",
-    image: "/category-1.png",
+    title: "Three 120mm RGB Fans and Controller.",
+    description: "",
+    image: "/products/Shadow/Auto-Slider/image-2.png",
   },
 ];
 
@@ -144,7 +144,7 @@ const Shadowv2Page = () => {
       />
    
 
-   <ProductOverview
+   <AutoSlider
   products={products}
   mainTitle="TORTOX"
   subTitle="SHADOW"

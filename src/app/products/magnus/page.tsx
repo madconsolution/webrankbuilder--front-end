@@ -21,16 +21,17 @@ type SpecItem = {
   items: string[];
 };
 
+// Here is auto-slider data
 const products = [
   {
-    title: "3D Reflection front panel with Elegant honeycomb design",
-    description: "A sleek and stylish design for maximum airflow and performance.",
-    image: "/category-1.png",
+    title: "Two USB 3.0 for high-speed connections.",
+    description: "",
+    image: "/products/Magnus/Auto-Slider/image-1.png",
   },
   {
-    title: "Four 120mm Tortox Dual loop Case fans, Aura Controller & Remote",
-    description: "Optimized for cooling with customizable lighting effects.",
-    image: "/category-1.png",
+    title: "Three Tortox Raindow 120mm Fans.",
+    description: "",
+    image: "/products/Magnus/Auto-Slider/image-2.png",
   },
 ];
 

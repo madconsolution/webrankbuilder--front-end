@@ -4,11 +4,8 @@ import ProductBanner from "@/app/reuseable/products/banner/page";
 
 import FeatureGrid from "@/app/reuseable/products/Feature-Grid/page";
 
-
-
-import FeatureSlider from "@/app/reuseable/products/freature-slider/page";
-
 import CallToActionBanner from "@/app/reuseable/products/join-group/page";
+import AutoSlider from "@/app/reuseable/products/overview/page";
 
 
 import ProductSlider from "@/app/reuseable/products/product-slider/page";
@@ -22,30 +19,40 @@ type SpecItem = {
   items: string[];
 };
 
-
-const slides = [
+// Here is auto-slider data
+const products = [
   {
-    title: 'Up to',
-    highlight: 'EATX support',
-    description:
-      'Tortox IRIS supports up to EATX motherboards while having plenty of room for high end water-cooling builds. At the back of the motherboard tray, leaves plenty of room for cables management to support high end components and PSUs.',
-    image: '/products/Prism/slider/image-2.png',
+    title: "Semi Curved Tempered Glass Design.",
+    description: "",
+    image: "/products/Vidrio/Auto-Slider/image-1.png",
   },
   {
-    title: 'Tempered Glass',
-    highlight: 'Side Panels',
-    description:
-      'Tortox IRIS features high-quality tempered glass side panel to showcase the beautiful components. IRIS comes with high quality temper glass side panels is crystal clear to showcase the hardware while the other is 100% dark tinted to hide the cables behind motherboard tray.',
-    image: '/products/Prism/slider/image-1.png',
+    title: "Supports ATX, M-ATX, and Mini-ITX motherboards.",
+    description: "",
+    image: "/products/Vidrio/Auto-Slider/image-2.png",
   },
   {
-    title: '',
-    highlight: '',
-    description:
-      '',
-    image: '/products/IRIS/Feature-slider/Background.png',
+    title: "Semi Curved Tempered Glass Design.",
+    description: "",
+    image: "/products/Prism/Auto-Slider/image-1.png",
+  },
+  {
+    title: "Supports ATX, M-ATX, and Mini-ITX motherboards.",
+    description: "",
+    image: "/products/Prism/Auto-Slider/image-2.png",
+  },
+  {
+    title: "Semi Curved Tempered Glass Design.",
+    description: "",
+    image: "/products/Curvo/Auto-Slider/image-1.png",
+  },
+  {
+    title: "Supports ATX, M-ATX, and Mini-ITX motherboards.",
+    description: "",
+    image: "/products/Curvo/Auto-Slider/image-2.png",
   },
 ];
+
 
 const sampleProducts = [
   { image: '/products/IRIS/Feature-slider/image-1.png' },
@@ -176,8 +183,15 @@ const VidrioPage = () => {
              </div>
 
 
+       
+                {/* Here is auto slider section */}
+   <AutoSlider
+  products={products}
+  mainTitle="TORTOX"
+  subTitle="NOVA"
+  content="The most premium production gaming enclosure. Built from premium materials that are engineered with utmost care and attention to detail. A design based on continuous product improvement and innovation throughout . Discover the ultimate building experience. Shadow keeps an incredibly clean look that can be easily switched to different RGB patterns from the side control panel."
+/>
 
-      <FeatureSlider slides={slides} />
 
            {/* Feature-Grid 6-image */}
            <FeatureGrid features={features} />

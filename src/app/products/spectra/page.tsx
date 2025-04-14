@@ -21,18 +21,21 @@ type SpecItem = {
   items: string[];
 };
 
+
+// Here is auto-slider data
 const products = [
   {
-    title: "3D Reflection front panel with Elegant honeycomb design",
-    description: "A sleek and stylish design for maximum airflow and performance.",
-    image: "/category-1.png",
+    title: "Elegant mid-tower Blue LED designed front panel with an incredibly full-size interior.",
+    description: "",
+    image: "/products/Spectra/Auto-Slider/image-1.png",
   },
   {
-    title: "Four 120mm Tortox Dual loop Case fans, Aura Controller & Remote",
-    description: "Optimized for cooling with customizable lighting effects.",
-    image: "/category-1.png",
+    title: "Supports ATX, microATX, and mini-ITX motherboards and extra-long GPUs and PSUs.",
+    description: "",
+    image: "/products/Spectra/Auto-Slider/image-2.png",
   },
 ];
+
 
 const slides = [
   {

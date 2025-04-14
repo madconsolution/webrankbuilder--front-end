@@ -1,11 +1,10 @@
 'use client';
 
-import React, { useRef, useEffect } from "react";
-import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
+import React, { useState } from 'react';
+import Image from 'next/image';
+import { useKeenSlider } from 'keen-slider/react';
+import 'keen-slider/keen-slider.min.css';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface Product {
   title: string;
@@ -13,91 +12,99 @@ interface Product {
   image: string;
 }
 
-interface ProductOverviewProps {
+interface AutoSliderProps {
   products: Product[];
   mainTitle: string;
   subTitle: string;
   content: string;
 }
 
-const ProductOverview: React.FC<ProductOverviewProps> = ({
-  products,
-}) => {
-  const paginationRef = useRef<HTMLDivElement | null>(null);
+const AutoSlider: React.FC<AutoSliderProps> = ({ products }) => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
+    loop: true,
+    slides: {
+      perView: 1,
+      spacing: 20,
+    },
+    breakpoints: {
+      '(min-width: 768px)': {
+        slides: { perView: 2, spacing: 20 },
+      },
+    },
+    slideChanged(slider) {
+      setCurrentSlide(slider.track.details.rel);
+    },
+    created(slider) {
+      setCurrentSlide(slider.track.details.rel);
+    },
+  });
 
-  useEffect(() => {
-    // force re-render if needed
-  }, []);
+  const handlePrev = () => {
+    instanceRef.current?.prev();
+  };
+
+  const handleNext = () => {
+    instanceRef.current?.next();
+  };
 
   return (
     <div className="bg-black text-white py-10 px-4 md:px-16">
-      <Swiper
-        modules={[Pagination, Autoplay]}
-        pagination={{
-          clickable: true,
-          el: paginationRef.current!,
-        }}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-        }}
-        spaceBetween={20}
-        slidesPerView={1}
-        breakpoints={{
-          640: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-        }}
-        onSwiper={(swiper) => {
-          if (swiper.params.pagination && typeof swiper.params.pagination !== 'boolean') {
-            swiper.params.pagination.el = paginationRef.current!;
-            swiper.pagination.init();
-            swiper.pagination.render();
-            swiper.pagination.update();
-          }
-        }}
-      >
+      {/* Slider */}
+      <div ref={sliderRef} className="keen-slider">
         {products.map((product, index) => (
-          <SwiperSlide key={index}>
+          <div className="keen-slider__slide" key={index}>
             <div className="bg-[#111] rounded-lg p-4 flex flex-col items-center text-center h-full shadow-md">
               <p className="text-sm mb-4 max-w-xs">{product.title}</p>
               <Image
                 src={product.image}
                 alt={product.title}
-                width={300}
-                height={300}
+                width={548}
+                height={548}
                 className="object-contain"
               />
             </div>
-          </SwiperSlide>
+          </div>
         ))}
-      </Swiper>
-
-      {/* Pagination Bullets inside a Pill Background */}
-      <div className="flex w-28 mx-auto  justify-center mt-6">
-        <div
-          ref={paginationRef}
-          className="flex items-center gap-2 px-8 py-3 rounded-full bg-[#2b2b2b]"
-        />
       </div>
 
-      {/* Style the bullets to match the image */}
-      <style jsx global>{`
-        .swiper-pagination-bullet {
-          width: 8px;
-          height: 8px;
-          background-color: #888;
-          border-radius: 9999px;
-          opacity: 1;
-          transition: all 0.3s ease;
-        }
+      {/* Bullets + Arrows Container */}
 
-        .swiper-pagination-bullet-active {
-          width: 24px;
-          background-color: #fff;
-        }
-      `}</style>
+   {/* Bullets + Arrows Container */}
+<div className="relative mt-6 flex justify-center">
+  {/* Bullets */}
+  <div className="flex items-center bg-[#2b2b2b] px-4 py-3 rounded-full">
+    {products.map((_, idx) => (
+      <button
+        key={idx}
+        onClick={() => instanceRef.current?.moveToIdx(idx)}
+        className={`mx-1 h-2 rounded-full transition-all duration-300 ${
+          currentSlide === idx ? 'bg-white w-6' : 'bg-gray-500 w-2'
+        }`}
+      />
+    ))}
+  </div>
+
+  {/* Arrows (positioned to the right side of the parent) */}
+  <div className="absolute right-2 top-1/2 -translate-y-1/2 flex items-center gap-2">
+    <button
+      onClick={handlePrev}
+      className="w-8 h-8 flex items-center justify-center bg-[#2b2b2b] rounded-full hover:bg-white hover:text-black transition"
+    >
+      <ChevronLeft size={20} />
+    </button>
+    <button
+      onClick={handleNext}
+      className="w-8 h-8 flex items-center justify-center bg-[#2b2b2b] rounded-full hover:bg-white hover:text-black transition"
+    >
+      <ChevronRight size={20} />
+    </button>
+  </div>
+</div>
+
     </div>
+    
   );
 };
 
-export default ProductOverview;
+export default AutoSlider;

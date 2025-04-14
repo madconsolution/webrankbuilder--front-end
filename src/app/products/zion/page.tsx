@@ -21,18 +21,21 @@ type SpecItem = {
   items: string[];
 };
 
+
+// Here is auto-slider data
 const products = [
   {
-    title: "3D Reflection front panel with Elegant honeycomb design",
-    description: "A sleek and stylish design for maximum airflow and performance.",
-    image: "/category-1.png",
+    title: "Effective cooling",
+    description: "",
+    image: "/products/Zion/Auto-Slider/image-1.png",
   },
   {
-    title: "Four 120mm Tortox Dual loop Case fans, Aura Controller & Remote",
-    description: "Optimized for cooling with customizable lighting effects.",
-    image: "/category-1.png",
+    title: "More Expandability.",
+    description: "",
+    image: "/products/Zion/Auto-Slider/image-2.png",
   },
 ];
+
 
 const slides = [
   {
