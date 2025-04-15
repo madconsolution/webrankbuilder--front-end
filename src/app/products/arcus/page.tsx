@@ -17,15 +17,15 @@ const specs = [
   ];
 
 
-const ninja_x_page = () => {
+const acrus_page = () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
    <CaseBanner
-      bgImage="/case/Ninja-x3/banner.png"
+      bgImage="/case/Arcus/banner.png"
       logo1="/logo.png"
-      logo2="/case/Ninja-x/ninja-x.png"
+      logo2="/case/Arcus/ARCUS.png"
       description={[
-        'Beautiful LED Cooling System',
+        'RGB LED LIGHTING FAN',
   
         'Crafted For The Dynamic Game Players',
       ]}
@@ -35,8 +35,8 @@ const ninja_x_page = () => {
             <div className="text-xl text-[#FFFFFF]">
              <Title
                mainTitle="TORTOX"
-               subTitle="Ninja x"
-               content="The original Ninja was well known for being one of the best heatsink around. It has a special designed to give your build awesome LED visual effect just by a 3-button controller, which allow you adjust effect speed and mode , the only limitation is your imagination. The LED ring and fan blade are sharp made also add points on the install effect."
+               subTitle="arcus"
+               content="Tortox ARCUS dynamically adjust fan speed between 800 RPM to 2,000 RPM with a 120mm TORTOX PWM fan, making it easy to minimize noise or maximize airflow. Unified luminous effect of water block and fan, forming a beautiful color."
              />
               </ div>
  
@@ -54,4 +54,4 @@ const ninja_x_page = () => {
   );
 };
 
-export default ninja_x_page;
+export default acrus_page;
