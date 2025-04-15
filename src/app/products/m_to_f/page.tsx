@@ -35,11 +35,11 @@ const specs = [
       ],
     },
   ];
-const c_to_hdmi_page= () => {
+const m_to_f_page= () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
    <CablesBanner
-      bgImage="/adapter/c_to_hdmi/banner.png"
+      bgImage="/adapter/m_to_f/banner.png"
       logo1="/logo.png"
       logo2="/products/IRIS.png"
       description={[
@@ -53,8 +53,8 @@ const c_to_hdmi_page= () => {
             <div className="text-xl text-[#FFFFFF]">
              <Title
                mainTitle="TORTOX"
-               subTitle="USB TYPE C TO HDMI"
-               content="The Tortox USB C Adapter is designed to provide a high-resolution visual experience, delivering stunning 4K quality with a reliable and smooth viewing performance. It offers seamless streaming compatibility, allowing users to connect their smartphones equipped with USB C ports, TVs, projectors, or monitors with HDMI ports. This enables the direct streaming of movies, sports events, and gaming. The adapter is not only portable and lightweight but also user-friendly. It features a reinforced joint for added durability and an aluminum casing to manage heat effectively. With its plug-and-play functionality, no additional drivers are required—simply connect and enjoy high-resolution visuals instantly. This adapter is ideal for movie enthusiasts, sports fans, and binge-watchers of Netflix and Amazon Prime. It is also perfect for professionals who need to cast presentations onto projectors during meetings."
+               subTitle="DP DISPLAY PORT MALE TO HDMI FEMALE 4K CABLE CONVERTER ADAPTER"
+               content="The Tortox DP to HDMI adapter is designed to transmit high-quality video and audio from computers or tablets to monitor displays, supporting a 20-pin DisplayPort interface and providing a video bandwidth of up to 10.8Gbps. This makes it capable of handling video resolutions up to 4K at 30Hz and 1080p (Full HD), allowing users to enjoy high-quality visuals. Its universal adaptability means it can be connected to TVs, monitors, and desktops, making it highly versatile. Constructed from premium materials, the adapter is durable and resistant to corrosion, ensuring rigidity and improved signal performance. The built-in conversion chip eliminates the need for an external power supply, enhancing its ease of use. Tortox combines innovative design and aesthetics with optimal functionality, ensuring better performance and output."
              />
               </ div>
         {/* Resolution section */}
@@ -73,4 +73,4 @@ const c_to_hdmi_page= () => {
   );
 };
 
-export default c_to_hdmi_page;
+export default m_to_f_page;
