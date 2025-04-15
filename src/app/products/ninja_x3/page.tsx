@@ -17,13 +17,13 @@ const specs = [
   ];
 
 
-const ninja_x_page = () => {
+const ninja_x3_page = () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
    <CaseBanner
-      bgImage="/case/Ninja-x3/banner.png"
+      bgImage="/case/Ninja-x/banner.png"
       logo1="/logo.png"
-      logo2="/case/Ninja-x3/ninja-x3.png"
+      logo2="/case/Ninja-x/ninja-x.png"
       description={[
         'Beautiful LED Cooling System',
   
@@ -35,8 +35,8 @@ const ninja_x_page = () => {
             <div className="text-xl text-[#FFFFFF]">
              <Title
                mainTitle="TORTOX"
-               subTitle="Ninja x3"
-               content="The original Ninja was well known for being one of the best heatsink around. It has a special designed to give your build awesome LED visual effect just by a 3-button controller, which allow you adjust effect speed and mode , the only limitation is your imagination. The LED ring and fan blade are sharp made also add points on the install effect."
+               subTitle="Ninja"
+               content="The original Ninja was well known for being one of the best heatsink around. The fan is a beautiful LED cooling system with various RGB color effect. You can adjust the awesome LED visual effect and color with the controller. The LED ring and fan blade are sharp made also add points on the install effect."
              />
               </ div>
  
@@ -54,4 +54,4 @@ const ninja_x_page = () => {
   );
 };
 
-export default ninja_x_page;
+export default ninja_x3_page;
