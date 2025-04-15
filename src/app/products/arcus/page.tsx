@@ -35,7 +35,7 @@ const ninja_x_page = () => {
             <div className="text-xl text-[#FFFFFF]">
              <Title
                mainTitle="TORTOX"
-               subTitle="Ninja"
+               subTitle="Ninja x"
                content="The original Ninja was well known for being one of the best heatsink around. It has a special designed to give your build awesome LED visual effect just by a 3-button controller, which allow you adjust effect speed and mode , the only limitation is your imagination. The LED ring and fan blade are sharp made also add points on the install effect."
              />
               </ div>
