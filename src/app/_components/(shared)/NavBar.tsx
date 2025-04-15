@@ -45,10 +45,10 @@ const productCategories = [
   {
     title: "Adapter",
     items: [
-      { name: "USB TYPE C TO HDMI", slug: "usb-c-hdmi" },
-      { name: "DP To HDMI", slug: "dp-hdmi" },
-      { name: "Mini DP To HDMI 4K", slug: "mini-dp-hdmi-4k" },
-      { name: "Mini DP To DP", slug: "mini-dp-dp" },
+      { name: "USB TYPE C TO HDMI", slug: "c_to_hdmi" },
+      { name: "DP To HDMI", slug: "m_to_f" },
+      { name: "Mini DP To HDMI 4K", slug: "m_to_f2" },
+      { name: "Mini DP To DP", slug: "mini_dp_to_dp" },
     ],
   },
   {

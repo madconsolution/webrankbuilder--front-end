@@ -46,9 +46,9 @@ const dp48_cables_page = () => {
       logo1="/logo.png"
       logo2="/products/IRIS.png"
       description={[
-        'ATX MID TOWER COMPUTER',
-        'CASE',
-        'THAT HAVE GREAT DESIGN',
+        'Engineered for Durability ',
+        '',
+        'Stuffed with Features',
       ]}
     />
      

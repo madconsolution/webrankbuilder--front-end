@@ -46,9 +46,9 @@ const psu3_page = () => {
       logo1="/logo.png"
       logo2="/products/IRIS.png"
       description={[
-        'ATX MID TOWER COMPUTER',
-        'CASE',
-        'THAT HAVE GREAT DESIGN',
+        'Engineered for Durability ',
+        '',
+        'Stuffed with Features',
       ]}
     />
      
@@ -56,7 +56,7 @@ const psu3_page = () => {
             <div className="text-xl text-[#FFFFFF]">
              <Title
                mainTitle="TORTOX"
-               subTitle=" PSU 6+2 PIN * 2 ARGB EXTENSION CABLES"
+               subTitle=" PSU 6+2 PIN * 3 ARGB EXTENSION CABLES"
                content="The Tortox PSU ARGB Extension Cables are a premium choice for PC builders looking to combine functionality with eye-catching aesthetics. Featuring a dual 6+2 Pin2 configuration, these cables are compatible with a wide range of power supply units, ensuring reliable power distribution. The integrated ARGB illumination syncs seamlessly with 5V 3-pin connectors, allowing for synchronized and dynamic RGB lighting across your build. Made from high-quality silicone, these cables offer exceptional durability and flexibility, simplifying cable management and ensuring long-lasting performance. With 100 LED beads embedded within, the cables provide vibrant and even lighting, adding customizable visual effects to your system. The expandable TPE material enhances flexibility, making installation straightforward and ensuring a clean, organized interior. Additionally, the special protective coating on the cable's resists wear and tear, preserving their aesthetic appeal over time. Available in various configurations, including 6+2 Pin2, 6+2 Pin3, 12+4 PCI-E 5.0 12VHPWR Pin to 83 PCI-E Pin, and 24 Pin, these cables are designed to meet the needs of any PC build."
              />
               </ div>
