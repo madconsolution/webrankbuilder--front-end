@@ -35,7 +35,7 @@ const specs = [
       ],
     },
   ];
-const luna_page = () => {
+const ninja_x_page = () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
    <CablesBanner
@@ -72,4 +72,4 @@ const luna_page = () => {
   );
 };
 
-export default luna_page;
+export default ninja_x_page;
