@@ -41,7 +41,7 @@ const luna_page = () => {
    <CablesBanner
       bgImage="/case/luna/banner.png"
       logo1="/logo.png"
-      logo2=""
+      logo2="/logo.png"
       description={[
         'Engineered for Durability ',
         '',

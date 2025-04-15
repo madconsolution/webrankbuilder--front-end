@@ -59,10 +59,10 @@ const productCategories = [
     title: "Case Fans",
     items: [
       { name: "LUNA", slug: "luna" },
-      { name: "NINJA X", slug: "ninja-x" },
-      { name: "NINJA X3", slug: "ninja-x3" },
+      { name: "NINJA X", slug: "ninja_x" },
+      { name: "NINJA X3", slug: "ninja_x3" },
       { name: "SPARK", slug: "spark" },
-      { name: "SPARK X3", slug: "spark-x3" },
+      { name: "SPARK X3", slug: "spark_x3" },
       { name: "ARCUS", slug: "arcus" },
     ],
   },
