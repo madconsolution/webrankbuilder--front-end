@@ -35,11 +35,11 @@ const specs = [
       ],
     },
   ];
-const m_to_f_page = () => {
+const mini_dp_to__page= () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
    <CablesBanner
-      bgImage="/adapter/m_to_f/banner.png"
+      bgImage="/adapter/mini_dp_to_dp/banner.png"
       logo1="/logo.png"
       logo2="/products/IRIS.png"
       description={[
@@ -53,8 +53,8 @@ const m_to_f_page = () => {
             <div className="text-xl text-[#FFFFFF]">
              <Title
                mainTitle="TORTOX"
-               subTitle="DP DISPLAY PORT MALE TO HDMI FEMALE 4K CABLE CONVERTER ADAPTER"
-               content="The Tortox DP to HDMI adapter is designed to transmit high-quality video and audio from computers or tablets to monitor displays, supporting a 20-pin DisplayPort interface and providing a video bandwidth of up to 10.8Gbps. This makes it capable of handling video resolutions up to 4K at 30Hz and 1080p (Full HD), allowing users to enjoy high-quality visuals. Its universal adaptability means it can be connected to TVs, monitors, and desktops, making it highly versatile. Constructed from premium materials, the adapter is durable and resistant to corrosion, ensuring rigidity and improved signal performance. The built-in conversion chip eliminates the need for an external power supply, enhancing its ease of use. Tortox combines innovative design and aesthetics with optimal functionality, ensuring better performance and output."
+               subTitle="MINI DP TO DP ADAPTER CABLE 4K@60Hz"
+               content="The Tortox Mini DP to DP Adapter Cable is designed to support 4K resolution at 60Hz, providing high-quality visuals and fast data transmission. Compliant with the DP1.2 standard, this adapter can handle speeds up to 21.6Gbps, enabling smooth playback and a high-definition 3D experience for both gaming and movie watching. Its versatility includes two modes: mirror mode for sharing content and presentations, and extension mode for multitasking across a larger screen. The adapter's anti-loosing design ensures a secure and stable connection, with a gold-plated interface that enhances durability. It's widely compatible with various devices, including desktops, laptops, MacBooks, displays, and projectors, making it a practical choice for both work and entertainment."
              />
               </ div>
         {/* Resolution section */}
@@ -73,4 +73,4 @@ const m_to_f_page = () => {
   );
 };
 
-export default m_to_f_page;
+export default mini_dp_to__page;
