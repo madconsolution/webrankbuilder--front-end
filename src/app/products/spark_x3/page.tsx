@@ -15,15 +15,15 @@ const specs = [
   { label: "Compatibility", value: "Smartphone, TV, Projector" },
 ];
 
-const ninja_x3_page = () => {
+const spark_page = () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
       <CaseBanner
-        bgImage="/case/Ninja-x/banner.png"
+        bgImage="/case/Spark-x3/banner.png"
         logo1="/logo.png"
-        logo2="/case/Ninja-x/ninja-x.png"
+        logo2="/case/Spark-x3/spark-x3.png"
         description={[
-          "Beautiful LED Cooling System",
+          "RGB LED LIGHTING FAN",
 
           "Crafted For The Dynamic Game Players",
         ]}
@@ -33,8 +33,9 @@ const ninja_x3_page = () => {
       <div className="text-xl text-[#FFFFFF]">
         <Title
           mainTitle="TORTOX"
-          subTitle="Ninja"
-          content="The original Ninja was well known for being one of the best heatsink around. The fan is a beautiful LED cooling system with various RGB color effect. You can adjust the awesome LED visual effect and color with the controller. The LED ring and fan blade are sharp made also add points on the install effect."
+          subTitle="spark x3"
+          content="SPARK X3 is the excellent RGB fan to create the right light and colour composition for your system
+SPARK X3 fan applies exclusive TORTOX LED LIGHTING Technology to deliver incredibly bright and even RGB lighting. With the patented Twister Bearing technology, the Spark X3 fan can not only provide beautiful lighting effects, but also offer superior silent performance. Spark X3 can be used as a standalone product with the included RGB controller or can be synchronised with supported RGB motherboards from Asus, MSI and Gigabyte."
         />
       </div>
 
@@ -51,4 +52,4 @@ const ninja_x3_page = () => {
   );
 };
 
-export default ninja_x3_page;
+export default spark_page;
