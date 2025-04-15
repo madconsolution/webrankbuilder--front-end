@@ -42,7 +42,7 @@ const psu4_page = () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
    <CablesBanner
-      bgImage="/cables/cat6_ethernet/banner.png"
+      bgImage="/cables/psu4/banner.png"
       logo1="/logo.png"
       logo2="/products/IRIS.png"
       description={[

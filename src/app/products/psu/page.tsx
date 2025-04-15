@@ -42,7 +42,7 @@ const psu_page = () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
    <CablesBanner
-    bgImage="/cables/psu623/banner.png"
+    bgImage="/cables/psu/banner.png"
       logo1="/logo.png"
       logo2="/products/IRIS.png"
       description={[
