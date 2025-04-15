@@ -1,11 +1,10 @@
 'use client';
 
-import CablesBanner from "@/app/reuseable/cables/banner/page";
-import ResolutionSection from "@/app/reuseable/cables/Resolution/page";
 import SpecificationSection from "@/app/reuseable/cables/Specification/page";
-import ProductBanner from "@/app/reuseable/products/banner/page";
+import CaseBanner from "@/app/reuseable/case/banner/page";
 import CallToActionBanner from "@/app/reuseable/products/join-group/page";
 import Title from "@/app/reuseable/products/title/page";
+
 
 // Here is specification date
 const specs = [
@@ -39,14 +38,14 @@ const specs = [
 const ninja_x_page = () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
-     <ProductBanner
+   <CaseBanner
       bgImage="/case/Ninja-x/banner.png"
       logo1="/logo.png"
-      logo2="/products/IRIS.png"
+      logo2="/case/Ninja-x/ninja-x.png"
       description={[
-        'ATX MID TOWER COMPUTER',
-        'CASE',
-        'THAT HAVE GREAT DESIGN',
+        'Beautiful LED Cooling System',
+  
+        'Crafted For The Dynamic Game Players',
       ]}
     />
      
@@ -54,8 +53,8 @@ const ninja_x_page = () => {
             <div className="text-xl text-[#FFFFFF]">
              <Title
                mainTitle="TORTOX"
-               subTitle="LUNA"
-               content="Tortox ARCUS dynamically adjust fan speed between 800 RPM to 2,000 RPM with a 120mm TORTOX PWM fan, making it easy to minimize noise or maximize airflow. Unified luminous effect of water block and fan, forming a beautiful color."
+               subTitle="Ninja x3"
+               content="The design is user friendly interface: a 3pin and Molex Pin two interface design, compatible with any motherboard, power supply plug or other devices. Super Silent PC Heat Sink: all copper motor and rugged. hydraulic press bearings with self-lubricating antifriction material, reduce operating noise, improve efficiency, and run the noise less than 25.5 decibels."
              />
               </ div>
  

@@ -1,8 +1,7 @@
 'use client';
 
-import CablesBanner from "@/app/reuseable/cables/banner/page";
-import ResolutionSection from "@/app/reuseable/cables/Resolution/page";
 import SpecificationSection from "@/app/reuseable/cables/Specification/page";
+import CaseBanner from "@/app/reuseable/case/banner/page";
 import CallToActionBanner from "@/app/reuseable/products/join-group/page";
 import Title from "@/app/reuseable/products/title/page";
 
@@ -38,10 +37,10 @@ const specs = [
 const luna_page = () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
-   <CablesBanner
+   <CaseBanner
       bgImage="/case/luna/banner.png"
       logo1="/logo.png"
-      logo2="/logo.png"
+      logo2="/case/Luna/luna.png"
       description={[
         'Engineered for Durability ',
         '',
