@@ -48,7 +48,7 @@ interface ResolutionCard {
                         );
                       })}
                     </div>
-                    {card.descriptionImage && (
+                    {card.descriptionImage && ( 
                       <div className="bg-cover p-5  ">
                         <img
                           src={card.descriptionImage}
