@@ -92,8 +92,8 @@ const productCategories = [
   {
     title: "Gaming Chair",
     items: [
-      { name: "GC400-R", slug: "gc400r" },
-      { name: "GS300-G", slug: "gs300g" },
+      { name: "GD 400 R", slug: "gd_400_r" },
+      { name: "GW 400 R", slug: "gw_400_r" },
     ],
   },
   {
