@@ -3,6 +3,8 @@
 import SpecificationSection from "@/app/reuseable/cables/Specification/page";
 import CaseBanner from "@/app/reuseable/case/banner/page";
 import NinjaSlider, { SlideContent } from "@/app/reuseable/case/slider/ninja-slider/page";
+import PowerGrid from "@/app/reuseable/power/power-grid/page";
+
 import CallToActionBanner from "@/app/reuseable/products/join-group/page";
 import Title from "@/app/reuseable/products/title/page";
 
@@ -32,7 +34,30 @@ const specs = [
     },
   
   ];  
-
+  const powerItems = [
+    {
+      title: "Safety And Protection LX700",
+      description: `• 0.6mm Sec Black Baking Varnish
+  • Smart Thermal Control Circuit
+  • High Voltage Electrolytic Capacitor
+  • Intel/AMD Compatible
+  • Protection from Overvoltage, Undervoltage, Short Circuit
+  • 1Oz Copper Foil Circuit Board`,
+      image: "/power/lx7/grid/image-1.png",
+    },
+    {
+      title: "Non-Modular Design",
+      description: `The Non-Modular Design Ensures All Cables Are Permanently Connected,\nReducing Clutter And Improving Airflow.`,
+      image: "/power/lx7/grid/image-2.png",
+    },
+    {
+      title: "Multiple Connectors",
+      description: `This Power Supply Supports CPU Power, SATA Ports, And Graphics Cards,\nCompatible With A Wide Range Of Desktop Computers.`,
+      image: "/power/lx7/grid/image-3.png",
+    },
+  ];
+  
+  
 const lx7_page = () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
@@ -56,7 +81,7 @@ const lx7_page = () => {
         />
       </div>
              {/* Grid  */}
-             
+             <PowerGrid items={powerItems} />
           {/*  slider  */}
           <NinjaSlider slides={slides} />
       {/* Specification section */}
