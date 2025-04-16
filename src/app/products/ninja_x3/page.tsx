@@ -2,7 +2,7 @@
 
 import SpecificationSection from "@/app/reuseable/cables/Specification/page";
 import CaseBanner from "@/app/reuseable/case/banner/page";
-import NinjaSlider from "@/app/reuseable/case/slider/ninja-slider/page";
+import NinjaSlider, { SlideContent } from "@/app/reuseable/case/slider/ninja-slider/page";
 import CallToActionBanner from "@/app/reuseable/products/join-group/page";
 import Title from "@/app/reuseable/products/title/page";
 

@@ -2,6 +2,7 @@
 
 import SpecificationSection from "@/app/reuseable/cables/Specification/page";
 import CaseBanner from "@/app/reuseable/case/banner/page";
+import NinjaSlider, { SlideContent } from "@/app/reuseable/case/slider/ninja-slider/page";
 import CallToActionBanner from "@/app/reuseable/products/join-group/page";
 import Title from "@/app/reuseable/products/title/page";
 
@@ -15,24 +16,20 @@ const specs = [
     { label: 'Compatibility', value: 'Smartphone, TV, Projector' },
   ];
 
-//   Here is resolution data
-  const resolutionData = [
+  // Here is sldier data
+  const slides: SlideContent[] = [
     {
-      mainImage: '/cables/4hdmi_cables/resolution/cable-1.png',
-      overlayImage: '/cables/4hdmi_cables/resolution/right-1.png',
-      title: 'Stream Visuals From Your Smartphone',
-      descriptionImage: '/cables/4hdmi_cables/resolution/monitor.png',
-    },
-    {
-      mainImage: '/cables/4hdmi_cables/resolution/cable-2.png',
-      title: 'Experience The Brilliance Of',
-      descriptionImage: '/cables/4hdmi_cables/resolution/right-1.png',
-      badges: [
-        '/cables/4hdmi_cables/resolution/right-1.png',
-        '/cables/4hdmi_cables/resolution/right-2.png',
-        '/cables/4hdmi_cables/resolution/right-3.png',
+      image: '/case/Ninja-x/slider/image.png',
+      leftTexts: [
+        'Tempered Glass Panel Showcases Custom RGB Lighting',
+        'With High-Quality Hydraulic Bearing, Working Life Is Up To 20000 Hrs Under High-Speed Rotation Condition',
+      ],
+      rightTexts: [
+        'Water-Cooling Installation Simplified For Both AIO And Custom Loop',
+        'Adaptive Noise Reduction Optimizes Cooling And Noise Balance For Best Gaming Comfort',
       ],
     },
+  
   ];
 const luna_page = () => {
   return (
@@ -56,7 +53,8 @@ const luna_page = () => {
                content="The design is user friendly interface: a 3pin and Molex Pin two interface design, compatible with any motherboard, power supply plug or other devices. Super Silent PC Heat Sink: all copper motor and rugged. hydraulic press bearings with self-lubricating antifriction material, reduce operating noise, improve efficiency, and run the noise less than 25.5 decibels."
              />
               </ div>
- 
+          {/*  slider  */}
+          <NinjaSlider slides={slides} />
         {/* Specification section */}
         <SpecificationSection specifications={specs} />
            

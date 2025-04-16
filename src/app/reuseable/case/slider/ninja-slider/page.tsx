@@ -1,4 +1,4 @@
-'use client';
+'use client'; 
 
 import React from 'react';
 import { useKeenSlider } from 'keen-slider/react';
@@ -23,15 +23,15 @@ const NinjaSlider: React.FC<NinjaSliderProps> = ({ slides }) => {
   });
 
   return (
-    <div className="relative w-full max-w-[1180px] mx-auto py-10 px-4">
+    <div className="relative w-full max-w-[1313px] mx-auto py-10 px-4 bg-[#D9D9D91A] rounded-[40px]">
       <div
         ref={sliderRef}
-        className="keen-slider bg-[#111111] rounded-[40px] overflow-hidden px-6 py-12"
+        className="keen-slider  overflow-hidden px-6 py-12"
       >
         {slides.map((slide, idx) => (
           <div
             key={idx}
-            className="keen-slider__slide flex justify-between items-stretch text-white relative"
+            className="keen-slider__slide flex justify-between  text-white relative"
           >
             {/* Left Section */}
             <div className="w-1/6 flex flex-col justify-between text-center ">
@@ -75,4 +75,4 @@ const NinjaSlider: React.FC<NinjaSliderProps> = ({ slides }) => {
   );
 };
 
-export default NinjaSlider;
+export default NinjaSlider;  
