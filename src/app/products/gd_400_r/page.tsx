@@ -1,22 +1,17 @@
 "use client";
-
-import SpecificationSection from "@/app/reuseable/cables/Specification/page";
 import CaseBanner from "@/app/reuseable/case/banner/page";
 import NinjaSlider, { SlideContent } from "@/app/reuseable/case/slider/ninja-slider/page";
 import PowerGrid from "@/app/reuseable/power/power-grid/page";
 import CallToActionBanner from "@/app/reuseable/products/join-group/page";
+import ProductSlider from "@/app/reuseable/products/product-slider/page";
 import Title from "@/app/reuseable/products/title/page";
+import SpecificationSection from "@/app/reuseable/products/specifications/page";
 
-// Here is specification date
-const specs = [
-  { label: "Model", value: "USB C To HDMI" },
-  { label: "Built In Conversion Chip", value: "Yes" },
-  { label: "PVC Jackets", value: "Yes" },
-  { label: "Shell Type", value: "Aluminium" },
-  { label: "Max Resolution", value: "4k@60Hz" },
-  { label: "Compatibility", value: "Smartphone, TV, Projector" },
-];
-
+// ✅the SpecItem type here
+type SpecItem = {
+  title: string;
+  items: string[];
+};
   // Here is sldier data
   const slides: SlideContent[] = [
     {
@@ -33,40 +28,114 @@ const specs = [
   
   ];  
 
+  // here is slider
+  const sampleProducts = [
+    { image: '/products/IRIS/Feature-slider/image-1.png' },
+    { image: '/products/IRIS/Feature-slider/image-2.png' },
+    { image: '/products/IRIS/Feature-slider/Background.png' },
+  ];
   //   Here is power-grid data
   const powerItems = [
     {
-      title: "Safety And Protection BX700",
-      description: `Get economical power today with the Tortox Power Supply with high-efficiency power supply solution. Featuring 80 PLUS® BRONZE certification, a quiet 120 mm DBB fan, All Japanese capacitors and Universal Input with Active Power Factor Correction, Tortox gives you a cooler, quieter system, all powered by Continuous Power.`,
-      image: "/power/bx7/grid/image-1.png",
+      title: "Clever Architecture Design",
+      description: `Tortox GD400-R desk has four adjustable knobs that can be effortlessly adjusted for it to stand erect and stay completely leveled on any surface.`,
+      image: "/gaming/gd_400_r/grid/image-1.png",
     },
     {
-      title: "80-Plus Bronze Certified",
-      description: `Efficiency up to 85% power conversion for reducing your electricity bill.`,
-      title2: "Support MULTI-GPU Technology",
-      description2: `Support PCI Express 3.0 graphic cards with 6+2pin PCI-E connectors`,
-      image: "/power/bx7/grid/image-2.png",
+      title: "Timeless Construction",
+      description: `Made of scratch-resistant Medium Particle Board (PB) and premium steel frame, the Tortox aims to be as sturdy as possible, accompanying you to countless game battles.`,
+      title2: "Light Up Your Battles",
+      description2: `The Tortox GD400-R has 2 ARGB light streams on both wings of the table, toggle through 15 exotic lighting effects with a simple command on the remote.`,
+      image: "/gaming/gd_400_r/grid/image-2.png",
     },
     {
-      title: "Optimized Over Current Protections",
-      description: `Your components will operate stably and protected from any harm.`,
-      image: "/power/bx7/grid/image-3.png",
+      title: "Unique Overlay",
+      description: `The surface of the desk is completely covered with a spill-resistant XXL mouse mat, and under the mousemat is a switch to freely command the RGB light streams with 15 lighting effects.`,
+      image: "/gaming/gd_400_r/grid/image-3.png",
       title2: "Impressive Operation At 40°C",
       description2: `Powerful performance at 40°C/104°F ambient temperature.`,
   
     },
   ];
 
+  // here is specification data
+  const specs: SpecItem[] = [
+    {
+      title: "Featured",
+      items: [
+        "Clean design, well balanced between a perfectly optimized interior structure and the sleek exterior design",
+        "Color: <strong>Black</strong>",
+        "Material: <strong>SECC 0.6mm</strong>",
+        "Motherboard: EATX/ATX/Micro ATX/Mini-ITX",
+        "HDD/1–5/2.5” x 5",
+        "Add-on card: ≤ 7",
+        "Max. VGA card: <strong>400mm</strong>",
+        "Max. CPU Cooler: <strong>175mm</strong>",
+        "Power Supply: Bottom/ATX PS2 PSU",
+      ],
+    },
+    {
+      title: "Cooling System",
+      items: [
+        "Front: 3*120MM (Included) <strong>Support 240mm liquid cooler</strong>",
+        "Rear: 120 fan (*optional)",
+        "1*120mm (included) <strong>Support 240 liquid cooler</strong>",
+        "Bottom: 2*120mm (Fan Optional) <strong>Support 240 liquid cooler</strong>",
+        "Front water cooling: <strong>360mm/280mm/152mm</strong>",
+        "Rear water cooling: <strong>240mm*175mm</strong>",
+      ],
+    },
+    {
+      title: "Dimensions And Weight",
+      items: [
+        "IRIS comes with high quality temper glass side panels in crystal clear to showcase the hardware.",
+        "16.5\"x7.9\"x18\"(overall)",
+        "17.7\"x7.9\"x18\"(Case)",
+        "2.1\"x11.7\"x12.1\"(chassis)",
+        "Weight: <strong>10.5kg</strong>",
+      ],
+    },
+    {
+      title: "I/O ports",
+      items: [
+        "Top-front panel features two USB 3.0 data transfer port along with one RESET button as well as HD audio I/O to grant direct access when needed.",
+        "1*Power",
+        "2*USB3.0",
+        "1*RESET button",
+        "1*HD Audio in / out",
+      ],
+    },
+    {
+      title: "Additional Features",
+      items: [
+        "Preinstalled with 4x True Dual loop fans for a more efficient cooling performance.",
+        "VGA card convenient installation",
+        "CPU cooler height: up to <strong>175mm</strong>",
+        "Filtered front ventilation",
+        "Back cable management",
+        "Thumbs screw mounted side panels for easy access",
+      ],
+    },
+    {
+      title: "Expansion",
+      items: [
+        "The improved air intake mesh on the front comes with an embedded nylon filter that prevents dust from entering the system while the drive filter at the bottom keeps PSU free from dust.",
+        "2*3.5” external drive bay",
+        "2*2.5” SSD drive bay",
+        "8* expansion slots",
+      ],
+    },
+  ];
+  
 const gd_400_r_page = () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
       <CaseBanner
-        bgImage="/power/bx7/banner.png"
+        bgImage="/gaming/gd_400_r/banner.png"
         logo1="/logo.png"
-        logo2="/power/bx7/bx7.png"
+        logo2="/gaming/gd_400_r/GAMING-DESK.png"
         description={[
-          "RGB LED LIGHTING FAN",
-
+  
           "Crafted For The Dynamic Game Players",
         ]}
       />
@@ -75,23 +144,27 @@ const gd_400_r_page = () => {
       <div className="text-xl text-[#FFFFFF]">
         <Title
           mainTitle="TORTOX"
-          subTitle="bx700"
-          content="Simplest and most powerful PSU design allowing you to handle your many devices without worry. No matter what combination of devices and components you have, our PSUs have plenty of power to handle all your needs. Whether we are using Single or Multi rail design, it will always function the same way, easy and simple."
+          subTitle="Gaming desk"
+          content="The Tortox GD400-R Series is an RGB gaming desk that features a carbon fiber surface, an innovative structural design, and RGB streaming lights on both wings of the table to enhance your gaming experience."
         />
       </div>
-            {/* Grid  */}
-            <PowerGrid items={powerItems} />
-          {/*  slider  */}
-          <NinjaSlider slides={slides} />
-      {/* Specification section */}
-      <SpecificationSection specifications={specs} />
-
-      {/* Join Group  */}
+       {/*  slider  */}
+       <NinjaSlider slides={slides} />
+          {/* Join Group  */}
       <CallToActionBanner
         text="Over 1000's of gamers already using our products."
         buttonLabel="Join Our Group"
         buttonHref="/community"
       />
+            {/* Grid  */}
+            <PowerGrid items={powerItems} />
+         
+
+       
+             {/* Specifications */}
+      <SpecificationSection specs={specs} imageSrc="/products/IRIS/specification/image.png" />
+             {/* Products slider */}
+             <ProductSlider title="Other Products" products={sampleProducts} />
     </div>
   );
 };

@@ -14,7 +14,7 @@ import ProductSlider from "@/app/reuseable/products/product-slider/page";
 import SpecificationSection from "@/app/reuseable/products/specifications/page";
 import Title from "@/app/reuseable/products/title/page";
 
-// ✅ Add the SpecItem type here
+// ✅the SpecItem type here
 type SpecItem = {
   title: string;
   items: string[];
