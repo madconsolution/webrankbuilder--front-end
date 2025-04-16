@@ -30,7 +30,7 @@ const specs = [
       ],
     },
   
-  ];
+  ];   
 const luna_page = () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">

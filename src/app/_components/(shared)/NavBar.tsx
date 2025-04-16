@@ -69,9 +69,9 @@ const productCategories = [
   {
     title: "Power Supply",
     items: [
-      { name: "BX 600", slug: "bx600" },
-      { name: "BX 700", slug: "bx700" },
-      { name: "LX 700", slug: "lx700" },
+      { name: "BX 600", slug: "bx6" },
+      { name: "BX 700", slug: "bx7" },
+      { name: "LX 700", slug: "lx7" },
     ],
   },
   {
