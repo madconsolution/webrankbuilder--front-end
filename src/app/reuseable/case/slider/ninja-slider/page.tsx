@@ -7,8 +7,8 @@ import Image from 'next/image';
 
 export interface SlideContent {
   image: string;
-  leftTexts: string[];
-  rightTexts: string[];
+  leftTexts: [string, string];   // Top & bottom left
+  rightTexts: [string, string];  // Top & bottom right
 }
 
 interface NinjaSliderProps {
@@ -16,51 +16,57 @@ interface NinjaSliderProps {
 }
 
 const NinjaSlider: React.FC<NinjaSliderProps> = ({ slides }) => {
+  const [currentSlide, setCurrentSlide] = React.useState(0);
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
     loop: true,
     slideChanged: (s) => setCurrentSlide(s.track.details.rel),
   });
 
-  const [currentSlide, setCurrentSlide] = React.useState(0);
-
   return (
-    <div className="relative w-full max-w-6xl mx-auto py-10 px-4">
-      <div ref={sliderRef} className="keen-slider">
+    <div className="relative w-full max-w-[1180px] mx-auto py-10 px-4">
+      <div
+        ref={sliderRef}
+        className="keen-slider bg-[#111111] rounded-[40px] overflow-hidden px-6 py-12"
+      >
         {slides.map((slide, idx) => (
-          <div key={idx} className="keen-slider__slide flex justify-center items-center bg-[#1A1A1A] rounded-3xl text-white p-6">
-            <div className="flex flex-col text-right text-sm w-1/4 space-y-4 pr-4">
-              {slide.leftTexts.map((text, i) => (
-                <p key={i} className="leading-snug">{text}</p>
-              ))}
+          <div
+            key={idx}
+            className="keen-slider__slide flex justify-between items-stretch text-white relative"
+          >
+            {/* Left Section */}
+            <div className="w-1/6 flex flex-col justify-between text-center ">
+              <p className="text-[14px] leading-snug font-light">{slide.leftTexts[0]}</p>
+              <p className="text-[14px] leading-snug font-light">{slide.leftTexts[1]}</p>
             </div>
 
-            <div className="w-1/2 flex justify-center">
+            {/* Center Image */}
+            <div className="w-[413px] h-[411px] flex items-center justify-center">
               <Image
                 src={slide.image}
                 alt={`Slide ${idx + 1}`}
-                width={250}
-                height={250}
+                width={300}
+                height={300}
                 className="object-contain"
               />
             </div>
 
-            <div className="flex flex-col text-left text-sm w-1/4 space-y-4 pl-4">
-              {slide.rightTexts.map((text, i) => (
-                <p key={i} className="leading-snug">{text}</p>
-              ))}
+            {/* Right Section */}
+            <div className="w-1/6 flex flex-col justify-between text-center ">
+              <p className="text-[14px] leading-snug font-light">{slide.rightTexts[0]}</p>
+              <p className="text-[14px] leading-snug font-light">{slide.rightTexts[1]}</p>
             </div>
           </div>
         ))}
       </div>
 
       {/* Pagination Dots */}
-      <div className="flex justify-center mt-6 gap-2">
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-2">
         {slides.map((_, idx) => (
           <button
             key={idx}
             onClick={() => instanceRef.current?.moveToIdx(idx)}
-            className={`w-3 h-3 rounded-full transition-all ${
-              currentSlide === idx ? 'bg-white' : 'bg-gray-500'
+            className={`w-4 h-2 rounded-full transition-all duration-300 ${
+              currentSlide === idx ? 'bg-white w-6' : 'bg-gray-500'
             }`}
           />
         ))}
