@@ -34,6 +34,8 @@ const specs = [
     },
   
   ];  
+
+//   Here is power-grid data
   const powerItems = [
     {
       title: "Safety And Protection LX700",
@@ -46,16 +48,22 @@ const specs = [
       image: "/power/lx7/grid/image-1.png",
     },
     {
-      title: "Non-Modular Design",
-      description: `The Non-Modular Design Ensures All Cables Are Permanently Connected,\nReducing Clutter And Improving Airflow.`,
+      title: "High Power Output",
+      description: `With a power output of, this PC power supply can handle even the most power-hungry gaming rigs and servers`,
+      title2: "Quiet Operation",
+      description2: `The fan ensures quiet operation, making it ideal for use in noise-sensitive environments.`,
       image: "/power/lx7/grid/image-2.png",
     },
     {
-      title: "Multiple Connectors",
-      description: `This Power Supply Supports CPU Power, SATA Ports, And Graphics Cards,\nCompatible With A Wide Range Of Desktop Computers.`,
+      title: "Non-modular Design",
+      description: `The non-modular design of this power supply ensures that all cables are permanently connected, reducing clutter and improving airflow in your vehicle.`,
       image: "/power/lx7/grid/image-3.png",
+      title2: "Multiple Connectors",
+      description2: `With multiple connectors for CPU power, SATA ports and graphics cards, this power supply is compatible with a wide range of desktop computers`,
+  
     },
   ];
+  
   
   
 const lx7_page = () => {

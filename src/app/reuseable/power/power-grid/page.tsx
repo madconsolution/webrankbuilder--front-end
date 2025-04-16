@@ -1,10 +1,10 @@
-'use client';
-
 import Image from "next/image";
 
 interface PowerGridItem {
   title: string;
+  title2?: string;
   description: string;
+  description2?: string;
   image: string;
 }
 
@@ -14,7 +14,7 @@ interface PowerGridProps {
 
 const PowerGrid: React.FC<PowerGridProps> = ({ items }) => {
   return (
-    <section className="bg-black text-white py-16 px-4 md:px-16">
+    <section className="bg-black w-full md:w-[1300px] mx-auto text-white py-16 px-4 md:px-16">
       <div className="space-y-20">
         {items.map((item, index) => {
           const isImageRight = index % 2 === 0; // row 1 and 3: image on right
@@ -29,6 +29,15 @@ const PowerGrid: React.FC<PowerGridProps> = ({ items }) => {
               <div className="w-full md:w-1/2 space-y-3 text-left">
                 <h3 className="text-xl font-semibold text-red-600">{item.title}</h3>
                 <p className="text-sm leading-relaxed whitespace-pre-line">{item.description}</p>
+
+                {item.title2 && (
+                  <h4 className="text-lg font-semibold text-red-500 mt-6">{item.title2}</h4>
+                )}
+                {item.description2 && (
+                  <p className="text-sm leading-relaxed whitespace-pre-line">
+                    {item.description2}
+                  </p>
+                )}
               </div>
 
               {/* Image */}
@@ -37,7 +46,7 @@ const PowerGrid: React.FC<PowerGridProps> = ({ items }) => {
                   src={item.image}
                   alt={item.title}
                   width={500}
-                  height={300}
+                  height={400}
                   className="rounded-lg object-contain w-full h-auto"
                 />
               </div>
