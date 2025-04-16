@@ -32,13 +32,13 @@ const specs = [
   
   ];  
 
-const bx6_page = () => {
+const bx7_page = () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
       <CaseBanner
-        bgImage="/power/bx6/banner.png"
+        bgImage="/power/bx7/banner.png"
         logo1="/logo.png"
-        logo2="/power/bx6/bx6.png"
+        logo2="/power/bx7/bx7.png"
         description={[
           "RGB LED LIGHTING FAN",
 
@@ -50,7 +50,7 @@ const bx6_page = () => {
       <div className="text-xl text-[#FFFFFF]">
         <Title
           mainTitle="TORTOX"
-          subTitle="bx600"
+          subTitle="bx700"
           content="Simplest and most powerful PSU design allowing you to handle your many devices without worry. No matter what combination of devices and components you have, our PSUs have plenty of power to handle all your needs. Whether we are using Single or Multi rail design, it will always function the same way, easy and simple."
         />
       </div>
@@ -70,4 +70,4 @@ const bx6_page = () => {
   );
 };
 
-export default bx6_page;
+export default bx7_page;
