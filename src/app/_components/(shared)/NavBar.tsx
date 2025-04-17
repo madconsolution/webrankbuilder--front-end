@@ -90,15 +90,22 @@ const productCategories = [
     items: [{ name: "SMART LIGHT PANEL", slug: "smart-light-panel" }],
   },
   {
-    title: "Gaming Chair",
+    title: "Gaming Desk",
     items: [
       { name: "GD 400 R", slug: "gd_400_r" },
       { name: "GW 400 R", slug: "gw_400_r" },
     ],
   },
   {
-    title: "Gaming Desk",
-    items: [{ name: "GD400-R", slug: "gd400r" }],
+    title: "Gaming Cheir",
+    items: [
+      { name: "GC 400 R", slug: "gc_400_r" },
+     { name: "GC 400 W", slug: "gc_400_w" },
+    { name: "GC 300 B", slug: "gc_300_b" },
+     { name: "GS 300 R", slug: "gs_300_r" },
+     { name: "GS 300 G", slug: "gs_300_g" },
+    ],
+ 
   },
 ];
 

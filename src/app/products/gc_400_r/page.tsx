@@ -15,7 +15,7 @@ type SpecItem = {
   // Here is sldier data
   const slides: SlideContent[] = [
     {
-      image: '/gaming/gd_400_r/slider/image.png',
+      image: '/cheir/gc_400_r/slider/image.png',
       leftTexts: [
         'Tempered Glass Panel Showcases Custom RGB Lighting',
         'With High-Quality Hydraulic Bearing, Working Life Is Up To 20000 Hrs Under High-Speed Rotation Condition',
@@ -127,13 +127,13 @@ type SpecItem = {
     },
   ];
   
-const gd_400_r_page = () => {
+const gc_400_r_page = () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
       <CaseBanner
-        bgImage="/gaming/gd_400_r/banner.png"
+        bgImage="/cheir/gc_400_r/banner.png"
         logo1="/logo.png"
-        logo2="/gaming/gd_400_r/GAMING-DESK.png"
+        logo2="/cheir/gc_400_r/GC_400R.png"
         description={[
   
           "Crafted For The Dynamic Game Players",
@@ -144,8 +144,8 @@ const gd_400_r_page = () => {
       <div className="text-xl text-[#FFFFFF]">
         <Title
           mainTitle="TORTOX"
-          subTitle="Gaming desk"
-          content="The Tortox GD400-R Series is an RGB gaming desk that features a carbon fiber surface, an innovative structural design, and RGB streaming lights on both wings of the table to enhance your gaming experience."
+          subTitle="gc 400r"
+          content="The Tortox GC400-R Series gaming chairs are constructed with high-density padding and a contoured backrest to bring unparalleled comfort and adjustability to your gaming. It is important to maintain good posture and sit in comfort. It is recommended choosing a chair with all the necessary adjustments to support proper posture."
         />
       </div>
        {/*  slider  */}
@@ -169,4 +169,4 @@ const gd_400_r_page = () => {
   );
 };
 
-export default gd_400_r_page;
+export default gc_400_r_page;
