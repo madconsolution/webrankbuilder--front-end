@@ -77,8 +77,8 @@ const productCategories = [
   {
     title: "Liquid Cooler",
     items: [
-      { name: "LIQWI L120", slug: "liqwi-l120" },
-      { name: "LIQWI L240", slug: "liqwi-l240" },
+      { name: "LIQWI L120", slug: "l120" },
+      { name: "LIQWI L240", slug: "l240" },
     ],
   },
   {
