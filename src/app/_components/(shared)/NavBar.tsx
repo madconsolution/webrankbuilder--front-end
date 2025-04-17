@@ -83,7 +83,11 @@ const productCategories = [
   },
   {
     title: "Air Coolers",
-    items: [{ name: "AIR FREEZE 120", slug: "air-freeze-120" }],
+    items: [
+      { name: "AIR FREEZE 120", slug: "air_freeze_120" },
+      { name: "AIR FREEZE 121", slug: "air_freeze_121" },
+
+    ],
   },
   {
     title: "Light Panels",
