@@ -15,7 +15,7 @@ type SpecItem = {
   // Here is sldier data
   const slides: SlideContent[] = [
     {
-      image: '/cheir/gc_400_w/slider/image.png',
+      image: '/cheir/gc_300_b/slider/image.png',
       leftTexts: [
         'Tempered Glass Panel Showcases Custom RGB Lighting',
         'With High-Quality Hydraulic Bearing, Working Life Is Up To 20000 Hrs Under High-Speed Rotation Condition',
@@ -127,13 +127,13 @@ type SpecItem = {
     },
   ];
   
-const gc_400_w_page = () => {
+const gc_300_b_page = () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
       <CaseBanner
-        bgImage="/cheir/gc_400_w/banner.png"
+        bgImage="/cheir/gc_300_b/banner.png"
         logo1="/logo.png"
-        logo2="/cheir/gc_400_w/GC_400W.png"
+        logo2="/cheir/gc_300_b/GC_300B.png"
         description={[
   
           "Crafted For The Dynamic Game Players",
@@ -144,8 +144,8 @@ const gc_400_w_page = () => {
       <div className="text-xl text-[#FFFFFF]">
         <Title
           mainTitle="TORTOX"
-          subTitle="gc 400w"
-          content="The Tortox GC400-W Series gaming chairs are constructed with high-density padding and a contoured backrest to bring unparalleled comfort and adjustability to your gaming. It is important to maintain good posture and sit in comfort. It is recommended choosing a chair with all the necessary adjustments to support proper posture."
+          subTitle="gc 300b"
+          content="The Tortox GC300-B Series fabric gaming chairs are constructed with high-density padding and a contoured backrest to bring unparalleled comfort and adjustability to your gaming. Many gamers prefer the feel of a fabric chair because of the soft-touch material. Others prefer mesh fabric because it’s more breathable. It is recommended choosing a chair with all the necessary adjustments to support proper posture."
         />
       </div>
        {/*  slider  */}
@@ -169,4 +169,4 @@ const gc_400_w_page = () => {
   );
 };
 
-export default gc_400_w_page;
+export default gc_300_b_page;
