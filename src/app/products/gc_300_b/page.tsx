@@ -39,23 +39,16 @@ type SpecItem = {
     {
       title: "Clever Architecture Design",
       description: `Tortox GD400-R desk has four adjustable knobs that can be effortlessly adjusted for it to stand erect and stay completely leveled on any surface.`,
-      image: "/gaming/gd_400_r/grid/image-1.png",
+      image: "/cheir/gc_300_b/grid/image-1.png",
     },
     {
       title: "Timeless Construction",
       description: `Made of scratch-resistant Medium Particle Board (PB) and premium steel frame, the Tortox aims to be as sturdy as possible, accompanying you to countless game battles.`,
       title2: "Light Up Your Battles",
       description2: `The Tortox GD400-R has 2 ARGB light streams on both wings of the table, toggle through 15 exotic lighting effects with a simple command on the remote.`,
-      image: "/gaming/gd_400_r/grid/image-2.png",
+      image: "/cheir/gc_300_b/grid/image-2.png",
     },
-    {
-      title: "Unique Overlay",
-      description: `The surface of the desk is completely covered with a spill-resistant XXL mouse mat, and under the mousemat is a switch to freely command the RGB light streams with 15 lighting effects.`,
-      image: "/gaming/gd_400_r/grid/image-3.png",
-      title2: "Impressive Operation At 40°C",
-      description2: `Powerful performance at 40°C/104°F ambient temperature.`,
-  
-    },
+ 
   ];
 
   // here is specification data
