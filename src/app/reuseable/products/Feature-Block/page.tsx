@@ -39,7 +39,7 @@ const FeatureBlock: FC<FeatureBlockProps> = ({
           />
         </div>
         <div className="text-left">
-          <h3 className="text-2xl md:text-3xl font-bold">
+          <h3>
             {title}{' '}
             <span className="text-red-500">{highlight}</span>
           </h3>

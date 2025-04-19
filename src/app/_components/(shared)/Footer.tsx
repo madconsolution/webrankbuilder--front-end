@@ -59,7 +59,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="w-full md:w-[1440px] mx-auto border-t border-gray-700 mt-8 pt-4 flex flex-col md:flex-row justify-between items-center px-6 text-sm">
+      <div className="w-full md:w-[1200px]   mx-auto border-t border-gray-400 mt-8 pt-4 flex flex-col md:flex-row justify-between items-center  text-sm">
  <div className="flex gap-4">
  <Link href="/">
           <Image src="/logo/logo.png" alt="Logo" width={200} height={50} />

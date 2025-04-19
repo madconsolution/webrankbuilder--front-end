@@ -28,13 +28,13 @@ const HighlightsSlider: FC<HighlightsSliderProps> = ({
   };
 
   return (
-    <section className="bg-black text-white py-16">
-      <div className="w-full">
-        <div className="">
-          <h2 className="mt-4 pr-0 md:pr-[8%] text-sm md:text-base text-gray-300 max-w-[1044px] font-bold">
+    <section className="bg-black text-white p-16">
+      <div className="w-full md:w-[1400px]">
+        <div className="max-w-[1044px] px-8">
+          <h3 className="mt-4">
             {title} <span className="text-red-500">{highlight}</span>
-          </h2>
-          <p className="mt-4 pl-4 md:pl-[10%] text-sm md:text-base text-gray-300 max-w-[1044px]">
+          </h3>
+          <p className="mt-4 text-sm md:text-base text-gray-300 ">
             {description}
           </p>
         </div>

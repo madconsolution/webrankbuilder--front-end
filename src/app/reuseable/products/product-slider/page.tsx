@@ -47,7 +47,7 @@ const ProductSlider: React.FC<ProductSliderProps> = ({ title, products }) => {
   };
 
   return (
-    <div className="w-full bg-black py-10 px-4 md:px-16 text-white relative overflow-hidden">
+    <div className="w-full bg-black py-10 px-4 md:px-20 text-white relative overflow-hidden">
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-xl font-semibold">{title}</h2>
         <div className="hidden md:flex gap-2">

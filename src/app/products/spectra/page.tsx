@@ -142,7 +142,11 @@ const SpectraPage = () => {
         bgImage="/products/iris-banner.png"
         logo1="/logo.png"
         logo2="/products/Spectra/image.png"
-        description={["ATX MID TOWER COMPUTER  CASE THAT HAVE GREAT DESIGN"]}
+        description={[
+          'ATX MID TOWER COMPUTER',
+          'CASE',
+          'THAT HAVE GREAT DESIGN',
+        ]}
       />
    
 

@@ -141,10 +141,14 @@ const ShadowPage = () => {
         bgImage="/products/iris-banner.png"
         logo1="/logo.png"
         logo2="/products/Shadow/Shadow-right-logo-banner.png"
-        description={["ATX MID TOWER COMPUTER  CASE THAT HAVE GREAT DESIGN"]}
+        description={[
+          'ATX MID TOWER COMPUTER',
+          'CASE',
+          'THAT HAVE GREAT DESIGN',
+        ]}
       />
    
-
+  
    <AutoSlider
   products={products}
   mainTitle="TORTOX"
