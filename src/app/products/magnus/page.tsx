@@ -143,7 +143,15 @@ const MagnusPage = () => {
         description={["ATX MID TOWER COMPUTER  CASE THAT HAVE GREAT DESIGN"]}
       />
    
-
+    {/* Here is first heading title */}
+                         <div className="text-xl text-[#FFFFFF]">
+                          <Title
+                            mainTitle="TORTOX"
+                            subTitle="Magnus"
+                            content="The elegant all-steel construction embeds the iconic cable management system that streamlines building and upgrading your system. You can easily build a powerful system with plenty of options for storage and cooling. Includes Three integrated Tortox Raindow RGB fans and a tempered glass panel to showcase your build. With the included fan controller, you will be able to control all the power of each Fan’s 18 LEDs and enjoy more than 100 different dynamic RGB lighting effects in one of the most beautiful cases ever created.
+"
+                          />
+                        </div>
    <ProductOverview
   products={products}
   mainTitle="TORTOX"

@@ -13,6 +13,7 @@ import AutoSlider from "@/app/reuseable/products/overview/page";
 import ProductSlider from "@/app/reuseable/products/product-slider/page";
 import ProductFeatureShowcase from "@/app/reuseable/products/Showcase/page";
 import SpecificationSection from "@/app/reuseable/products/specifications/page";
+import Title from "@/app/reuseable/products/title/page";
 
 
 // Add the SpecItem type here
@@ -146,7 +147,14 @@ const Shadowv2Page = () => {
           'THAT HAVE GREAT DESIGN',
         ]}
       />
-   
+                       {/* Here is first heading title */}
+                         <div className="text-xl text-[#FFFFFF]">
+                          <Title
+                            mainTitle="TORTOX"
+                            subTitle="Shadow"
+                            content="The most premium production gaming enclosure. Built from premium materials that are engineered with utmost care and attention to detail. A design based on continuous product improvement and innovation throughout . Discover the ultimate building experience. Shadow keeps an incredibly clean look that can be easily switched to different RGB patterns from the side control panel."
+                          />
+                        </div>
 
    <AutoSlider
   products={products}

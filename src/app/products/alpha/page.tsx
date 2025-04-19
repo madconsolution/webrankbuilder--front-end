@@ -146,7 +146,14 @@ const AlphaPage = () => {
           'THAT HAVE GREAT DESIGN',
         ]}
       />
-   
+                          {/* Here is first heading title */}
+                           <div className="text-xl text-[#FFFFFF]">
+                             <Title
+                               mainTitle="TORTOX"
+                               subTitle="alpha"
+                               content="Tortox Alpha, modern design is ideal for home or office, and full featured enough to be a serious gaming or content creation machine.The elegantly crafted mesh front panel brings a clean and uncluttered look to the chassis.Users can look forward to dedicated 3.5 and 2.5 drive racks, and compatibility with graphics cards up to 30cm long. Alpha makes installation easy with tool-free mechanisms and dual dust filters mean quick cleanup.Long air vents running along the sides of its front, hidden behind sleek mesh strips, provide plenty of airflow to cool the system."
+                             />
+                           </div>                      
 
    <ProductOverview
   products={products}

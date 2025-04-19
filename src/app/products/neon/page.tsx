@@ -146,7 +146,15 @@ const NeonPage = () => {
         ]}
       />
    
-
+  {/* Here is first heading title */}
+                       <div className="text-xl text-[#FFFFFF]">
+                        <Title
+                          mainTitle="TORTOX"
+                          subTitle="Neon"
+                          content="The core of the NEON is its clean design, well balanced between a perfectly organized interior structure and the sleek exterior design. It is complemented by a tempered glass front panel and the latest in illumination effects, highlighting the clean and discreet lines of the grid front panel. It is complemented by a 4mm see-through-tinted tempered glass panel on the front. Available in with or without RGB windowed acrylic side panel case, you can choose the NEON that blends perfectly with your surroundings.
+"
+                        />
+                      </div>
    <ProductOverview
   products={products}
   mainTitle="TORTOX"

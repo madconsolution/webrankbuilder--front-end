@@ -174,7 +174,7 @@ const PrismPage = () => {
           'THAT HAVE GREAT DESIGN',
         ]}
       />
-   
+        
         {/* Section title is here */}
      
             <div className="text-xl text-[#FFFFFF]">

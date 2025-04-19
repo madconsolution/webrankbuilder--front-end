@@ -23,14 +23,14 @@ const ProductBanner: React.FC<BannerProps> = ({ bgImage, logo1, logo2, descripti
         className="absolute inset-0 w-full h-full bg-center bg-no-repeat bg-cover"
         style={{ backgroundImage: `url('${bgImage}')` }}
       />
-      <div className="absolute max-w-xl mx-auto inset-0 flex flex-col items-center text-white mt-8 px-4 text-center">
-        <div className="flex gap-2  items-center">
+      <div className="absolute max-w-xl mx-auto inset-0 flex flex-col items-center text-white mt-8 px-4 ">
+        <div className="flex gap-2  items-center md:-ml-36 my-2">
           <Image src={logo1} alt="Product Logo 1" width={250} height={50} />
           <Image src={logo2} alt="Product Logo 2" width={100} height={70} />
         </div>
-        <div className="text-xl sm:text-2xl md:text-3xl font-medium tracking-widest leading-snug space-y-2">
+        <div className=" space-y-4">
           {lines.map((line, idx) => (
-            <p key={idx}>{line}</p>
+            <h2 key={idx}>{line}</h2>
           ))}
         </div>
       </div>

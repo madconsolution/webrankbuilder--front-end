@@ -148,7 +148,14 @@ const ZionPage = () => {
           'THAT HAVE GREAT DESIGN',
         ]}
       />
-   
+    {/* Here is first heading title */}
+                              <div className="text-xl text-[#FFFFFF]">
+                                <Title
+                                  mainTitle="TORTOX"
+                                  subTitle="zion"
+                                  content="Design your computer with the Tortox ZION. The computer case allows you to mount 2 HDDs and SDDs each, as well as 2 120mm fans. In addition, it is compatible with motherboards with ITX, ATX and M-ATX standards. In addition, the USB.30 port enables high-speed data transfer."
+                                />
+                              </div>   
 
    <ProductOverview
   products={products}

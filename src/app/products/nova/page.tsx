@@ -146,7 +146,14 @@ const NovaPage = () => {
           'THAT HAVE GREAT DESIGN',
         ]}
       />
-   
+       {/* Here is first heading title */}
+                       <div className="text-xl text-[#FFFFFF]">
+                        <Title
+                          mainTitle="TORTOX"
+                          subTitle="Nova"
+                          content="NOVA simplistic design, aluminium badge, color options and full tempered glass side panel mean it will blend in perfectly. To seal fan noise inside the chassis, we developed a closed front panel for Nova. Nova supports up to four full size 3.5 hard drives, two 2.5 compact hard drives or SSDs and features a full size 5.25 optical disc drive slot."
+                        />
+                      </div>
  {/* Here is auto slider section */}
    <AutoSlider
   products={products}
