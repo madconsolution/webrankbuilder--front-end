@@ -19,7 +19,7 @@ const FeatureHighlightSection: React.FC<FeatureHighlightSectionProps> = ({
   const isRight = position === 'right';
 
   return (
-    <div className="w-full bg-black text-white py-10 px-4 md:px-16 overflow-hidden">
+    <div className="w-full md:w-[1440px]  text-white p-4 md:p-[65px] overflow-hidden">
       <div className="max-w-[1440px]  mx-auto flex flex-col md:flex-row items-center justify-between relative">
         {/* Image Section */}
         <div
@@ -40,7 +40,7 @@ const FeatureHighlightSection: React.FC<FeatureHighlightSectionProps> = ({
         <div
           className={`relative w-full md:w-[40%] ${
             isRight ? 'order-2' : 'order-1'
-          } z-20 ${isRight ? 'md:ml-[-30%] md:mb-[12%]' : 'md:mr-[-10%]'} `}
+          } z-20 ${isRight ? 'md:ml-[-30%] md:mb-[15%]' : 'md:mr-[-10%]'} `}
         >
           <h2 className="text-3xl font-bold  leading-snug">
             {title.split(' ').map((word, index) => (

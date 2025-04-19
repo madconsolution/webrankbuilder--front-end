@@ -29,7 +29,7 @@ const FeatureSlider: React.FC<FeatureSliderProps> = ({ slides }) => {
   };
 
   return (
-    <div className="relative w-full md:w-[1440px] mx-auto my-auto  items-center px-4 md:px-16 py-10 text-white font-sans">
+    <div className="relative w-full md:w-[1150px] mx-auto my-auto py-[50px] items-center  text-white ">
       <div
         ref={scrollRef}
         className="flex gap-6 overflow-x-scroll scroll-smooth pb-4 items-center"
@@ -41,7 +41,7 @@ const FeatureSlider: React.FC<FeatureSliderProps> = ({ slides }) => {
             className="w-[550px] flex-shrink-0 rounded-lg p-2 mb-5 flex flex-col "
           >
             {/* Text Section */}
-            <div className="px-4 mb-4 w-[70%]">
+            <div className="px-4 mb-12 md:w-[411px] ">
               <h3 className="text-[16px] font-bold text-white mb-2 leading-snug">
                 {slide.title}{' '}
                 {slide.highlight && (

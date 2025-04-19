@@ -49,18 +49,18 @@ const AutoSlider: React.FC<AutoSliderProps> = ({ products }) => {
   };
 
   return (
-    <div className="bg-black text-white py-10 px-4 md:px-16">
+    <div className="bg-black text-white w-full md:w-[1440px] p-[20px]">
       {/* Slider */}
       <div ref={sliderRef} className="keen-slider">
         {products.map((product, index) => (
           <div className="keen-slider__slide" key={index}>
             <div className="bg-[#111] rounded-lg p-4 flex flex-col items-center text-center h-full shadow-md">
-              <p className="text-sm mb-4 max-w-xs">{product.title}</p>
+              <p className="text-sm mb-4 max-w-[335px] h-[60px]">{product.title}</p>
               <Image
                 src={product.image}
                 alt={product.title}
-                width={548}
-                height={548}
+                width={400}
+                height={530}
                 className="object-contain"
               />
             </div>

@@ -9,6 +9,7 @@ interface FeatureBlockProps {
   description: string;
   note?: string;
   imageLeft?: boolean;
+  subTitle?: string;
 }
 
 const FeatureBlock: FC<FeatureBlockProps> = ({
@@ -16,6 +17,7 @@ const FeatureBlock: FC<FeatureBlockProps> = ({
   imageAlt,
   title,
   highlight,
+  subTitle,
   description,
   note,
   imageLeft = true,
@@ -27,8 +29,7 @@ const FeatureBlock: FC<FeatureBlockProps> = ({
           imageLeft ? '' : 'lg:[grid-template-columns:repeat(2,minmax(0,1fr))] lg:[direction:rtl]'
         }`}
       >
-        <div className="aspect-[1/1] w-full max-w-md mx-auto ${
-          imageLeft ? '' : 'lg:[direction:ltr]'}">
+        <div className={`w-full max-w-md mx-auto ${imageLeft ? '' : 'lg:[direction:ltr]'}`}>
           <Image
             src={imageSrc}
             alt={imageAlt}
@@ -37,19 +38,26 @@ const FeatureBlock: FC<FeatureBlockProps> = ({
             className="w-full h-full object-contain"
           />
         </div>
-        <div className="w-full max-w-xl mx-auto">
+        <div className="text-left">
           <h3 className="text-2xl md:text-3xl font-bold">
             {title}{' '}
             <span className="text-red-500">{highlight}</span>
           </h3>
           <p
-            className="mt-4 text-sm md:text-base leading-relaxed text-gray-300"
+            className="mt-8"
             dangerouslySetInnerHTML={{ __html: description }}
           />
           {note && (
-            <p className="mt-4 text-sm md:text-base italic text-[#CD2122]">
-              {note}
-            </p>
+            <div className="mt-4">
+              <span>
+                {note}
+              </span>
+              {subTitle && (
+                <span className="block text-sm text-[#CD2122] mt-1">
+                  {subTitle}
+                </span>
+              )}
+            </div>
           )}
         </div>
       </div>

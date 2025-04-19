@@ -12,6 +12,7 @@ import AutoSlider from "@/app/reuseable/products/overview/page";
 import ProductSlider from "@/app/reuseable/products/product-slider/page";
 
 import SpecificationSection from "@/app/reuseable/products/specifications/page";
+import Title2 from "@/app/reuseable/products/title-2/page";
 import Title from "@/app/reuseable/products/title/page";
 
 // ✅the SpecItem type here
@@ -171,7 +172,7 @@ const IrisPage = () => {
       <FeatureSlider slides={slides} />
 
       <div className="text-xl text-[#FFFFFF]">
-        <Title
+        <Title2
           mainTitle="TORTOX"
           subTitle="IRIS"
           content="Featuring EATX / ATX / Micro ATX / Mini-ITX Supported Case with 2 SSD Drive Bays and additional connections for all modern peripherals."
@@ -189,20 +190,18 @@ const IrisPage = () => {
  {/* Feature Block */}
   <FeatureBlock
   imageSrc="/products/IRIS/showcase/image-1.png"
-  imageAlt="Open Neon Case"   title="Thermal"
-   highlight="Expandability"
-   description={`To cool down the components, Grid Design on the front panel
-   has offered smooth intake. NEON supports up to two 140mm fans or a 280mm radiator in the front while a 120mm rear-fan
-   or radiator at the rear will push the hot air out. It also supports up
-   to 163mm high CPU air cooler.`}
-  note="Three Single Colour(Red) 33 LED Case Fans Pre-installed"
+  imageAlt="Open Neon Case"   title="High Performance"
+   highlight="Spectre Fans Included"
+   description={`Tortox IRIS comes preinstalled with 4x Tortox Dual loop fans for a more efficient cooling performance. The Included RGB fansare RGB center illuminated and can support multiple control standards like ASUS AURA SYNC, MSI MISTIC LIGHT SYNC, GIGABYTE RGB Fusion 2.0 and ASRock POLYCHROME RGB. This allows you to control the fan lighting simply through software and synchronize the fans, and other devices such as mice and keyboard for more attractive lighting.`}
+  note="8 Fan 2 LED strip Aura connection with Remote"
+  subTitle="4x DUAL LOOP 120MM RGB RAINBOW FANS*"
    imageLeft={true} />
 
  <FeatureBlock
     imageSrc="/products/IRIS/showcase/image-2.png"
    imageAlt="Two NEON Cases"
-  title="Tool-free"
- highlight="modular storage design"
+  title="Tool-free and modular "
+ highlight="storage design"
  description={`Both the included hard drive cages are modular and tool-free
   giving the user the ability to configure the system to their needs. Apart from these hard drive cages which accommodate up to 2
    HDDs, the NEON comes with three modular SSD brackets. Available in with or without RGB windowed side panel case, you can
