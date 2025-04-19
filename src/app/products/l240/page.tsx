@@ -6,9 +6,6 @@ import CallToActionBanner from "@/app/reuseable/products/join-group/page";
 import ProductSlider from "@/app/reuseable/products/product-slider/page";
 import Title from "@/app/reuseable/products/title/page";
 import SpecificationSection from "@/app/reuseable/products/specifications/page";
-import HeatPipeFeatureSection from "@/app/reuseable/air/HeatPipe/paget";
-import AngleFeatureSection from "@/app/reuseable/air/HeatPipe/paget";
-import AngleFeatureSectionWithIcons from "@/app/reuseable/air/HeatPipe/paget";
 
 // ✅the SpecItem type here
 type SpecItem = {
@@ -16,9 +13,9 @@ type SpecItem = {
   items: string[];
 };
   // Here is sldier data
-  const slides: SlideContent[] = [
+  const slides: SlideContent[] = [ 
     {
-      image: '/cheir/gs_300_r/slider/image.png',
+      image: '/cheir/gc_400_r/slider/image.png',
       leftTexts: [
         'Tempered Glass Panel Showcases Custom RGB Lighting',
         'With High-Quality Hydraulic Bearing, Working Life Is Up To 20000 Hrs Under High-Speed Rotation Condition',
@@ -42,14 +39,14 @@ type SpecItem = {
     {
       title: "Clever Architecture Design",
       description: `Tortox GD400-R desk has four adjustable knobs that can be effortlessly adjusted for it to stand erect and stay completely leveled on any surface.`,
-      image: "/cheir/gs_300_g/grid/image-1.png",
+      image: "/cheir/gc_400_r/grid/image-1.png",
     },
     {
       title: "Timeless Construction",
       description: `Made of scratch-resistant Medium Particle Board (PB) and premium steel frame, the Tortox aims to be as sturdy as possible, accompanying you to countless game battles.`,
       title2: "Light Up Your Battles",
       description2: `The Tortox GD400-R has 2 ARGB light streams on both wings of the table, toggle through 15 exotic lighting effects with a simple command on the remote.`,
-      image: "/cheir/gs_300_g/grid/image-2.png",
+      image: "/cheir/gc_400_r/grid/image-2.png",
     },
  
   ];
@@ -123,66 +120,27 @@ type SpecItem = {
     },
   ];
   
-const air_freeze_121_page = () => {
+const l240_page = () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
       <CaseBanner
-        bgImage="/coolers/freeze_120/banner.png"
+        bgImage="/liquid/l120/banner.png"
         logo1="/logo.png"
-        logo2="/coolers/freeze_120/freeze_120.png"
+        logo2="/liquid/l120/l120.png"
         description={[
-           "COMPUTER CASE COOLING FAN",
-           "Crafted For The Dynamic Game Players",
+  
+          "Crafted For The Dynamic Game Players",
         ]}
       />
-        
+
       {/* Here is first heading title */}
       <div className="text-xl text-[#FFFFFF]">
         <Title
           mainTitle="TORTOX"
-          subTitle="AIR FREEZE 120"
-          content="Air Freeze 120 keeps a pure aluminium base combining with 4 pure copper heat pipes, efficient heat dissipation. Solves the high temperature problems, farewell game crashing. Dual 15 LEDs ultra-quiet fan. Hydraulic bearing, reduce the frictional resistance, effectively lower the noise. Design for multiple platforms, simple installation."
+          subTitle="LIQWI L120"
+          content="Tortox Liquid CPU cooler’s second-generation design offers powerful, low-noise, liquid cooling. The redesigned fan and low-profile radiator help L120 excel at rapidly drawing heat away from your CPU, all the while looking stylish with its RGB LED-lit pump head."
         />
       </div>
-
-      {/* HeadPipe  */}
-      <AngleFeatureSectionWithIcons
-imageSrc="/coolers/freeze_121/HeadPipe/image.png"
-features={[
-  {
-    title: "COPPER HEATPIPES",
-    highlight: "COPPER",
-    description:
-      "4 pure copper heatpipe. The evaporation and condensation of the liquid in the fully enclosed vacuum tube made high performance heat transfer.",
-    position: "left-1",
-    icon: "/coolers/freeze_121/HeadPipe/left-1.png",
-  },
-  {
-    title: "ALUMINIUM HEATSINKS",
-    highlight: "ALUMINIUM",
-    description:
-      "High properties of heat dissipation, increase density and enlarge heat dissipation area and tightly coupled to the heatpipes.",
-    position: "left-2",
-    icon: "/coolers/freeze_121/HeadPipe/left-2.png",
-  },
-  {
-    title: "HEATPIPE DIRECT CONTACT BASE",
-    highlight: "HEATPIPE",
-    description:
-      "Copper pipe direct contact and aluminium base, with smooth cutting process, seamless connection with CPU.",
-    position: "right-1",
-    icon: "/coolers/freeze_121/HeadPipe/right-1.png",
-  },
-  {
-    title: "UNIVERSAL PLATFORM",
-    highlight: "UNIVERSAL",
-    description:
-      "High toughness steel, double buckle design, supports most Intel and AMD CPUs.",
-    position: "right-2",
-    icon: "/coolers/freeze_121/HeadPipe/right-2.png",
-  },
-]}
-/>
        {/*  slider  */}
        <NinjaSlider slides={slides} />
           {/* Join Group  */}
@@ -204,4 +162,4 @@ features={[
   );
 };
 
-export default air_freeze_121_page;
+export default l240_page;
