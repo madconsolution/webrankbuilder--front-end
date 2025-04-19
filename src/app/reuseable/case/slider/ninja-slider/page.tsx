@@ -23,10 +23,10 @@ const NinjaSlider: React.FC<NinjaSliderProps> = ({ slides }) => {
   });
 
   return (
-    <div className="relative w-full max-w-[1313px] mx-auto py-10 px-4 bg-[#D9D9D91A] rounded-[40px]">
+    <div className="relative w-full mx-auto m-[50px] px-4 bg-[#D9D9D91A] rounded-[40px]">
       <div
         ref={sliderRef}
-        className="keen-slider  overflow-hidden  py-12"
+        className="keen-slider  overflow-hidden w-full max-w-[1313px]  mx-auto  py-12"
       >
         {slides.map((slide, idx) => (
           <div

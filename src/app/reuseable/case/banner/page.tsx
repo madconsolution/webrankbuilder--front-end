@@ -29,7 +29,7 @@ const CaseBanner: React.FC<BannerProps> = ({ bgImage, logo1, logo2, description 
         </div>
         <div className="text-xl sm:text-2xl md:text-3xl font-medium tracking-widest leading-snug space-y-2">
           {lines.map((line, idx) => (
-            <p key={idx}>{line}</p>
+            <h5 key={idx}>{line}</h5>
           ))}
         </div>
       </div>

@@ -9,8 +9,8 @@ export default function Footer() {
       <div className="max-w-custom w-full md:w-[1440px] mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Footer Menu */}
         <div>
-          <h3 className=" mb-2">FOOTER MENU</h3>
-          <div className="grid grid-cols-2 gap-2 text-gray-400 text-sm">
+          <h6 className=" mb-2">FOOTER MENU</h6>
+          <div className="grid grid-cols-2 gap-2  text-sm">
             <p className="hover:text-white cursor-pointer">Tortox Shadow</p>
             <p className="hover:text-white cursor-pointer">Tortox Magnus</p>
             <p className="hover:text-white cursor-pointer">Tortox Neon</p>
@@ -26,7 +26,7 @@ export default function Footer() {
 
         {/* Newsletter Signup */}
         <div>
-          <h3 className=" mb-2">NEWSLETTER SIGNUP</h3>
+          <h6 className=" mb-2">NEWSLETTER SIGNUP</h6>
           <p className="text-gray-400 mb-4 text-sm">
             By subscribing to our mailing list you will always be updated with
             the latest news from us.
@@ -47,7 +47,7 @@ export default function Footer() {
 
         {/* Contact Info */}
         <div>
-          <h3 className=" mb-2">GET IN TOUCH</h3>
+          <h6 className=" mb-2">GET IN TOUCH</h6>
           <p className="text-gray-400 text-sm">
             T (+971) <span className="font-semibold">56 502 0762</span>
           </p>

@@ -4,6 +4,8 @@ import SpecificationSection from "@/app/reuseable/cables/Specification/page";
 import CaseBanner from "@/app/reuseable/case/banner/page";
 import NinjaSlider, { SlideContent } from "@/app/reuseable/case/slider/ninja-slider/page";
 import CallToActionBanner from "@/app/reuseable/products/join-group/page";
+import ProductSlider from "@/app/reuseable/products/product-slider/page";
+import Title2 from "@/app/reuseable/products/title-2/page";
 import Title from "@/app/reuseable/products/title/page";
 
 // Here is specification date
@@ -31,6 +33,12 @@ const specs = [
     },
   
   ];   
+  const sampleProducts = [
+    { image: '/products/IRIS/Feature-slider/image-1.png' },
+    { image: '/products/IRIS/Feature-slider/image-2.png' },
+    { image: '/products/IRIS/Feature-slider/Background.png' },
+  ];
+  
 const luna_page = () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
@@ -55,16 +63,18 @@ const luna_page = () => {
               </ div>
           {/*  slider  */}
           <NinjaSlider slides={slides} />
-        {/* Specification section */}
-        <SpecificationSection specifications={specs} />
-           
+                  
           {/* Join Group  */}
       <CallToActionBanner
   text="Over 1000's of gamers already using our products."
   buttonLabel="Join Our Group"
   buttonHref="/community"
 />
-
+        {/* Specification section */}
+        <SpecificationSection specifications={specs} />
+   
+          {/* Products slider */}
+      <ProductSlider title="Other Products" products={sampleProducts} />
     </ div>
   );
 };

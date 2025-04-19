@@ -15,9 +15,18 @@ const SpecificationSection: FC<SpecificationSectionProps> = ({ specs, imageSrc }
   return (
     <section className="bg-black text-white py-16 px-6 md:px-12 lg:px-20 font-sans relative">
       <div className="max-w-7xl mx-auto relative z-10">
-        <h2 className="text-5xl font-bold text-red-600 uppercase tracking-widest mb-16">
-          Specification
-        </h2>
+      <h1 className=" text-4xl md:text-5xl font-extrabold mb-10 uppercase">
+          <span
+            className="inline-block text-transparent"
+            style={{
+              WebkitTextStroke: '1px #E7000B',
+              color: '#000',
+            }}
+          >
+           Specification
+          </span>
+        </h1>
+
         <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {specs.map((spec, index) => (
