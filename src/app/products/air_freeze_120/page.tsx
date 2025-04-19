@@ -6,6 +6,7 @@ import CallToActionBanner from "@/app/reuseable/products/join-group/page";
 import ProductSlider from "@/app/reuseable/products/product-slider/page";
 import Title from "@/app/reuseable/products/title/page";
 import SpecificationSection from "@/app/reuseable/products/specifications/page";
+import AngleFeatureSectionWithIcons from "@/app/reuseable/air/HeatPipe/paget";
 
 // ✅the SpecItem type here
 type SpecItem = {
@@ -140,6 +141,46 @@ const air_freeze_120_page = () => {
           subTitle="AIR FREEZE 120"
           content="Air Freeze 120 keeps a pure aluminium base combining with 4 pure copper heat pipes, efficient heat dissipation. Solves the high temperature problems, farewell game crashing. Dual 15 LEDs ultra-quiet fan. Hydraulic bearing, reduce the frictional resistance, effectively lower the noise. Design for multiple platforms, simple installation."
         />
+
+             {/* HeadPipe  */}
+      <AngleFeatureSectionWithIcons
+  imageSrc="/coolers/freeze_121/HeadPipe/image.png"
+  features={[
+    {
+      title: "COPPER HEATPIPES",
+      highlight: "COPPER",
+      description:
+        "4 pure copper heatpipe. The evaporation and condensation of the liquid in the fully enclosed vacuum tube made high performance heat transfer.",
+      position: "left-1",
+      icon: "/coolers/freeze_121/HeadPipe/left-1.png",
+    },
+    {
+      title: "ALUMINIUM HEATSINKS",
+      highlight: "ALUMINIUM",
+      description:
+        "High properties of heat dissipation, increase density and enlarge heat dissipation area and tightly coupled to the heatpipes.",
+      position: "left-2",
+      icon: "/coolers/freeze_121/HeadPipe/left-2.png",
+    },
+    {
+      title: "HEATPIPE DIRECT CONTACT BASE",
+      highlight: "HEATPIPE",
+      description:
+        "Copper pipe direct contact and aluminium base, with smooth cutting process, seamless connection with CPU.",
+      position: "right-1",
+      icon: "/coolers/freeze_121/HeadPipe/right-1.png",
+    },
+    {
+      title: "UNIVERSAL PLATFORM",
+      highlight: "UNIVERSAL",
+      description:
+        "High toughness steel, double buckle design, supports most Intel and AMD CPUs.",
+      position: "right-2",
+      icon: "/coolers/freeze_121/HeadPipe/right-2.png",
+    },
+  ]}
+/>
+
       </div>
        {/*  slider  */}
        <NinjaSlider slides={slides} />
