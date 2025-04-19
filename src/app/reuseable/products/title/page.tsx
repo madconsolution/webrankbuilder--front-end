@@ -8,7 +8,7 @@ interface TitleProps {
 
 export default function Title({ mainTitle, subTitle, content }: TitleProps) {
   return (
-    <div className=" text-white py-28 px-4 w-9/12 md:w-[1440px] mx-auto ">
+    <div className=" text-white py-[68px] px-4 w-full md:w-[971px] mx-auto ">
       {/* Heading */}
       <h3 className="text-3xl font-bold text-center ">
         {mainTitle} <span className="text-red-500 uppercase ">{subTitle}</span>

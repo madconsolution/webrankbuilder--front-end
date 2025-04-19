@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Roboto&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -27,9 +28,32 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-
 }
-/*  */
+
+/* Apply Roboto to all heading tags */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Apply Open Sans to paragraph tags */
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+}
+a {
+  font-family: 'Open Sans', sans-serif;
+}
+link {
+  font-family: 'Open Sans', sans-serif;
+}
+span {
+  font-family: 'Open Sans', sans-serif; 
+}
 /* Hide scrollbar but keep scroll behavior */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
@@ -40,17 +64,6 @@ body {
   scrollbar-width: none; /* Firefox */
 }
 
-/* h2 {
-  font-family: Roboto;
-  font-weight: 400;
-  font-size: 34px;
-  line-height: 40px;
-  letter-spacing: 0%;
-  text-align: center;
-  vertical-align: middle;
-  color: #ffffff;
-} */
-
 products_banner_logo_box {
   width: 492.5;
   height: 33;
@@ -58,9 +71,7 @@ products_banner_logo_box {
   left: 474px;
 }
 
-
-/* Swipper  */
-
+/* Swipper */
 .swiper-pagination-bullet {
   width: 8px;
   height: 8px;
