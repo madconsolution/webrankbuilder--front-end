@@ -103,20 +103,22 @@ const bx6_page = () => {
           subTitle="bx600"
           content="Simplest and most powerful PSU design allowing you to handle your many devices without worry. No matter what combination of devices and components you have, our PSUs have plenty of power to handle all your needs. Whether we are using Single or Multi rail design, it will always function the same way, easy and simple."
         />
-      </div>
-          {/* Grid  */}
-          <PowerGrid items={powerItems} />
-          {/*  slider  */}
-          <NinjaSlider slides={slides} />
-      {/* Specification section */}
-      <SpecificationSection specifications={specs} />
-
-      {/* Join Group  */}
+              {/*  slider  */}
+              <NinjaSlider slides={slides} />
+          {/* Join Group  */}
       <CallToActionBanner
         text="Over 1000's of gamers already using our products."
         buttonLabel="Join Our Group"
         buttonHref="/community"
       />
+      </div>
+          {/* Grid  */}
+          <PowerGrid items={powerItems} />
+    
+      {/* Specification section */}
+      <SpecificationSection specifications={specs} />
+
+    
     </div>
   );
 };

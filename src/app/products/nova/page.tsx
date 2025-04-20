@@ -1,26 +1,23 @@
 'use client';
 
+
 import ProductBanner from "@/app/reuseable/products/banner/banner";
 import Expensive from "@/app/reuseable/products/expensive/expensive";
 import FeatureBlock from "@/app/reuseable/products/Feature-Block/Feature_Block";
 
 import FeatureHighlightSection from "@/app/reuseable/products/feature/feature";
+import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/pecification";
 
 import FeatureSlider from "@/app/reuseable/products/freature-slider/freature_slider";
-import HighlightsSlider from "@/app/reuseable/products/Highlights-silder/Highlights_silder";
+
 import CallToActionBanner from "@/app/reuseable/products/join-group/join_group";
 import AutoSlider from "@/app/reuseable/products/overview/overview";
 import ProductSlider from "@/app/reuseable/products/product-slider/product_slider";
-import ProductFeatureShowcase from "@/app/reuseable/products/Showcase/Showcase";
-import SpecificationSection from "@/app/reuseable/products/specifications/specifications";
+
 import Title2 from "@/app/reuseable/products/title-2/title_2";
 import Title from "@/app/reuseable/products/title/title";
 
-// ✅ Add the SpecItem type here
-type SpecItem = {
-  title: string;
-  items: string[];
-};
+
 
 // Here is auto-slider data
 const products = [
@@ -66,74 +63,40 @@ const sampleProducts = [
   { image: '/products/IRIS/Feature-slider/Background.png' },
 ];
 
-const specs: SpecItem[] = [
-  {
-    title: "Featured",
-    items: [
-      "Clean design, well balanced between a perfectly optimized interior structure and the sleek exterior design",
-      "Color: <strong>Black</strong>",
-      "Material: <strong>SECC 0.6mm</strong>",
-      "Motherboard: EATX/ATX/Micro ATX/Mini-ITX",
-      "HDD/1–5/2.5” x 5",
-      "Add-on card: ≤ 7",
-      "Max. VGA card: <strong>400mm</strong>",
-      "Max. CPU Cooler: <strong>175mm</strong>",
-      "Power Supply: Bottom/ATX PS2 PSU",
-    ],
-  },
-  {
-    title: "Cooling System",
-    items: [
-      "Front: 3*120MM (Included) <strong>Support 240mm liquid cooler</strong>",
-      "Rear: 120 fan (*optional)",
-      "1*120mm (included) <strong>Support 240 liquid cooler</strong>",
-      "Bottom: 2*120mm (Fan Optional) <strong>Support 240 liquid cooler</strong>",
-      "Front water cooling: <strong>360mm/280mm/152mm</strong>",
-      "Rear water cooling: <strong>240mm*175mm</strong>",
-    ],
-  },
-  {
-    title: "Dimensions And Weight",
-    items: [
-      "IRIS comes with high quality temper glass side panels in crystal clear to showcase the hardware.",
-      "16.5\"x7.9\"x18\"(overall)",
-      "17.7\"x7.9\"x18\"(Case)",
-      "2.1\"x11.7\"x12.1\"(chassis)",
-      "Weight: <strong>10.5kg</strong>",
-    ],
-  },
-  {
-    title: "I/O ports",
-    items: [
-      "Top-front panel features two USB 3.0 data transfer port along with one RESET button as well as HD audio I/O to grant direct access when needed.",
-      "1*Power",
-      "2*USB3.0",
-      "1*RESET button",
-      "1*HD Audio in / out",
-    ],
-  },
-  {
-    title: "Additional Features",
-    items: [
-      "Preinstalled with 4x True Dual loop fans for a more efficient cooling performance.",
-      "VGA card convenient installation",
-      "CPU cooler height: up to <strong>175mm</strong>",
-      "Filtered front ventilation",
-      "Back cable management",
-      "Thumbs screw mounted side panels for easy access",
-    ],
-  },
-  {
-    title: "Expansion",
-    items: [
-      "The improved air intake mesh on the front comes with an embedded nylon filter that prevents dust from entering the system while the drive filter at the bottom keeps PSU free from dust.",
-      "2*3.5” external drive bay",
-      "2*2.5” SSD drive bay",
-      "8* expansion slots",
-    ],
-  },
-];
-
+  // Here is specification date
+ const specs: SpecificationItem[] = [
+    {
+      type: 'featured',
+      items: [
+        'Aorus fan no need an extra controller for rainbow effect',
+        'Stand out with vibrant RGB lighting',
+        'Custom engineered for superior cooling',
+        'Minimize noise or maximize airflow',
+        'Stay quiet, run cool!',
+      ],
+    },
+    {
+      type: 'dimensions',
+      items: [
+        { label: 'Voltage', value: 'DC 12V' },
+        { label: 'Fan Dimensions', value: '120 x 120 x 25mm' },
+        { label: 'Fan Speed', value: '800~2000 R.P.M' },
+        { label: 'Air Flow', value: '18~25.4 CFM' },
+        { label: 'Static Pressure', value: '0.55~1.51 mm-H2O' },
+        { label: 'Noise Level', value: '≤13.5~25.8 dB(A)' },
+      ],
+    },
+    {
+      type: 'additional',
+      items: [
+        'Custom engineered for superior cooling. Minimize noise or maximize airflow',
+        { label: 'Bearing Type', value: 'Hydraulic Bearing', highlight: true },
+        { label: 'Connector', value: '2510–4Pin' },
+        { label: 'Lead Wire Length', value: '300mm', highlight: true },
+        { label: 'LED', value: 'Rainbow 16 LEDs', highlight: true },
+      ],
+    },
+  ];
 const NovaPage = () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
@@ -187,20 +150,7 @@ const NovaPage = () => {
   buttonLabel="Join Our Group"
   buttonHref="/community"
 />
-
-       {/* Feature showcase */}
-       <ProductFeatureShowcase
-  imageSrc="/products/IRIS/showcase/image-1.png"
- imageAlt="Remote and Fan Controller"
- title="High Performance"
- highlight="Spectre Fans Included"
- description={`Tortox IRIS comes preinstalled with 4x Tortox Dual loop fans for a more efficient cooling performance. The Included RGB fansare RGB center illuminated and can support multiple control standards like ASUS AURA SYNC, MSI MISTIC LIGHT SYNC, GIGABYTE RGB Fusion 2.0 and ASRock POLYCHROME RGB. This allows you to control the fan lighting simply through software and synchronize the fans, and other devices such as mice and keyboard for more attractive lighting.`}
-  noteLine1="8 Fan 2 LED strip Aura connection with Remote"
-  noteLine2="4x DUAL LOOP 120MM RGB RAINBOW FANS*"
- />
-
-
-{/* Expensive */}
+     {/* Expensive */}
 
 <Expensive
   bgImage="/products/Shadow/expensive/image.png"
@@ -209,17 +159,8 @@ const NovaPage = () => {
 />
 
 
-       {/* Highlight slider  */}
-        <HighlightsSlider
-   title="Magnetic And Removable"
-   highlight="Built-In Dust Filters"
-  description="Your system should look good inside and out. Featuring a large removable and magnetic dust filter on the Top of case, along with dust filters for the power supply at the bottom. Shadow keeps dust where it belongs - outside your PC."
-  images={[
-     { src: '/products/IRIS/highlight/image-1.png', alt: 'Front Case' },
-    { src: '/products/IRIS/highlight/image-2.png', alt: 'Mesh Filter' },
-    { src: '/products/IRIS/highlight/image-3.png', alt: 'RGB Case' },
-   ]}
- />
+
+
 
 
  
@@ -246,8 +187,8 @@ const NovaPage = () => {
   choose the NEON that blends perfectly with your surroundings.`}
   imageLeft={false}
 />
-          {/* Specifications */}
-      <SpecificationSection specs={specs} imageSrc="/products/IRIS/specification/image.png" />
+        {/* Specification section */}
+        <SpecificationSection specifications={specs} />
           {/* Products slider */}
       <ProductSlider title="Other Products" products={sampleProducts} />
     </ div>

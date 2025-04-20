@@ -12,7 +12,7 @@ import CompatibilitySection from "@/app/reuseable/liquid/Compatibility/banner";
   // Here is sldier data
   const slides: SlideContent[] = [
     {
-      image: '/cheir/gc_400_r/slider/image.png',
+      image: '/liquid/l120/slider/image.png',
       leftTexts: [
         'Tempered Glass Panel Showcases Custom RGB Lighting',
         'With High-Quality Hydraulic Bearing, Working Life Is Up To 20000 Hrs Under High-Speed Rotation Condition',
