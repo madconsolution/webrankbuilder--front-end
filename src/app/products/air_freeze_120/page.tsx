@@ -9,6 +9,7 @@ import Title from "@/app/reuseable/products/title/page";
 import AngleFeatureSectionWithIcons from "@/app/reuseable/air/HeatPipe/paget";
 import AutoSlider from "@/app/reuseable/products/overview/page";
 import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/page";
+import FanBracketSection from "@/app/reuseable/air/FanBracket/page";
 
 
   // here is slider
@@ -155,7 +156,8 @@ const air_freeze_120_page = () => {
         buttonHref="/community"
       />
   
-
+        {/* Here is fan - bracket section */}
+        <FanBracketSection/>
            {/* Specification section */}
       <SpecificationSection specifications={specs} />
              {/* Products slider */}

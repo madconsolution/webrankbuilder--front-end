@@ -5,7 +5,8 @@ import PowerGrid from "@/app/reuseable/power/power-grid/page";
 import CallToActionBanner from "@/app/reuseable/products/join-group/page";
 import ProductSlider from "@/app/reuseable/products/product-slider/page";
 import Title from "@/app/reuseable/products/title/page";
-import SpecificationSection from "@/app/reuseable/products/specifications/page";
+import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/page";
+import CompatibilitySection from "@/app/reuseable/liquid/Compatibility/page";
 
 // ✅the SpecItem type here
 type SpecItem = {
@@ -52,73 +53,40 @@ type SpecItem = {
   ];
 
   // here is specification data
-  const specs: SpecItem[] = [
-    {
-      title: "Featured",
-      items: [
-        "Clean design, well balanced between a perfectly optimized interior structure and the sleek exterior design",
-        "Color: <strong>Black</strong>",
-        "Material: <strong>SECC 0.6mm</strong>",
-        "Motherboard: EATX/ATX/Micro ATX/Mini-ITX",
-        "HDD/1–5/2.5” x 5",
-        "Add-on card: ≤ 7",
-        "Max. VGA card: <strong>400mm</strong>",
-        "Max. CPU Cooler: <strong>175mm</strong>",
-        "Power Supply: Bottom/ATX PS2 PSU",
-      ],
-    },
-    {
-      title: "Cooling System",
-      items: [
-        "Front: 3*120MM (Included) <strong>Support 240mm liquid cooler</strong>",
-        "Rear: 120 fan (*optional)",
-        "1*120mm (included) <strong>Support 240 liquid cooler</strong>",
-        "Bottom: 2*120mm (Fan Optional) <strong>Support 240 liquid cooler</strong>",
-        "Front water cooling: <strong>360mm/280mm/152mm</strong>",
-        "Rear water cooling: <strong>240mm*175mm</strong>",
-      ],
-    },
-    {
-      title: "Dimensions And Weight",
-      items: [
-        "IRIS comes with high quality temper glass side panels in crystal clear to showcase the hardware.",
-        "16.5\"x7.9\"x18\"(overall)",
-        "17.7\"x7.9\"x18\"(Case)",
-        "2.1\"x11.7\"x12.1\"(chassis)",
-        "Weight: <strong>10.5kg</strong>",
-      ],
-    },
-    {
-      title: "I/O ports",
-      items: [
-        "Top-front panel features two USB 3.0 data transfer port along with one RESET button as well as HD audio I/O to grant direct access when needed.",
-        "1*Power",
-        "2*USB3.0",
-        "1*RESET button",
-        "1*HD Audio in / out",
-      ],
-    },
-    {
-      title: "Additional Features",
-      items: [
-        "Preinstalled with 4x True Dual loop fans for a more efficient cooling performance.",
-        "VGA card convenient installation",
-        "CPU cooler height: up to <strong>175mm</strong>",
-        "Filtered front ventilation",
-        "Back cable management",
-        "Thumbs screw mounted side panels for easy access",
-      ],
-    },
-    {
-      title: "Expansion",
-      items: [
-        "The improved air intake mesh on the front comes with an embedded nylon filter that prevents dust from entering the system while the drive filter at the bottom keeps PSU free from dust.",
-        "2*3.5” external drive bay",
-        "2*2.5” SSD drive bay",
-        "8* expansion slots",
-      ],
-    },
-  ];
+   // Here is specification date
+   export const specs: SpecificationItem[] = [
+     {
+       type: 'featured',
+       items: [
+         'Aorus fan no need an extra controller for rainbow effect',
+         'Stand out with vibrant RGB lighting',
+         'Custom engineered for superior cooling',
+         'Minimize noise or maximize airflow',
+         'Stay quiet, run cool!',
+       ],
+     },
+     {
+       type: 'dimensions',
+       items: [
+         { label: 'Voltage', value: 'DC 12V' },
+         { label: 'Fan Dimensions', value: '120 x 120 x 25mm' },
+         { label: 'Fan Speed', value: '800~2000 R.P.M' },
+         { label: 'Air Flow', value: '18~25.4 CFM' },
+         { label: 'Static Pressure', value: '0.55~1.51 mm-H2O' },
+         { label: 'Noise Level', value: '≤13.5~25.8 dB(A)' },
+       ],
+     },
+     {
+       type: 'additional',
+       items: [
+         'Custom engineered for superior cooling. Minimize noise or maximize airflow',
+         { label: 'Bearing Type', value: 'Hydraulic Bearing', highlight: true },
+         { label: 'Connector', value: '2510–4Pin' },
+         { label: 'Lead Wire Length', value: '300mm', highlight: true },
+         { label: 'LED', value: 'Rainbow 16 LEDs', highlight: true },
+       ],
+     },
+   ];
   
 const l120_page = () => {
   return (
@@ -153,9 +121,9 @@ const l120_page = () => {
             <PowerGrid items={powerItems} />
          
 
-       
-             {/* Specifications */}
-      <SpecificationSection specs={specs} imageSrc="/products/IRIS/specification/image.png" />
+            <CompatibilitySection />
+                   {/* Specification section */}
+      <SpecificationSection specifications={specs} />
              {/* Products slider */}
              <ProductSlider title="Other Products" products={sampleProducts} />
     </div>

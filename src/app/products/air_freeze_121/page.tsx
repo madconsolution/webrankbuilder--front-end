@@ -153,6 +153,8 @@ const air_freeze_121_page = () => {
         buttonLabel="Join Our Group"
         buttonHref="/community"
       />
+
+      {/* Here is fan - bracket section */}
            <FanBracketSection/>
 
                {/* Specification section */}
