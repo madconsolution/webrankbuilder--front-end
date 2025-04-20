@@ -38,18 +38,18 @@ const products = [
 
 const slides = [
   {
-    title: 'Up to',
-    highlight: 'EATX support',
+    title: 'Multi-Color Modes',
+    highlight: ' Of Light Strip',
     description:
-      'Tortox IRIS supports up to EATX motherboards while having plenty of room for high end water-cooling builds. At the back of the motherboard tray, leaves plenty of room for cables management to support high end components and PSUs.',
-    image: '/products/IRIS/Feature-slider/image-1.png',
+      'RGB light Strip with pure design of front panel and pre-installed RGB LED strip in the front and bottom delivers RGB LED illumination, which is exclusively designed for Tortox Nova RGB PC gaming case.',
+    image: '/products/Nova/showcase/image-1.png',
   },
   {
-    title: 'Tempered Glass',
-    highlight: 'Side Panels',
+    title: 'The Rigor And Detail Of',
+    highlight: ' Nordic Design',
     description:
-      'Tortox IRIS features high-quality tempered glass side panel to showcase the beautiful components. IRIS comes with high quality temper glass side panels is crystal clear to showcase the hardware while the other is 100% dark tinted to hide the cables behind motherboard tray.',
-    image: '/products/IRIS/Feature-slider/image-2.png',
+      '0.8MM Hardware Structure to achieve solid and steady effect.',
+      image: '/products/Nova/showcase/image-2.png',
   },
   {
     title: 'Dual Chamber',

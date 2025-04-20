@@ -29,37 +29,37 @@ const FeatureSlider: React.FC<FeatureSliderProps> = ({ slides }) => {
   };
 
   return (
-    <div className="relative w-full md:w-[1150px] mx-auto my-auto py-[50px] items-center  text-white ">
+    <div className="relative w-full md:w-[1150px] mx-auto py-[50px] text-white">
       <div
         ref={scrollRef}
-        className="flex gap-6 overflow-x-scroll scroll-smooth pb-4 items-center"
+        className="flex gap-6 overflow-x-scroll scroll-smooth pb-4"
         style={{ scrollbarWidth: 'none' }}
       >
         {slides.map((slide, index) => (
           <div
             key={index}
-            className="w-[550px] flex-shrink-0 rounded-lg p-2 mb-5 flex flex-col "
+            className="w-[550px] h-[700px] flex-shrink-0 rounded-lg p-2 mb-5 flex flex-col relative"
           >
             {/* Text Section */}
-            <div className="px-4 mb-12 md:w-[411px] ">
-              <h3 className="text-[16px] font-bold text-white mb-2 leading-snug">
+            <div className="px-4 pt-2">
+              <h4 className="text-[16px] md:text-[20px] font-bold text-white mb-2 leading-snug">
                 {slide.title}{' '}
                 {slide.highlight && (
                   <span className="text-red-500">{slide.highlight}</span>
                 )}
-              </h3>
-              <p className="text-[14px] text-gray-300 leading-[22px]">
+              </h4>
+              <p className="text-[14px] md:text-[16px]  text-gray-300 leading-[22px] max-w-[480px]">
                 {slide.description}
               </p>
             </div>
 
-            {/* Image Section */}
-            <div className="w-[100%] h-[400px] relative rounded-lg overflow-hidden items-center">
+            {/* Image Section at Bottom */}
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[550px] h-[500px]  rounded-lg overflow-hidden">
               <Image
                 src={slide.image}
                 alt="feature"
                 fill
-                style={{ objectFit: 'cover' }}
+                className="object-cover rounded-lg"
               />
             </div>
           </div>
