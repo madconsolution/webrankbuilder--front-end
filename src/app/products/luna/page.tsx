@@ -3,7 +3,7 @@
 import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/page";
 import CaseBanner from "@/app/reuseable/case/banner/page";
 import LunaSlider from "@/app/reuseable/case/slider/luna-slider/page";
-import { SlideContent } from "@/app/reuseable/case/slider/ninja-slider/page";
+
 import CallToActionBanner from "@/app/reuseable/products/join-group/page";
 import ProductSlider from "@/app/reuseable/products/product-slider/page";
 
