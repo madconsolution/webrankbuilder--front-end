@@ -51,7 +51,7 @@ const ArcusSlider: React.FC<ArcusSliderProps> = ({ slides }) => {
             </div>
 
             {/* Right Texts */}
-            <div className="flex-1 space-y-4 text-left px-4 md:px-0">
+            <div className="flex-1 space-y-4 text-right px-4 md:px-0">
               {slide.rightTexts.map((text, i) => (
                 <p key={i} className="text-[14px] md:text-[16px] font-light">
                   {text}

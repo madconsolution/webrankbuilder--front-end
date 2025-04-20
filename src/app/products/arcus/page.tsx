@@ -1,23 +1,79 @@
 'use client';
-
-import SpecificationSection from "@/app/reuseable/cables/Specification/page";
+import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/page";
 import CaseBanner from "@/app/reuseable/case/banner/page";
 import ArcusSlider from "@/app/reuseable/case/slider/arcus-slider/page";
 import CallToActionBanner from "@/app/reuseable/products/join-group/page";
 import Title from "@/app/reuseable/products/title/page";
 
-
 // Here is specification date
-const specs = [
-    { label: 'Model', value: 'USB C To HDMI' },
-    { label: 'Built In Conversion Chip', value: 'Yes' },
-    { label: 'PVC Jackets', value: 'Yes' },
-    { label: 'Shell Type', value: 'Aluminium' },
-    { label: 'Max Resolution', value: '4k@60Hz' },
-    { label: 'Compatibility', value: 'Smartphone, TV, Projector' },
-  ];
+export const specs: SpecificationItem[] = [
+  {
+    type: 'featured',
+    items: [
+      'Aorus fan no need an extra controller for rainbow effect',
+      'Stand out with vibrant RGB lighting',
+      'Custom engineered for superior cooling',
+      'Minimize noise or maximize airflow',
+      'Stay quiet, run cool!',
+    ],
+  },
+  {
+    type: 'dimensions',
+    items: [
+      { label: 'Voltage', value: 'DC 12V' },
+      { label: 'Fan Dimensions', value: '120 x 120 x 25mm' },
+      { label: 'Fan Speed', value: '800~2000 R.P.M' },
+      { label: 'Air Flow', value: '18~25.4 CFM' },
+      { label: 'Static Pressure', value: '0.55~1.51 mm-H2O' },
+      { label: 'Noise Level', value: '≤13.5~25.8 dB(A)' },
+    ],
+  },
+  {
+    type: 'additional',
+    items: [
+      'Custom engineered for superior cooling. Minimize noise or maximize airflow',
+      { label: 'Bearing Type', value: 'Hydraulic Bearing', highlight: true },
+      { label: 'Connector', value: '2510–4Pin' },
+      { label: 'Lead Wire Length', value: '300mm', highlight: true },
+      { label: 'LED', value: 'Rainbow 16 LEDs', highlight: true },
+    ],
+  },
+];
+
 
   const slideData = [
+    {
+      image: "/case/Arcus/slider/image.png",
+      leftTexts: [
+        'Do Not Need Extra Controller For Rainbow Effect',
+        'With URA RGB Circle Fan More Distinctive Visual Effect',
+        'Precise PWM Control',
+        'RGB Fan',
+      ],
+      rightTexts: [
+        '300mm Lead Wire Length',
+        'Rainbow 16 LEDs',
+        'Fan Airflow - 57.2 CFM',
+        'Magnetic Levitation Fans',
+        'Low Noise Fans',
+      ],
+    },
+    {
+      image: "/case/Arcus/slider/image.png",
+      leftTexts: [
+        'Do Not Need Extra Controller For Rainbow Effect',
+        'With URA RGB Circle Fan More Distinctive Visual Effect',
+        'Precise PWM Control',
+        'RGB Fan',
+      ],
+      rightTexts: [
+        '300mm Lead Wire Length',
+        'Rainbow 16 LEDs',
+        'Fan Airflow - 57.2 CFM',
+        'Magnetic Levitation Fans',
+        'Low Noise Fans',
+      ],
+    },
     {
       image: "/case/Arcus/slider/image.png",
       leftTexts: [
