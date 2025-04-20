@@ -2,10 +2,11 @@
 
 import SpecificationSection from "@/app/reuseable/cables/Specification/page";
 import CaseBanner from "@/app/reuseable/case/banner/page";
-import NinjaSlider, { SlideContent } from "@/app/reuseable/case/slider/ninja-slider/page";
+import LunaSlider from "@/app/reuseable/case/slider/luna-slider/page";
+import { SlideContent } from "@/app/reuseable/case/slider/ninja-slider/page";
 import CallToActionBanner from "@/app/reuseable/products/join-group/page";
 import ProductSlider from "@/app/reuseable/products/product-slider/page";
-import Title2 from "@/app/reuseable/products/title-2/page";
+
 import Title from "@/app/reuseable/products/title/page";
 
 // Here is specification date
@@ -18,21 +19,7 @@ const specs = [
     { label: 'Compatibility', value: 'Smartphone, TV, Projector' },
   ];
 
-  // Here is sldier data
-  const slides: SlideContent[] = [
-    {
-      image: '/case/Ninja-x/slider/image.png',
-      leftTexts: [
-        'Tempered Glass Panel Showcases Custom RGB Lighting',
-        'With High-Quality Hydraulic Bearing, Working Life Is Up To 20000 Hrs Under High-Speed Rotation Condition',
-      ],
-      rightTexts: [
-        'Water-Cooling Installation Simplified For Both AIO And Custom Loop',
-        'Adaptive Noise Reduction Optimizes Cooling And Noise Balance For Best Gaming Comfort',
-      ],
-    },
-  
-  ];   
+ 
   const sampleProducts = [
     { image: '/products/IRIS/Feature-slider/image-1.png' },
     { image: '/products/IRIS/Feature-slider/image-2.png' },
@@ -41,7 +28,7 @@ const specs = [
   
 const luna_page = () => {
   return (
-    <div className="w-full md:w-[1440px] mx-auto">
+    <div className="w-full md:w-[1440px] mx-auto overflow-hidden">
    <CaseBanner
       bgImage="/case/luna/banner.png"
       logo1="/logo.png"
@@ -61,9 +48,47 @@ const luna_page = () => {
                content="The design is user friendly interface: a 3pin and Molex Pin two interface design, compatible with any motherboard, power supply plug or other devices. Super Silent PC Heat Sink: all copper motor and rugged. hydraulic press bearings with self-lubricating antifriction material, reduce operating noise, improve efficiency, and run the noise less than 25.5 decibels."
              />
               </ div>
-          {/*  slider  */}
-          <NinjaSlider slides={slides} />
-                  
+      
+        {/* here is luna slider */}
+          <LunaSlider
+  slides={[
+    {
+      image: '/case/luna/slider/image.png', 
+     
+      leftTexts: [
+        'High-Performance Fan For The CPU Heatsink',
+        'Standard 120mm Computer Case Fan',
+        'High-Speed And High-Brightness LED Design',
+        'High Capacity Cooling',
+        'Water Cooling System',
+      ],
+    },
+    {
+      image: '/case/luna/slider/image.png', 
+     
+      leftTexts: [
+        'High-Performance Fan For The CPU Heatsink',
+        'Standard 120mm Computer Case Fan',
+        'High-Speed And High-Brightness LED Design',
+        'High Capacity Cooling',
+        'Water Cooling System',
+      ],
+    },
+    {
+      image: '/case/luna/slider/image.png', 
+     
+      leftTexts: [
+        'High-Performance Fan For The CPU Heatsink',
+        'Standard 120mm Computer Case Fan',
+        'High-Speed And High-Brightness LED Design',
+        'High Capacity Cooling',
+        'Water Cooling System',
+      ],
+    },
+   
+  ]}
+/>
+
           {/* Join Group  */}
       <CallToActionBanner
   text="Over 1000's of gamers already using our products."
