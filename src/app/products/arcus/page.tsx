@@ -3,6 +3,7 @@ import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/
 import CaseBanner from "@/app/reuseable/case/banner/page";
 import ArcusSlider from "@/app/reuseable/case/slider/arcus-slider/page";
 import CallToActionBanner from "@/app/reuseable/products/join-group/page";
+import ProductSlider from "@/app/reuseable/products/product-slider/page";
 import Title from "@/app/reuseable/products/title/page";
 
 // Here is specification date
@@ -91,6 +92,14 @@ export const specs: SpecificationItem[] = [
       ],
     },
   ];
+
+  // here is slider data
+  const sampleProducts = [
+    { image: '/products/IRIS/Feature-slider/image-1.png' },
+    { image: '/products/IRIS/Feature-slider/image-2.png' },
+    { image: '/products/IRIS/Feature-slider/Background.png' },
+  ];
+  
 const acrus_page = () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
@@ -115,8 +124,7 @@ const acrus_page = () => {
               </ div>
            {/* here is luna slider */}
            <ArcusSlider slides={slideData} />
-        {/* Specification section */}
-        <SpecificationSection specifications={specs} />
+     
            
           {/* Join Group  */}
       <CallToActionBanner
@@ -124,7 +132,10 @@ const acrus_page = () => {
   buttonLabel="Join Our Group"
   buttonHref="/community"
 />
-
+           {/* Specification section */}
+           <SpecificationSection specifications={specs} />
+                {/* Products slider */}
+      <ProductSlider title="Other Products" products={sampleProducts} />
     </ div>
   );
 };

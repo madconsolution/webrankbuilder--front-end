@@ -4,6 +4,7 @@ import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/
 import CaseBanner from "@/app/reuseable/case/banner/page";
 import NinjaSlider, { SlideContent } from "@/app/reuseable/case/slider/ninja-slider/page";
 import CallToActionBanner from "@/app/reuseable/products/join-group/page";
+import ProductSlider from "@/app/reuseable/products/product-slider/page";
 import Title from "@/app/reuseable/products/title/page";
 
 
@@ -82,6 +83,11 @@ export const specs: SpecificationItem[] = [
   
   ];
   
+  const sampleProducts = [
+    { image: '/products/IRIS/Feature-slider/image-1.png' },
+    { image: '/products/IRIS/Feature-slider/image-2.png' },
+    { image: '/products/IRIS/Feature-slider/Background.png' },
+  ];
   
 const ninja_x_page = () => {
   return (
@@ -107,16 +113,18 @@ const ninja_x_page = () => {
               </ div>
              {/*  slider  */}
              <NinjaSlider slides={slides} />
-        {/* Specification section */}
-        <SpecificationSection specifications={specs} />
-           
-          {/* Join Group  */}
+                       {/* Join Group  */}
       <CallToActionBanner
   text="Over 1000's of gamers already using our products."
   buttonLabel="Join Our Group"
   buttonHref="/community"
 />
-
+        {/* Specification section */}
+        <SpecificationSection specifications={specs} />
+           
+             {/* Products slider */}
+      <ProductSlider title="Other Products" products={sampleProducts} />
+       
     </ div>
   );
 };

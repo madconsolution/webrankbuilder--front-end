@@ -25,7 +25,7 @@ const SparkSlider: React.FC<LunaSliderProps> = ({ slides }) => {
   });
 
   return (
-    <div className="relative w-full max-w-[1100px] mx-auto my-12 bg-[#1F1F1F] rounded-[40px] py-12 px-6">
+    <div className="relative w-full max-w-[1100px] mx-auto my-12 bg-gradient-to-b from-[#D9D9D91A] via-[#9a9a9a6a] to-[#D9D9D91A]  rounded-[40px] py-12 px-6">
       <div ref={sliderRef} className="keen-slider">
         {slides.map((slide, idx) => (
           <div

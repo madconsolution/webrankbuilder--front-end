@@ -22,7 +22,7 @@ const LunaSlider: React.FC<LunaSliderProps> = ({ slides }) => {
   });
 
   return (
-    <div className="relative w-full max-w-[1313px] mx-auto my-[50px] px-20 bg-[#1F1F1F] rounded-[40px] py-12">
+    <div className="relative w-full max-w-[1313px] mx-auto my-[50px] px-20 bg-gradient-to-b from-[#D9D9D91A] via-[#9a9a9a6a] to-[#D9D9D91A]  rounded-[40px] py-12">
       <div
         ref={sliderRef}
         className="keen-slider  overflow-hidden"

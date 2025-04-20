@@ -3,6 +3,7 @@
 import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/page";
 import CaseBanner from "@/app/reuseable/case/banner/page";
 import SparkSlider from "@/app/reuseable/case/slider/spark-slider/page";
+import TwisterBearingSection from "@/app/reuseable/case/TwisterBearing/page";
 import CallToActionBanner from "@/app/reuseable/products/join-group/page";
 import Title from "@/app/reuseable/products/title/page";
 
@@ -97,15 +98,19 @@ SPARK X3 fan applies exclusive TORTOX LED LIGHTING Technology to deliver incredi
            {/* Here is spark slider */}
 
            <SparkSlider slides={slideData} />
-      {/* Specification section */}
-      <SpecificationSection specifications={specs} />
-
-      {/* Join Group  */}
+            {/* Join Group  */}
       <CallToActionBanner
         text="Over 1000's of gamers already using our products."
         buttonLabel="Join Our Group"
         buttonHref="/community"
       />
+      {/* here is twister-technology section */}
+      <TwisterBearingSection/>
+      {/* Specification section */}
+      <SpecificationSection specifications={specs} />
+
+     
+
     </div>
   );
 };
