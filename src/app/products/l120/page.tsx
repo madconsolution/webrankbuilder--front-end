@@ -32,18 +32,25 @@ import CompatibilitySection from "@/app/reuseable/liquid/Compatibility/banner";
     { image: '/products/IRIS/Feature-slider/Background.png' },
   ];
   //   Here is power-grid data
+
   const powerItems = [
     {
-      title: "Clever Architecture Design",
-      description: `Tortox GD400-R desk has four adjustable knobs that can be effortlessly adjusted for it to stand erect and stay completely leveled on any surface.`,
-      image: "/cheir/gc_400_r/grid/image-1.png",
+      title: "Double cavity water block design",
+      description: `Independent pump, internal motor, smooth flow.The form of dipper tooth copper heatsink makes the better heat conduction.`,
+      image: "/liquid/l120/grid/image-1.png",
     },
     {
-      title: "Timeless Construction",
-      description: `Made of scratch-resistant Medium Particle Board (PB) and premium steel frame, the Tortox aims to be as sturdy as possible, accompanying you to countless game battles.`,
-      title2: "Light Up Your Battles",
-      description2: `The Tortox GD400-R has 2 ARGB light streams on both wings of the table, toggle through 15 exotic lighting effects with a simple command on the remote.`,
-      image: "/cheir/gc_400_r/grid/image-2.png",
+      title: "Densification aluminum radiator",
+      description: `High density fin, large heat dissipation area.High density folding leaves, better heat dissipation efficiency.`,
+      title2: "Equipped with univerual platform metal brackets",
+      description2: `Compatible with various mainstream platforms of both Intel and AMD.`,
+      image: "/liquid/l120/grid/image-2.png",
+    },
+    {
+      title: "FEP material pipe, industrial-grade seal",
+      description: `Effectively reduces the evaporation rate of coolant.Special pipe material, resistant to corrosion and oxidation greatly improves the service life of the pipe.`,
+  
+      image: "/liquid/l120/grid/image-3.png",
     },
  
   ];

@@ -1,7 +1,7 @@
 'use client';
 
 import CablesBanner from "@/app/reuseable/cables/banner/banner";
-import ResolutionSection from "@/app/reuseable/cables/Resolution/resulution";
+import Resolution2Section from "@/app/reuseable/cables/Resolution/Resolution2";
 import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/pecification";
 import CallToActionBanner from "@/app/reuseable/products/join-group/join_group";
 import Title from "@/app/reuseable/products/title/title";
@@ -43,15 +43,17 @@ import Title from "@/app/reuseable/products/title/title";
 //   Here is resolution data
   const resolutionData = [
     {
-      mainImage: '/cables/4hdmi_cables/resolution/cable-1.png',
+      mainImage: '/adapter/m_to_f/resolution/left-cable.png',
       overlayImage: '/cables/4hdmi_cables/resolution/right-1.png',
       title: 'Stream Visuals From Your Smartphone',
+  
+      
       descriptionImage: '/cables/4hdmi_cables/resolution/monitor.png',
     },
     {
-      mainImage: '/cables/4hdmi_cables/resolution/cable-2.png',
+      mainImage: '/adapter/m_to_f/resolution/right-cable.png',
       title: 'Experience The Brilliance Of',
-      descriptionImage: '/cables/4hdmi_cables/resolution/right-1.png',
+      descriptionImage: '/adapter/m_to_f/resolution/max-image.png',
       badges: [
         '/cables/4hdmi_cables/resolution/right-1.png',
         '/cables/4hdmi_cables/resolution/right-2.png',
@@ -82,7 +84,7 @@ const m_to_f_page = () => {
              />
               </ div>
         {/* Resolution section */}
-        <ResolutionSection cards={resolutionData} />;
+        <Resolution2Section cards={resolutionData} />;
         {/* Specification section */}
         <SpecificationSection specifications={specs} />
            
