@@ -20,7 +20,25 @@ const specs = [
 // here is slider data
 const slideData = [
   {
-    image: '/case/luna/slider/image.png', 
+    image: '/case/spark/slider/image.png', 
+    leftTitle: 'RGB LED Lighting',
+    leftDescription:
+      'SPARK X offers full colour control and stunning visual effects. Four halo shaped rings equipped with the TORTOX LED lighting technology are smoothly worked into the frame and offer bright and even illumination without visible LED spots.',
+    rightTitle: 'Silent Operation',
+    rightDescription:
+      'The fan blades of Spark X are optimized for silent operation and the speed can be turned down to 500 RPM. Spark X frame is equipped with rubber damping pads to prevent vibration transfer to the chassis and to ensure low noise operation.',
+  },
+  {
+    image: '/case/spark/slider/image.png', 
+    leftTitle: 'RGB LED Lighting',
+    leftDescription:
+      'SPARK X offers full colour control and stunning visual effects. Four halo shaped rings equipped with the TORTOX LED lighting technology are smoothly worked into the frame and offer bright and even illumination without visible LED spots.',
+    rightTitle: 'Silent Operation',
+    rightDescription:
+      'The fan blades of Spark X are optimized for silent operation and the speed can be turned down to 500 RPM. Spark X frame is equipped with rubber damping pads to prevent vibration transfer to the chassis and to ensure low noise operation.',
+  },
+  {
+    image: '/case/spark/slider/image.png', 
     leftTitle: 'RGB LED Lighting',
     leftDescription:
       'SPARK X offers full colour control and stunning visual effects. Four halo shaped rings equipped with the TORTOX LED lighting technology are smoothly worked into the frame and offer bright and even illumination without visible LED spots.',

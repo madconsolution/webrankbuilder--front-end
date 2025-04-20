@@ -34,9 +34,9 @@ const SparkSlider: React.FC<LunaSliderProps> = ({ slides }) => {
           >
             {/* Left Text */}
             <div className="flex-1 text-center md:text-left">
-              <h3 className="text-[#FF3C3C] text-[18px] font-bold uppercase mb-2">
+              <h1 className="text-[#FF3C3C] text-[18px] font-bold uppercase mb-2">
                 {slide.leftTitle}
-              </h3>
+              </h1>
               <p className="text-sm md:text-base leading-relaxed text-white">
                 {slide.leftDescription}
               </p>
@@ -55,9 +55,9 @@ const SparkSlider: React.FC<LunaSliderProps> = ({ slides }) => {
 
             {/* Right Text */}
             <div className="flex-1 text-center md:text-left">
-              <h3 className="text-[#FF3C3C] text-[18px] font-bold uppercase mb-2">
+              <h1 className="text-[#FF3C3C] text-[18px] font-bold uppercase mb-2">
                 {slide.rightTitle}
-              </h3>
+              </h1>
               <p className="text-sm md:text-base leading-relaxed text-white">
                 {slide.rightDescription}
               </p>
