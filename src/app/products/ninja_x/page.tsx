@@ -30,6 +30,28 @@ const specs = [
         'Adaptive Noise Reduction Optimizes Cooling And Noise Balance For Best Gaming Comfort',
       ],
     },
+    {
+      image: '/case/Ninja-x/slider/image.png',
+      leftTexts: [
+        'Tempered Glass Panel Showcases Custom RGB Lighting',
+        'With High-Quality Hydraulic Bearing, Working Life Is Up To 20000 Hrs Under High-Speed Rotation Condition',
+      ],
+      rightTexts: [
+        'Water-Cooling Installation Simplified For Both AIO And Custom Loop',
+        'Adaptive Noise Reduction Optimizes Cooling And Noise Balance For Best Gaming Comfort',
+      ],
+    },
+    {
+      image: '/case/Ninja-x/slider/image.png',
+      leftTexts: [
+        'Tempered Glass Panel Showcases Custom RGB Lighting',
+        'With High-Quality Hydraulic Bearing, Working Life Is Up To 20000 Hrs Under High-Speed Rotation Condition',
+      ],
+      rightTexts: [
+        'Water-Cooling Installation Simplified For Both AIO And Custom Loop',
+        'Adaptive Noise Reduction Optimizes Cooling And Noise Balance For Best Gaming Comfort',
+      ],
+    },
   
   ];
   
