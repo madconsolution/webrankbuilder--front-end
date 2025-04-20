@@ -7,11 +7,6 @@ import ProductSlider from "@/app/reuseable/products/product-slider/page";
 import Title from "@/app/reuseable/products/title/page";
 import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/page";
 
-// ✅the SpecItem type here
-type SpecItem = {
-  title: string;
-  items: string[];
-};
   // Here is sldier data
   const slides: SlideContent[] = [
     {
