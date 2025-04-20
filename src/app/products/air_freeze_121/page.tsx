@@ -1,16 +1,16 @@
 "use client";
-import CaseBanner from "@/app/reuseable/case/banner/page";
+import CaseBanner from "@/app/reuseable/case/banner/banner";
 
 
-import CallToActionBanner from "@/app/reuseable/products/join-group/page";
-import ProductSlider from "@/app/reuseable/products/product-slider/page";
-import Title from "@/app/reuseable/products/title/page";
+import CallToActionBanner from "@/app/reuseable/products/join-group/join_group";
+import ProductSlider from "@/app/reuseable/products/product-slider/product_slider";
+import Title from "@/app/reuseable/products/title/title";
 
-import AngleFeatureSectionWithIcons from "@/app/reuseable/air/HeatPipe/paget";
-import AutoSlider from "@/app/reuseable/products/overview/page";
-import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/page";
+import AngleFeatureSectionWithIcons from "@/app/reuseable/air/HeatPipe/HeatPipe";
+import AutoSlider from "@/app/reuseable/products/overview/overview";
+import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/pecification";
 
-import FanBracketSection from "@/app/reuseable/air/FanBracket/page";
+import FanBracketSection from "@/app/reuseable/air/FanBracket/FanBracket";
 
   // here is slider
   const sampleProducts = [
@@ -20,7 +20,7 @@ import FanBracketSection from "@/app/reuseable/air/FanBracket/page";
   ];
 
   // Here is specification date
-  export const specs: SpecificationItem[] = [
+ const specs: SpecificationItem[] = [
     {
       type: 'featured',
       items: [

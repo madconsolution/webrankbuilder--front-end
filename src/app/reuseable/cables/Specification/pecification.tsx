@@ -1,11 +1,7 @@
 import { FC } from 'react';
 import Image from 'next/image';
 
-interface TextSpecItem {
-  label: string;
-  value: string;
-  highlight?: boolean;
-}
+
 
 export interface SpecificationItem {
   type: 'featured' | 'dimensions' | 'additional';

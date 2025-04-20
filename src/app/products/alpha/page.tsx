@@ -1,19 +1,19 @@
 'use client';
 
-import ProductBanner from "@/app/reuseable/products/banner/page";
-import Expensive from "@/app/reuseable/products/expensive/page";
+import ProductBanner from "@/app/reuseable/products/banner/banner";
+import Expensive from "@/app/reuseable/products/expensive/expensive";
 
-import FeatureHighlightSection from "@/app/reuseable/products/feature/page";
+import FeatureHighlightSection from "@/app/reuseable/products/feature/feature";
 
-import FeatureSlider from "@/app/reuseable/products/freature-slider/page";
-import HighlightsSlider from "@/app/reuseable/products/Highlights-silder/page";
-import CallToActionBanner from "@/app/reuseable/products/join-group/page";
+import FeatureSlider from "@/app/reuseable/products/freature-slider/freature_slider";
+import HighlightsSlider from "@/app/reuseable/products/Highlights-silder/Highlights_silder";
+import CallToActionBanner from "@/app/reuseable/products/join-group/join_group";
 
-import ProductOverview from "@/app/reuseable/products/overview/page";
-import ProductSlider from "@/app/reuseable/products/product-slider/page";
-import ProductFeatureShowcase from "@/app/reuseable/products/Showcase/page";
-import SpecificationSection from "@/app/reuseable/products/specifications/page";
-import Title from "@/app/reuseable/products/title/page";
+import ProductOverview from "@/app/reuseable/products/overview/overview";
+import ProductSlider from "@/app/reuseable/products/product-slider/product_slider";
+import ProductFeatureShowcase from "@/app/reuseable/products/Showcase/Showcase";
+import SpecificationSection from "@/app/reuseable/products/specifications/specifications";
+import Title from "@/app/reuseable/products/title/title";
 
 // ✅ Add the SpecItem type here
 type SpecItem = {
@@ -164,7 +164,7 @@ const AlphaPage = () => {
 
 
       <FeatureHighlightSection
-        image="/products/feature-prof.png"
+        image="/products/feature_prof.png"
         title="FUTURE-PROOF FRONT PANEL"
         highlightText="Featuring a super-speed USB 3.1 port, RGB Lighting Control switch and additional connections for all modern peripherals."
         position="right"

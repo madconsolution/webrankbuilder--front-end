@@ -1,6 +1,6 @@
 
 "use client"
-import FeatureCard from "../Feature-Card/page";
+import FeatureCard from "../Feature-Card/Feature_Card";
 
 type Feature = {
   image: string;

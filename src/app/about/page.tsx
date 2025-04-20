@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 
 import Image from 'next/image';
-import BannerSection from '../reuseable/contact/banner/page';
+import BannerSection from '../reuseable/contact/banner/banner';
 
 export default function AboutTortox() {
   return (

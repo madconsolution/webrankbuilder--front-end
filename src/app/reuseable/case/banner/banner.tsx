@@ -1,20 +1,19 @@
-'use client';
+
 
 import Image from 'next/image';
 import React from 'react';
 
 export interface BannerProps {
-  bgImage: string;  
+  bgImage: string;
   logo1: string;
-  logo2: string;    
+  logo2: string;
   description?: string[];
 }
 
-const ProductBanner: React.FC<BannerProps> = ({ bgImage, logo1, logo2, description }) => {
+const CaseBanner: React.FC<BannerProps> = ({ bgImage, logo1, logo2, description }) => {
   const lines = description ?? [
-    'ATX MID TOWER COMPUTER',
-    'CASE',
-    'THAT HAVE GREAT DESIGN',
+    'Engineered for Durability',
+    'Stuffed with Features',
   ];
 
   return (
@@ -23,14 +22,14 @@ const ProductBanner: React.FC<BannerProps> = ({ bgImage, logo1, logo2, descripti
         className="absolute inset-0 w-full h-full bg-center bg-no-repeat bg-cover"
         style={{ backgroundImage: `url('${bgImage}')` }}
       />
-      <div className="absolute max-w-xl mx-auto inset-0 flex flex-col items-center text-white mt-8 px-4 ">
-        <div className="flex gap-2  items-center md:-ml-36 my-2">
+      <div className="absolute inset-0 flex flex-col justify-center items-center text-white px-4 text-center">
+        <div className="flex gap-2 mb-4 justify-center items-center">
           <Image src={logo1} alt="Product Logo 1" width={250} height={50} />
           <Image src={logo2} alt="Product Logo 2" width={100} height={70} />
         </div>
-        <div className=" space-y-4">
+        <div className="text-xl sm:text-2xl md:text-3xl font-medium tracking-widest leading-snug space-y-2">
           {lines.map((line, idx) => (
-            <h2 key={idx}>{line}</h2>
+            <h5 key={idx}>{line}</h5>
           ))}
         </div>
       </div>
@@ -38,4 +37,4 @@ const ProductBanner: React.FC<BannerProps> = ({ bgImage, logo1, logo2, descripti
   );
 };
 
-export default ProductBanner;
+export default CaseBanner;

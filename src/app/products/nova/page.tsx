@@ -1,19 +1,20 @@
 'use client';
 
-import ProductBanner from "@/app/reuseable/products/banner/page";
-import Expensive from "@/app/reuseable/products/expensive/page";
-import FeatureBlock from "@/app/reuseable/products/Feature-Block/page";
+import ProductBanner from "@/app/reuseable/products/banner/banner";
+import Expensive from "@/app/reuseable/products/expensive/expensive";
+import FeatureBlock from "@/app/reuseable/products/Feature-Block/Feature_Block";
 
-import FeatureHighlightSection from "@/app/reuseable/products/feature/page";
+import FeatureHighlightSection from "@/app/reuseable/products/feature/feature";
 
-import FeatureSlider from "@/app/reuseable/products/freature-slider/page";
-import HighlightsSlider from "@/app/reuseable/products/Highlights-silder/page";
-import CallToActionBanner from "@/app/reuseable/products/join-group/page";
-import AutoSlider from "@/app/reuseable/products/overview/page";
-import ProductSlider from "@/app/reuseable/products/product-slider/page";
-import ProductFeatureShowcase from "@/app/reuseable/products/Showcase/page";
-import SpecificationSection from "@/app/reuseable/products/specifications/page";
-import Title from "@/app/reuseable/products/title/page";
+import FeatureSlider from "@/app/reuseable/products/freature-slider/freature_slider";
+import HighlightsSlider from "@/app/reuseable/products/Highlights-silder/Highlights_silder";
+import CallToActionBanner from "@/app/reuseable/products/join-group/join_group";
+import AutoSlider from "@/app/reuseable/products/overview/overview";
+import ProductSlider from "@/app/reuseable/products/product-slider/product_slider";
+import ProductFeatureShowcase from "@/app/reuseable/products/Showcase/Showcase";
+import SpecificationSection from "@/app/reuseable/products/specifications/specifications";
+import Title2 from "@/app/reuseable/products/title-2/title_2";
+import Title from "@/app/reuseable/products/title/title";
 
 // ✅ Add the SpecItem type here
 type SpecItem = {
@@ -164,7 +165,7 @@ const NovaPage = () => {
 
 
       <FeatureHighlightSection
-        image="/products/feature-prof.png"
+        image="/products/feature_prof.png"
         title="FUTURE-PROOF FRONT PANEL"
         highlightText="Featuring a super-speed USB 3.1 port, RGB Lighting Control switch and additional connections for all modern peripherals."
         position="right"
@@ -173,10 +174,10 @@ const NovaPage = () => {
       <FeatureSlider slides={slides} />
 
       <div className="text-xl text-[#FFFFFF]">
-        <Title
+        <Title2
           mainTitle="TORTOX"
-          subTitle="IRIS"
-          content="Featuring EATX / ATX / Micro ATX / Mini-ITX Supported Case with 2 SSD Drive Bays and additional connections for all modern peripherals."
+          subTitle="nova"
+          content="Featuring 5.25” exposed x1, 3.5” hidden x2, 2.5”SSD x3 or 5(sharing 2 with 3’5) Drive bays and additional connections for all modern peripherals."
         />
       </div>
 

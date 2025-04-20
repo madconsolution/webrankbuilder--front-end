@@ -1,19 +1,19 @@
 'use client';
 
-import ProductBanner from "@/app/reuseable/products/banner/page";
-import FeatureBlock from "@/app/reuseable/products/Feature-Block/page";
-import FeatureHighlightSection from "@/app/reuseable/products/feature/page";
+import ProductBanner from "@/app/reuseable/products/banner/banner";
+import FeatureBlock from "@/app/reuseable/products/Feature-Block/Feature_Block";
+import FeatureHighlightSection from "@/app/reuseable/products/feature/feature";
 
-import FeatureSlider from "@/app/reuseable/products/freature-slider/page";
-import HighlightsSlider from "@/app/reuseable/products/Highlights-silder/page";
-import CallToActionBanner from "@/app/reuseable/products/join-group/page";
-import AutoSlider from "@/app/reuseable/products/overview/page";
+import FeatureSlider from "@/app/reuseable/products/freature-slider/freature_slider";
+import HighlightsSlider from "@/app/reuseable/products/Highlights-silder/Highlights_silder";
+import CallToActionBanner from "@/app/reuseable/products/join-group/join_group";
+import AutoSlider from "@/app/reuseable/products/overview/overview";
 
-import ProductSlider from "@/app/reuseable/products/product-slider/page";
+import ProductSlider from "@/app/reuseable/products/product-slider/product_slider";
 
-import SpecificationSection from "@/app/reuseable/products/specifications/page";
-import Title2 from "@/app/reuseable/products/title-2/page";
-import Title from "@/app/reuseable/products/title/page";
+import SpecificationSection from "@/app/reuseable/products/specifications/specifications";
+import Title2 from "@/app/reuseable/products/title-2/title_2";
+import Title from "@/app/reuseable/products/title/title";
 
 // ✅the SpecItem type here
 type SpecItem = {
@@ -163,7 +163,7 @@ const IrisPage = () => {
 />
 
       <FeatureHighlightSection
-        image="/products/feature-prof.png"
+        image="/products/feature_prof.png"
         title="FUTURE-PROOF FRONT PANEL"
         highlightText="Featuring a super-speed USB 3.1 port, RGB Lighting Control switch and additional connections for all modern peripherals."
         position="right"

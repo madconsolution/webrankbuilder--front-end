@@ -3,14 +3,14 @@
 import Image from 'next/image';
 import React from 'react';
 
-export interface BannerProps {
+ interface BannerProps {
   bgImage: string;  
   logo1: string;
   logo2: string;    
   description?: string[];
 }
 
-const CablesBanner: React.FC<BannerProps> = ({ bgImage, logo1, logo2, description }) => {
+const CablesBanner: React.FC<BannerProps> = ({ bgImage, logo1,  description }) => {
   const lines = description ?? [
     'ATX MID TOWER COMPUTER',
     'CASE',

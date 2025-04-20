@@ -1,13 +1,13 @@
 "use client";
 
 
-import CaseBanner from "@/app/reuseable/case/banner/page";
-import NinjaSlider, { SlideContent } from "@/app/reuseable/case/slider/ninja-slider/page";
-import PowerGrid from "@/app/reuseable/power/power-grid/page";
-import CallToActionBanner from "@/app/reuseable/products/join-group/page";
-import ProductSlider from "@/app/reuseable/products/product-slider/page";
-import Title from "@/app/reuseable/products/title/page";
-import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/page";
+import CaseBanner from "@/app/reuseable/case/banner/banner";
+import NinjaSlider, { SlideContent } from "@/app/reuseable/case/slider/ninja-slider/ninja_slider";
+import PowerGrid from "@/app/reuseable/power/power-grid/power_grid";
+import CallToActionBanner from "@/app/reuseable/products/join-group/join_group";
+import ProductSlider from "@/app/reuseable/products/product-slider/product_slider";
+import Title from "@/app/reuseable/products/title/title";
+import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/pecification";
 
   // Here is sldier data
   const slides: SlideContent[] = [
@@ -56,7 +56,7 @@ import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/
   ];
 
 // Here is specification date
-export const specs: SpecificationItem[] = [
+ const specs: SpecificationItem[] = [
   {
     type: 'featured',
     items: [

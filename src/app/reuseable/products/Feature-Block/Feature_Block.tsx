@@ -23,7 +23,7 @@ const FeatureBlock: FC<FeatureBlockProps> = ({
   imageLeft = true,
 }) => {
   return (
-    <section className="bg-black text-white py-16 px-4 md:px-16 lg:px-24">
+    <section className=" text-white py-16 px-4 md:px-16 lg:px-24">
       <div
         className={`max-w-7xl mx-auto grid gap-10 lg:grid-cols-2 items-center ${
           imageLeft ? '' : 'lg:[grid-template-columns:repeat(2,minmax(0,1fr))] lg:[direction:rtl]'

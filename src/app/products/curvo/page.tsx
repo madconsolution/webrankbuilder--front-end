@@ -1,16 +1,16 @@
 'use client';
 
-import ProductBanner from "@/app/reuseable/products/banner/page";
+import ProductBanner from "@/app/reuseable/products/banner/banner";
 
-import FeatureGrid from "@/app/reuseable/products/Feature-Grid/page";
-import CallToActionBanner from "@/app/reuseable/products/join-group/page";
-import AutoSlider from "@/app/reuseable/products/overview/page";
+import FeatureGrid from "@/app/reuseable/products/Feature-Grid/Feature_Grid";
+import CallToActionBanner from "@/app/reuseable/products/join-group/join_group";
+import AutoSlider from "@/app/reuseable/products/overview/overview";
 
 
-import ProductSlider from "@/app/reuseable/products/product-slider/page";
+import ProductSlider from "@/app/reuseable/products/product-slider/product_slider";
 
-import SpecificationSection from "@/app/reuseable/products/specifications/page";
-import Title from "@/app/reuseable/products/title/page";
+import SpecificationSection from "@/app/reuseable/products/specifications/specifications";
+import Title from "@/app/reuseable/products/title/title";
 
 // ✅ Add the SpecItem type here
 type SpecItem = {

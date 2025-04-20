@@ -20,7 +20,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #121212;
   }
 }
 
@@ -50,7 +50,7 @@ line-height: 40px;
 letter-spacing: 0%;
 text-align: center;
 vertical-align: middle;
-color: #FFFFFF;
+
 }
 h3 {
   font-family: Montserrat;
@@ -59,7 +59,7 @@ font-size: 31px;
 line-height: 30px;
 letter-spacing: 0%;
 vertical-align: middle;
-color: #FFFFFF;
+
 
 }
 h5{
@@ -90,7 +90,7 @@ p {
   letter-spacing: 0%;
 
   vertical-align: middle;
-  color: #FFFFFF;
+
   
 }
 a {

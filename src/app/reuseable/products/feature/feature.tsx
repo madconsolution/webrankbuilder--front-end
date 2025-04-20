@@ -19,7 +19,7 @@ const FeatureHighlightSection: React.FC<FeatureHighlightSectionProps> = ({
   const isRight = position === 'right';
 
   return (
-    <div className="w-full md:w-[1440px]  text-white p-4 md:p-[65px] overflow-hidden">
+    <div className="w-full md:w-[1440px]   text-white p-4 md:p-[65px] overflow-hidden">
       <div className="max-w-[1440px]  mx-auto flex flex-col md:flex-row items-center justify-between relative">
         {/* Image Section */}
         <div

@@ -1,6 +1,6 @@
 'use client';
 import { FaMapMarkerAlt, FaPhoneAlt, FaMobileAlt, FaEnvelope, FaGlobe } from 'react-icons/fa';
-import BannerSection from '../reuseable/contact/banner/page';
+import BannerSection from '../reuseable/contact/banner/banner';
 import Image from 'next/image';
 
 export default function ContactSection() {
