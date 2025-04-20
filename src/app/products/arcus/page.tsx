@@ -2,6 +2,7 @@
 
 import SpecificationSection from "@/app/reuseable/cables/Specification/page";
 import CaseBanner from "@/app/reuseable/case/banner/page";
+import ArcusSlider from "@/app/reuseable/case/slider/arcus-slider/page";
 import CallToActionBanner from "@/app/reuseable/products/join-group/page";
 import Title from "@/app/reuseable/products/title/page";
 
@@ -16,7 +17,24 @@ const specs = [
     { label: 'Compatibility', value: 'Smartphone, TV, Projector' },
   ];
 
-
+  const slideData = [
+    {
+      image: "/case/Arcus/slider/image.png",
+      leftTexts: [
+        'Do Not Need Extra Controller For Rainbow Effect',
+        'With URA RGB Circle Fan More Distinctive Visual Effect',
+        'Precise PWM Control',
+        'RGB Fan',
+      ],
+      rightTexts: [
+        '300mm Lead Wire Length',
+        'Rainbow 16 LEDs',
+        'Fan Airflow - 57.2 CFM',
+        'Magnetic Levitation Fans',
+        'Low Noise Fans',
+      ],
+    },
+  ];
 const acrus_page = () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
@@ -39,7 +57,8 @@ const acrus_page = () => {
                content="Tortox ARCUS dynamically adjust fan speed between 800 RPM to 2,000 RPM with a 120mm TORTOX PWM fan, making it easy to minimize noise or maximize airflow. Unified luminous effect of water block and fan, forming a beautiful color."
              />
               </ div>
- 
+           {/* here is luna slider */}
+           <ArcusSlider slides={slideData} />
         {/* Specification section */}
         <SpecificationSection specifications={specs} />
            
