@@ -1,5 +1,6 @@
 'use client';
 
+import AnimatedSection from "@/app/reuseable/Animation/AnimatedSection";
 import ProductBanner from "@/app/reuseable/products/banner/banner";
 import FeatureBlock from "@/app/reuseable/products/Feature-Block/Feature_Block";
 import FeatureHighlightSection from "@/app/reuseable/products/feature/feature";
@@ -136,7 +137,9 @@ const specs: SpecItem[] = [
 const IrisPage = () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
-   <ProductBanner
+{/* ProductBanner */}
+<AnimatedSection delay={0.1}>
+<ProductBanner
       bgImage="/products/iris-banner.png"
       logo1="/logo.png"
       logo2="/products/IRIS.png"
@@ -146,7 +149,10 @@ const IrisPage = () => {
         'THAT HAVE GREAT DESIGN',
       ]}
     />
-       {/* Here is first heading title */}
+
+ {/* Here is first heading title */}
+</AnimatedSection>
+       <AnimatedSection delay={0.2}>
        <div className="text-xl text-[#FFFFFF]">
         <Title
           mainTitle="TORTOX"
@@ -154,41 +160,60 @@ const IrisPage = () => {
           content="Tortox Iris re-engineered designs and features to offer the best balance of performance and with honeycomb design front panel inspired open fascia that is specifically created take as much air in to your system as possible. The core of the TORTOX IRIS is its clean design, well balanced between a perfectly organised interior structure and the sleek exterior design."
         />
       </div>
+</AnimatedSection>
 
-   <AutoSlider
+{/* AutoSlider */}
+<AnimatedSection delay={0.3}>
+<AutoSlider
   products={products}
   mainTitle="TORTOX"
   subTitle="IRIS"
   content="Tortox Iris re-engineered designs and features to offer the best balance of performance and with honeycomb design front panel inspired open fascia that is specifically created take as much air in to your system as possible. The core of the TORTOX IRIS is its clean design, well balanced between a perfectly organised interior structure and the sleek exterior design."
 />
-
-      <FeatureHighlightSection
+</AnimatedSection>
+ 
+ {/* FeatureHighlightSection */}
+<AnimatedSection delay={0.1}>
+<FeatureHighlightSection
         image="/products/feature_prof.png"
         title="FUTURE-PROOF FRONT PANEL"
         highlightText="Featuring a super-speed USB 3.1 port, RGB Lighting Control switch and additional connections for all modern peripherals."
         position="right"
       />
+</AnimatedSection>
 
-      <FeatureSlider slides={slides} />
+{/* FeatureSlider */}
+<AnimatedSection delay={0.3}>
+<FeatureSlider slides={slides} />
+</AnimatedSection>
 
-      <div className="text-xl text-[#FFFFFF]">
+
+{/* Here is title2 */}
+<AnimatedSection delay={0.2}>
+<div className="text-xl text-[#FFFFFF]">
         <Title2
           mainTitle="TORTOX"
           subTitle="IRIS"
           content="Featuring EATX / ATX / Micro ATX / Mini-ITX Supported Case with 2 SSD Drive Bays and additional connections for all modern peripherals."
         />
       </div>
+</AnimatedSection>
+
+  
 
       {/* Join Group  */}
-      <CallToActionBanner
+<AnimatedSection delay={0.1}>
+<CallToActionBanner
   text="Over 1000's of gamers already using our products."
   buttonLabel="Join Our Group"
   buttonHref="/community"
 />
+</AnimatedSection>
 
 
  {/* Feature Block */}
-  <FeatureBlock
+<AnimatedSection delay={0.3}>
+<FeatureBlock
   imageSrc="/products/IRIS/showcase/image-1.png"
   imageAlt="Open Neon Case"   title="High Performance"
    highlight="Spectre Fans Included"
@@ -208,9 +233,12 @@ const IrisPage = () => {
   choose the NEON that blends perfectly with your surroundings.`}
   imageLeft={false}
 />
+</AnimatedSection>
 
-       {/* Highlight slider  */}
-        <HighlightsSlider
+
+    {/* Highlight slider  */}
+<AnimatedSection delay={0.1}>
+       <HighlightsSlider
    title="Easy Clean with "
    highlight="Removable Dust Filters"
   description="TORTOX IRIS is designed to offer reliable performance for years to come. By filtering out dust particle which reduces system lifespan, systems built with TORTOX IRIS can boast of dust free operation. The improved air intake mesh on the front comes with an embedded nylon filter that prevents dust from entering the system while the filter at the bottom keeps PSU free from dust. All these filters can be easily removed for a faster cleaning job."
@@ -220,10 +248,19 @@ const IrisPage = () => {
     { src: '/products/IRIS/highlight/image-3.png', alt: 'RGB Case' },
    ]}
  />
-          {/* Specifications */}
-      <SpecificationSection specs={specs} imageSrc="/products/IRIS/specification/image.png" />
-          {/* Products slider */}
-      <ProductSlider title="Other Products" products={sampleProducts} />
+</AnimatedSection>
+
+  {/* Specifications */}
+<AnimatedSection delay={0.2}>
+       <SpecificationSection specs={specs} imageSrc="/products/IRIS/specification/image.png" />
+</AnimatedSection>
+
+
+   {/* Products slider */}
+<AnimatedSection delay={0.1}>
+       <ProductSlider title="Other Products" products={sampleProducts} />
+</AnimatedSection>
+
     </ div>
   );
 };
