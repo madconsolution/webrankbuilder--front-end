@@ -16,6 +16,7 @@ import ProductSlider from "@/app/reuseable/products/product-slider/product_slide
 
 import Title2 from "@/app/reuseable/products/title-2/title_2";
 import Title from "@/app/reuseable/products/title/title";
+import AnimatedSection from "@/app/reuseable/Animation/AnimatedSection";
 
 
 
@@ -100,6 +101,8 @@ const sampleProducts = [
 const NovaPage = () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
+      {/* ProductBanner */}
+      <AnimatedSection delay={0.1}>
       <ProductBanner
         bgImage="/products/iris-banner.png"
         logo1="/logo.png"
@@ -110,32 +113,51 @@ const NovaPage = () => {
           'THAT HAVE GREAT DESIGN',
         ]}
       />
-       {/* Here is first heading title */}
-                       <div className="text-xl text-[#FFFFFF]">
+      </AnimatedSection>
+
+    {/* Here is first heading title */}
+      <AnimatedSection delay={0.1}>
+     
+       <div className="text-xl text-[#FFFFFF]">
                         <Title
                           mainTitle="TORTOX"
                           subTitle="Nova"
                           content="NOVA simplistic design, aluminium badge, color options and full tempered glass side panel mean it will blend in perfectly. To seal fan noise inside the chassis, we developed a closed front panel for Nova. Nova supports up to four full size 3.5 hard drives, two 2.5 compact hard drives or SSDs and features a full size 5.25 optical disc drive slot."
                         />
-                      </div>
- {/* Here is auto slider section */}
-   <AutoSlider
+       </div>
+      </AnimatedSection>
+  
+    {/* Here is auto slider section */}
+      <AnimatedSection delay={0.1}>
+     <AutoSlider
   products={products}
   mainTitle="TORTOX"
   subTitle="NOVA"
   content="The most premium production gaming enclosure. Built from premium materials that are engineered with utmost care and attention to detail. A design based on continuous product improvement and innovation throughout . Discover the ultimate building experience. Shadow keeps an incredibly clean look that can be easily switched to different RGB patterns from the side control panel."
 />
 
-
+</AnimatedSection>
+  
+  
+    {/*FeatureHighlightSection*/}
+      <AnimatedSection delay={0.1}>
       <FeatureHighlightSection
         image="/products/feature_prof.png"
         title="FUTURE-PROOF FRONT PANEL"
         highlightText="Featuring a super-speed USB 3.1 port, RGB Lighting Control switch and additional connections for all modern peripherals."
         position="right"
       />
+      </AnimatedSection>
 
+
+    {/*FeatureSlider*/}
+      <AnimatedSection delay={0.1}>
       <FeatureSlider slides={slides} />
+      </AnimatedSection>
 
+
+    {/*Title2*/}
+      <AnimatedSection delay={0.1}>
       <div className="text-xl text-[#FFFFFF]">
         <Title2
           mainTitle="TORTOX"
@@ -143,29 +165,29 @@ const NovaPage = () => {
           content="Featuring 5.25” exposed x1, 3.5” hidden x2, 2.5”SSD x3 or 5(sharing 2 with 3’5) Drive bays and additional connections for all modern peripherals."
         />
       </div>
-
-      {/* Join Group  */}
-      <CallToActionBanner
+      </AnimatedSection>
+  
+           {/* Join Group  */}
+      <AnimatedSection delay={0.1}>
+       <CallToActionBanner
   text="Over 1000's of gamers already using our products."
   buttonLabel="Join Our Group"
   buttonHref="/community"
 />
-     {/* Expensive */}
-
+  </AnimatedSection>
+  
+             {/* Expensive */}
+      <AnimatedSection delay={0.1}>
 <Expensive
   bgImage="/products/Shadow/expensive/image.png"
   title="Remaking the Idea of Gaming Case"
   description="With the explosion of high-definition content, users are going to need a lot more storage to keep it all. Shadow offers no less than seven PCI Slot & two 3.5” HDD bays for massive storage capability. You can even install a 2.5” SSD on the case for lightning-fast boot times."
 />
-
-
-
-
-
-
- 
- {/* Feature Block */}
-  <FeatureBlock
+</AnimatedSection>
+  
+        {/* Feature Block */}
+  <AnimatedSection delay={0.1}>
+ <FeatureBlock
   imageSrc="/products/Nova/dual-feature/image-2.png"
   imageAlt="Open Neon Case"   title=""
    highlight="Flexible Cooling Option"
@@ -187,10 +209,20 @@ const NovaPage = () => {
   choose the NEON that blends perfectly with your surroundings.`}
   imageLeft={false}
 />
-        {/* Specification section */}
-        <SpecificationSection specifications={specs} />
-          {/* Products slider */}
-      <ProductSlider title="Other Products" products={sampleProducts} />
+</AnimatedSection>
+  
+         {/* Specification section */}
+  <AnimatedSection delay={0.1}>
+   <SpecificationSection specifications={specs} />
+</AnimatedSection>
+  
+ {/* Products slider */}
+  <AnimatedSection delay={0.1}>
+ <ProductSlider title="Other Products" products={sampleProducts} />
+</AnimatedSection>
+  
+    
+
     </ div>
   );
 };
