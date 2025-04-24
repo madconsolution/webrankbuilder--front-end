@@ -1,5 +1,6 @@
 'use client';
 
+import AnimatedSection from "@/app/reuseable/Animation/AnimatedSection";
 import ProductBanner from "@/app/reuseable/products/banner/banner";
 import Expensive from "@/app/reuseable/products/expensive/expensive";
 
@@ -138,6 +139,8 @@ const specs: SpecItem[] = [
 const ShadowPage = () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
+  {/* ProductBanner section */}
+  <AnimatedSection delay={0.1}>
       <ProductBanner
         bgImage="/products/iris-banner.png"
         logo1="/logo.png"
@@ -148,33 +151,49 @@ const ShadowPage = () => {
           'THAT HAVE GREAT DESIGN',
         ]}
       />
-             {/* Here is first heading title */}
-                <div className="text-xl text-[#FFFFFF]">
+   </AnimatedSection>
+
+  
+  <AnimatedSection delay={0.1}>
+  <div className="text-xl text-[#FFFFFF]">
                  <Title
                    mainTitle="TORTOX"
                    subTitle="Shadow"
                    content="The most premium production gaming enclosure. Built from premium materials that are engineered with utmost care and attention to detail. A design based on continuous product improvement and innovation throughout . Discover the ultimate building experience. Shadow keeps an incredibly clean look that can be easily switched to different RGB patterns from the side control panel."
                  />
                </div>
-  
-   <AutoSlider
+   </AnimatedSection>
+
+   {/* AutoSlider */}
+  <AnimatedSection delay={0.1}>   
+  <AutoSlider
   products={products}
   mainTitle="TORTOX"
   subTitle="SHADOW"
   content="The most premium production gaming enclosure. Built from premium materials that are engineered with utmost care and attention to detail. A design based on continuous product improvement and innovation throughout . Discover the ultimate building experience. Shadow keeps an incredibly clean look that can be easily switched to different RGB patterns from the side control panel."
 />
+ </AnimatedSection>
 
-
-      <FeatureHighlightSection
+      {/* FeatureHighlightSection */}
+  <AnimatedSection delay={0.1}>   
+  <FeatureHighlightSection
       image="/products/feature_prof.png"
         title="FUTURE-PROOF FRONT PANEL"
         highlightText="Featuring a super-speed USB 3.1 port, RGB Lighting Control switch and additional connections for all modern peripherals."
         position="right"
       />
+ </AnimatedSection>
 
-      <FeatureSlider slides={slides} />
+
+      {/* FeatureSlider */}
+  <AnimatedSection delay={0.1}>   
+ <FeatureSlider slides={slides} />
+ </AnimatedSection>
+
+
 
         {/* Feature Gallery section is here */}
+  <AnimatedSection delay={0.1}>   
         <FeatureGallery
   title="TORTOX"
   highlight="SHADOW"
@@ -188,16 +207,22 @@ const ShadowPage = () => {
    
   ]}
 />
+ </AnimatedSection>
 
 
       {/* Join Group  */}
+  <AnimatedSection delay={0.1}>   
       <CallToActionBanner
   text="Over 1000's of gamers already using our products."
   buttonLabel="Join Our Group"
   buttonHref="/community"
 />
 
+ </AnimatedSection>
+
+
        {/* Feature showcase */}
+  <AnimatedSection delay={0.1}>   
        <ProductFeatureShowcase
   imageSrc="/products/Shadow/showcase/image.png"
  imageAlt=""
@@ -207,19 +232,22 @@ const ShadowPage = () => {
   noteLine1="THREE PRE-INSTALLED 120MM RGB RAINBOW FANS*"
   noteLine2="*Shadow Case can support up to 7 RGB Fans."
  />
-
+ </AnimatedSection>
 
 
 {/* Expensive */}
-
+  <AnimatedSection delay={0.1}>   
 <Expensive
   bgImage="/products/Shadow/expensive/image.png"
   title="Expansive Storage Space"
   description="With the explosion of high-definition content, users are going to need a lot more storage to keep it all. Shadow offers no less than seven PCI Slot & two 3.5” HDD bays for massive storage capability. You can even install a 2.5” SSD on the case for lightning-fast boot times."
 />
 
+ </AnimatedSection>
+
 
        {/* Highlight slider  */}
+  <AnimatedSection delay={0.1}>   
         <HighlightsSlider
    title="Magnetic And Removable"
    highlight="Built-In Dust Filters"
@@ -230,10 +258,19 @@ const ShadowPage = () => {
     { src: '/products/Shadow/Highlight-slider/image-3.png', alt: 'RGB Case' },
    ]}
  />
+ </AnimatedSection>
+
           {/* Specifications */}
-      <SpecificationSection specs={specs} imageSrc="/products/IRIS/specification/image.png" />
-          {/* Products slider */}
+  <AnimatedSection delay={0.1}>   
+          <SpecificationSection specs={specs} imageSrc="/products/IRIS/specification/image.png" />
+ </AnimatedSection>
+
+
+           {/* Products slider */}
+  <AnimatedSection delay={0.1}>   
       <ProductSlider title="Other Products" products={sampleProducts} />
+ </AnimatedSection>
+
     </ div>
   );
 };

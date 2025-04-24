@@ -51,7 +51,7 @@ export default function AnimatedSection({
           scale: 1,
           filter: 'blur(0px)',
           transition: {
-            ease: [0.22, 1, 0.36, 1], // Apple-style
+            ease: [0.22, 1, 0.36, 1], 
             duration,
             delay,
           },
