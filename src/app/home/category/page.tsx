@@ -63,7 +63,7 @@ export default function CategoryTabs() {
   return (
     <div className="w-full md:w-[1140px] mx-auto p-4">
       {/* Tabs with animation */}
-      <AnimatedSection delay={0.1} direction="top">
+      <AnimatedSection delay={0.1} >
         <div className="flex flex-wrap md:flex space-x-2 md:space-x-4 mb-6 p-2 text-sm">
           {categories.map((category) => (
             <motion.button
@@ -85,7 +85,7 @@ export default function CategoryTabs() {
       </AnimatedSection>
 
       {/* Product cards with animation */}
-      <AnimatedSection delay={0.2} direction="bottom">
+      <AnimatedSection delay={0.2} >
         <motion.div
           className="grid grid-cols-2 md:grid-cols-3 gap-6"
           initial="hidden"
