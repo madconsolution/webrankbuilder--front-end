@@ -1,5 +1,6 @@
 'use client';
 
+import AnimatedSection from "@/app/reuseable/Animation/AnimatedSection";
 import ProductBanner from "@/app/reuseable/products/banner/banner";
 import Expensive from "@/app/reuseable/products/expensive/expensive";
 
@@ -136,6 +137,8 @@ const specs: SpecItem[] = [
 const MagnusPage = () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
+      {/* ProductBanner */}
+      <AnimatedSection delay={0.1}>
       <ProductBanner
         bgImage="/products/iris-banner.png"
         logo1="/logo.png"
@@ -146,49 +149,68 @@ const MagnusPage = () => {
           'THAT HAVE GREAT DESIGN',
         ]}
       />
-   
-    {/* Here is first heading title */}
-                         <div className="text-xl text-[#FFFFFF]">
+      </AnimatedSection>
+
+      {/* Title */}
+      <AnimatedSection delay={0.1}>
+      <div className="text-xl text-[#FFFFFF]">
                           <Title
                             mainTitle="TORTOX"
                             subTitle="Magnus"
-                            content="The elegant all-steel construction embeds the iconic cable management system that streamlines building and upgrading your system. You can easily build a powerful system with plenty of options for storage and cooling. Includes Three integrated Tortox Raindow RGB fans and a tempered glass panel to showcase your build. With the included fan controller, you will be able to control all the power of each Fan’s 18 LEDs and enjoy more than 100 different dynamic RGB lighting effects in one of the most beautiful cases ever created.
-"
+                            content="The elegant all-steel construction embeds the iconic cable management system that streamlines building and upgrading your system. You can easily build a powerful system with plenty of options for storage and cooling. Includes Three integrated Tortox Raindow RGB fans and a tempered glass panel to showcase your build. With the included fan controller, you will be able to control all the power of each Fan’s 18 LEDs and enjoy more than 100 different dynamic RGB lighting effects in one of the most beautiful cases ever created."
                           />
                         </div>
-   <ProductOverview
+      </AnimatedSection>
+    
+      {/* ProductOverview */}
+      <AnimatedSection delay={0.1}>
+      <ProductOverview
   products={products}
   mainTitle="TORTOX"
   subTitle="MAGNUS"
   content="The most premium production gaming enclosure. Built from premium materials that are engineered with utmost care and attention to detail. A design based on continuous product improvement and innovation throughout . Discover the ultimate building experience. Shadow keeps an incredibly clean look that can be easily switched to different RGB patterns from the side control panel."
 />
+ </AnimatedSection>
 
-
+      {/* AnimatedSection */}
+      <AnimatedSection delay={0.1}>
       <FeatureHighlightSection
         image="/products/feature_prof.png"
         title="FUTURE-PROOF FRONT PANEL"
         highlightText="Featuring a super-speed USB 3.1 port, RGB Lighting Control switch and additional connections for all modern peripherals."
         position="right"
       />
+ </AnimatedSection>
 
+      {/* FeatureSlider */}
+      <AnimatedSection delay={0.1}>
       <FeatureSlider slides={slides} />
+       </AnimatedSection>
 
-      <div className="text-xl text-[#FFFFFF]">
+      {/* Title */}
+      <AnimatedSection delay={0.1}>
+     <div className="text-xl text-[#FFFFFF]">
         <Title
           mainTitle="TORTOX"
           subTitle="IRIS"
           content="Featuring EATX / ATX / Micro ATX / Mini-ITX Supported Case with 2 SSD Drive Bays and additional connections for all modern peripherals."
         />
       </div>
-
-      {/* Join Group  */}
-      <CallToActionBanner
+       </AnimatedSection>
+    
+       {/* Join Group  */}
+      <AnimatedSection delay={0.1}>
+       <CallToActionBanner
   text="Over 1000's of gamers already using our products."
   buttonLabel="Join Our Group"
   buttonHref="/community"
 />
+       </AnimatedSection>
 
-       {/* Feature showcase */}
+
+       {/* Join Group  */}
+      <AnimatedSection delay={0.1}>
+       {/*ProductFeatureShowcase */}
        <ProductFeatureShowcase
   imageSrc="/products/IRIS/showcase/image-1.png"
  imageAlt="Remote and Fan Controller"
@@ -198,41 +220,22 @@ const MagnusPage = () => {
   noteLine1="8 Fan 2 LED strip Aura connection with Remote"
   noteLine2="4x DUAL LOOP 120MM RGB RAINBOW FANS*"
  />
+       </AnimatedSection>
 
- {/* Feature Block */}
-  {/* <FeatureBlock
-  imageSrc="/products/IRIS/showcase/image-1.png"
-  imageAlt="Open Neon Case"   title="Thermal"
-   highlight="Expandability"
-   description={`To cool down the components, Grid Design on the front panel
-   has offered smooth intake. NEON supports up to two 140mm fans or a 280mm radiator in the front while a 120mm rear-fan
-   or radiator at the rear will push the hot air out. It also supports up
-   to 163mm high CPU air cooler.`}
-  note="Three Single Colour(Red) 33 LED Case Fans Pre-installed"
-   imageLeft={true} />
 
- <FeatureBlock
-    imageSrc="/products/IRIS/showcase/image-2.png"
-   imageAlt="Two NEON Cases"
-  title="Tool-free"
- highlight="modular storage design"
- description={`Both the included hard drive cages are modular and tool-free
-  giving the user the ability to configure the system to their needs. Apart from these hard drive cages which accommodate up to 2
-   HDDs, the NEON comes with three modular SSD brackets. Available in with or without RGB windowed side panel case, you can
-  choose the NEON that blends perfectly with your surroundings.`}
-  imageLeft={false}
-/> */}
-
-{/* Expensive */}
-
+       {/* Expensive */}
+      <AnimatedSection delay={0.1}>
 <Expensive
   bgImage="/products/Shadow/expensive/image.png"
   title="Expansive Storage Space"
   description="With the explosion of high-definition content, users are going to need a lot more storage to keep it all. Shadow offers no less than seven PCI Slot & two 3.5” HDD bays for massive storage capability. You can even install a 2.5” SSD on the case for lightning-fast boot times."
 />
 
+       </AnimatedSection>
 
-       {/* Highlight slider  */}
+
+             {/* Highlight slider  */}
+      <AnimatedSection delay={0.1}>
         <HighlightsSlider
    title="Magnetic And Removable"
    highlight="Built-In Dust Filters"
@@ -243,10 +246,26 @@ const MagnusPage = () => {
     { src: '/products/IRIS/highlight/image-3.png', alt: 'RGB Case' },
    ]}
  />
-          {/* Specifications */}
-      <SpecificationSection specs={specs} imageSrc="/products/IRIS/specification/image.png" />
-          {/* Products slider */}
-      <ProductSlider title="Other Products" products={sampleProducts} />
+       </AnimatedSection>
+    
+           {/* Specifications */}
+      <AnimatedSection delay={0.1}>
+           <SpecificationSection specs={specs} imageSrc="/products/IRIS/specification/image.png" />
+       </AnimatedSection>
+    
+             {/* Products slider */}
+      <AnimatedSection delay={0.1}>
+          <ProductSlider title="Other Products" products={sampleProducts} />
+       </AnimatedSection>
+    
+   
+
+
+
+
+
+
+
     </ div>
   );
 };

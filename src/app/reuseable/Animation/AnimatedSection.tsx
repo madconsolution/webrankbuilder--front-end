@@ -12,12 +12,12 @@ type AnimatedSectionProps = {
 export default function AnimatedSection({
   children,
   delay = 0.1,
-  duration = 0.8,
+  duration = 1,
 }: AnimatedSectionProps) {
   const ref = useRef(null);
   const inView = useInView(ref, {
-    once: false, // 👈 Animate every time it comes into view
-    amount: 0.3,
+    once: false,
+    amount: 0.3, // Trigger a bit deeper for better experience
   });
   const controls = useAnimation();
 
@@ -25,7 +25,7 @@ export default function AnimatedSection({
     if (inView) {
       controls.start('visible');
     } else {
-      controls.start('hidden'); // 👈 Smoothly animate out on scroll out
+      controls.start('hidden');
     }
   }, [inView, controls]);
 
@@ -37,9 +37,9 @@ export default function AnimatedSection({
       variants={{
         hidden: {
           opacity: 0,
-          y: 50,
+          y: 80,
           scale: 0.98,
-          filter: 'blur(6px)',
+          filter: 'blur(8px)',
           transition: {
             ease: [0.65, 0, 0.35, 1],
             duration: duration * 0.6,
@@ -51,13 +51,16 @@ export default function AnimatedSection({
           scale: 1,
           filter: 'blur(0px)',
           transition: {
-            ease: [0.22, 1, 0.36, 1], 
+            ease: [0.22, 1, 0.36, 1],
             duration,
             delay,
           },
         },
       }}
-      style={{ willChange: 'transform, opacity, filter' }}
+      style={{
+        willChange: 'transform, opacity, filter',
+        transitionTimingFunction: 'cubic-bezier(0.22, 1, 0.36, 1)',
+      }}
     >
       {children}
     </motion.section>

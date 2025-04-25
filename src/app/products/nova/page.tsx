@@ -220,9 +220,6 @@ const NovaPage = () => {
   <AnimatedSection delay={0.1}>
  <ProductSlider title="Other Products" products={sampleProducts} />
 </AnimatedSection>
-  
-    
-
     </ div>
   );
 };
