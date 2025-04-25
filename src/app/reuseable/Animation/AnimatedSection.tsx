@@ -39,7 +39,7 @@ export default function AnimatedSection({
           opacity: 0,
           y: 80,
           scale: 0.98,
-          filter: 'blur(8px)',
+          filter: 'blur(0px)',
           transition: {
             ease: [0.65, 0, 0.35, 1],
             duration: duration * 0.6,
