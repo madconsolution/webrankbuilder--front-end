@@ -1,5 +1,6 @@
 'use client';
 
+import AnimatedSection from "@/app/reuseable/Animation/AnimatedSection";
 import ProductBanner from "@/app/reuseable/products/banner/banner";
 import Expensive from "@/app/reuseable/products/expensive/expensive";
 
@@ -138,6 +139,8 @@ const specs: SpecItem[] = [
 const SpectraPage = () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
+      {/* ProductBanner */}
+      <AnimatedSection delay={0.1}>
       <ProductBanner
         bgImage="/products/iris-banner.png"
         logo1="/logo.png"
@@ -148,25 +151,37 @@ const SpectraPage = () => {
           'THAT HAVE GREAT DESIGN',
         ]}
       />
-   
+      </AnimatedSection>
 
-   <ProductOverview
+      {/* ProductOverview */}
+      <AnimatedSection delay={0.1}>
+    <ProductOverview
   products={products}
   mainTitle="TORTOX"
   subTitle="SPECTRA"
   content="The most premium production gaming enclosure. Built from premium materials that are engineered with utmost care and attention to detail. A design based on continuous product improvement and innovation throughout . Discover the ultimate building experience. Shadow keeps an incredibly clean look that can be easily switched to different RGB patterns from the side control panel."
 />
+      </AnimatedSection>
 
 
+      {/* FeatureHighlightSection */}
+      <AnimatedSection delay={0.1}>
       <FeatureHighlightSection
         image="/products/feature_prof.png"
         title="FUTURE-PROOF FRONT PANEL"
         highlightText="Featuring a super-speed USB 3.1 port, RGB Lighting Control switch and additional connections for all modern peripherals."
         position="right"
       />
+      </AnimatedSection>
 
+
+      {/* FeatureSlider */}
+      <AnimatedSection delay={0.1}>
       <FeatureSlider slides={slides} />
+      </AnimatedSection>
 
+      {/* Title */}
+      <AnimatedSection delay={0.1}>
       <div className="text-xl text-[#FFFFFF]">
         <Title
           mainTitle="TORTOX"
@@ -174,15 +189,11 @@ const SpectraPage = () => {
           content="Featuring EATX / ATX / Micro ATX / Mini-ITX Supported Case with 2 SSD Drive Bays and additional connections for all modern peripherals."
         />
       </div>
+      </AnimatedSection>
 
-      {/* Join Group  */}
-      <CallToActionBanner
-  text="Over 1000's of gamers already using our products."
-  buttonLabel="Join Our Group"
-  buttonHref="/community"
-/>
 
        {/* Feature showcase */}
+      <AnimatedSection delay={0.1}>
        <ProductFeatureShowcase
   imageSrc="/products/IRIS/showcase/image-1.png"
  imageAlt="Remote and Fan Controller"
@@ -192,42 +203,22 @@ const SpectraPage = () => {
   noteLine1="8 Fan 2 LED strip Aura connection with Remote"
   noteLine2="4x DUAL LOOP 120MM RGB RAINBOW FANS*"
  />
+      </AnimatedSection>
 
- {/* Feature Block */}
-  {/* <FeatureBlock
-  imageSrc="/products/IRIS/showcase/image-1.png"
-  imageAlt="Open Neon Case"   title="Thermal"
-   highlight="Expandability"
-   description={`To cool down the components, Grid Design on the front panel
-   has offered smooth intake. NEON supports up to two 140mm fans or a 280mm radiator in the front while a 120mm rear-fan
-   or radiator at the rear will push the hot air out. It also supports up
-   to 163mm high CPU air cooler.`}
-  note="Three Single Colour(Red) 33 LED Case Fans Pre-installed"
-   imageLeft={true} />
-
- <FeatureBlock
-    imageSrc="/products/IRIS/showcase/image-2.png"
-   imageAlt="Two NEON Cases"
-  title="Tool-free"
- highlight="modular storage design"
- description={`Both the included hard drive cages are modular and tool-free
-  giving the user the ability to configure the system to their needs. Apart from these hard drive cages which accommodate up to 2
-   HDDs, the NEON comes with three modular SSD brackets. Available in with or without RGB windowed side panel case, you can
-  choose the NEON that blends perfectly with your surroundings.`}
-  imageLeft={false}
-/> */}
 
 {/* Expensive */}
-
+      <AnimatedSection delay={0.1}>
 <Expensive
   bgImage="/products/Shadow/expensive/image.png"
   title="Expansive Storage Space"
   description="With the explosion of high-definition content, users are going to need a lot more storage to keep it all. Shadow offers no less than seven PCI Slot & two 3.5” HDD bays for massive storage capability. You can even install a 2.5” SSD on the case for lightning-fast boot times."
 />
+      </AnimatedSection>
 
 
        {/* Highlight slider  */}
-        <HighlightsSlider
+      <AnimatedSection delay={0.1}>
+       <HighlightsSlider
    title="Magnetic And Removable"
    highlight="Built-In Dust Filters"
   description="Your system should look good inside and out. Featuring a large removable and magnetic dust filter on the Top of case, along with dust filters for the power supply at the bottom. Shadow keeps dust where it belongs - outside your PC."
@@ -237,10 +228,18 @@ const SpectraPage = () => {
     { src: '/products/IRIS/highlight/image-3.png', alt: 'RGB Case' },
    ]}
  />
-          {/* Specifications */}
+      </AnimatedSection>
+
+       {/* Specifications */}
+      <AnimatedSection delay={0.1}>
       <SpecificationSection specs={specs} imageSrc="/products/IRIS/specification/image.png" />
-          {/* Products slider */}
-      <ProductSlider title="Other Products" products={sampleProducts} />
+      </AnimatedSection>
+
+                {/* Products slider */}
+      <AnimatedSection delay={0.1}>
+          <ProductSlider title="Other Products" products={sampleProducts} />
+      </AnimatedSection>
+
     </ div>
   );
 };
