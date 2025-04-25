@@ -2,19 +2,24 @@
 import { FaMapMarkerAlt, FaPhoneAlt, FaMobileAlt, FaEnvelope, FaGlobe } from 'react-icons/fa';
 import BannerSection from '../reuseable/contact/banner/banner';
 import Image from 'next/image';
+import AnimatedSection from '../reuseable/Animation/AnimatedSection';
 
 export default function ContactSection() {
   return (
     <div>
       {/* Contact Banner */}
+      <AnimatedSection delay={0.1}>
       <BannerSection
         backgroundImage="/contact/banner-contact.jpg"
         title="Distributors"
         buttonText="Read More"
         buttonLink="/distributors"
       />
+      </AnimatedSection>
+    
 
       {/* Contact Form */}
+      <AnimatedSection delay={0.1}>
       <section className="w-full bg-[#f5f5f5] py-12 px-4 md:px-16">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
           
@@ -70,6 +75,7 @@ export default function ContactSection() {
           </div>
 
           {/* Contact Info */}
+          
           <div className="text-black space-y-4">
             <h3 className="text-xl font-bold border-b pb-2">CONTACT INFO</h3>
             <div className="flex items-start space-x-3 text-sm">
@@ -101,6 +107,8 @@ export default function ContactSection() {
           </div>
         </div>
       </section>
+     </AnimatedSection>
+     
     </div>
   );
 }
