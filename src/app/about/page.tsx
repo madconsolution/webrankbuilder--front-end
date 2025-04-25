@@ -4,17 +4,21 @@ import { motion } from 'framer-motion';
 
 import Image from 'next/image';
 import BannerSection from '../reuseable/contact/banner/banner';
+import AnimatedSection from '../reuseable/Animation/AnimatedSection';
 
 export default function AboutTortox() {
   return (
  <div>
   {/* About benner */}
+  <AnimatedSection delay={0.1}>
   <BannerSection
         backgroundImage="/contact/banner-contact.jpg" 
         title="Distributors"
         buttonText="Read More"
         buttonLink="/distributors"
       />
+</AnimatedSection>
+
   {/*  */}
      <section className="bg-white py-12 px-4 md:px-16">
       <motion.div
@@ -57,7 +61,7 @@ export default function AboutTortox() {
           <Image
             src="/logo/logo.png"
             alt="Tortox Logo"
-            width={250} // adjust as needed
+            width={250} 
             height={250}
             className="w-full h-auto"
           />
