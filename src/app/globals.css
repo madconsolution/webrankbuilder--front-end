@@ -60,7 +60,17 @@ line-height: 30px;
 letter-spacing: 0%;
 vertical-align: middle;
 
+h4{
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  
 
+}
 }
 h5{
   font-family: Open Sans;
@@ -70,6 +80,7 @@ line-height: 100%;
 letter-spacing: 0%;
 text-align: center;
 vertical-align: middle;
+
 
 h6 {
   font-family: Open Sans;
@@ -88,10 +99,9 @@ p {
   font-size: 18px;
   line-height: 30.6px;
   letter-spacing: 0%;
-
+  text-align: center;
   vertical-align: middle;
-
-  
+  color: #FFFFFFCC;
 }
 a {
   font-family: 'Open Sans', sans-serif;
