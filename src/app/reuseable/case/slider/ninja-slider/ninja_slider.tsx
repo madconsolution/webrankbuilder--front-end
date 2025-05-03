@@ -7,8 +7,8 @@ import Image from 'next/image';
 
 export interface SlideContent {
   image: string;
-  leftTexts: [string, string];   // Top & bottom left
-  rightTexts: [string, string];  // Top & bottom right
+  leftTexts: [string, string];   
+  rightTexts: [string, string]; 
 }
 
 interface NinjaSliderProps {
@@ -35,8 +35,8 @@ const NinjaSlider: React.FC<NinjaSliderProps> = ({ slides }) => {
           >
             {/* Left Section */}
             <div className="w-1/6 flex flex-col justify-between text-center ">
-              <p className="text-[14px] leading-snug font-light">{slide.leftTexts[0]}</p>
-              <p className="text-[14px] leading-snug font-light">{slide.leftTexts[1]}</p>
+              <span className="ninja-slider-text">{slide.leftTexts[0]}</span>
+              <p className="ninja-slider-text">{slide.leftTexts[1]}</p>
             </div>
 
             {/* Center Image */}

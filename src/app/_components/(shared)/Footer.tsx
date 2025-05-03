@@ -10,7 +10,7 @@ export default function Footer() {
         {/* Footer Menu */}
         <div>
           <h6 className=" mb-2">FOOTER MENU</h6>
-          <div className="grid grid-cols-2 gap-2  text-sm">
+          <div className="grid grid-cols-2 gap-2 text-start">
             <p className="hover:text-white cursor-pointer">Tortox Shadow</p>
             <p className="hover:text-white cursor-pointer">Tortox Magnus</p>
             <p className="hover:text-white cursor-pointer">Tortox Neon</p>
