@@ -25,11 +25,11 @@ const CablesBanner: React.FC<BannerProps> = ({ bgImage, logo1,  description }) =
       />
       <div className="absolute max-w-xl  mx-auto inset-0 flex flex-col items-center justify-center text-white mt-8 px-4 text-center">
       
-          <Image src={logo1} alt="Product Logo 1" width={250} height={50} />
+          <Image src={logo1} alt="Product Logo 1" width={250} height={50} className='mb-3' />
 
-        <div className="text-xl sm:text-2xl md:text-3xl font-medium tracking-widest leading-snug space-y-2">
+        <div className="text-xl sm:text-2xl md:text-3xl font-medium tracking-widest leading-snug space-y-3">
           {lines.map((line, idx) => (
-            <p key={idx}>{line}</p>
+            <h5 key={idx}>{line}</h5>
           ))}
         </div>
       </div>
