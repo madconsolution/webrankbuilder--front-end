@@ -1,25 +1,31 @@
 "use client";
 import CaseBanner from "@/app/reuseable/case/banner/banner";
-import NinjaSlider, { SlideContent } from "@/app/reuseable/case/slider/ninja-slider/ninja_slider";
+
 import PowerGrid from "@/app/reuseable/power/power-grid/power_grid";
 import CallToActionBanner from "@/app/reuseable/products/join-group/join_group";
 import ProductSlider from "@/app/reuseable/products/product-slider/product_slider";
 import Title from "@/app/reuseable/products/title/title";
 import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/pecification";
+import GamingSlider, { GamingSlideContent } from "@/app/reuseable/slider/gaming/gaming_slider";
+
 
   // Here is sldier data
-  const slides: SlideContent[] = [
+  const slides: GamingSlideContent[] = [
     {
       image: '/gaming/gd_400_r/slider/image.png',
       leftTexts: [
-        'Tempered Glass Panel Showcases Custom RGB Lighting',
-        'With High-Quality Hydraulic Bearing, Working Life Is Up To 20000 Hrs Under High-Speed Rotation Condition',
+        'Increase the angle of view, refuse to do low head, healthy sitting, easy to deal with the work.',
+        '4-port USB expansion interface, stable and efficient transmission, no longer need to bow and bend.',
+        'The panel of the stand can be folded flexibly, occupying less space, the small desktop can also be used.',
       ],
       rightTexts: [
-        'Water-Cooling Installation Simplified For Both AIO And Custom Loop',
-        'Adaptive Noise Reduction Optimizes Cooling And Noise Balance For Best Gaming Comfort',
+        'LED lighting effect decoration on both sides, RGB lighting, 9 kinds of lighting effects, more sense of use experience.',
+        'Built in mobile phone, tablet bracket and sundry storage box, easy storage more clean desktop',
+        'The material is solid, bearing 30kg, safe to use.',
+     
       ],
     },
+ 
   
   ];  
 
@@ -110,7 +116,7 @@ const gd_400_r_page = () => {
         />
       </div>
        {/*  slider  */}
-       <NinjaSlider slides={slides} />
+       <GamingSlider slides={slides}/>
           {/* Join Group  */}
       <CallToActionBanner
         text="Over 1000's of gamers already using our products."
