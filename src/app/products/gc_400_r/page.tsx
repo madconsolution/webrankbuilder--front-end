@@ -43,6 +43,39 @@ import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/
         'Armrest with adjustable height and width',
       ],
     },
+    {
+      image: '/cheir/gc_400_r/slider/image.png',
+      leftTexts: [
+        'Chair with casters and five-point base',
+        'Seat rest with dense foam padding',
+      ],
+      rightTexts: [
+        'Backrest with lumbar support',
+        'Armrest with adjustable height and width',
+      ],
+    },
+    {
+      image: '/cheir/gc_400_r/slider/image.png',
+      leftTexts: [
+        'Chair with casters and five-point base',
+        'Seat rest with dense foam padding',
+      ],
+      rightTexts: [
+        'Backrest with lumbar support',
+        'Armrest with adjustable height and width',
+      ],
+    },
+    {
+      image: '/cheir/gc_400_r/slider/image.png',
+      leftTexts: [
+        'Chair with casters and five-point base',
+        'Seat rest with dense foam padding',
+      ],
+      rightTexts: [
+        'Backrest with lumbar support',
+        'Armrest with adjustable height and width',
+      ],
+    },
   
   ];  
 

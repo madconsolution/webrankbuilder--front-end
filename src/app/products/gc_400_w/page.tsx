@@ -15,36 +15,61 @@ import Title from "@/app/reuseable/products/title/title";
     {
       image: '/cheir/gc_400_w/slider/image.png',
       leftTexts: [
-        'Tempered Glass Panel Showcases Custom RGB Lighting',
-        'With High-Quality Hydraulic Bearing, Working Life Is Up To 20000 Hrs Under High-Speed Rotation Condition',
+        'Chair with casters and five-point base',
+        'Seat rest with dense foam padding',
       ],
       rightTexts: [
-        'Water-Cooling Installation Simplified For Both AIO And Custom Loop',
-        'Adaptive Noise Reduction Optimizes Cooling And Noise Balance For Best Gaming Comfort',
+        'Backrest with lumbar support',
+        'Armrest with adjustable height and width',
+      ],
+    },
+   
+    {
+      image: '/cheir/gc_400_w/slider/image.png',
+      leftTexts: [
+        'Chair with casters and five-point base',
+        'Seat rest with dense foam padding',
+      ],
+      rightTexts: [
+        'Backrest with lumbar support',
+        'Armrest with adjustable height and width',
+      ],
+    },
+   
+    {
+      image: '/cheir/gc_400_w/slider/image.png',
+      leftTexts: [
+        'Chair with casters and five-point base',
+        'Seat rest with dense foam padding',
+      ],
+      rightTexts: [
+        'Backrest with lumbar support',
+        'Armrest with adjustable height and width',
       ],
     },
     {
       image: '/cheir/gc_400_w/slider/image.png',
       leftTexts: [
-        'Tempered Glass Panel Showcases Custom RGB Lighting',
-        'With High-Quality Hydraulic Bearing, Working Life Is Up To 20000 Hrs Under High-Speed Rotation Condition',
+        'Chair with casters and five-point base',
+        'Seat rest with dense foam padding',
       ],
       rightTexts: [
-        'Water-Cooling Installation Simplified For Both AIO And Custom Loop',
-        'Adaptive Noise Reduction Optimizes Cooling And Noise Balance For Best Gaming Comfort',
+        'Backrest with lumbar support',
+        'Armrest with adjustable height and width',
       ],
     },
     {
       image: '/cheir/gc_400_w/slider/image.png',
       leftTexts: [
-        'Tempered Glass Panel Showcases Custom RGB Lighting',
-        'With High-Quality Hydraulic Bearing, Working Life Is Up To 20000 Hrs Under High-Speed Rotation Condition',
+        'Chair with casters and five-point base',
+        'Seat rest with dense foam padding',
       ],
       rightTexts: [
-        'Water-Cooling Installation Simplified For Both AIO And Custom Loop',
-        'Adaptive Noise Reduction Optimizes Cooling And Noise Balance For Best Gaming Comfort',
+        'Backrest with lumbar support',
+        'Armrest with adjustable height and width',
       ],
     },
+   
   
   ];  
 
