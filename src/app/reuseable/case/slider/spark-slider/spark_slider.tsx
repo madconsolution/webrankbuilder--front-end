@@ -25,12 +25,12 @@ const SparkSlider: React.FC<LunaSliderProps> = ({ slides }) => {
   });
 
   return (
-    <div className="relative w-full max-w-[1100px] mx-auto my-12 bg-gradient-to-b from-[#D9D9D91A] via-[#9a9a9a6a] to-[#D9D9D91A]  rounded-[40px] py-12 px-6">
+    <div className="relative w-full max-w-[1313px]  mx-auto mb-8 bg-gradient-to-b from-[#D9D9D91A] via-[#9a9a9a6a] to-[#D9D9D91A]  rounded-[40px]  px-6">
       <div ref={sliderRef} className="keen-slider">
         {slides.map((slide, idx) => (
           <div
             key={idx}
-            className="keen-slider__slide flex flex-col md:flex-row items-center justify-between text-white px-4 md:px-10 gap-10"
+            className="keen-slider__slide flex flex-col h-[516px] md:flex-row items-center justify-between text-white px-4 md:px-10 gap-10"
           >
             {/* Left Text */}
             <div className="flex-1 text-center md:text-left">
