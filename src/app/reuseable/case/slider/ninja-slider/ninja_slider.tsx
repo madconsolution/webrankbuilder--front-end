@@ -1,4 +1,4 @@
-'use client'; 
+'use client';
 
 import React from 'react';
 import { useKeenSlider } from 'keen-slider/react';
@@ -22,38 +22,52 @@ const NinjaSlider: React.FC<NinjaSliderProps> = ({ slides }) => {
     slideChanged: (s) => setCurrentSlide(s.track.details.rel),
   });
 
+  // Auto-slide every 3 seconds (instead of 1s)
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      if (instanceRef.current) {
+        instanceRef.current.next();
+      }
+    }, 5000); 
+
+    return () => clearInterval(interval);
+  }, [instanceRef]);
+
   return (
-    <div className="relative w-full md:max-w-[1313px] mx-auto m-[50px] px-4 bg-gradient-to-b from-[#D9D9D91A] via-[#9a9a9a6a] to-[#D9D9D91A]  rounded-[40px]">
+    <div className="relative w-full md:max-w-[1313px] h-[516px] mx-auto mt-[40px] mb-[63px] bg-gradient-to-b from-[#D9D9D91A] via-[#9a9a9a6a] to-[#D9D9D91A] rounded-[40px]">
       <div
         ref={sliderRef}
-        className="keen-slider  overflow-hidden w-full  mx-auto  py-12"
+        className="keen-slider overflow-hidden w-full"
+        style={{
+          transition: 'transform 1s ease-in-out' 
+        }}
       >
         {slides.map((slide, idx) => (
           <div
             key={idx}
-            className="keen-slider__slide flex justify-between  text-white relative"
+            className="keen-slider__slide flex justify-between px-[90px] py-[60px]"
           >
             {/* Left Section */}
-            <div className="w-1/6 flex flex-col justify-between text-center ">
+            <div className="w-1/5 flex flex-col justify-between">
               <span className="ninja-slider-text">{slide.leftTexts[0]}</span>
-              <p className="ninja-slider-text">{slide.leftTexts[1]}</p>
+              <span className="ninja-slider-text">{slide.leftTexts[1]}</span>
             </div>
 
             {/* Center Image */}
-            <div className="w-[413px] h-[411px] flex items-center justify-center">
+            <div className="flex items-center justify-center">
               <Image
                 src={slide.image}
                 alt={`Slide ${idx + 1}`}
-                width={300}
-                height={300}
+                width={400}
+                height={400}
                 className="object-contain"
               />
             </div>
 
             {/* Right Section */}
-            <div className="w-1/6 flex flex-col justify-between text-center ">
-              <p className="text-[14px] leading-snug font-light">{slide.rightTexts[0]}</p>
-              <p className="text-[14px] leading-snug font-light">{slide.rightTexts[1]}</p>
+            <div className="w-1/6 flex flex-col justify-between">
+              <span className="ninja-slider-text">{slide.rightTexts[0]}</span>
+              <span className="ninja-slider-text">{slide.rightTexts[1]}</span>
             </div>
           </div>
         ))}
@@ -75,4 +89,4 @@ const NinjaSlider: React.FC<NinjaSliderProps> = ({ slides }) => {
   );
 };
 
-export default NinjaSlider;  
+export default NinjaSlider;
