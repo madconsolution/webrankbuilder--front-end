@@ -48,7 +48,7 @@ const GamingSlider: React.FC<NinjaSliderProps> = ({ slides }) => {
             className="keen-slider__slide flex justify-between h-[516px] px-[110px] py-[90px]"
           >
             {/* Left Section */}
-            <div className="w-[215px] flex flex-col justify-between ">
+            <div className="w-[215px] text-start flex flex-col justify-between ">
               <span className="gaming-slider-text">{slide.leftTexts[0]}</span>
               <span className="gaming-slider-text">{slide.leftTexts[1]}</span>
               <span className="gaming-slider-text">{slide.leftTexts[2]}</span>
@@ -67,7 +67,7 @@ const GamingSlider: React.FC<NinjaSliderProps> = ({ slides }) => {
             </div>
 
             {/* Right Section */}
-            <div className="w-[215px]  flex flex-col justify-between ">
+            <div className="w-[215px] text-end flex flex-col justify-between ">
               <span className="gaming-slider-text ">{slide.rightTexts[0]}</span>
               <span className="gaming-slider-text">{slide.rightTexts[1]}</span>
             
