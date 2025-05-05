@@ -13,12 +13,53 @@ import Title from "@/app/reuseable/products/title/title";
     {
       image: '/cheir/gc_300_b/slider/image.png',
       leftTexts: [
-        'Tempered Glass Panel Showcases Custom RGB Lighting',
-        'With High-Quality Hydraulic Bearing, Working Life Is Up To 20000 Hrs Under High-Speed Rotation Condition',
+        'Soft yet durable furniture fabric',
+        'Armrest with adjustable height and width',
+        'Velvet backrest and head support',
       ],
       rightTexts: [
-        'Water-Cooling Installation Simplified For Both AIO And Custom Loop',
-        'Adaptive Noise Reduction Optimizes Cooling And Noise Balance For Best Gaming Comfort',
+        'Lumbered support adjustable knob',
+        'Backrest with lumbar support',
+        'Chair with casters and five-point base',
+      ],
+    },
+    {
+      image: '/cheir/gc_300_b/slider/image.png',
+      leftTexts: [
+        'Soft yet durable furniture fabric',
+        'Armrest with adjustable height and width',
+        'Velvet backrest and head support',
+      ],
+      rightTexts: [
+        'Lumbered support adjustable knob',
+        'Backrest with lumbar support',
+        'Chair with casters and five-point base',
+      ],
+    },
+    {
+      image: '/cheir/gc_300_b/slider/image.png',
+      leftTexts: [
+        'Soft yet durable furniture fabric',
+        'Armrest with adjustable height and width',
+        'Velvet backrest and head support',
+      ],
+      rightTexts: [
+        'Lumbered support adjustable knob',
+        'Backrest with lumbar support',
+        'Chair with casters and five-point base',
+      ],
+    },
+    {
+      image: '/cheir/gc_300_b/slider/image.png',
+      leftTexts: [
+        'Soft yet durable furniture fabric',
+        'Armrest with adjustable height and width',
+        'Velvet backrest and head support',
+      ],
+      rightTexts: [
+        'Lumbered support adjustable knob',
+        'Backrest with lumbar support',
+        'Chair with casters and five-point base',
       ],
     },
   

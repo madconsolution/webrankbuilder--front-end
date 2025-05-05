@@ -7,8 +7,8 @@ import Image from 'next/image';
 
 export interface SlideContent {
   image: string;
-  leftTexts: [string, string];   
-  rightTexts: [string, string]; 
+  leftTexts: [string, string , string?];   
+  rightTexts: [string, string , string?]; 
 }
 
 interface NinjaSliderProps {
@@ -45,20 +45,21 @@ const NinjaSlider: React.FC<NinjaSliderProps> = ({ slides }) => {
         {slides.map((slide, idx) => (
           <div
             key={idx}
-            className="keen-slider__slide flex justify-between px-[90px] py-[60px]"
+            className="keen-slider__slide flex justify-between px-[90px] py-[70px]"
           >
             {/* Left Section */}
             <div className="w-1/5 flex flex-col justify-between">
               <span className="ninja-slider-text">{slide.leftTexts[0]}</span>
               <span className="ninja-slider-text">{slide.leftTexts[1]}</span>
+              <span className="ninja-slider-text">{slide.leftTexts[2]}</span>
             </div>
 
             {/* Center Image */}
-            <div className="flex items-center justify-center">
+            <div className="flex items-center mt-0 md:-mt-12 ">
               <Image
                 src={slide.image}
                 alt={`Slide ${idx + 1}`}
-                width={400}
+                width={413}
                 height={400}
                 className="object-contain"
               />
@@ -68,19 +69,20 @@ const NinjaSlider: React.FC<NinjaSliderProps> = ({ slides }) => {
             <div className="w-1/6 flex flex-col justify-between">
               <span className="ninja-slider-text">{slide.rightTexts[0]}</span>
               <span className="ninja-slider-text">{slide.rightTexts[1]}</span>
+              <span className="ninja-slider-text">{slide.rightTexts[2]}</span>
             </div>
           </div>
         ))}
       </div>
 
       {/* Pagination Dots */}
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-2">
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-2 bg-[#3D3D3D]  p-4 rounded-full ">
         {slides.map((_, idx) => (
           <button
             key={idx}
             onClick={() => instanceRef.current?.moveToIdx(idx)}
-            className={`w-4 h-2 rounded-full transition-all duration-300 ${
-              currentSlide === idx ? 'bg-white w-6' : 'bg-gray-500'
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${
+              currentSlide === idx ? 'bg-white w-10' : 'bg-gray-500'
             }`}
           />
         ))}
