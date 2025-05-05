@@ -34,7 +34,7 @@ const GamingSlider: React.FC<NinjaSliderProps> = ({ slides }) => {
   }, [instanceRef]);
 
   return (
-    <div className="relative w-full md:max-w-[1313px]  mx-auto mt-[40px] mb-[63px] bg-gradient-to-b from-[#D9D9D91A] via-[#9a9a9a6a] to-[#D9D9D91A] rounded-[40px]">
+    <div className="relative w-full md:max-w-[1313px]  mx-auto mt-[40px] mb-[63px] bg-gradient-to-b from-[#D9D9D91A] via-[#9a9a9a6a] to-[#D9D9D91A] rounded-[80px]">
       <div
         ref={sliderRef}
         className="keen-slider overflow-hidden w-full"
@@ -45,13 +45,13 @@ const GamingSlider: React.FC<NinjaSliderProps> = ({ slides }) => {
         {slides.map((slide, idx) => (
           <div
             key={idx}
-            className="keen-slider__slide flex justify-between px-[90px] h-[516px] py-12"
+            className="keen-slider__slide flex justify-between h-[516px] px-[110px] py-[90px]"
           >
             {/* Left Section */}
-            <div className="w-1/4 flex flex-col justify-between space-y-2">
-              <span className="ninja-slider-text">{slide.leftTexts[0]}</span>
-              <span className="ninja-slider-text">{slide.leftTexts[1]}</span>
-              <span className="ninja-slider-text">{slide.leftTexts[2]}</span>
+            <div className="w-[215px] flex flex-col justify-between ">
+              <span className="gaming-slider-text">{slide.leftTexts[0]}</span>
+              <span className="gaming-slider-text">{slide.leftTexts[1]}</span>
+              <span className="gaming-slider-text">{slide.leftTexts[2]}</span>
           
             </div>
 
@@ -67,11 +67,11 @@ const GamingSlider: React.FC<NinjaSliderProps> = ({ slides }) => {
             </div>
 
             {/* Right Section */}
-            <div className="w-1/4 flex flex-col justify-between  space-y-2">
-              <span className="ninja-slider-text">{slide.rightTexts[0]}</span>
-              <span className="ninja-slider-text">{slide.rightTexts[1]}</span>
+            <div className="w-[215px]  flex flex-col justify-between ">
+              <span className="gaming-slider-text ">{slide.rightTexts[0]}</span>
+              <span className="gaming-slider-text">{slide.rightTexts[1]}</span>
             
-              <span className="ninja-slider-text">{slide.rightTexts[2]}</span>
+              <span className="gaming-slider-text">{slide.rightTexts[2]}</span>
             
             </div>
           </div>
@@ -84,8 +84,8 @@ const GamingSlider: React.FC<NinjaSliderProps> = ({ slides }) => {
           <button
             key={idx}
             onClick={() => instanceRef.current?.moveToIdx(idx)}
-            className={`w-4 h-2 rounded-full transition-all duration-300 ${
-              currentSlide === idx ? 'bg-white w-6' : 'bg-gray-500'
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${
+              currentSlide === idx ? 'bg-white w-10' : 'bg-gray-500'
             }`}
           />
         ))}

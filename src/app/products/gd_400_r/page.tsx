@@ -25,6 +25,48 @@ import GamingSlider, { GamingSlideContent } from "@/app/reuseable/slider/gaming/
      
       ],
     },
+    {
+      image: '/gaming/gd_400_r/slider/image.png',
+      leftTexts: [
+        'Increase the angle of view, refuse to do low head, healthy sitting, easy to deal with the work.',
+        '4-port USB expansion interface, stable and efficient transmission, no longer need to bow and bend.',
+        'The panel of the stand can be folded flexibly, occupying less space, the small desktop can also be used.',
+      ],
+      rightTexts: [
+        'LED lighting effect decoration on both sides, RGB lighting, 9 kinds of lighting effects, more sense of use experience.',
+        'Built in mobile phone, tablet bracket and sundry storage box, easy storage more clean desktop',
+        'The material is solid, bearing 30kg, safe to use.',
+     
+      ],
+    },
+    {
+      image: '/gaming/gd_400_r/slider/image.png',
+      leftTexts: [
+        'Increase the angle of view, refuse to do low head, healthy sitting, easy to deal with the work.',
+        '4-port USB expansion interface, stable and efficient transmission, no longer need to bow and bend.',
+        'The panel of the stand can be folded flexibly, occupying less space, the small desktop can also be used.',
+      ],
+      rightTexts: [
+        'LED lighting effect decoration on both sides, RGB lighting, 9 kinds of lighting effects, more sense of use experience.',
+        'Built in mobile phone, tablet bracket and sundry storage box, easy storage more clean desktop',
+        'The material is solid, bearing 30kg, safe to use.',
+     
+      ],
+    },
+    {
+      image: '/gaming/gd_400_r/slider/image.png',
+      leftTexts: [
+        'Increase the angle of view, refuse to do low head, healthy sitting, easy to deal with the work.',
+        '4-port USB expansion interface, stable and efficient transmission, no longer need to bow and bend.',
+        'The panel of the stand can be folded flexibly, occupying less space, the small desktop can also be used.',
+      ],
+      rightTexts: [
+        'LED lighting effect decoration on both sides, RGB lighting, 9 kinds of lighting effects, more sense of use experience.',
+        'Built in mobile phone, tablet bracket and sundry storage box, easy storage more clean desktop',
+        'The material is solid, bearing 30kg, safe to use.',
+     
+      ],
+    },
  
   
   ];  
