@@ -1,23 +1,24 @@
 "use client";
 import CaseBanner from "@/app/reuseable/case/banner/banner";
-import NinjaSlider, { SlideContent } from "@/app/reuseable/case/slider/ninja-slider/ninja_slider";
+import { SlideContent } from "@/app/reuseable/case/slider/ninja-slider/ninja_slider";
 import PowerGrid from "@/app/reuseable/power/power-grid/power_grid";
 import CallToActionBanner from "@/app/reuseable/products/join-group/join_group";
 import ProductSlider from "@/app/reuseable/products/product-slider/product_slider";
 import Title from "@/app/reuseable/products/title/title";
 import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/pecification";
+import GSSlider from "@/app/reuseable/slider/gaming/gs_slider";
 
   // Here is sldier data
   const slides: SlideContent[] = [
     {
-      image: '/cheir/gs_300_r/slider/image.png',
+      image: '/cheir/gs_300_g/slider/image.png',
       leftTexts: [
-        'Tempered Glass Panel Showcases Custom RGB Lighting',
-        'With High-Quality Hydraulic Bearing, Working Life Is Up To 20000 Hrs Under High-Speed Rotation Condition',
+        'The Tortox GS300 Gaming Sofa is a versatile and comfortable seating option designed specifically for gamers. With its movable scroll casters, you can easily move the sofa around your gaming setup without any hassle.',
+   
       ],
       rightTexts: [
-        'Water-Cooling Installation Simplified For Both AIO And Custom Loop',
-        'Adaptive Noise Reduction Optimizes Cooling And Noise Balance For Best Gaming Comfort',
+        'Foam in the holder and back feels very soft when your body is above it. The foam is not easily deflated even if it is occupied for a long time and will return to its original position.',
+ 
       ],
     },
   
@@ -103,7 +104,7 @@ const gs_300_g_page = () => {
         />
       </div>
        {/*  slider  */}
-       <NinjaSlider slides={slides} />
+       <GSSlider slides={slides} />
           {/* Join Group  */}
       <CallToActionBanner
         text="Over 1000's of gamers already using our products."

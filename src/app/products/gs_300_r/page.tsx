@@ -22,6 +22,39 @@ import GSSlider from "@/app/reuseable/slider/gaming/gs_slider";
  
       ],
     },
+    {
+      image: '/cheir/gs_300_r/slider/image.png',
+      leftTexts: [
+        'The Tortox GS300 Gaming Sofa is a versatile and comfortable seating option designed specifically for gamers. With its movable scroll casters, you can easily move the sofa around your gaming setup without any hassle.',
+   
+      ],
+      rightTexts: [
+        'Foam in the holder and back feels very soft when your body is above it. The foam is not easily deflated even if it is occupied for a long time and will return to its original position.',
+ 
+      ],
+    },
+    {
+      image: '/cheir/gs_300_r/slider/image.png',
+      leftTexts: [
+        'The Tortox GS300 Gaming Sofa is a versatile and comfortable seating option designed specifically for gamers. With its movable scroll casters, you can easily move the sofa around your gaming setup without any hassle.',
+   
+      ],
+      rightTexts: [
+        'Foam in the holder and back feels very soft when your body is above it. The foam is not easily deflated even if it is occupied for a long time and will return to its original position.',
+ 
+      ],
+    },
+    {
+      image: '/cheir/gs_300_r/slider/image.png',
+      leftTexts: [
+        'The Tortox GS300 Gaming Sofa is a versatile and comfortable seating option designed specifically for gamers. With its movable scroll casters, you can easily move the sofa around your gaming setup without any hassle.',
+   
+      ],
+      rightTexts: [
+        'Foam in the holder and back feels very soft when your body is above it. The foam is not easily deflated even if it is occupied for a long time and will return to its original position.',
+ 
+      ],
+    },
   
   ];  
 
