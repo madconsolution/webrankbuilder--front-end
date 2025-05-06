@@ -13,12 +13,12 @@ import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/
     {
       image: '/cheir/gs_300_r/slider/image.png',
       leftTexts: [
-        'Tempered Glass Panel Showcases Custom RGB Lighting',
-        'With High-Quality Hydraulic Bearing, Working Life Is Up To 20000 Hrs Under High-Speed Rotation Condition',
+        'The Tortox GS300 Gaming Sofa is a versatile and comfortable seating option designed specifically for gamers. With its movable scroll casters, you can easily move the sofa around your gaming setup without any hassle.',
+   
       ],
       rightTexts: [
-        'Water-Cooling Installation Simplified For Both AIO And Custom Loop',
-        'Adaptive Noise Reduction Optimizes Cooling And Noise Balance For Best Gaming Comfort',
+        'Foam in the holder and back feels very soft when your body is above it. The foam is not easily deflated even if it is occupied for a long time and will return to its original position.',
+ 
       ],
     },
   

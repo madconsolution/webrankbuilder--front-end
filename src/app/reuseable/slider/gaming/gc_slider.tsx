@@ -5,17 +5,17 @@ import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
 import Image from 'next/image';
 
-export interface SlideContent {
+export interface GamingSlideContent {
   image: string;
-  leftTexts: [string, string? , string?];   
-  rightTexts: [string, string? , string?]; 
+  leftTexts: [string, string?, string?];   
+  rightTexts: [string, string?, string?]; 
 }
 
 interface NinjaSliderProps {
-  slides: SlideContent[];
+  slides: GamingSlideContent[];
 }
 
-const NinjaSlider: React.FC<NinjaSliderProps> = ({ slides }) => {
+const GCSlider: React.FC<NinjaSliderProps> = ({ slides }) => {
   const [currentSlide, setCurrentSlide] = React.useState(0);
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
     loop: true,
@@ -34,7 +34,7 @@ const NinjaSlider: React.FC<NinjaSliderProps> = ({ slides }) => {
   }, [instanceRef]);
 
   return (
-    <div className="relative w-full md:max-w-[1313px] h-[516px] mx-auto mt-[40px] mb-[63px] bg-gradient-to-b from-[#D9D9D91A] via-[#9a9a9a6a] to-[#D9D9D91A] rounded-[40px]">
+    <div className="relative w-full md:max-w-[1313px]  mx-auto mt-[40px] mb-[63px] bg-gradient-to-b from-[#D9D9D91A] via-[#9a9a9a6a] to-[#D9D9D91A] rounded-[80px]">
       <div
         ref={sliderRef}
         className="keen-slider overflow-hidden w-full"
@@ -45,38 +45,41 @@ const NinjaSlider: React.FC<NinjaSliderProps> = ({ slides }) => {
         {slides.map((slide, idx) => (
           <div
             key={idx}
-            className="keen-slider__slide flex justify-between px-[90px] py-[70px]"
+            className="keen-slider__slide flex justify-between h-[516px] px-[110px] py-[90px]"
           >
             {/* Left Section */}
-            <div className="w-1/5 flex flex-col justify-between">
-              <span className="ninja-slider-text">{slide.leftTexts[0]}</span>
-              <span className="ninja-slider-text">{slide.leftTexts[1]}</span>
-              <span className="ninja-slider-text">{slide.leftTexts[2]}</span>
+            <div className="w-[215px] text-start flex flex-col justify-between ">
+              <span className="gc-slider-text">{slide.leftTexts[0]}</span>
+              <span className="gc-slider-text">{slide.leftTexts[1]}</span>
+         
+          
             </div>
 
             {/* Center Image */}
-            <div className="flex items-center mt-0 md:-mt-12 ">
+            <div className="flex items-center justify-center mt-0 md:-mt-16">
               <Image
                 src={slide.image}
                 alt={`Slide ${idx + 1}`}
-                width={413}
+                width={400}
                 height={400}
                 className="object-contain"
               />
             </div>
 
             {/* Right Section */}
-            <div className="w-1/6 flex flex-col justify-between">
-              <span className="ninja-slider-text">{slide.rightTexts[0]}</span>
-              <span className="ninja-slider-text">{slide.rightTexts[1]}</span>
-              <span className="ninja-slider-text">{slide.rightTexts[2]}</span>
+            <div className="w-[215px] text-end flex flex-col justify-between ">
+              <span className="gc-slider-text">{slide.rightTexts[0]}</span>
+              <span className="gc-slider-text">{slide.rightTexts[1]}</span>
+            
+             
+            
             </div>
           </div>
         ))}
       </div>
 
       {/* Pagination Dots */}
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-2 bg-[#3D3D3D]  p-4 rounded-full ">
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-2">
         {slides.map((_, idx) => (
           <button
             key={idx}
@@ -91,4 +94,4 @@ const NinjaSlider: React.FC<NinjaSliderProps> = ({ slides }) => {
   );
 };
 
-export default NinjaSlider;
+export default GCSlider;

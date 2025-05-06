@@ -181,3 +181,18 @@ color: #FFFFFFCC;
 
 
 }
+/* Gaming slider */
+.gc-slider-text {
+  font-family: Open Sans;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+  
+color: #FFFFFFCC;
+
+
+}
