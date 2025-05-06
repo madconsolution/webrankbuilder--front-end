@@ -5,8 +5,9 @@ import PowerGrid from "@/app/reuseable/power/power-grid/power_grid";
 import CallToActionBanner from "@/app/reuseable/products/join-group/join_group";
 import ProductSlider from "@/app/reuseable/products/product-slider/product_slider";
 import Title from "@/app/reuseable/products/title/title";
-import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/pecification";
+import { SpecificationItem } from "@/app/reuseable/cables/Specification/pecification";
 import GSSlider from "@/app/reuseable/slider/gaming/gs_slider";
+import SpecificationCheir from "@/app/reuseable/specifications/specification_cheir";
 
   // Here is sldier data
   const slides: SlideContent[] = [
@@ -73,11 +74,13 @@ const specs: SpecificationItem[] = [
   {
     type: 'additional',
     items: [
-      'Custom engineered for superior cooling. Minimize noise or maximize airflow',
-      { label: 'Bearing Type', value: 'Hydraulic Bearing', highlight: true },
-      { label: 'Connector', value: '2510–4Pin' },
-      { label: 'Lead Wire Length', value: '300mm', highlight: true },
-      { label: 'LED', value: 'Rainbow 16 LEDs', highlight: true },
+      'A high-quality sofa is built to last with sturdy construction and reinforced stitching to withstand the rigors of intense gaming.',
+      { label: 'Chair Cover Material ',  value: ' PVC Leather', highlight: true },
+      { label: 'Mechanism Type ', value: '2Multi-Functional Tilt', highlight: true },
+      { label: 'Armrests : ', value: '4D', highlight: true },
+      { label: 'Model', value: 'GS300-R', highlight: true },
+      { label: 'Gas Lift Class', value: '4', highlight: true },
+      { label: 'Foam Type ', value: 'High Density Mold Shaping Foam', highlight: true },
     ],
   },
 ];
@@ -117,7 +120,7 @@ const gs_300_g_page = () => {
 
        
            {/* Specification section */}
-      <SpecificationSection specifications={specs} />
+      <SpecificationCheir specifications={specs} />
              {/* Products slider */}
              <ProductSlider title="Other Products" products={sampleProducts} />
     </div>
