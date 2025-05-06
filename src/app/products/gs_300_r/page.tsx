@@ -1,11 +1,12 @@
 "use client";
 import CaseBanner from "@/app/reuseable/case/banner/banner";
-import NinjaSlider, { SlideContent } from "@/app/reuseable/case/slider/ninja-slider/ninja_slider";
+import  { SlideContent } from "@/app/reuseable/case/slider/ninja-slider/ninja_slider";
 import PowerGrid from "@/app/reuseable/power/power-grid/power_grid";
 import CallToActionBanner from "@/app/reuseable/products/join-group/join_group";
 import ProductSlider from "@/app/reuseable/products/product-slider/product_slider";
 import Title from "@/app/reuseable/products/title/title";
 import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/pecification";
+import GSSlider from "@/app/reuseable/slider/gaming/gs_slider";
 
 
   // Here is sldier data
@@ -104,7 +105,7 @@ const gs_300_r_page = () => {
         />
       </div>
        {/*  slider  */}
-       <NinjaSlider slides={slides} />
+       <GSSlider slides={slides} />
           {/* Join Group  */}
       <CallToActionBanner
         text="Over 1000's of gamers already using our products."
