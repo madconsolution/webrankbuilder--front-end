@@ -52,12 +52,12 @@ const ProductBanner: React.FC<BannerProps> = ({
         {/* Text Description */}
         <div className="space-y-2 md:space-y-4 text-center">
           {lines.map((line, idx) => (
-            <h1
+            <h4
               key={idx}
-              className="text-md md:text-4xl  uppercase tracking-wide"
+              className="text-md md:text-3xl  uppercase "
             >
               {line}
-            </h1>
+            </h4>
           ))}
         </div>
       </div>

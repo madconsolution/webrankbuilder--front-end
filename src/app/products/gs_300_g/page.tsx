@@ -63,6 +63,7 @@ const specs: SpecificationItem[] = [
   {
     type: 'dimensions',
     items: [
+      'The backrest is adjustable, allowing you to find the perfect angle for maximum comfort during long gaming sessions.',
       { label: 'Voltage', value: 'DC 12V' },
       { label: 'Fan Dimensions', value: '120 x 120 x 25mm' },
       { label: 'Fan Speed', value: '800~2000 R.P.M' },

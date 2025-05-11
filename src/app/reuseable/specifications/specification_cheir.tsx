@@ -60,30 +60,37 @@ const SpecificationCheir: FC<SpecificationSectionProps> = ({
               </h4>
             </div>
 
-            {/* Description List */}
-         <div className="w-full px-[65px]  grid grid-cols-1 ">
-       
-         <ul className="space-y-2 list-disc ">
-              {spec.items.map((item, index) => {
-                if (typeof item === 'string') {
-                  return <li  key={index}>{item}</li>;
-                } else {
-                  return (
-                    <li key={index}>
-                      <span className="">{item.label}:</span>{' '}
-                      {item.highlight ? (
-                        <span className="text-white font-bold ">
-                          {item.value}
-                        </span>
-                      ) : (
-                        item.value
-                      )}
-                    </li>
-                  );
-                }
-              })}
-            </ul>
-         </div>
+                        {/* Description List */}
+            <div className="space-y-2">
+  {spec.items.map((item, index) => {
+    if (typeof item === 'string') {
+      return (
+        <div key={index} >
+          <div />
+          <div className='ml-16'><span>{item}</span></div>
+        </div>
+      );
+    } else {
+      return (
+        <div key={index} className="flex items-start gap-2 ">
+            <div  className="w-2 h-2 my-2 mx-6 border-2 border-red-500 bg-white rounded-full flex-shrink-0" />
+          <span>
+            <span className="">{item.label}:</span>{' '}
+            {item.highlight ? (
+              <span className="text-white font-bold">{item.value}</span>
+            ) : (
+              item.value
+            )}
+          </span>
+        </div>
+      );
+    }
+  })}
+</div>
+            
+           
+
+        
           </div>
         ))}
       </div>
