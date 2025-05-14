@@ -17,7 +17,13 @@ export default function BannerSection({
   buttonLink = '#',
 }: BannerProps) {
   return (
-    <section className="relative w-full h-[300px] md:h-[400px] flex items-center justify-center overflow-hidden">
+    <section className="relative w-full h-[300px] md:h-[400px] flex items-center justify-center overflow-hidden"
+    
+       style={{
+        
+        clipPath:
+          'polygon(0 100%, 0 0, 35% 0%, 65% 0%, 59% 0, 100% 0, 100% 43%, 100% 60%, 100% 100%, 58% 100%, 52% 94%, 46% 100%)',
+      }}>
       {/* Background Image */}
       <Image
         src={backgroundImage}
