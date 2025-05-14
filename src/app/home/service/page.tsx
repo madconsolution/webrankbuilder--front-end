@@ -10,19 +10,19 @@ const services = [
     icon: <FaTools />,
   },
   {
-    title: "Network Security",
+    title: "Computer Cooling",
     description:
       "Product incorporate many advanced heat transfer technology with fans for exhausting hot air and cools the components inside the cabinets.",
     icon: <FaShieldAlt />,
   },
   {
-    title: "Software Development",
+    title: "Gaming Computers",
     description:
       "We build computers to make your business run smooth, to photo-editing PC’s, Gaming Computers and even your most high end Enthusiasts systems.",
     icon: <FaLaptopCode />,
   },
   {
-    title: "IT Consultation",
+    title: "Warranty",
     description:
       "Tortox computer cases, fans, power supply, accessories, and cables carry warranty from the date of purchase for parts and labor.",
     icon: <FaUserTie />,
@@ -41,11 +41,11 @@ export default function ServiceSection() {
           >
             <h6 className="text-lg font-semibold mb-2">{service.title}</h6>
             <span className="bg-white text-gray-300 rounded-full p-3 flex items-center justify-center transition-colors duration-500 ease-in-out group-hover:text-[#CC0000] mx-auto w-12 h-12">
-              <span className="text-xl transition-transform duration-500 ease-in-out transform group-hover:scale-110">
+              <span className="text-3xl transition-transform duration-500 ease-in-out transform group-hover:scale-110">
                 {service.icon}
               </span>
             </span>
-            <p className="text-sm mt-3 ">{service.description}</p>
+            <p className=" mt-3 text-black">{service.description}</p>
           </div>
         ))}
       </div>
