@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation, Autoplay } from 'swiper/modules';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import { useRef} from 'react';
+import { useRef } from 'react';
 
 export default function HeroSection() {
   const videos = ['/logo_video.mp4'];
@@ -13,42 +13,47 @@ export default function HeroSection() {
   const nextRef = useRef(null);
 
   return (
-    <div className="relative w-full min-h-screen bg-[#0B1320] text-white overflow-hidden">
+    <div
+      className="relative w-full min-h-screen text-white overflow-hidden"
+      style={{
+        backgroundColor: '#0B1320',
+        clipPath: 'polygon(0 100%, 0 0, 100% 0%, 65% 0%, 59% 0, 100% 0, 100% 43%, 100% 60%, 100% 100%, 56% 100%, 52% 97%, 49% 100%)',
+      }}
+    >
       {/* Video Swiper Carousel */}
       <Swiper
-  modules={[Navigation, Autoplay]}
-  slidesPerView={1}
-  loop
-  autoplay={{ delay: 5000, disableOnInteraction: false }}
-  navigation={{
-    prevEl: prevRef.current,
-    nextEl: nextRef.current,
-  }}
-  onInit={(swiper) => {
-    // Fix for custom navigation buttons
-    // @ts-expect-error: Custom Swiper navigation ref not typed
-    swiper.params.navigation.prevEl = prevRef.current;
-   // @ts-expect-error: Custom Swiper navigation ref not typed
-    swiper.params.navigation.nextEl = nextRef.current;
-    swiper.navigation.init();
-    swiper.navigation.update();
-  }}
-  className="h-screen"
->
-  {videos.map((video, index) => (
-    <SwiperSlide key={index}>
-      <video
-        className="w-full h-auto object-cover"
-        src={video}
-        autoPlay
-        muted
+        modules={[Navigation, Autoplay]}
+        slidesPerView={1}
         loop
-        playsInline
-      />
-    </SwiperSlide>
-  ))}
-</Swiper>
-
+        autoplay={{ delay: 5000, disableOnInteraction: false }}
+        navigation={{
+          prevEl: prevRef.current,
+          nextEl: nextRef.current,
+        }}
+        onInit={(swiper) => {
+          // Fix for custom navigation buttons
+          // @ts-expect-error: Custom Swiper navigation ref not typed
+          swiper.params.navigation.prevEl = prevRef.current;
+          // @ts-expect-error: Custom Swiper navigation ref not typed
+          swiper.params.navigation.nextEl = nextRef.current;
+          swiper.navigation.init();
+          swiper.navigation.update();
+        }}
+        className="h-screen"
+      >
+        {videos.map((video, index) => (
+          <SwiperSlide key={index}>
+            <video
+              className="w-full h-auto object-cover"
+              src={video}
+              autoPlay
+              muted
+              loop
+              playsInline
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
 
       {/* Custom Navigation Buttons */}
       <button
