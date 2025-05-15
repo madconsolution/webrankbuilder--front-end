@@ -9,26 +9,7 @@ import Title from "@/app/reuseable/products/title/title";
 
 
 //   Here is resolution data
-const resolutionData = [
-  {
-    mainImage: '/adapter/m_to_f2/resolution/left-cable.png',
-    overlayImage: '/cables/4hdmi_cables/resolution/right-1.png',
-    title: 'Stream Visuals From Your Smartphone',
 
-    
-    descriptionImage: '/cables/4hdmi_cables/resolution/monitor.png',
-  },
-  {
-    mainImage: '/adapter/m_to_f2/resolution/right-cable.png',
-    title: 'Experience The Brilliance Of',
-    descriptionImage: '/adapter/m_to_f/resolution/max-image.png',
-    badges: [
-      '/cables/4hdmi_cables/resolution/right-1.png',
-      '/cables/4hdmi_cables/resolution/right-2.png',
-      '/cables/4hdmi_cables/resolution/right-3.png',
-    ],
-  },
-];
 
   
      // Here is specification date
@@ -88,7 +69,7 @@ const mini_dp_to__page= () => {
              />
               </ div>
         {/* Resolution section */}
-        <Resolution2Section cards={resolutionData} />;
+        <Resolution2Section />;
         {/* Specification section */}
         <SpecificationSection specifications={specs} />
            

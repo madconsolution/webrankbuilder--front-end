@@ -216,3 +216,15 @@ vertical-align: middle;
 color: #CD2122;
 }
 
+/* Here are resution sections styles */
+
+.mini-to-dp-text{
+  font-family: Open Sans;
+font-weight: 700;
+font-size: 32px;
+
+letter-spacing: 0%;
+vertical-align: middle;
+text-transform: capitalize;
+color: #CD2122;
+}
