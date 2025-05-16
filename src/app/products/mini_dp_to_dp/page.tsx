@@ -9,6 +9,30 @@ import Title from "@/app/reuseable/products/title/title";
 
 
 //   Here is resolution data
+const cards = [
+  {
+    type: 'single',
+    mainImage: '/adapter/m_to_f2/resolution/left-cable.png',
+    title: (
+      <>
+        <span className="text-white">Enjoy 4k Resolution</span><br />
+        <span className="text-[#E7000B]">Supports 3840*2160@30Hz</span>
+      </>
+    ),
+    descriptionImage: '/cables/4hdmi_cables/resolution/monitor.png',
+  },
+  {
+    type: 'dual',
+    mainImage: '/adapter/m_to_f2/resolution/right-cable.png',
+    title: (
+      <>
+        Mirror <span className="text-white">&</span><br />
+        Extended Modes
+      </>
+    ),
+    descriptionImage: '/adapter/m_to_f/resolution/max-image.png',
+  }
+] as const;
 
 
   
@@ -69,7 +93,7 @@ const mini_dp_to__page= () => {
              />
               </ div>
         {/* Resolution section */}
-        <Resolution2Section />;
+        <Resolution2Section  cards={cards}/>; 
         {/* Specification section */}
         <SpecificationSection specifications={specs} />
            

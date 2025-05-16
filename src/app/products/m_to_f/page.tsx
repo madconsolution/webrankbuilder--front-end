@@ -41,26 +41,31 @@ import Title from "@/app/reuseable/products/title/title";
        },
      ];
 //   Here is resolution data
-  const resolutionData = [
-    {
-      mainImage: '/adapter/m_to_f/resolution/left-cable.png',
-      overlayImage: '/cables/4hdmi_cables/resolution/right-1.png',
-      title: 'Stream Visuals From Your Smartphone',
-  
-      
-      descriptionImage: '/cables/4hdmi_cables/resolution/monitor.png',
-    },
-    {
-      mainImage: '/adapter/m_to_f/resolution/right-cable.png',
-      title: 'Experience The Brilliance Of',
-      descriptionImage: '/adapter/m_to_f/resolution/max-image.png',
-      badges: [
-        '/cables/4hdmi_cables/resolution/right-1.png',
-        '/cables/4hdmi_cables/resolution/right-2.png',
-        '/cables/4hdmi_cables/resolution/right-3.png',
-      ],
-    },
-  ];
+const cards = [
+  {
+    type: 'single',
+    mainImage: '/adapter/m_to_f/resolution/left-cable.png',
+    title: (
+      <>
+        <span className="  mini-to-dp-text-left-top">Enjoy 4k Resolution</span><br />
+        <span className=" mini-to-dp-text-left-bottom">Supports 3840*2160@30Hz</span>
+      </>
+    ),
+    descriptionImage: '/cables/4hdmi_cables/resolution/monitor.png',
+  },
+  {
+    type: 'dual',
+    mainImage: '/adapter/m_to_f/resolution/right-cable.png',
+    title: (
+      <>
+        Mirror <span className="text-white">&</span><br />
+        Extended Modes
+      </>
+    ),
+    descriptionImage: '/adapter/m_to_f/resolution/max-image.png',
+  }
+] as const;
+
 const m_to_f_page = () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
@@ -84,7 +89,7 @@ const m_to_f_page = () => {
              />
               </ div>
         {/* Resolution section */}
-        <Resolution2Section cards={resolutionData} />;
+        <Resolution2Section cards={cards} />;
         {/* Specification section */}
         <SpecificationSection specifications={specs} />
            

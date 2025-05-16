@@ -222,9 +222,30 @@ color: #CD2122;
   font-family: Open Sans;
 font-weight: 700;
 font-size: 32px;
-
 letter-spacing: 0%;
 vertical-align: middle;
 text-transform: capitalize;
 color: #CD2122;
+}
+
+.mini-to-dp-text-left-top{
+font-family: Open Sans;
+font-weight: 700;
+font-size: 31px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+color: #FFFFFF;
+}
+.mini-to-dp-text-left-bottom {
+font-family: Open Sans;
+font-weight: 700;
+font-size: 23px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+color: #CD2122;
+
 }
