@@ -232,7 +232,6 @@ color: #CD2122;
 font-family: Open Sans;
 font-weight: 700;
 font-size: 31px;
-line-height: 100%;
 letter-spacing: 0%;
 text-align: center;
 vertical-align: middle;
@@ -242,10 +241,23 @@ color: #FFFFFF;
 font-family: Open Sans;
 font-weight: 700;
 font-size: 23px;
-line-height: 100%;
 letter-spacing: 0%;
 text-align: center;
 vertical-align: middle;
 color: #CD2122;
+
+}
+
+/* /* Adapter stylse  */
+
+.adapter-title{
+font-family: Montserrat;
+font-weight: 700;
+font-size: 26px;
+line-height: 40px;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+
 
 }

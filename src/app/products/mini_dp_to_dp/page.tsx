@@ -15,8 +15,8 @@ const cards = [
     mainImage: '/adapter/m_to_f2/resolution/left-cable.png',
     title: (
       <>
-        <span className="text-white">Enjoy 4k Resolution</span><br />
-        <span className="text-[#E7000B]">Supports 3840*2160@30Hz</span>
+             <span className="  mini-to-dp-text-left-top">Enjoy 4k Resolution</span><br />
+        <span className=" mini-to-dp-text-left-bottom">Supports 3840*2160@30Hz</span>
       </>
     ),
     descriptionImage: '/cables/4hdmi_cables/resolution/monitor.png',
@@ -74,7 +74,7 @@ const mini_dp_to__page= () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
    <CablesBanner
-      bgImage="/adapter/mini_dp_to_dp/banner.png"
+      bgImage="/adapter/mini_dp_to_dp"
       logo1="/logo.png"
       logo2="/products/IRIS.png"
       description={[
