@@ -1,5 +1,6 @@
 'use client';
 
+import Hdmi4ResolutionCardLeftBottom from '@/app/cards/cables/Hdmi4ResolutionCardLeftBottom';
 import Hdmi4ResolutionCardLeftMid from '@/app/cards/cables/Hdmi4ResolutionCardLeftMid';
 import Hdmi4ResolutionCardLeftTop from '@/app/cards/cables/Hdmi4ResolutionCardLeftTop';
 import Hdmi4ResolutionCardRightTop from '@/app/cards/cables/Hdmi4ResolutionCardRightTop';
@@ -15,7 +16,9 @@ const Hdmi4ResolutionSection: React.FC = () => {
         <Hdmi4ResolutionCardLeftTop/>
         <Hdmi4ResolutionCardRightTop/>
        <Hdmi4ResolutionCardLeftMid/>
-        <Hdmi4ResolutionCardLeftTop/>
+        <Hdmi4ResolutionCardLeftBottom/>
+        <Hdmi4ResolutionCardLeftBottom/>
+        <Hdmi4ResolutionCardLeftBottom/>
  
    
 </div>
