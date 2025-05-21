@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-const Hdmi4ResolutionCardLeftBottom: React.FC = () => {
+const Hdmi4ResolutionCardRightBottom: React.FC = () => {
   return (
     <>
       {/* left top card start */}
@@ -12,20 +12,21 @@ const Hdmi4ResolutionCardLeftBottom: React.FC = () => {
 
                            <>
        
-            <h6 className="hdmi4-card-text-red items-center">
-            Specifications
+            <h6 className=" hdmi4-card-text">
+           Engineered for <span className="hdmi4-card-text-red">Durability</span>, <br />
+Stuffed with <span className="hdmi4-card-text-red">features</span>
             </h6>
              
-             <div className='-mt-32 space-y-2  Hdmi4ResolutionCardLeftBottom-text'>
-                <h6>Model : HDMI 2.0</h6>
-                <h6>Transfer Speed : 18 GBPS</h6>
-                <h6>Plug : Gold Plated</h6>
-                <h6>Body : Aluminium</h6>
-                <h6>Max Resolution : 4K</h6>
-                <h6>Audio Support : DTS, Dolby, ARC Audio</h6>
-                <h6>Compatibility : HDTV/TV, Monitor, Projector, 
+             <div className='-mt-20 space-y-2  Hdmi4ResolutionCardLeftBottom-text'>
+                <h6>Gold Plated Connectors</h6>
+                <h6>Reinforced Joints</h6>
+                <h6>Dynamic Colors</h6>
+                <h6>Dolby True HD</h6>
+                <h6>Aluminium Shell Body</h6>
+                <h6>4K @ 60Hz</h6>
+                <h6>18 GBPS 
 </h6>
-<h6>Laptop, PS5 </h6>
+<h6>Dolby Audio Supported </h6>
              </div>
           </>
 
@@ -55,4 +56,4 @@ const Hdmi4ResolutionCardLeftBottom: React.FC = () => {
   );
 };
 
-export default Hdmi4ResolutionCardLeftBottom;
+export default Hdmi4ResolutionCardRightBottom;
