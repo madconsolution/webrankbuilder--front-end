@@ -5,6 +5,7 @@ import ResolutionSection from "@/app/reuseable/cables/Resolution/resulution";
 import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/pecification";
 import CallToActionBanner from "@/app/reuseable/products/join-group/join_group";
 import Title from "@/app/reuseable/products/title/title";
+import Hdmi8ResolutionSection from "@/app/sections/cables/8hdmi_cables_section";
 
   // Here is specification date
 const specs: SpecificationItem[] = [
@@ -43,25 +44,6 @@ const specs: SpecificationItem[] = [
 //   Here is resolution data
 
 
-
-  const resolutionData = [
-    {
-      mainImage: '/cables/4hdmi_cables/resolution/cable-1.png',
-      overlayImage: '/cables/4hdmi_cables/resolution/right-1.png',
-      title: 'Stream Visuals From Your Smartphone',
-      descriptionImage: '/cables/4hdmi_cables/resolution/monitor.png',
-    },
-    {
-      mainImage: '/cables/4hdmi_cables/resolution/cable-2.png',
-      title: 'Experience The Brilliance Of',
-      descriptionImage: '/cables/4hdmi_cables/resolution/right-1.png',
-      badges: [
-        '/cables/4hdmi_cables/resolution/right-1.png',
-        '/cables/4hdmi_cables/resolution/right-2.png',
-        '/cables/4hdmi_cables/resolution/right-3.png',
-      ],
-    },
-  ];
 const hdmi8_cables_page = () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
@@ -85,7 +67,7 @@ const hdmi8_cables_page = () => {
              />
               </ div>
         {/* Resolution section */}
-        <ResolutionSection cards={resolutionData} />;
+        <Hdmi8ResolutionSection />;
         {/* Specification section */}
         <SpecificationSection specifications={specs} />
            
