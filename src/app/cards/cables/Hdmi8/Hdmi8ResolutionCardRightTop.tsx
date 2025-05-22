@@ -34,41 +34,42 @@ const Hdmi8ResolutionCardRightTop: React.FC = () => {
       
 <div className="flex w-[90%] mt-12 mx-auto items-center gap-x-6">
   {/* Right Image Side */}
-  <div className="w-1/2 relative  inset-0 ">
-    {/* Main image */}
+<div className="w-[50%] relative">
+  {/* Cable images behind the main image */}
+  <div className="absolute mt-40 flex gap-x-2 z-0">
     <Image
-      src="/cables/8hdmi_cables/resolution/right-bottom-image.png"
-      alt="Main HDMI Display"
-      width={303}
-      height={231}
-      className="w-[303px] h-[231px]"
+      src="/cables/8hdmi_cables/resolution/right-cable-2.png"
+      alt="HDMI Cable 2"
+      width={222}
+      height={222}
+      className="w-[222px] h-[222px]"
     />
-
-    {/* Positioned cable images */}
-    <div className="absolute -mt-10  flex gap-x-2 ">
-      <Image
-        src="/cables/8hdmi_cables/resolution/right-cable-2.png"
-        alt="HDMI Cable 2"
-        width={220}
-        height={220}
-        className="w-[222px] h-[222px] "
-      />
-      <Image
-        src="/cables/8hdmi_cables/resolution/right-cable-1.png"
-        alt="HDMI Cable 1"
-        width={220}
-        height={220}
-        className="w-[222px] h-[222px] -rotate-[10deg] -ml-9 -mt-10"
-      />
-    </div>
+    <Image
+      src="/cables/8hdmi_cables/resolution/right-cable-1.png"
+      alt="HDMI Cable 1"
+      width={222}
+      height={222}
+      className="w-[222px] h-[222px] -rotate-[10deg] -ml-5"
+    />
   </div>
 
+  {/* Main image on top */}
+  <Image
+    src="/cables/8hdmi_cables/resolution/right-bottom-image.png"
+    alt="Main HDMI Display"
+    width={303}
+    height={231}
+    className="w-[303px] h-[231px] relative z-10"
+  />
+</div>
+
+
   {/* Left Text Side */}
-  <div className="w-7/12">
-    <h5 className="hdmi4-card-text-red">Enriched with true colors</h5>
-    <h5 className="hdmi4-card-text mt-2">
+  <div className="w-[50%] text-start">
+    <h5 className="hdmi4-card-text-red ">Enriched with true colors</h5>
+    <p className="hdmi4-card-text mt-2 ">
       Experience true colors with Dynamic HDR
-    </h5>
+    </p>
   </div>
 </div>
 
