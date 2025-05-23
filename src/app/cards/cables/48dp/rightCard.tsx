@@ -12,34 +12,36 @@ const Dp48ResolutionCardRight: React.FC = () => {
     
 
        
+    <div className='pt-[16%] justify-center items-center my-auto'>
+ 
 
-          <div>
+
+            {/* bottom cable with lines */}
+            <div className=''>
+             
+                 <div className="space-y-3 font-[700] text-[34px] leading-[100%] tracking-[0%] text-center align-middle font-['Open_Sans']">
+                  <h5 className='text-[#CD2122]'>
+                    4K (3840*2160P) @ 60Hz
+                  </h5>
+               
+                   <h5>
+Resolution</h5>
+             
+                
+             
+               </div>
+                  {/* bottom cable is here */}
               <div>
-                    <Image
-      src="/cables/48dp_cables/resolution/right-bg.png"
-      alt="HDMI Cable Right"
-      width={480}
-      height={270}
-      className="object-contain w-full h-full  "
-    />
+                             <Image
+               src="/cables/4minidp_cables/resolution/right-cable.png"
+                alt="HDMI Cable Right"
+                width={500}
+                height={500}
+                className=" bg-cover w-[500px] h-[500px] mx-auto ml-[24%]"
+              />
+              </div>
             </div>
-            <div>
-                    <Image
-      src="/cables/48dp_cables/resolution/right-cable.png"
-      alt="HDMI Cable Right"
-      width={500}
-      height={510}
-      className=" w-[500px] h-[510px] -mt-[44%] ml-[32%]"
-    />
-            </div>
-
-            {/* bottom text  */}
-
-            <div className='-mt-[30%] space-y-2'>
-                <h5 className='hdmi4-card-text-red'>8k Ultra HD Resolution</h5>
-                <span className="font-[400] text-[25px] leading-[100%] tracking-[0%] text-center align-middle font-['Open_Sans']">Supports 8k@60Hz for high quality visuals</span>
-            </div>
-          </div>
+        </div>
 
 
         </div>
