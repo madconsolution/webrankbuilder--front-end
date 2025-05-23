@@ -8,7 +8,7 @@ const Dp48ResolutionCardLeft: React.FC = () => {
     <>
       {/* left top card start */}
       <div>
-        <div className="grid grid-cols-1 grid-rows-3 gap-3 w-[660px] h-[796px] text-center bg-[#000000] text-white border-1 border-[#CD2122] rounded-[120px]">
+        <div className="grid grid-cols-1  gap-3 w-[660px] h-[796px] text-center bg-[#000000] text-white border-1 border-[#CD2122] rounded-[120px]">
     
 
        
