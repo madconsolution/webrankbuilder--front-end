@@ -1,10 +1,11 @@
 'use client';
 
 import CablesBanner from "@/app/reuseable/cables/banner/banner";
-import ResolutionSection from "@/app/reuseable/cables/Resolution/resulution";
+
 import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/pecification";
 import CallToActionBanner from "@/app/reuseable/products/join-group/join_group";
 import Title from "@/app/reuseable/products/title/title";
+import Dp48_cables_section from "@/app/sections/cables/48dp_cables_section";
 
 // Here is specification date
   // Here is specification date
@@ -41,28 +42,7 @@ const specs: SpecificationItem[] = [
       ],
     },
   ];
-//   Here is resolution data
 
-
-
-  const resolutionData = [
-    {
-      mainImage: '/cables/4hdmi_cables/resolution/cable-1.png',
-      overlayImage: '/cables/4hdmi_cables/resolution/right-1.png',
-      title: 'Stream Visuals From Your Smartphone',
-      descriptionImage: '/cables/4hdmi_cables/resolution/monitor.png',
-    },
-    {
-      mainImage: '/cables/4hdmi_cables/resolution/cable-2.png',
-      title: 'Experience The Brilliance Of',
-      descriptionImage: '/cables/4hdmi_cables/resolution/right-1.png',
-      badges: [
-        '/cables/4hdmi_cables/resolution/right-1.png',
-        '/cables/4hdmi_cables/resolution/right-2.png',
-        '/cables/4hdmi_cables/resolution/right-3.png',
-      ],
-    },
-  ];
 const dp48_cables_page = () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
@@ -86,7 +66,7 @@ const dp48_cables_page = () => {
              />
               </ div>
         {/* Resolution section */}
-        <ResolutionSection cards={resolutionData} />;
+        <Dp48_cables_section />;
         {/* Specification section */}
         <SpecificationSection specifications={specs} />
            
