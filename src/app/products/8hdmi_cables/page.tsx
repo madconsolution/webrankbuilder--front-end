@@ -1,11 +1,10 @@
 'use client';
 
 import CablesBanner from "@/app/reuseable/cables/banner/banner";
-import ResolutionSection from "@/app/reuseable/cables/Resolution/resulution";
 import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/pecification";
 import CallToActionBanner from "@/app/reuseable/products/join-group/join_group";
 import Title from "@/app/reuseable/products/title/title";
-import Hdmi8ResolutionSection from "@/app/sections/cables/8hdmi_cables_section";
+import Cable2ResolutionSection from "@/app/sections/cables/cables2_section";
 
   // Here is specification date
 const specs: SpecificationItem[] = [
@@ -67,7 +66,7 @@ const hdmi8_cables_page = () => {
              />
               </ div>
         {/* Resolution section */}
-        <Hdmi8ResolutionSection />;
+        <Cable2ResolutionSection />;
         {/* Specification section */}
         <SpecificationSection specifications={specs} />
            

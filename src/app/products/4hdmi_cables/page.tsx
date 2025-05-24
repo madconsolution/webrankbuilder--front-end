@@ -5,7 +5,7 @@ import CablesBanner from "@/app/reuseable/cables/banner/banner";
 import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/pecification";
 import CallToActionBanner from "@/app/reuseable/products/join-group/join_group";
 import Title from "@/app/reuseable/products/title/title";
-import Hdmi4ResolutionSection from "@/app/sections/cables/4hdmi_cables_section";
+import Cable1ResolutionSection from "@/app/sections/cables/cables1_section";
 
 
   // Here is specification date
@@ -66,7 +66,7 @@ const hdmi4_cables_page= () => {
              />
               </ div>
         {/* Resolution section */}
-        <Hdmi4ResolutionSection />;
+        <Cable1ResolutionSection />;
         {/* Specification section */}
         <SpecificationSection specifications={specs} />
            

@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-const Dp48ResolutionCardLeft: React.FC = () => {
+const Cable4ResolutionCardLeft: React.FC = () => {
   return (
     <>
       {/* left top card start */}
@@ -68,4 +68,4 @@ const Dp48ResolutionCardLeft: React.FC = () => {
   );
 };
 
-export default Dp48ResolutionCardLeft;
+export default Cable4ResolutionCardLeft;

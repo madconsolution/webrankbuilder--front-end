@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-const Hdmi4ResolutionCardLeftMid: React.FC = () => {
+const Cable1ResolutionCardLeftMid: React.FC = () => {
   return (
     <>
       {/* left top card start */}
@@ -54,4 +54,4 @@ with tortox HDMI cables
   );
 };
 
-export default Hdmi4ResolutionCardLeftMid;
+export default Cable1ResolutionCardLeftMid;

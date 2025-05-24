@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-const Hdmi8ResolutionCardLeftTop: React.FC = () => {
+const Cable1ResolutionCardLeftTop: React.FC = () => {
   return (
     <>
       {/* left top card start */}
@@ -91,4 +91,4 @@ a seamless visual experience</p>
   );
 };
 
-export default Hdmi8ResolutionCardLeftTop;
+export default Cable1ResolutionCardLeftTop;

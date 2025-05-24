@@ -5,7 +5,8 @@ import CablesBanner from "@/app/reuseable/cables/banner/banner";
 import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/pecification";
 import CallToActionBanner from "@/app/reuseable/products/join-group/join_group";
 import Title from "@/app/reuseable/products/title/title";
-import Dp48_cables_section from "@/app/sections/cables/48dp_cables_section";
+import Cable3ResolutionSection from "@/app/sections/cables/cables3_section";
+
 
 // Here is specification date
   // Here is specification date
@@ -66,7 +67,7 @@ const dp48_cables_page = () => {
              />
               </ div>
         {/* Resolution section */}
-        <Dp48_cables_section />;
+        <Cable3ResolutionSection/>;
         {/* Specification section */}
         <SpecificationSection specifications={specs} />
            

@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-const Hdmi4ResolutionCardRightMid: React.FC = () => {
+const Cable1ResolutionCardRightBottom: React.FC = () => {
   return (
     <>
       {/* left top card start */}
@@ -62,7 +62,7 @@ const Hdmi4ResolutionCardRightMid: React.FC = () => {
 
           {/* Bottom  of mid card */}
                            <div className="space-y-3 mt-[33%]">
-            <h5 className="hdmi4-card-text">Immerse in rich, dynamic sound </h5>
+            <h5 className="hdmi4-card-text">Enhanced with Dolby Audio-Visual </h5>
          
           </div>
 
@@ -93,4 +93,4 @@ const Hdmi4ResolutionCardRightMid: React.FC = () => {
   );
 };
 
-export default Hdmi4ResolutionCardRightMid;
+export default Cable1ResolutionCardRightBottom;

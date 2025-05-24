@@ -1,9 +1,9 @@
 'use client';
 import React from 'react';
-import Dp48ResolutionCardLeft from './../../cards/cables/48dp/leftCard';
-import Dp48ResolutionCardRight from '@/app/cards/cables/48dp/rightCard';
+import Dp48ResolutionCardLeft from '../../cards/cables/cable4/leftCard';
+import Dp48ResolutionCardRight from '@/app/cards/cables/cable4/rightCard';
 
-const Dp48_cables_section: React.FC = () => {
+const Cable4ResolutionSection: React.FC = () => {
   return (
     <section className="bg-black px-4">
            
@@ -18,4 +18,4 @@ const Dp48_cables_section: React.FC = () => {
   );
 };
 
-export default Dp48_cables_section;
+export default Cable4ResolutionSection;
