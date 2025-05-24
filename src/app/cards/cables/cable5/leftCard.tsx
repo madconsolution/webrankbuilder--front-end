@@ -13,81 +13,30 @@ const Cable5ResolutionCardLeft: React.FC = () => {
 
        
 
-        <div className='pt-28'>
-       <div className="flex justify-around items-center">
-  {/* Left Progress */}
-  <div className="relative w-[154px] h-[154px]">
-    <Image
-      src="/cables/48dp_cables/resolution/left-progress.png"
-      alt="HDMI Cable Left"
-      width={154}
-      height={154}
-      className="object-contain w-full h-full"
-    />
-    <span className="absolute inset-0 flex items-center justify-center font-[400] text-[16px] leading-[100%] tracking-[0%] text-center align-middle font-['Open_Sans']">
-      32.4 GBPS
-    </span>
-  </div>
-
-  {/* Right Progress */}
-  <div className="relative w-[154px] h-[154px]">
-    <Image
-      src="/cables/48dp_cables/resolution/right-progress.png"
-      alt="HDMI Cable Right"
-      width={154}
-      height={154}
-      className="object-contain w-full h-full"
-    />
- <span className="absolute inset-0 flex items-center justify-center font-[400] text-[16px] leading-[100%] tracking-[0%] text-center align-middle font-['Open_Sans']">
-      32.4 GBPS
-    </span>
-  </div>
-</div>
-
-
-            {/* bottom cable with lines */}
-            <div className='mt-[11%]'>
-               <div className='-mb-[33%]'>
-                 <div>
-                   <span className="font-[400] text-[16px] leading-[100%] tracking-[0%] text-center align-middle font-['Open_Sans']">24K Gold Plating</span>
-                </div>
-                {/* line flex positon is here */}
-                <div className='flex justify-around mx-32'>
-                    <div>
+        <div>
                              <Image
-                src="/cables/48dp_cables/resolution/Line-1.png"
+              src="/cables/4minidp_hdmicables/resolution/left-cable.png"
                 alt="HDMI Cable Right"
-                width={53}
-                height={53}
-                className=" bg-cover w-[53px] h-[53px] mx-auto "
+                width={318}
+                height={252}
+                className=" bg-cover w-[318px] h-[252px] mx-auto "
               />
               </div>
-              <div>
+       
+        <div>
                              <Image
-                src="/cables/48dp_cables/resolution/Line-2.png"
+               src="/cables/4minidp_hdmicables/resolution/bg.png"
                 alt="HDMI Cable Right"
-                width={28}
-                height={28}
-                className=" bg-cover w-[28px] h-[28px] mx-auto "
+                width={518}
+                height={326}
+                className=" bg-cover w-[518px] h-[326px] mx-auto -mt-[15%] "
               />
               </div>
-                </div>
-               </div>
-                  {/* bottom cable is here */}
-              <div>
-                             <Image
-                src="/cables/48dp_cables/resolution/left-cable.png"
-                alt="HDMI Cable Right"
-                width={600}
-                height={600}
-                className=" bg-cover w-[600px] h-[600px] mx-auto "
-              />
-              </div>
-            </div>
-        </div>
        
 
-
+          <div className=" mb-[16%] text-[#CD2122]  font-[600] text-[33px]  tracking-[0%] text-center align-middle font-['Open_Sans']">
+            <h5><span className='text-[#ffffff] '>Supports</span> 4K Resolution </h5>
+          </div>
         </div>
 
       </div>
