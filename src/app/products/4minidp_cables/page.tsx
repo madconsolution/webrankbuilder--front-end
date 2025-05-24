@@ -1,11 +1,12 @@
 'use client';
 
 import CablesBanner from "@/app/reuseable/cables/banner/banner";
-import ResolutionSection from "@/app/reuseable/cables/Resolution/resulution";
+
 import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/pecification";
 import CallToActionBanner from "@/app/reuseable/products/join-group/join_group";
 import Title from "@/app/reuseable/products/title/title";
-import MiniDP4_cables_section from "@/app/sections/cables/cables4_section";
+import Cable4ResolutionSection from "@/app/sections/cables/cables4_section";
+
 
   // Here is specification date
 const specs: SpecificationItem[] = [
@@ -69,7 +70,7 @@ const minidp4_cables_page = () => {
              />
               </ div>
         {/* Resolution section */}
-        <MiniDP4_cables_section />;
+        <Cable4ResolutionSection/>;
         {/* Specification section */}
         <SpecificationSection specifications={specs} />
            

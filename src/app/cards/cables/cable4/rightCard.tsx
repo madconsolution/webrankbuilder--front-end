@@ -12,7 +12,7 @@ const Cable4ResolutionCardRight: React.FC = () => {
     
 
        
-    <div className='pt-[16%] justify-center items-center my-auto'>
+    <div className='pt-[36%] justify-center items-center my-auto'>
  
 
 

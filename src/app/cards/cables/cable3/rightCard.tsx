@@ -27,7 +27,7 @@ const Cable3ResolutionCardRight: React.FC = () => {
       alt="HDMI Cable Left"
       width={500}
       height={510}
-      className="object-contain w-[500px] h-[510px] -mt-[44%] ml-[32%]"
+      className="object-contain w-[500px] h-[510px] -mt-[44%] ml-[31%]"
     />
 </div>
        
