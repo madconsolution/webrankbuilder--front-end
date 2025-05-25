@@ -30,31 +30,31 @@ const ProductBanner: React.FC<BannerProps> = ({
       />
 
       {/* Content */}
-      <div className="absolute inset-0 flex flex-col items-center  text-white p-4">
+      <div className="absolute inset-0 flex flex-col items-center   text-white p-4">
         {/* Logos */}
-        <div className="flex gap-2 items-center mb-6 flex-wrap justify-center -ml-[10%]">
+        <div className="flex gap-2   flex-wrap justify-center ">
           <Image
             src={logo1}
             alt="Product Logo 1"
-            width={160}
-            height={32}
-            className="w-[120px] md:w-[250px] h-auto"
+            width={250}
+            height={50}
+            className=" "
           />
           <Image
             src={logo2}
             alt="Product Logo 2"
-            width={80}
-            height={50}
-            className="w-[70px] md:w-[100px] h-auto"
+            width={235}
+            height={70}
+            className="[235px] h-[70px]"
           />
         </div>
 
         {/* Text Description */}
-        <div className="space-y-2 md:space-y-4 text-center">
+        <div>
           {lines.map((line, idx) => (
             <h4
               key={idx}
-              className="text-md md:text-3xl  uppercase "
+              className="font-[400] text-[34px] leading-[40px] tracking-[0%] text-center align-middle "
             >
               {line}
             </h4>
