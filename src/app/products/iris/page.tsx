@@ -154,7 +154,7 @@ const IrisPage = () => {
  {/* Here is first heading title */}
 </AnimatedSection>
        <AnimatedSection delay={0.2}>
-       <div className="text-xl text-[#FFFFFF]">
+       <div>
         <Title
           mainTitle="TORTOX"
           subTitle="IRIS"

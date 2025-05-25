@@ -1,7 +1,8 @@
 'use client';
 
 import CablesBanner from "@/app/reuseable/cables/banner/banner";
-import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/pecification";
+import CableSpecificationSection from "@/app/reuseable/cables/Specification/CableSpecification";
+import  { SpecificationItem } from "@/app/reuseable/cables/Specification/pecification";
 import CallToActionBanner from "@/app/reuseable/products/join-group/join_group";
 import Title from "@/app/reuseable/products/title/title";
 import Cable9ResolutionSection from "@/app/sections/cables/cables9_section";
@@ -12,7 +13,7 @@ const specs: SpecificationItem[] = [
     {
       type: 'dimensions',
       items: [
-        { label: 'Size ', value: '345 X 40 X 15mm' },
+        { label: 'Size ', value: '345 X 40 X 18mm' },
         { label: 'Rated Voltage ', value: 'Line 300V - Light 5V' },
        
       ],
@@ -53,7 +54,7 @@ const psu4_page = () => {
         {/* Resolution section */}
         <Cable9ResolutionSection />;
         {/* Specification section */}
-        <SpecificationSection specifications={specs} />
+        <CableSpecificationSection specifications={specs} />
            
           {/* Join Group  */}
       <CallToActionBanner
