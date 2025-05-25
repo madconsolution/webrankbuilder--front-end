@@ -8,7 +8,7 @@ import Title from "@/app/reuseable/products/title/title";
 
 import AngleFeatureSectionWithIcons from "@/app/reuseable/air/HeatPipe/HeatPipe";
 import AutoSlider from "@/app/reuseable/products/overview/overview";
-import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/pecification";
+import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/specification";
 
 import FanBracketSection from "@/app/reuseable/air/FanBracket/FanBracket";
 

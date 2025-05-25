@@ -5,7 +5,7 @@ import PowerGrid from "@/app/reuseable/power/power-grid/power_grid";
 import CallToActionBanner from "@/app/reuseable/products/join-group/join_group";
 import ProductSlider from "@/app/reuseable/products/product-slider/product_slider";
 import Title from "@/app/reuseable/products/title/title";
-import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/pecification";
+import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/specification";
 import GSSlider from "@/app/reuseable/slider/gaming/gs_slider";
 
 

@@ -1,7 +1,7 @@
 'use client';
 
 import CablesBanner from "@/app/reuseable/cables/banner/banner";
-import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/pecification";
+import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/specification";
 import CallToActionBanner from "@/app/reuseable/products/join-group/join_group";
 import Title from "@/app/reuseable/products/title/title";
 import Cable5ResolutionSection from "@/app/sections/cables/cables5_section";

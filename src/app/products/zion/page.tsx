@@ -2,6 +2,7 @@
 
 import AnimatedSection from "@/app/reuseable/Animation/AnimatedSection";
 import ProductBanner from "@/app/reuseable/products/banner/banner";
+import BottomProductBanner from "@/app/reuseable/products/banner/BottomBanner";
 import Expensive from "@/app/reuseable/products/expensive/expensive";
 
 import FeatureHighlightSection from "@/app/reuseable/products/feature/feature";
@@ -141,7 +142,7 @@ const ZionPage = () => {
     <div className="w-full md:w-[1440px] mx-auto">
       {/* ProductBanner */}
       <AnimatedSection delay={0.1}>
-      <ProductBanner
+      <BottomProductBanner
         bgImage="/products/iris-banner.png"
         logo1="/logo.png"
         logo2="/products/Zion/ZION.png"
