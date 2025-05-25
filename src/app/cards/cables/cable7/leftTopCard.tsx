@@ -17,7 +17,7 @@ const Cable7ResolutionCardLeftTop: React.FC = () => {
 
                 <div>
      
-                     <div className=' '>
+                     <div >
                              <Image
               src="/cables/psu/resolution/left-top.png"
                 alt="HDMI Cable Right"
