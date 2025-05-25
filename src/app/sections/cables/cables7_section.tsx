@@ -14,8 +14,8 @@ const Cable7ResolutionSection: React.FC = () => {
              <Cable7ResolutionCardRightTop/>
         <Cable7ResolutionCardLeftBottom/>
    
-        <Cable7ResolutionCardLeftBottom/>
         
+        <Cable7ResolutionCardRightTop/>
        
         
        
