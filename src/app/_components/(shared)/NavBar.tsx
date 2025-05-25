@@ -157,56 +157,58 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <ul className="hidden md:flex space-x-6">
-            {navigation.map(({ name, href, hasArrow }) => {
-              const isActive = pathname === href || pathname.startsWith(href);
+    {navigation.map(({ name, href, hasArrow }) => {
+  const isActive =
+    pathname === href ||
+    (href === "/products/iris" && pathname.startsWith("/products"));
 
-              const handleMouseEnter = () => {
-                if (hasArrow) {
-                  if (hoverTimeout.current) clearTimeout(hoverTimeout.current);
-                  setHoveredItem(name);
-                  setMegaMenuVisible(true);
-                }
-              };
+  const handleMouseEnter = () => {
+    if (hasArrow) {
+      if (hoverTimeout.current) clearTimeout(hoverTimeout.current);
+      setHoveredItem(name);
+      setMegaMenuVisible(true);
+    }
+  };
 
-              const handleMouseLeave = () => {
-                if (hasArrow) {
-                  if (hoverTimeout.current) clearTimeout(hoverTimeout.current);
-                  hoverTimeout.current = setTimeout(() => {
-                    setMegaMenuVisible(false);
-                    setHoveredItem(null);
-                  }, 300);
-                }
-              };
+  const handleMouseLeave = () => {
+    if (hasArrow) {
+      if (hoverTimeout.current) clearTimeout(hoverTimeout.current);
+      hoverTimeout.current = setTimeout(() => {
+        setMegaMenuVisible(false);
+        setHoveredItem(null);
+      }, 300);
+    }
+  };
 
-              return (
-                <li
-                  key={name}
-                  className=""
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}
-                >
-                  <Link
-                    href={href}
-                    className={`block px-4 py-2 rounded transition ${
-                      isActive ? "bg-gray-200 text-black" : "hover:bg-gray-100 hover:text-black"
-                    }`}
-                  >
-                    {name}
-                  </Link>
+  return (
+    <li
+      key={name}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <Link
+        href={href}
+        className={`block px-4 py-2 rounded transition ${
+          isActive ? "bg-gray-200 text-black" : "hover:bg-gray-100 hover:text-black"
+        }`}
+      >
+        {name}
+      </Link>
 
-                  {hasArrow && (
-                    <MegaMenu
-                      categories={productCategories}
-                      hoveredItem={hoveredItem}
-                      megaMenuVisible={megaMenuVisible}
-                      currentItem={name}
-                      onMouseEnter={handleMouseEnter}
-                      onMouseLeave={handleMouseLeave}
-                    />
-                  )}
-                </li>
-              );
-            })}
+      {hasArrow && (
+        <MegaMenu
+          categories={productCategories}
+          hoveredItem={hoveredItem}
+          megaMenuVisible={megaMenuVisible}
+          currentItem={name}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        />
+      )}
+    </li>
+  );
+})}
+
           </ul>
         </div>
 

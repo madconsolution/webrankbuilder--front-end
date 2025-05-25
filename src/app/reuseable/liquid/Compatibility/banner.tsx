@@ -6,10 +6,10 @@ const CompatibilitySection = () => {
       <div className="flex flex-col md:flex-row items-center justify-between gap-8 py-5">
         {/* Text Section */}
         <div className="md:w-1/2">
-          <h1 className="text-xl font-bold text-red-600 mb-4">
+          <h5 className="text-[#CD2122] font-[700] text-[25px] leading-[100%] tracking-[0%]  align-middle font-['Open_Sans'] ">
           Compatibility
-          </h1>
-          <p className="text-sm leading-relaxed text-gray-200">
+          </h5>
+          <p className="font-[600] text-[18px] leading-[100%] tracking-[0%]  align-middle font-['Open_Sans'] ">
           The RGB sychronization via 4-pin RGB header is compatible with motherboards using Asus Aura Sync, ASRock RGB LED, MSI Mystic Light Sync and Gigabyte RGB Fusion. Aura sync effect supported with transition cables.
           </p>
         </div>

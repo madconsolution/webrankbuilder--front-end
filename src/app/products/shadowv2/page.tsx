@@ -2,14 +2,14 @@
 
 import AnimatedSection from "@/app/reuseable/Animation/AnimatedSection";
 import ProductBanner from "@/app/reuseable/products/banner/banner";
-import Expensive from "@/app/reuseable/products/expensive/expensive";
+
 
 import FeatureGallery from "@/app/reuseable/products/Feature-Gallery/Feature_Gallery";
 import FeatureHighlightSection from "@/app/reuseable/products/feature/feature";
 
 import FeatureSlider from "@/app/reuseable/products/freature-slider/freature_slider";
 import HighlightsSlider from "@/app/reuseable/products/Highlights-silder/Highlights_silder";
-import CallToActionBanner from "@/app/reuseable/products/join-group/join_group";
+
 import AutoSlider from "@/app/reuseable/products/overview/overview";
 import ProductSlider from "@/app/reuseable/products/product-slider/product_slider";
 import ProductFeatureShowcase from "@/app/reuseable/products/Showcase/Showcase";
@@ -43,22 +43,22 @@ const slides = [
     highlight: 'Sharp, Black and Beautiful',
     description:
       'Premium-quality tempered glass guarantees the durability of the panels and adds overall strength to the chassis. A light grey tinted tempered glass side panel is ideal for showcasing your build with (RGB) lighting.',
-    image: '/products/IRIS/Feature-slider/image-1.png',
+    image: '/products/Shadow2/Feature-slider/image-1.png',
   },
   {
     title: '',
     highlight: 'Covers for Clean Building',
     description:
       'A PSU shroud and additional cable covers take cable management to the next level. Assemble clean builds like a pro!  An incredibly clean look that can be easily switched to different RGB patterns from the side control panel.',
-    image: '/products/IRIS/Feature-slider/image-2.png',
+    image: '/products/Shadow2/Feature-slider/image-2.png',
   },
-  {
-    title: '',
-    highlight: '',
-    description:
-      '',
-    image: '/products/IRIS/Feature-slider/Background.png',
-  },
+{
+  title: 'Optimized',
+  highlight: 'Airflow Design',
+  description:
+    'Tortox IRIS is engineered with a high-airflow layout featuring multiple fan mounts and ventilation points to ensure maximum cooling efficiency. The front mesh panel and top exhaust setup allow for optimal air circulation, making it ideal for high-performance gaming builds.',
+  image: '/products/IRIS/Feature-slider/Background.png',
+}
 ];
 
 const sampleProducts = [
