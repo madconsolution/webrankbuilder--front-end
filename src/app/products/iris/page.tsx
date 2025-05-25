@@ -1,7 +1,7 @@
 'use client';
 
 import AnimatedSection from "@/app/reuseable/Animation/AnimatedSection";
-import ProductBanner from "@/app/reuseable/products/banner/banner";
+import IrisProductBanner from "@/app/reuseable/products/banner/iris-banner";
 import FeatureBlock from "@/app/reuseable/products/Feature-Block/Feature_Block";
 import FeatureHighlightSection from "@/app/reuseable/products/feature/feature";
 
@@ -140,7 +140,7 @@ const IrisPage = () => {
     <div className="w-full md:w-[1440px] mx-auto">
 {/* ProductBanner */}
 <AnimatedSection delay={0.1}>
-<ProductBanner
+<IrisProductBanner
       bgImage="/products/iris-banner.png"
       logo1="/logo.png"
       logo2="/products/IRIS.png"

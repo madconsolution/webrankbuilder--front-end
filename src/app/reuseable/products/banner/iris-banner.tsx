@@ -9,7 +9,7 @@ export interface BannerProps {
   description?: string[];
 }
 
-const ProductBanner: React.FC<BannerProps> = ({
+const IrisProductBanner: React.FC<BannerProps> = ({
   bgImage,
   logo1,
   logo2,
@@ -32,7 +32,7 @@ const ProductBanner: React.FC<BannerProps> = ({
       {/* Content */}
       <div className="absolute inset-0 flex flex-col items-center   text-white p-4">
         {/* Logos */}
-        <div className="flex  items-center  ">
+    <div className="flex  items-center md:w-[354px] mx-auto gap-x-5 pb-2 ">
          <div>
            <Image
             src={logo1}
@@ -46,9 +46,9 @@ const ProductBanner: React.FC<BannerProps> = ({
            <Image
             src={logo2}
             alt="Product Logo 2"
-            width={235}
-            height={70}
-            className="w-[235px] h-[70px] bg-cover"
+            width={100}
+            height={30}
+            className="w-[100px] h-[36px] bg-cover"
          
           />
        </div>
@@ -70,4 +70,4 @@ const ProductBanner: React.FC<BannerProps> = ({
   );
 };
 
-export default ProductBanner;
+export default IrisProductBanner;
