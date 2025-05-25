@@ -20,20 +20,20 @@ const Cable10ResolutionCardRightBottom: React.FC = () => {
                
  
                                  {/* Left bttom text */}
-               <div className="  ml-[10%] mt-[5%]  text-[#CD2122] font-[400] text-[40px]  font-['Open_Sans'] p-4">
+               <div className="  ml-[12%] -mt-[35%]   text-[#CD2122] font-[400] text-[40px]  font-['Open_Sans'] ">
     <h5 className="text-start">
       Flexible & <br />
       <span className=' whitespace-nowrap'>Soft Silicon Gel</span>
     </h5>
   </div>
 
-                  <div className='mt-[51%]'>
+                  <div className='-mb-[35%] mr-[10%]'>
                               <Image
-               src="/cables/psu4/resolution/right-top.png"
+               src="/cables/psu5/resolution/right-bottom.png"
                  alt="HDMI Cable Right"
                  width={472}
-                 height={500}
-                 className=" bg-cover w-[472px] h-[500px] -rotate-[8deg]"
+                 height={464}
+                 className=" bg-cover w-[472px] h-[564px] rotate-[16deg] "
                />
                </div>
           </div>
