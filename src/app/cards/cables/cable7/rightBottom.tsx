@@ -17,7 +17,7 @@ const Cable7ResolutionCardRightBottom: React.FC = () => {
   <div className="  ml-[10%]  text-[#CD2122] font-[400] text-[40px]  font-['Open_Sans'] p-4">
     <h5 className="text-start">
       Flexible &
-      <h5 className=' whitespace-nowrap'>Soft Silicon Gel</h5>
+      <span className=' whitespace-nowrap'>Soft Silicon Gel</span>
     </h5>
   </div>
 

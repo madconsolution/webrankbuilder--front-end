@@ -12,14 +12,10 @@ const Cable7ResolutionSection: React.FC = () => {
 
 <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-1  gap-y-8 mx-auto w-[92%] md:w-full">
         <Cable7ResolutionCardLeftTop/>
-             <Cable7ResolutionCardRightTop/>
+        <Cable7ResolutionCardRightTop/>
         <Cable7ResolutionCardLeftBottom/>
-   
-        
         <Cable7ResolutionCardRightBottom/>
-       
-        
-       
+
 </div>
 
      
