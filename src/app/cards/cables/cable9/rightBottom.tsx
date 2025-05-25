@@ -13,35 +13,29 @@ const Cable9ResolutionCardRightBottom: React.FC = () => {
  
         
  
-          <div className=' justify-center mx-auto '>
+          <div className=' flex items-center   '>
  
-                 <div>
-      
-                      <div>
-                              <Image
-               src="/cables/psu/resolution/left-bottom.png"
-                 alt="HDMI Cable Right"
-                 width={500}
-                 height={500}
-                 className=" bg-cover w-[500px] h-[500px] "
-               />
-               </div>
-                 </div>
+     
  
                
  
                                  {/* Left bttom text */}
-                 <div className="w-[313px] h-[240px] text-start ml-[56%]  text-[#CD2122]  font-[600] text-[40px] leading-[100%] font-['Open_Sans']">
-                     <h5>
-                   Durable &
-Expandable 
-<br />
-              <span className='text-[#ffffff]'>Thermoplastic
-Elastomer (TPE)
-Cable</span>
-                     </h5>
- 
-           </div>
+               <div className="  ml-[10%] mt-[5%]  text-[#CD2122] font-[400] text-[40px]  font-['Open_Sans'] p-4">
+    <h5 className="text-start">
+      Flexible & <br />
+      <span className=' whitespace-nowrap'>Soft Silicon Gel</span>
+    </h5>
+  </div>
+
+                  <div className='mt-[51%]'>
+                              <Image
+               src="/cables/psu4/resolution/right-top.png"
+                 alt="HDMI Cable Right"
+                 width={472}
+                 height={500}
+                 className=" bg-cover w-[472px] h-[500px] -rotate-[8deg]"
+               />
+               </div>
           </div>
         
  

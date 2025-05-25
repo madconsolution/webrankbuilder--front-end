@@ -1,6 +1,7 @@
 'use client';
 import Cable9ResolutionCardLeftBottom from '@/app/cards/cables/cable9/leftBottomCard';
 import Cable9ResolutionCardLeftTop from '@/app/cards/cables/cable9/leftTopCard';
+import Cable9ResolutionCardRightBottom from '@/app/cards/cables/cable9/rightBottom';
 import Cable9ResolutionCardRightTop from '@/app/cards/cables/cable9/rightTopCard';
 import React from 'react';
 
@@ -15,7 +16,7 @@ const Cable9ResolutionSection: React.FC = () => {
             <Cable9ResolutionCardLeftTop/>
             <Cable9ResolutionCardRightTop/>
             <Cable9ResolutionCardLeftBottom/>
-           
+               <Cable9ResolutionCardRightBottom/>
 </div>
 
      
