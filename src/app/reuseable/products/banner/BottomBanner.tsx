@@ -9,7 +9,7 @@ export interface BannerProps {
   description?: string[];
 }
 
-const MagnusProductBanner: React.FC<BannerProps> = ({
+const BottomProductBanner: React.FC<BannerProps> = ({
   bgImage,
   logo1,
   logo2,
@@ -32,7 +32,7 @@ const MagnusProductBanner: React.FC<BannerProps> = ({
       {/* Content */}
       <div className="absolute inset-0 flex flex-col items-center   text-white p-4">
         {/* Logos */}
-    <div className="flex  items-center   ">
+        <div className="flex  items-center gap-x-3 pb-3 ">
          <div>
            <Image
             src={logo1}
@@ -46,9 +46,9 @@ const MagnusProductBanner: React.FC<BannerProps> = ({
            <Image
             src={logo2}
             alt="Product Logo 2"
-            width={165}
-            height={52}
-            className="w-[168px] h-[49px] "
+            width={166}
+            height={29}
+            className="w-[166px] h-[30px] "
          
           />
        </div>
@@ -70,4 +70,4 @@ const MagnusProductBanner: React.FC<BannerProps> = ({
   );
 };
 
-export default MagnusProductBanner;
+export default BottomProductBanner;

@@ -1,6 +1,5 @@
 'use client';
-
-import ProductBanner from "@/app/reuseable/products/banner/banner";
+import BottomProductBanner from "@/app/reuseable/products/banner/BottomBanner";
 
 import FeatureGrid from "@/app/reuseable/products/Feature-Grid/Feature_Grid";
 
@@ -165,7 +164,7 @@ const specs: SpecItem[] = [
 const VidrioPage = () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
-      <ProductBanner
+      <BottomProductBanner
         bgImage="/products/iris-banner.png"
         logo1="/logo.png"
         logo2="/products/VIDRIO/VIDRIO.png"
