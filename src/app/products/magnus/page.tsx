@@ -1,7 +1,7 @@
 'use client';
 
 import AnimatedSection from "@/app/reuseable/Animation/AnimatedSection";
-import ProductBanner from "@/app/reuseable/products/banner/banner";
+import MagnusProductBanner from "@/app/reuseable/products/banner/magnus-banner";
 import Expensive from "@/app/reuseable/products/expensive/expensive";
 
 import FeatureHighlightSection from "@/app/reuseable/products/feature/feature";
@@ -139,7 +139,7 @@ const MagnusPage = () => {
     <div className="w-full md:w-[1440px] mx-auto">
       {/* ProductBanner */}
       <AnimatedSection delay={0.1}>
-      <ProductBanner
+      <MagnusProductBanner
         bgImage="/products/iris-banner.png"
         logo1="/logo.png"
         logo2="/products/Magnus/image.png"
