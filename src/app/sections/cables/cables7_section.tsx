@@ -3,6 +3,7 @@ import React from 'react';
 import Cable7ResolutionCardLeftTop from '@/app/cards/cables/cable7/leftTopCard';
 import Cable7ResolutionCardLeftBottom from '@/app/cards/cables/cable7/leftBottomCard';
 import Cable7ResolutionCardRightTop from '@/app/cards/cables/cable7/rightTopCard';
+import Cable7ResolutionCardRightBottom from '@/app/cards/cables/cable7/rightBottom';
 
 const Cable7ResolutionSection: React.FC = () => {
   return (
@@ -15,7 +16,7 @@ const Cable7ResolutionSection: React.FC = () => {
         <Cable7ResolutionCardLeftBottom/>
    
         
-        <Cable7ResolutionCardRightTop/>
+        <Cable7ResolutionCardRightBottom/>
        
         
        
