@@ -2,7 +2,7 @@
 
 import CablesBanner from "@/app/reuseable/cables/banner/banner";
 import CableSpecificationSection from "@/app/reuseable/cables/Specification/CableSpecification";
-import { SpecificationItem } from "@/app/reuseable/cables/Specification/specification";
+import  { SpecificationItem } from "@/app/reuseable/cables/Specification/pecification";
 import CallToActionBanner from "@/app/reuseable/products/join-group/join_group";
 import Title from "@/app/reuseable/products/title/title";
 import Cable2ResolutionSection from "@/app/sections/cables/cables2_section";
@@ -13,25 +13,25 @@ const specs: SpecificationItem[] = [
     {
       type: 'dimensions',
       items: [
-        { label: 'Model ', value: 'HDMI 2.1' },
+        { label: 'Model ', value: ' HDMI 2.1' },
         { label: 'Transfer Speed ', value: '18 GBPS' },
         { label: 'Plug ', value: 'Gold Plated' },
-        { label: 'Compatibility', value: " HDTV/TV, Monitor, Projector, Laptop, PS5 " },
-      
+        { label: 'Compatibility ', value: 'HDTV/TV, Monitor, Projector, Laptop, PS5 ' },
+
       ],
     },
     {
       type: 'additional',
       items: [
-  
+ 
         { label: 'Body ', value: 'Aluminium', highlight: true },
         { label: 'Max Resolution ', value: '4K' },
-        { label: 'Audio Support', value: 'DTS, Dolby, ARC Audio', highlight: true },
-     
+
+        { label: 'Audio Support', value: ' DTS, Dolby, ARC Audio', highlight: true },
       ],
     },
   ];
-//   Here is resolution data
+
 
 
 const hdmi8_cables_page = () => {

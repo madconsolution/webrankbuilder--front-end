@@ -6,7 +6,7 @@ import Expensive from "@/app/reuseable/products/expensive/expensive";
 import FeatureBlock from "@/app/reuseable/products/Feature-Block/Feature_Block";
 
 import FeatureHighlightSection from "@/app/reuseable/products/feature/feature";
-import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/specification";
+import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/pecification";
 
 import FeatureSlider from "@/app/reuseable/products/freature-slider/freature_slider";
 

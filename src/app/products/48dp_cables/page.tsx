@@ -1,8 +1,9 @@
 'use client';
 
 import CablesBanner from "@/app/reuseable/cables/banner/banner";
+import CableSpecificationSection from "@/app/reuseable/cables/Specification/CableSpecification";
 
-import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/specification";
+import  { SpecificationItem } from "@/app/reuseable/cables/Specification/pecification";
 import CallToActionBanner from "@/app/reuseable/products/join-group/join_group";
 import Title from "@/app/reuseable/products/title/title";
 import Cable3ResolutionSection from "@/app/sections/cables/cables3_section";
@@ -11,35 +12,24 @@ import Cable3ResolutionSection from "@/app/sections/cables/cables3_section";
 // Here is specification date
   // Here is specification date
 const specs: SpecificationItem[] = [
-    {
-      type: 'featured',
-      items: [
-        'Aorus fan no need an extra controller for rainbow effect',
-        'Stand out with vibrant RGB lighting',
-        'Custom engineered for superior cooling',
-        'Minimize noise or maximize airflow',
-        'Stay quiet, run cool!',
-      ],
-    },
+ 
     {
       type: 'dimensions',
       items: [
-        { label: 'Voltage', value: 'DC 12V' },
-        { label: 'Fan Dimensions', value: '120 x 120 x 25mm' },
-        { label: 'Fan Speed', value: '800~2000 R.P.M' },
-        { label: 'Air Flow', value: '18~25.4 CFM' },
-        { label: 'Static Pressure', value: '0.55~1.51 mm-H2O' },
-        { label: 'Noise Level', value: '≤13.5~25.8 dB(A)' },
+        { label: 'Model ', value: 'DP to DP 8k' },
+        { label: 'Transfer Speed ', value: '32.4 GBPS' },
+        { label: 'Plug ', value: 'Gold Plated' },
+    
       ],
     },
     {
       type: 'additional',
       items: [
-        'Custom engineered for superior cooling. Minimize noise or maximize airflow',
-        { label: 'Bearing Type', value: 'Hydraulic Bearing', highlight: true },
-        { label: 'Connector', value: '2510–4Pin' },
-        { label: 'Lead Wire Length', value: '300mm', highlight: true },
-        { label: 'LED', value: 'Rainbow 16 LEDs', highlight: true },
+   
+        { label: 'Body ', value: ' Aluminium', highlight: true },
+        { label: 'Max Resolution ', value: '8k@60Hz' },
+        { label: 'Compatibility ', value: 'Graphics Card, Monitor, Desktop, Laptop', highlight: true },
+   
       ],
     },
   ];
@@ -69,7 +59,7 @@ const dp48_cables_page = () => {
         {/* Resolution section */}
         <Cable3ResolutionSection/>;
         {/* Specification section */}
-        <SpecificationSection specifications={specs} />
+        <CableSpecificationSection specifications={specs} />
            
           {/* Join Group  */}
       <CallToActionBanner

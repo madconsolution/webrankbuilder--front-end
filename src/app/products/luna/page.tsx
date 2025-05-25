@@ -1,6 +1,6 @@
 'use client';
 
-import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/specification";
+import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/pecification";
 import CaseBanner from "@/app/reuseable/case/banner/banner";
 import LunaSlider from "@/app/reuseable/case/slider/luna-slider/luna_slider";
 
