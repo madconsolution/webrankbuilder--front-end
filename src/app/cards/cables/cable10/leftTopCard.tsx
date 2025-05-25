@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-const Cable9ResolutionCardLeftBottom: React.FC = () => {
+const Cable10ResolutionCardLeftTop: React.FC = () => {
   return (
    <>
        {/* left top card start */}
@@ -13,32 +13,28 @@ const Cable9ResolutionCardLeftBottom: React.FC = () => {
  
         
  
-          <div className=' mx-auto '>
+          <div >
  
                  <div>
       
                       <div >
-             <Image
-               src="/cables/psu4/resolution/left-bottom.png"
+                              <Image
+               src="/cables/psu5/resolution/left-top.png"
                  alt="HDMI Cable Right"
                  width={500}
                  height={500}
-                 className=" bg-cover w-[500px] h-[500px] -mt-[5%] "
+                 className=" bg-cover w-[500px] h-[500px]  mx-auto"
                />
                </div>
                  </div>
  
                
  
-                  {/* Left bttom text */}
-                 <div className="w-[313px] h-[240px] text-start ml-[56%]  text-[#CD2122]  font-[600] text-[40px] leading-[100%] font-['Open_Sans']">
+                                 {/* Left bttom text */}
+                 <div className="w-[400px] h-auto mx-auto   text-[#CD2122]  font-[600] text-[40px] leading-[100%] font-['Open_Sans']">
                      <h5>
-                   Durable &
-Expandable 
-<br />
-              <span className='text-[#ffffff]'>Thermoplastic
-Elastomer (TPE)
-Cable</span>
+12+4 PCI-E 5.0 12 VHPWR Pin <span className='text-[#ffffff]'>to</span> 8*3 PCI-E Pin
+
                      </h5>
  
            </div>
@@ -53,4 +49,4 @@ Cable</span>
   );
 };
 
-export default Cable9ResolutionCardLeftBottom;
+export default Cable10ResolutionCardLeftTop;

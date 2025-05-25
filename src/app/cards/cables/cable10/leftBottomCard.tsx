@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-const Cable9ResolutionCardLeftBottom: React.FC = () => {
+const Cable10ResolutionCardLeftBottom: React.FC = () => {
   return (
    <>
        {/* left top card start */}
@@ -53,4 +53,4 @@ Cable</span>
   );
 };
 
-export default Cable9ResolutionCardLeftBottom;
+export default Cable10ResolutionCardLeftBottom;

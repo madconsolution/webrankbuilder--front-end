@@ -1,4 +1,5 @@
 'use client';
+
 import Cable9ResolutionCardLeftBottom from '@/app/cards/cables/cable9/leftBottomCard';
 import Cable9ResolutionCardLeftTop from '@/app/cards/cables/cable9/leftTopCard';
 import Cable9ResolutionCardRightBottom from '@/app/cards/cables/cable9/rightBottom';
