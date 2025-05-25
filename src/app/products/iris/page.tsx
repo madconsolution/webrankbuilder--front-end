@@ -51,13 +51,14 @@ const slides = [
       'Tortox IRIS features high-quality tempered glass side panel to showcase the beautiful components. IRIS comes with high quality temper glass side panels is crystal clear to showcase the hardware while the other is 100% dark tinted to hide the cables behind motherboard tray.',
     image: '/products/IRIS/Feature-slider/image-2.png',
   },
-  {
-    title: '',
-    highlight: '',
-    description:
-      '',
-    image: '/products/IRIS/Feature-slider/Background.png',
-  },
+{
+  title: 'Optimized',
+  highlight: 'Airflow Design',
+  description:
+    'Tortox IRIS is engineered with a high-airflow layout featuring multiple fan mounts and ventilation points to ensure maximum cooling efficiency. The front mesh panel and top exhaust setup allow for optimal air circulation, making it ideal for high-performance gaming builds.',
+  image: '/products/IRIS/Feature-slider/Background.png',
+}
+
 ];
 
 const sampleProducts = [
