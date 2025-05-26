@@ -2,7 +2,7 @@
 
 import CablesBanner from "@/app/reuseable/cables/banner/banner";
 import CableSpecificationSection from "@/app/reuseable/cables/Specification/CableSpecification";
-import  { SpecificationItem } from "@/app/reuseable/cables/Specification/pecification";
+import  { SpecificationItem } from "@/app/reuseable/cables/Specification/specification";
 import CallToActionBanner from "@/app/reuseable/products/join-group/join_group";
 import Title from "@/app/reuseable/products/title/title";
 import Cable2ResolutionSection from "@/app/sections/cables/cables2_section";

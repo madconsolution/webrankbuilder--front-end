@@ -1,6 +1,6 @@
 "use client";
 
-import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/pecification";
+import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/specification";
 import CaseBanner from "@/app/reuseable/case/banner/banner";
 import NinjaSlider, { SlideContent } from "@/app/reuseable/case/slider/ninja-slider/ninja_slider";
 import PowerGrid from "@/app/reuseable/power/power-grid/power_grid";

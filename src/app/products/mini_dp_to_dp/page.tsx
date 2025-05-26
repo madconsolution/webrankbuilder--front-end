@@ -2,7 +2,8 @@
 
 import CablesBanner from "@/app/reuseable/cables/banner/banner";
 import Resolution2Section from "@/app/reuseable/cables/Resolution/Resolution2";
-import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/pecification";
+import CableSpecificationSection from "@/app/reuseable/cables/Specification/CableSpecification";
+import { SpecificationItem } from "@/app/reuseable/cables/Specification/specification";
 
 import CallToActionBanner from "@/app/reuseable/products/join-group/join_group";
 import Title from "@/app/reuseable/products/title/title";
@@ -37,44 +38,34 @@ const cards = [
 
   
      // Here is specification date
-  const specs: SpecificationItem[] = [
-       {
-         type: 'featured',
-         items: [
-           'Aorus fan no need an extra controller for rainbow effect',
-           'Stand out with vibrant RGB lighting',
-           'Custom engineered for superior cooling',
-           'Minimize noise or maximize airflow',
-           'Stay quiet, run cool!',
-         ],
-       },
-       {
-         type: 'dimensions',
-         items: [
-           { label: 'Voltage', value: 'DC 12V' },
-           { label: 'Fan Dimensions', value: '120 x 120 x 25mm' },
-           { label: 'Fan Speed', value: '800~2000 R.P.M' },
-           { label: 'Air Flow', value: '18~25.4 CFM' },
-           { label: 'Static Pressure', value: '0.55~1.51 mm-H2O' },
-           { label: 'Noise Level', value: '≤13.5~25.8 dB(A)' },
-         ],
-       },
-       {
-         type: 'additional',
-         items: [
-           'Custom engineered for superior cooling. Minimize noise or maximize airflow',
-           { label: 'Bearing Type', value: 'Hydraulic Bearing', highlight: true },
-           { label: 'Connector', value: '2510–4Pin' },
-           { label: 'Lead Wire Length', value: '300mm', highlight: true },
-           { label: 'LED', value: 'Rainbow 16 LEDs', highlight: true },
-         ],
-       },
-     ];
+     const specs: SpecificationItem[] = [
+
+      {
+        type: 'dimensions',
+        items: [
+          { label: 'Model ', value: 'DP to HDMI Adapter' },
+          { label: 'Gold Plated Connectors ', value: 'Yes' },
+       
+          { label: 'Built-in Conversion Chips ', value: 'Yes' },
+ 
+        ],
+      },
+      {
+        type: 'additional',
+        items: [
+      
+          { label: 'Bandwidth ', value: '10.8GBPS', highlight: true },
+          { label: 'Max Resolution ', value: '4k@60Hz' },
+          { label: 'Compatibility  ', value: 'TV, Monitors, Projectors', highlight: true },
+
+        ],
+      },
+    ];
 const mini_dp_to__page= () => {
   return (
     <div className="w-full md:w-[1440px] mx-auto">
    <CablesBanner
-      bgImage="/adapter/mini_dp_to_dp"
+      bgImage="/adapter/mini_dp_to_dp/banner.png"
       logo1="/logo.png"
       logo2="/products/IRIS.png"
       description={[
@@ -95,7 +86,7 @@ const mini_dp_to__page= () => {
         {/* Resolution section */}
         <Resolution2Section  cards={cards}/>; 
         {/* Specification section */}
-        <SpecificationSection specifications={specs} />
+        <CableSpecificationSection specifications={specs} />
            
           {/* Join Group  */}
       <CallToActionBanner

@@ -1,6 +1,6 @@
 "use client";
 
-import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/pecification";
+import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/specification";
 import CaseBanner from "@/app/reuseable/case/banner/banner";
 import SparkSlider from "@/app/reuseable/case/slider/spark-slider/spark_slider";
 import TwisterBearingSection from "@/app/reuseable/case/TwisterBearing/TwisterBearing";

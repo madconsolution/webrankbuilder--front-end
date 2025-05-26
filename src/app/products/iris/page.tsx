@@ -13,7 +13,8 @@ import AutoSlider from "@/app/reuseable/products/overview/overview";
 import ProductSlider from "@/app/reuseable/products/product-slider/product_slider";
 
 import SpecificationSection from "@/app/reuseable/products/specifications/specifications";
-import Title2 from "@/app/reuseable/products/title-2/title_2";
+import IrisTitle from "@/app/reuseable/products/title-2/iris_title";
+
 import Title from "@/app/reuseable/products/title/title";
 
 // ✅the SpecItem type here
@@ -192,7 +193,7 @@ const IrisPage = () => {
 {/* Here is title2 */}
 <AnimatedSection delay={0.2}>
 <div className="text-xl text-[#FFFFFF]">
-        <Title2
+        <IrisTitle
           mainTitle="TORTOX"
           subTitle="IRIS"
           content="Featuring EATX / ATX / Micro ATX / Mini-ITX Supported Case with 2 SSD Drive Bays and additional connections for all modern peripherals."

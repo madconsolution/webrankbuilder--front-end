@@ -4,7 +4,7 @@ import NinjaSlider, { SlideContent } from "@/app/reuseable/case/slider/ninja-sli
 import PowerGrid from "@/app/reuseable/power/power-grid/power_grid";
 
 import CallToActionBanner from "@/app/reuseable/products/join-group/join_group";
-import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/pecification";
+import SpecificationSection, { SpecificationItem } from "@/app/reuseable/cables/Specification/specification";
 import Title from "@/app/reuseable/products/title/title";
 
 

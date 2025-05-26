@@ -27,7 +27,7 @@ export default function Footer() {
         {/* Newsletter Signup */}
         <div>
           <h6 className=" mb-2">NEWSLETTER SIGNUP</h6>
-          <p className="text-gray-400 mb-4 text-sm">
+          <p className="text-[#D5D5D5] mb-4 text-sm">
             By subscribing to our mailing list you will always be updated with
             the latest news from us.
           </p>
@@ -35,44 +35,44 @@ export default function Footer() {
             <input
               type="email"
               placeholder="your.address@email.com"
-              className="p-2 w-full bg-white text-black border border-gray-400 rounded-l-md focus:outline-none"
+              className="p-2 w-full bg-white text-black border border-[#D5D5D5] rounded-l-md focus:outline-none"
             />
             <button className="bg-red-600 px-4 py-2 rounded-r-md text-white text-sm font-semibold hover:bg-red-700">
               JOIN US
             </button>
           </div>
 
-          <p className="text-gray-400 mt-2 text-xs">We never spam!</p>
+          <p className="text-[#D5D5D5] mt-2 text-xs">We never spam!</p>
         </div>
 
         {/* Contact Info */}
         <div>
           <h6 className=" mb-2">GET IN TOUCH</h6>
-          <p className="text-gray-400 text-sm">
+          <p className="text-[#D5D5D5] text-sm">
             T (+971) <span className="font-semibold">56 502 0762</span>
           </p>
-          <p className="text-gray-400 text-sm">Email: info@tortox.com</p>
-          <p className="text-gray-400 mt-4 text-sm">
+          <p className="text-[#D5D5D5] text-sm">Email: info@tortox.com</p>
+          <p className="text-[#D5D5D5] mt-4 text-sm">
             Office No. 1007, Mohammad Al Mulla Tower <br /> Beside Ansar Mall,
             Al Nahda, <br /> Sharjah, U.A.E
           </p>
         </div>
       </div>
 
-      <div className="w-full md:w-[1200px]   mx-auto border-t border-gray-400 mt-8 pt-4 flex flex-col md:flex-row justify-between items-center  text-sm">
+      <div className="w-full md:w-[1200px]   mx-auto border-t border-[#D5D5D5] mt-8 pt-4 flex flex-col md:flex-row justify-between items-center  text-sm">
  <div className="flex gap-4">
  <Link href="/">
           <Image src="/logo/logo.png" alt="Logo" width={200} height={50} />
         </Link>
-        <p className="text-gray-400">
+        <p className="text-[#D5D5D5]">
           &copy; 2025 All rights reserved by{" "}
           <span className="text-white font-semibold">Tortox</span>
         </p>
  </div>
         <div className="flex items-center space-x-4 mt-2 md:mt-0">
-          <span className="text-gray-400">GET SOCIAL</span>
-          <FaFacebookF className="text-white cursor-pointer hover:text-gray-400 text-lg" />
-          <FaInstagram className="text-white cursor-pointer hover:text-gray-400 text-lg" />
+          <span className="text-[#D5D5D5]">GET SOCIAL</span>
+          <FaFacebookF className="text-white cursor-pointer hover:text-[#D5D5D5] text-lg" />
+          <FaInstagram className="text-white cursor-pointer hover:text-[#D5D5D5] text-lg" />
         </div>
       </div>
     </footer>
