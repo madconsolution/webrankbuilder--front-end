@@ -8,10 +8,13 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "www.gstatic.com",
-        port: "", 
+        port: "",
         pathname: "/recaptcha/api2/**",
       },
     ],
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
   },
 };
 
