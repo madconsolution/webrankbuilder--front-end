@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400&family=Roboto&display=swap");
 @import "tailwindcss";
-
 
 :root {
   --background: #000000;
@@ -25,7 +24,8 @@
   }
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -35,15 +35,18 @@ html, body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-
-
 /* Apply Roboto to all heading tags */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Montserrat', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 h1 {
   font-family: Montserrat;
@@ -52,73 +55,65 @@ h1 {
   line-height: 40px;
   letter-spacing: 0%;
   vertical-align: middle;
-  color: #CD2122;
+  color: #cd2122;
 }
-h2{
+h2 {
   font-family: Roboto;
-font-weight: 400;
-font-size: 34px;
-line-height: 40px;
-letter-spacing: 0%;
-text-align: center;
-vertical-align: middle;
-
-}
-h3 {
-  font-family: Montserrat;
-font-weight: 700;
-font-size: 31px;
-line-height: 30px;
-letter-spacing: 0%;
-vertical-align: middle;
-
-h4{
- 
   font-weight: 400;
   font-size: 34px;
   line-height: 40px;
   letter-spacing: 0%;
   text-align: center;
   vertical-align: middle;
-  
+}
+h3 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  vertical-align: middle;
 
+  h4 {
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+  }
 }
-}
-h5{
+h5 {
   font-family: Open Sans;
-font-weight: 600;
-font-size: 34px;
+  font-weight: 600;
+  font-size: 34px;
 
-letter-spacing: 0%;
+  letter-spacing: 0%;
 
-vertical-align: middle;
+  vertical-align: middle;
 
-
-h6 {
-  font-family: Open Sans;
-font-weight: 700;
-font-size: 25px;
-line-height: 26px;
-letter-spacing: 0%;
-
-
-}
+  h6 {
+    font-family: Open Sans;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 26px;
+    letter-spacing: 0%;
+  }
 }
 /* Apply Open Sans to paragraph tags */
- p {
+p {
   font-family: Open Sans;
   font-weight: 400;
   font-size: 18px;
   line-height: 30.6px;
   letter-spacing: 0%;
   vertical-align: middle;
-
-} 
+}
 a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 link {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* Hide scrollbar but keep scroll behavior */
@@ -154,21 +149,19 @@ products_banner_logo_box {
   background: white;
 }
 
-
 /* Footer text  */
-.footer-text{
+.footer-text {
   font-family: Open Sans;
-font-weight: 400;
-font-size: 13px;
-line-height: 22.1px;
-letter-spacing: 0%;
-vertical-align: middle;
-
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 22.1px;
+  letter-spacing: 0%;
+  vertical-align: middle;
 }
 
 /* Ninja slider p tags text here */
 
-.ninja-slider-text{
+.ninja-slider-text {
   font-family: Open Sans;
   font-weight: 500;
   font-size: 20px;
@@ -176,21 +169,19 @@ vertical-align: middle;
   text-align: center;
   vertical-align: middle;
   text-transform: capitalize;
-  
-color: #FFFFFFCC;
+
+  color: #ffffffcc;
 }
 
 /* Gaming slider */
 .gaming-slider-text {
   font-family: Open Sans;
-font-weight: 500;
-font-size: 13px;
-letter-spacing: 0%;
-vertical-align: middle;
-text-transform: capitalize;
-color: #FFFFFFCC;
-
-
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: capitalize;
+  color: #ffffffcc;
 }
 /* Gaming slider */
 .gc-slider-text {
@@ -201,113 +192,117 @@ color: #FFFFFFCC;
   text-align: center;
   vertical-align: middle;
   text-transform: capitalize;
-color: #FFFFFFCC;
-
-
+  color: #ffffffcc;
 }
 
 .specification-cheir {
- font-family: Montserrat;
-font-weight: 700;
-font-size: 100px;
-line-height: 40px;
-letter-spacing: 0%;
-vertical-align: middle;
-color: #CD2122;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 40px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #cd2122;
 }
 
 /* Here are resution sections styles */
 
-.mini-to-dp-text{
+.mini-to-dp-text {
   font-family: Open Sans;
-font-weight: 700;
-font-size: 32px;
-letter-spacing: 0%;
-vertical-align: middle;
-text-transform: capitalize;
-color: #CD2122;
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: capitalize;
+  color: #cd2122;
 }
 
-.mini-to-dp-text-left-top{
-font-family: Open Sans;
-font-weight: 700;
-font-size: 31px;
-letter-spacing: 0%;
-text-align: center;
-vertical-align: middle;
-color: #FFFFFF;
+.mini-to-dp-text-left-top {
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 31px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
 }
 .mini-to-dp-text-left-bottom {
-font-family: Open Sans;
-font-weight: 700;
-font-size: 23px;
-letter-spacing: 0%;
-text-align: center;
-vertical-align: middle;
-color: #CD2122;
-
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 23px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: #cd2122;
 }
 
 /* /* Adapter stylse  */
 
-.adapter-title{
-font-family: Montserrat;
-font-weight: 700;
-font-size: 26px;
-line-height: 40px;
-letter-spacing: 0%;
-text-align: center;
-vertical-align: middle;
-
-
+.adapter-title {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 40px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
 }
 
 /* cables stles here */
 
-.hdmi4-card-text-red{
-font-family: Open Sans;
-font-weight: 600;
-font-size: 34px;
-
-letter-spacing: 0%;
-vertical-align: middle;
-text-transform: capitalize;
-color: #CD2122;
-
-}
-.hdmi4-card-text{
+.hdmi4-card-text-red {
   font-family: Open Sans;
-font-weight: 400;
-font-size: 30px;
-letter-spacing: 0%;
+  font-weight: 600;
+  font-size: 34px;
 
-vertical-align: middle;
-color: #FFFFFF;
-
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: capitalize;
+  color: #cd2122;
 }
-.hdmi8-card-text{
-font-family: Open Sans;
-font-weight: 400;
-font-size: 25px;
+.hdmi4-card-text {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 0%;
 
-letter-spacing: 0%;
-
-
-color: #FFFFFF;
-
+  vertical-align: middle;
+  color: #ffffff;
 }
+.hdmi8-card-text {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 25px;
 
-.Hdmi4ResolutionCardLeftBottom-text{
-font-family: Open Sans;
-font-weight: 600;
-font-size: 25px;
+  letter-spacing: 0%;
 
-letter-spacing: 0%;
-text-align: center;
-vertical-align: middle;
-text-transform: capitalize;
-
+  color: #ffffff;
 }
 
+.Hdmi4ResolutionCardLeftBottom-text {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 25px;
 
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
 
+/* Inquiry Button Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeIn {
+  animation-name: fadeIn;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}

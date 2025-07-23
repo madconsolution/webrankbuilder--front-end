@@ -20,7 +20,11 @@
 
   "dependencies": {
 
+    "axios": "^1.11.0",
+
     "framer-motion": "^12.6.2",
+
+    "jiti": "^2.4.2",
 
     "keen-slider": "^6.8.6",
 

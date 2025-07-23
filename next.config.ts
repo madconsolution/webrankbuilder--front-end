@@ -1,5 +1,3 @@
-// next.config.ts
-
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
@@ -15,6 +13,16 @@ const nextConfig: NextConfig = {
   },
   eslint: {
     ignoreDuringBuilds: true,
+  },
+
+  // 🚫 Disable Turbopack (which is experimental)
+  experimental: {
+    turbo: {
+      // Disable the dev server
+      server: false,
+      // Disable the client
+      client: false,
+    },
   },
 };
 
